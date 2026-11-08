@@ -1,6 +1,7 @@
 # STATUS & log kerja (baca ini dulu di sesi baru)
 
 ## Posisi terakhir (8 Nov 2026)
+- **Lanjut nanti:** (opsional) render ulang video #2 dengan caption zona aman (naikkan readout "PESERTA 29" di s06 dulu), lalu video #3 lewat `WORKFLOW.md`.
 - **Channel stickman (STYLE RAKA):** video #1 "Hari ke-10" Shorts SELESAI (video, caption, cover). Versi panjang 16:9 belum diproduksi (naskah lengkap di `naskah/hari-ke-10.md`).
 - **Video #2 (stickman):** "Jam Tiga Pagi" (overthinking, 91% kekhawatiran tidak terjadi, LaFreniere & Newman 2020) SELESAI: video `studio/projects/jam-tiga-pagi-shorts/out/`, caption `caption/jam-tiga-pagi-shorts.md`, cover `caption/jam-tiga-pagi-shorts-cover.png`.
 - **Channel pengetahuan** dipindah ke repo `Channel-Penjelasan` (8 Nov 2026).
