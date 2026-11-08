@@ -2,12 +2,13 @@
 
 Channel terpisah dari channel stickman. Gunakan profil ini bila prompt menyebut **"style pengetahuan"** / "channel pengetahuan" / "style 3D bersih".
 Contoh frame: `channels/pengetahuan/contoh-frame.png`. Kode: `remotion-3d/src/pengetahuan/` (komposisi `PengetahuanTest`).
+Objek tidak harus otak: bata, keramik, meteran, pipa, dll. dibuat 3D koral glossy dengan cara yang sama.
 Terinspirasi estetika "clean medical/editorial 3D"; JANGAN meniru branding, handle, atau tata letak persis kreator lain.
 
 ## Niche & isi
-- Pengetahuan umum berbasis sains: tubuh & otak, psikologi kognitif, sains sehari-hari, alam, teknologi (ScriptForge 4.x, 2.3, 3.x).
-- Narasi gaya **SCIENCE** ScriptForge: penuh rasa ingin tahu, jelas, analogi visual, akurat, tanpa hype.
-- Setiap video: 1 pertanyaan pembuka → 3 fakta dengan label anatomi/diagram → 1 kesimpulan "jadi…". Sebut sumber.
+- Channel pengetahuan, seri utama **"fakta rumah"** (video #1–#4: bata, semen, meteran listrik, keramik; berikutnya #5). Audiens 35+, bahasa santai.
+- **Alur naskah WAJIB mengikuti `channels/pengetahuan/alur-naskah.md`** (Tahap 1 ide + tren → Tahap 2 storyboard dengan "Fakta, tren & asumsi" → Tahap 3 naskah final + suara → animasi mengikuti suara). Contoh naskah: `channels/pengetahuan/referensi/`.
+- Visual origami lama sudah DIGANTI dengan style editorial 3D di bawah ini.
 
 ## Visual (wajib sama setiap video)
 | Elemen | Aturan |

@@ -3,7 +3,7 @@
 | Profil | Panggil di prompt dengan | Isi aturan |
 |---|---|---|
 | **STYLE RAKA**: channel stickman self-improvement | "style raka" / "channel stickman" | file ini + `brand/` |
-| **STYLE PENGETAHUAN**: channel pengetahuan, editorial 3D bersih | "style pengetahuan" / "channel pengetahuan" | `channels/pengetahuan/style.md` |
+| **STYLE PENGETAHUAN**: channel pengetahuan, editorial 3D bersih | "style pengetahuan" / "channel pengetahuan" / "fakta rumah" | `channels/pengetahuan/style.md` + `alur-naskah.md` |
 
 Jika prompt tidak menyebut style, **tanyakan dulu** style mana. Jangan mencampur elemen kedua style dalam satu video.
 Aturan umum untuk kedua style: Bahasa Indonesia, fakta riset dengan sumber, **caption posting + cover wajib setelah setiap video**.
