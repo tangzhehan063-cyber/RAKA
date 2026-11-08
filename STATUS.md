@@ -2,7 +2,7 @@
 
 ## Posisi terakhir (8 Nov 2026)
 - **Channel stickman (STYLE RAKA):** video #1 "Hari ke-10" Shorts SELESAI (video, caption, cover). Versi panjang 16:9 belum diproduksi (naskah lengkap di `naskah/hari-ke-10.md`).
-- **Video #2 (stickman):** tahap ide. Riset tren TikTok ID 8 Nov 2026 selesai, 10 ide diajukan, menunggu pilihan user.
+- **Video #2 (stickman):** ide #1 dipilih (overthinking, 91% kekhawatiran tidak terjadi, LaFreniere & Newman 2020). Draft naskah di `naskah/jam-tiga-pagi.md`, menunggu ACC.
 - **Channel pengetahuan** dipindah ke repo `Channel-Penjelasan` (8 Nov 2026).
 
 ## Preferensi user (penting)
