@@ -1,4 +1,16 @@
-# Channel self-improvement berbasis riset: aturan kerja untuk Claude
+# Repo konten: DUA profil style
+
+| Profil | Panggil di prompt dengan | Isi aturan |
+|---|---|---|
+| **STYLE RAKA**: channel stickman self-improvement | "style raka" / "channel stickman" | file ini + `brand/` |
+| **STYLE PENGETAHUAN**: channel pengetahuan, editorial 3D bersih | "style pengetahuan" / "channel pengetahuan" | `channels/pengetahuan/style.md` |
+
+Jika prompt tidak menyebut style, **tanyakan dulu** style mana. Jangan mencampur elemen kedua style dalam satu video.
+Aturan umum untuk kedua style: Bahasa Indonesia, fakta riset dengan sumber, **caption posting + cover wajib setelah setiap video**.
+
+---
+
+# STYLE RAKA: channel self-improvement berbasis riset
 
 Channel faceless **self-improvement berbasis riset**, bahasa **Indonesia**, gaya **stickman sinematik** (plugin GrowKaz Stickman).
 Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/brand-kit.md` sebelum membuat konten apa pun.
