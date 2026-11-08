@@ -1,17 +1,15 @@
-# Brand kit: Channel Raka
+# Brand kit: channel self-improvement berbasis riset
 
-**Posisi:** sains kebiasaan dan disiplin, dibuat simpel, lewat cerita stickman bernama Raka. Bukan motivasi kosong: setiap video punya satu fakta riset yang bisa dicek.
+**Posisi:** satu niche, self-improvement berbasis riset (disiplin, kebiasaan, produktivitas, mindset). Setiap video adalah cerita stickman yang berdiri sendiri dengan satu fakta riset yang bisa dicek. Ciri khas video ada di `brand/dna-video.md`; bio di `brand/bio.md`.
 **Janji ke penonton:** "Satu video, satu langkah kecil yang terbukti."
 
-## Karakter
-| Nama | Peran | Ciri tetap |
-|---|---|---|
-| Raka | "kamu" versi stickman; jatuh, lalu kembali | Hoodie merah-oranye `#d64a33`, tanpa topi |
+## Maskot
+Protagonis "kamu" versi stickman dengan satu item merah-oranye `#d64a33`. Nama dan cerita berganti tiap video (video #1: Raka). Template: `studio/library/cast.js`.
 
 ## Visual
 - Style: GrowKaz **Emerald** (bayangan hijau tua, key light emas, rim light hijau limau).
 - Warna UI: emas `#ffd45a` (angka kunci), coral/accent (peringatan / "MITOS?"), cream (label).
-- Motif berulang: **kalender "HARI N"**, badge hari di pojok kanan atas, hujan = titik gagal, fajar = kembali.
+- Motif berulang: badge angka/waktu di pojok kanan atas, papan blueprint untuk fakta, gelap/hujan = masalah, fajar = titik balik.
 - Struktur Shorts: hook (detik 0–4) → mitos → fakta + angka → twist emosional → kembali → kalimat penutup yang loop ke awal.
 
 ## Suara
