@@ -9,7 +9,7 @@
 | `prompts/ScriptForge.pdf` | Prompt penulis naskah |
 | `plugin/` | File plugin GrowKaz Stickman asli |
 | `studio/` | Studio render (engine sudah dipatch), `library/` (maskot + set reusable), proyek video (`projects/`) |
-| `remotion-3d/` | Proyek Remotion + three.js (caption/3D alternatif) |
+| `remotion-3d/` | Proyek Remotion + three.js (demo 3D + caption) |
 | `tools/scribe_to_timeline.py` | Transkrip ElevenLabs ke timeline + angka |
 
 Container baru: `./setup.sh`, lalu ikuti `CLAUDE.md`.

@@ -2,8 +2,7 @@
 
 ## Posisi terakhir (8 Nov 2026)
 - **Channel stickman (STYLE RAKA):** video #1 "Hari ke-10" Shorts SELESAI (video, caption, cover). Versi panjang 16:9 belum diproduksi (naskah lengkap di `naskah/hari-ke-10.md`).
-- **Channel pengetahuan (STYLE PENGETAHUAN, seri fakta rumah):** video #1–#4 dibuat dulu dengan gaya origami (referensi di `channels/pengetahuan/referensi/`). Video #5: **Tahap 1 selesai**, 10 ide + tren + improvisasi di `channels/pengetahuan/riset/2026-11-08-ide-video-5.md`. **MENUNGGU user memilih ide** (rekomendasi: #1 "Tembokmu Minum Air dari Tanah"). Lanjut ke Tahap 2 (storyboard draft).
-- Belum diputuskan untuk channel pengetahuan: nama channel/handle, voice (default Riri Rida), realisme objek 3D (prosedural vs model CC0).
+- **Channel pengetahuan** dipindah ke repo `Channel-Penjelasan` (8 Nov 2026).
 
 ## Preferensi user (penting)
 - Bahasa Indonesia. Suka saran "out of the box".
@@ -17,4 +16,5 @@
 - Container baru: `./setup.sh` (studio, remotion-3d). Render butuh `CHROMIUM_PATH=/opt/pw-browsers/chromium`.
 
 ## Log
+- 8 Nov 2026: bagian channel pengetahuan dipindah ke repo Channel-Penjelasan.
 - 8 Nov 2026: setup Remotion+three.js, plugin GrowKaz, video Hari ke-10, repo RAKA (privat), style pengetahuan + otak 3D prosedural, alur naskah dari storyboard origami, riset ide #5.
