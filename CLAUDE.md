@@ -45,3 +45,10 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - `render.mjs`: mendukung `CHROMIUM_PATH` (Chromium bawaan container).
 - `engine/rig2d.js`: alis `worried` dan `angry` sebelumnya tertukar, sudah diperbaiki.
 - `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil.
+
+## Caption & komentar pertama (berlaku setelah user ACC naskah final)
+- Begitu user menyatakan **ACC/final** untuk naskah, langsung kirim **caption posting + komentar pertama** (jangan tunggu video selesai; cover tetap dibuat setelah render).
+- **Wajib riset bahasa manusia dulu:** pakai ScrapeMedsos (TikTok `v1_tiktok_search_keyword` region ID, lalu komentar video teratas dengan `v1_tiktok_video_comments`, bila perlu YouTube) untuk topik yang sama. Catat kata, singkatan, dan gaya yang benar-benar dipakai orang (mis. "jeglek", "kopong", "rembes", "wkwk", "auto", "relate banget").
+- Tulis caption & komentar pertama meniru ritme itu: kalimat pendek, boleh tidak baku, emoji secukupnya (0–2), tanpa frasa khas AI ("Yuk simak!", "Tahukah kamu", "di era modern ini", "mari kita", "penting untuk diingat", tanda "—" berlebihan, daftar berpoin di caption).
+- Komentar pertama = pancingan diskusi dari sudut pandang kreator (pertanyaan spesifik atau "aku dulu juga…"), bukan ringkasan video.
+- Simpan contoh bahasa hasil scrape (maks. 10 kutipan pendek) di file caption sebagai bukti, jangan menyalin komentar orang utuh ke caption.

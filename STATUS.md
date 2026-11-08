@@ -8,6 +8,7 @@
 - Bahasa Indonesia. Suka saran "out of the box".
 - Setelah video selesai: SELALU caption + cover.
 - Tahap ide: selalu riset tren (ScrapeMedsos) + saran improvisasi topik.
+- Setelah ACC naskah final: kirim caption + komentar pertama berbahasa manusia (hasil scrape sosmed), bukan gaya AI.
 - Setiap video berdiri sendiri; konsisten di DNA/style, bukan kelanjutan cerita.
 
 ## Lingkungan
