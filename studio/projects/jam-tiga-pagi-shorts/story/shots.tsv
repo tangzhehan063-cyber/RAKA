@@ -1,0 +1,21 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Jam Tiga Pagi
+@music 0-27.38 mystery 0.35; 27.38-36.2 sad 0.3; 36.2-44.5 hopeful 0.5; 44.5-56.2 triumph 0.5
+s01	0.0	1.7	kamar	cut	0.1 thunder -12	rain -20	Jam 3 pagi. | WIDE kamar malam hujan, Nara telentang melek, jam 03:00
+s02	1.7	4.9	kamar	cut	0.2 clock -18	rain -24	Nara masih melek... menatap langit-langit. | BIG FACE melotot ke langit-langit
+s03	4.9	7.5	kamar	cut	0.0 swish -12; 0.3 heartbeat -10	rain -24	Besok presentasimu bakal kacau. | Si Ramalan bangkit dari dinding, berbisik di atas kasur
+s04	7.5	9.15	kamar	cut	0.3 pop -14	rain -22	Dan dia percaya. | Nara meringkuk di kasur, bayangan di belakang; skor RAMALAN 1 TERJADI 0
+s05	9.15	13.6	board	zoom	1.6 pop -10; 3.9 hit -10	-	Kita sering mengira: kalau kita khawatir, berarti bahayanya nyata. | BLUEPRINT: KHAWATIR = BAHAYA NYATA, stempel MITOS?
+s06	13.6	20.42	board	cut	1.0 blip -14; 2.3 counter -16	-	Tapi peneliti Penn State meminta 29 orang ... mencatat setiap kekhawatirannya... | BLUEPRINT: PENN STATE 2020, 29 figur, kertas muncul
+s07	20.42	24.1	board	cut	0.6 tick -14; 1.3 tick -14; 2.0 tick -14; 1.9 riser -10	-	lalu mengecek mana yang benar-benar terjadi. Hasilnya? | Daftar kekhawatiran dicek: X X X YA X...; riser
+s08	24.1	27.38	board	flash	0.05 impact -5; 1.9 hit -12	-	91 persen... tidak pernah terjadi. | 91% emas meledak (flash + impact)
+s09	27.38	31.05	board	cut	2.0 shimmer -14	-	Dan bagi banyak peserta... tidak ada satu pun yang jadi kenyataan. | 29 figur, banyak yang menyala dengan angka 0
+s10	31.05	36.2	kamar	flash	0.0 freeze -6; 1.8 heartbeat -10	rain -26	Tapi setiap malam, suara itu kembali, dengan ramalan yang sama. | FREEZE: wajah raksasa + Si Ramalan membesar, hujan membeku; skor 47/4
+s11	36.2	38.84	kamar	dip	1.95 tick -8; 2.0 shimmer -14	roomtone -24	Malam itu, Nara menyalakan lampu. | Lampu meja menyala emas, bayangan mengecil
+s12	38.84	41.0	desk3d	cut	0.2 swish -16	roomtone -24	Menulis satu ketakutannya di kertas. | 3D ORBIT meja, Nara menulis di bawah lampu
+s13	41.0	42.04	kamar	dip	-	roomtone -26	Lalu tidur. | Nara tidur, kertas tertempel di dinding
+s14	42.04	44.5	kamar	dipWhite	0.1 whoosh -14; 1.5 swish -10; 2.2 ding -12	roomtone -24	Seminggu kemudian... ia mencoretnya. | Fajar, 7 HARI KEMUDIAN, kertas dicoret
+s15	44.5	46.9	kamar	cut	0.0 shimmer -14	wind -26	Overthinking bukan soal kamu lemah. | WIDE fajar, Nara di jendela, Si Ramalan kecil di sampingnya
+s16	46.9	49.38	kamar	cut	-	wind -28	Tapi otakmu terlalu sayang sama kamu. | BIG FACE fajar, senyum kecil
+s17	49.38	52.04	board	zoom	1.0 pop -10	-	Jadi malam ini, tulis satu ketakutanmu. | BLUEPRINT: TULIS 1 KETAKUTAN, cek 7 hari lagi
+s18	52.04	56.2	kamar	dip	2.7 thunder -14	rain -20	Karena sebagian besar ketakutan... cuma lahir di jam 3 pagi. | Kembali ke kamar malam jam 03:00 (loop ke s01)

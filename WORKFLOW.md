@@ -1,0 +1,60 @@
+# WORKFLOW cepat & hemat token (Shorts stickman)
+
+Tujuan: satu video ≈ 1 sesi, ±8 langkah, tanpa membaca file besar. Semua perintah dari root repo.
+
+## 0. Awal sesi (baca 2 file saja)
+- `STATUS.md` (posisi + preferensi). `brand/dna-video.md` hanya kalau perlu ingat struktur.
+- JANGAN baca: `prompts/ScriptForge.pdf`, kode shot video lama, engine. Contekan API ada di bawah.
+- Container baru: `tools/produksi.sh setup` (npm + numpy/scipy, ±1 mnt).
+
+## 1. Ide (≤ 4 kredit ScrapeMedsos)
+- `v1_tiktok_search_keyword` × 3–4 paralel: `region:"ID"`, `date_posted:"last-3-months"`, `sort_by:"most-liked"`, `trim:true`.
+- Output besar otomatis disimpan ke file → `python3 tools/scrape_ringkas.py search <file> 8`. Jangan baca file mentah.
+- Beri 10 ide + 1 rekomendasi out-of-the-box. Tunggu pilihan user.
+
+## 2. Fakta + naskah (1 WebSearch)
+- 1× WebSearch "standard" untuk memastikan angka + sumber. Tulis `naskah/<slug>.md` (sumber, teks TTS ±120 kata = ±55 dtk, storyboard tabel). Tunggu ACC.
+
+## 3. Setelah ACC (paralel dalam satu giliran)
+- Komentar: `v1_tiktok_video_comments` untuk 2 video saja, `trim:true` (≈1 kredit/video). Ringkas bila tersimpan ke file: `scrape_ringkas.py comments`.
+- Tulis `caption/<slug>-shorts.md` (format CLAUDE.md) **dan** mulai TTS di giliran yang sama.
+- ElevenLabs: `creative_create_flow` → `creative_generate_speech` (`eleven_v4`, voice `vLsH4ENK3zGpAuW1lSh4`). Kalau take ke-2 "free busy", pakai 1 take saja (tidak ditagih).
+- Sambil menunggu: tulis kode adegan (langkah 5). Poll status seperlunya (tiap poll = token).
+
+## 4. VO → timeline (2 perintah)
+- `tools/produksi.sh init <slug> "<content_url VO>"`
+- `creative_add_flow_asset_node` (generation_id) → `creative_transcribe_audio`. Bila "busy", kerjakan hal lain lalu coba lagi.
+- `tools/produksi.sh timeline <slug> "<words_download_url>"` → mencetak kalimat + waktu (dasar shot list).
+
+## 5. Adegan
+- Tulis `studio/projects/<slug>-shorts/story/shots.tsv` (contoh: `jam-tiga-pagi-shorts/story/shots.tsv`) → `tools/produksi.sh shots <slug>`.
+- Kode: `scenes/shots/01_*.js` (lokasi), `02_papan.js` (blueprint/fakta), `03_*3d.js` (1 shot 3D). Salin pola dari `studio/projects/jam-tiga-pagi-shorts/scenes/shots/` **tanpa membacanya bila contekan cukup**.
+- Set siap pakai di `studio/library/sets/`: `bedroom.js` (kalender), `street.js`, `kamar.js` (jam 03:00, meja + lampu, kertas, bayangan Si Ramalan).
+
+## 6. Cek visual → render (1 sheet, perbaikan via stills)
+- `tools/produksi.sh sheet <slug>` → lihat 1 gambar `build/sheets/sheet_01.png`.
+- Perbaiki → `tools/produksi.sh stills <slug> 12.3,40.1` (hanya shot yang diubah).
+- `tools/produksi.sh final <slug>` dengan Bash `run_in_background` (±10 mnt untuk 56 dtk; WORKERS = nproc−1). Selesai = render + mix + QC + `build/qc.png`.
+
+## 7. Cover + simpan
+- Salin `studio/projects/jam-tiga-pagi-cover/` → ganti teks/adegan di `scenes/shots/cover.js` → `tools/produksi.sh cover <slug>`.
+- Perbarui `STATUS.md`, `arsip/README.md`, `brand/brand-kit.md` (arsip konten). Commit + push sekali per fase.
+- Kirim ke user: MP4, cover, caption (SendUserFile).
+
+## Contekan API engine (tidak perlu grep)
+- Import: `import { E, V, S, registerShot, layer, blurLayer, veil, ease, prog, clamp, lerp, wordTime, alpha, glow, rr, seg, circle, ring, text, FONTS, shake } from '/engine/core.js'`
+- `V(h, v)` = nilai horizontal/vertikal. `E.W/E.H` = 1080×1920. `rel = (w, info, fb) => (wordTime(w, info.shot.start-0.1) ?? info.shot.start+fb) - info.shot.start` → detik kata dalam shot.
+- `registerShot('s01', { draw(g, t, info) {...} })`; 3D: `{ kind:'3d', init(T){ T.stage({mood,fov,fog,keyPos,keyIntensity,ambient}); T.box/cyl/cone/sphere/plane/ground/planks/figure3D(outfit,{pose,rim}); T.THREE }, draw(s,t,info,T){ T.orbit(cam,t,{target,radius,height,from,to,dur}) } }`. 3D: 1 unit rig = 1/140 m; pose sit: pinggul 0,51 m di atas kaki.
+- Tokoh: `drawFigure(g,{x,y,s,facing,pose,rot,outfit,expr,look,blink,rim:{color,dir,w},ink,alpha,shadow})`; `bigFace(g,cx,cy,r,{outfit,expr,look,blink,rimColor,rimSide,tilt})`; `POSES`: stand relaxed talk explain point wave cheer think shrug phone reach sad facepalm ready crouch sit kneel lie(rot ±π/2) jump fall; `breathe(pose,t,amt,seed)`, `walkPose(phase,{run})`, `posesAt(t,[[t,pose],...])`.
+- Ekspresi: neutral happy joy smile surprised shocked scared worried nervous angry determined sad cry smirk sleepy thinking confused awe.
+- FX: `rain dust drops rings godRays lightCone pool sparkle fog sun moon skyline windowFrame bed clock lensStreak speedLines`.
+- UI: `UI.blueprint(g)`, `UI.bpStroke()`, `UI.badge(g,{str,x,y,size,a})`, `UI.readout(g,{label,value,x,y,align,a})`; warna `S().ui.gold/cream/accent`.
+- Transisi: cut flash dip dipWhite zoom whip. SFX: whoosh swish impact hit riser freeze tick clock heartbeat pop blip counter ding shimmer stinger footstep phonebuzz thunder; ambience: rain wind roomtone city.
+- Tata letak 9:16: caption ada di ±0,72–0,80 H → teks papan taruh di 0,15–0,68 H. Badge pojok kanan atas: x = `E.W - V(90,70)`, y = `V(110,230)`; jangan taruh objek lain di sana.
+
+## Hemat token: aturan singkat
+1. Jangan pernah membaca output JSON mentah; pakai `scrape_ringkas.py` / `jq`.
+2. Tulis file sekali dengan Write; perbaikan kecil dengan sed/Edit, bukan menulis ulang.
+3. Cek visual hanya lewat 1 contact sheet; jangan membuka still satu per satu.
+4. Panggilan independen dikirim paralel (search, komentar, TTS).
+5. Render penuh selalu di background; jangan polling, tunggu notifikasi.

@@ -52,7 +52,8 @@ def main(src, dst):
                 if c2.lower() in NUMWORDS: seq.append(c2.lower()); j += 1; tail = t2
                 else: break
             val = parse_num(seq)
-            if len(seq) == 1 and not prefix and val < 10: out.append(words[i]); i += 1; continue
+            prev = split_punct(out[-1]["word"])[1].lower() if out else ""
+            if len(seq) == 1 and not prefix and val < 10 and prev not in ("jam", "pukul"): out.append(words[i]); i += 1; continue
             out.append({"word": f"{pre}{prefix}{val}{tail}", "start": words[i]["start"], "end": words[j]["end"]}); i = j + 1
         else:
             out.append(words[i]); i += 1

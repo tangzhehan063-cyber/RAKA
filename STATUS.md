@@ -5,6 +5,10 @@
 - **Video #2 (stickman):** "Jam Tiga Pagi" (overthinking, 91% kekhawatiran tidak terjadi, LaFreniere & Newman 2020) SELESAI: video `studio/projects/jam-tiga-pagi-shorts/out/`, caption `caption/jam-tiga-pagi-shorts.md`, cover `caption/jam-tiga-pagi-shorts-cover.png`.
 - **Channel pengetahuan** dipindah ke repo `Channel-Penjelasan` (8 Nov 2026).
 
+## Cara kerja (WAJIB, hemat token)
+- Ikuti `WORKFLOW.md` + `tools/produksi.sh` (init/timeline/shots/sheet/stills/final/qc/cover). Shot list ditulis di `story/shots.tsv`.
+- Arsip semua artifact: `arsip/README.md`. Halaman artifact Claude (arsip + workflow): slug `40b5677b-fc79-4023-83fe-457a59db2581`, https://claude.ai/artifact/8zT2UTpuoXUQ3wsdwNvjQC . Setiap video baru: buat pratinjau di `arsip/halaman/` lalu republish (publish_files dengan slug + base_version terakhir).
+
 ## Preferensi user (penting)
 - Bahasa Indonesia. Suka saran "out of the box".
 - Setelah video selesai: SELALU caption + cover.
@@ -18,6 +22,7 @@
 - Container baru: `./setup.sh` (studio, remotion-3d). Render butuh `CHROMIUM_PATH=/opt/pw-browsers/chromium`.
 
 ## Log
+- 8 Nov 2026: workflow hemat token: `WORKFLOW.md`, `tools/produksi.sh`, `tools/shots_tsv.py`, `tools/scrape_ringkas.py`; arsip + halaman artifact; `__pycache__` di-ignore; "jam tiga" otomatis jadi "jam 3".
 - 8 Nov 2026: video #2 Jam Tiga Pagi diproduksi. Set baru `kamar.js` (jam digital, meja+lampu, kertas ketakutan, tokoh bayangan "Si Ramalan") bisa dipakai ulang. Catatan: free ElevenLabs kadang "busy" (TTS hanya 1 take, Scribe perlu dicoba ulang beberapa kali, tidak ditagih).
 - 8 Nov 2026: riset tren video #2. Sinyal kuat: animasi "prokrastinasi memindahkan stres ke malam terakhir" (15,7 jt views, 2,2 jt likes), "overthinking jam 3 pagi" (3 jt), "niat scroll 5 menit jadi 30 menit" (1,2 jt), "procrastinator vs planner" (1–1,9 jt, banyak akun ID), "capek mikirin penilaian orang" (1,8 jt).
 - 8 Nov 2026: bagian channel pengetahuan dipindah ke repo Channel-Penjelasan.

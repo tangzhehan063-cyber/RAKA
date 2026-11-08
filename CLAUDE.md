@@ -1,7 +1,7 @@
 # Repo RAKA: channel stickman self-improvement
 
 Repo ini hanya untuk channel stickman (STYLE RAKA). Channel pengetahuan ("fakta rumah", editorial 3D) ada di repo terpisah **`tangzhehan063-cyber/Channel-Penjelasan`**; jangan campur gaya.
-**Di awal setiap sesi, baca `STATUS.md`** (posisi terakhir & preferensi user), dan perbarui `STATUS.md` setiap ada kemajuan.
+**Di awal setiap sesi, baca `STATUS.md`**, lalu kerjakan video dengan `WORKFLOW.md` + `tools/produksi.sh` (hemat token & waktu) (posisi terakhir & preferensi user), dan perbarui `STATUS.md` setiap ada kemajuan.
 Aturan umum: Bahasa Indonesia, fakta riset dengan sumber, **caption posting + cover wajib setelah setiap video**.
 
 ---
