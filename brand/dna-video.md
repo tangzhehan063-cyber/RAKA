@@ -47,7 +47,7 @@ Contoh: "Disiplin bukan soal tidak pernah jatuh. Tapi seberapa cepat kamu kembal
 
 ## 7. Judul, cover, caption
 - Judul ≤ 60 karakter, pola: **mitos dipatahkan** ("21 Hari Itu Mitos…"), **angka mengejutkan**, atau **"kamu" + kontradiksi** ("Kamu Gagal Sehari? Bagus.").
-- Teks cover 2–4 kata, angka di depan ("66, BUKAN 21").
+- **Cover**: adegan gelap dari video + teks 2–4 kata, angka emas raksasa di atas, kata pendukung krem tebal di bawah, coretan coral pada angka mitos ("66, BUKAN 21"). Teks di pita tengah (aman untuk crop 3:4 grid profil).
 - Caption mengikuti format di `CLAUDE.md` (wajib setelah setiap video).
 
 ## Jangan

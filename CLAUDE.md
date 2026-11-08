@@ -15,7 +15,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
    (Whisper/huggingface diblokir di cloud; jangan andalkan.)
 4. **Render:** dari `studio/`, selalu dengan `CHROMIUM_PATH=/opt/pw-browsers/chromium`. Cek `--sheet --scale 0.5` dulu, baru render final, lalu `python3 audio/mix.py --project projects/<slug>`.
 5. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata.
-6. **SELALU buat caption posting setelah video selesai** (lihat format di bawah) dan simpan ke `caption/<slug>.md`. Jangan anggap video selesai sebelum caption dibuat.
+6. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
 
 ## Format caption (wajib, per video)
 - **Hook baris pertama** (≤ 60 karakter, berhenti scroll; jangan "Halo guys").
@@ -29,6 +29,9 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - Versi panjang: 16:9, 1080p, caption off.
 - Protagonis: stickman "kamu" dengan satu item merah-oranye `#d64a33` (maskot); nama boleh baru tiap video. Mulai proyek dengan menyalin `studio/library/` (cast + set kamar & jalan); buat set baru bila topik membutuhkan, gaya tetap sama.
 - Niche: hanya self-improvement (ScriptForge 1.1–1.5). Tolak/konfirmasi dulu bila user minta topik di luar niche.
+
+## Catatan teknis
+- Folder repo tidak menyimpan `node_modules`; jalankan `./setup.sh` di container baru.
 
 ## Patch yang sudah diterapkan ke engine (`studio/`), jangan ditimpa saat update plugin
 - `render.mjs`: mendukung `CHROMIUM_PATH` (Chromium bawaan container).
