@@ -11,7 +11,9 @@ Alur ini meneruskan cara kerja 4 video pertama (referensi di `referensi/`), deng
 ## Tahap 1: Ide
 1. Beri **10 ide** dalam seri fakta rumah (format ScriptForge langkah 2: judul ≤ 60 karakter + satu baris hook/alasan orang klik). Campur format: "kenapa…", "cara … bekerja", "mitos vs fakta", "bahaya yang nggak kelihatan".
 2. **Cek tren** untuk ide unggulan: cari video serupa di TikTok/YouTube (tool ScrapeMedsos bila tersedia) dan catat judul + jumlah tayangan sebagai bukti. Jangan mengarang angka tayangan.
-3. User memilih satu.
+3. **Selalu sertakan saran improvisasi** per topik (permintaan user): ubah sudut ke masalah yang terlihat penonton, mitos yang bisa dipatahkan, mini-seri, atau sudut berbeda dari kompetitor (mis. @howcomeid). Beri satu rekomendasi utama + alasan.
+4. Simpan hasil riset ke `channels/pengetahuan/riset/<tanggal>-ide-video-N.md`.
+5. User memilih satu.
 
 ## Tahap 2: Storyboard draft (artifact/halaman, seperti video #1–#4)
 Header: `STORYBOARD · VIDEO #N · TAHAP 2 · DRAFT`, durasi sementara, "VO Bahasa Indonesia santai · audiens 35+ · CTA follow · seri fakta rumah", catatan safe zone (15% atas, 20% bawah; subtitle tepat di atas garis bawah).
