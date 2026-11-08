@@ -1,7 +1,7 @@
 # Jam Tiga Pagi (video #2): naskah Shorts
 
 Slug: `jam-tiga-pagi-shorts` · Tokoh: **Nara** (stickman, hoodie `#d64a33`) · Tokoh baru: **"Si Ramalan"**, bayangan stickman tinggi kurus (suara di kepala).
-Status: DRAFT, menunggu ACC user.
+Status: ACC user 8 Nov 2026, diproduksi.
 
 ## Sumber fakta
 LaFreniere, L. S. & Newman, M. G., *Exposing Worry's Deceit: Percentage of Untrue Worries in Generalized Anxiety Disorder Treatment*, **Behavior Therapy 51(3), 413–423** (online 2019, cetak 2020), Penn State.
