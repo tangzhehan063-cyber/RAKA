@@ -32,7 +32,7 @@ Tujuan: satu video ≈ 1 sesi, ±8 langkah, tanpa membaca file besar. Semua peri
 - Set siap pakai di `studio/library/sets/`: `bedroom.js` (kalender), `street.js`, `kamar.js` (jam 03:00, meja + lampu, kertas, bayangan Si Ramalan).
 
 ## 6. Cek visual → render (1 sheet, perbaikan via stills)
-- `tools/produksi.sh sheet <slug>` → lihat 1 gambar `build/sheets/sheet_01.png`.
+- `tools/produksi.sh sheet <slug>` → lihat 1 gambar `build/sheets/safe.png` (still + overlay zona aman TikTok).
 - Perbaiki → `tools/produksi.sh stills <slug> 12.3,40.1` (hanya shot yang diubah).
 - `tools/produksi.sh final <slug>` dengan Bash `run_in_background` (±10 mnt untuk 56 dtk; WORKERS = nproc−1). Selesai = render + mix + QC + `build/qc.png`.
 
@@ -50,7 +50,7 @@ Tujuan: satu video ≈ 1 sesi, ±8 langkah, tanpa membaca file besar. Semua peri
 - FX: `rain dust drops rings godRays lightCone pool sparkle fog sun moon skyline windowFrame bed clock lensStreak speedLines`.
 - UI: `UI.blueprint(g)`, `UI.bpStroke()`, `UI.badge(g,{str,x,y,size,a})`, `UI.readout(g,{label,value,x,y,align,a})`; warna `S().ui.gold/cream/accent`.
 - Transisi: cut flash dip dipWhite zoom whip. SFX: whoosh swish impact hit riser freeze tick clock heartbeat pop blip counter ding shimmer stinger footstep phonebuzz thunder; ambience: rain wind roomtone city.
-- Tata letak 9:16: caption ada di ±0,72–0,80 H → teks papan taruh di 0,15–0,68 H. Badge pojok kanan atas: x = `E.W - V(90,70)`, y = `V(110,230)`; jangan taruh objek lain di sana.
+- **Zona aman TikTok/Reels (1080×1920), wajib:** UI aplikasi menutup header atas (y < 150), kolom tombol kanan (x > 870, y 860–1560) dan deskripsi bawah (y > 1480). Caption otomatis di pita y ±1210–1330, x 60–870 (`engine/ui2d.js`, maks 3 kata). Teks papan/angka taruh di y 150–1180; di y > 860 jangan lewat x 870. Badge pojok kanan atas: x = `E.W - V(90,110)`, y = `V(110,300)` (di bawah ikon search). `produksi.sh sheet` menghasilkan `safe.png` (merah = tertutup UI); pastikan tidak ada teks di area merah.
 
 ## Hemat token: aturan singkat
 1. Jangan pernah membaca output JSON mentah; pakai `scrape_ringkas.py` / `jq`.
