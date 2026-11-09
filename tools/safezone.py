@@ -14,7 +14,7 @@ for f in files:
     d.rectangle([0, 0, W, 150 * k], fill=red)                    # header Following / For You
     d.rectangle([880 * k, 860 * k, W, 1560 * k], fill=red)       # tombol like/komentar/share/profil
     d.rectangle([0, 1480 * k, W, H], fill=red)                   # nama, deskripsi, musik, nav bar
-    for yy in (1210, 1330): d.line([60 * k, yy * k, 860 * k, yy * k], fill=(255, 212, 90, 160), width=max(1, int(2 * k)))
+    for yy in (1300, 1390): d.line([60 * k, yy * k, 860 * k, yy * k], fill=(255, 212, 90, 160), width=max(1, int(2 * k)))
     ims.append(Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB"))
 W, H = ims[0].size; cols = min(6, len(ims)); rows = (len(ims) + cols - 1) // cols
 sheet = Image.new("RGB", (W * cols, H * rows), (17, 17, 17))

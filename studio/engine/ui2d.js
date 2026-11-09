@@ -82,7 +82,7 @@ export function endScreen(g, t, o = {}) {
 // Word-level captions (great for 9:16). Shows a 3–4 word phrase, current word highlighted.
 export function captions(g, globalT, o = {}) {
   const words = E.words; if (!words.length) return; // 9:16 = TikTok/Reels safe zone: right column of buttons (x > ~870) and description (y > ~1480) are covered by the app UI.
-  const { y = V(E.H - 150, E.H * 0.66), x: x0, cx = x0 ?? V(E.W / 2, E.W * 0.44), maxW: mw = V(E.W * 0.88, E.W * 0.74), size = V(58, 72), max = V(4, 3), color = '#ffffff', hi = S().ui.gold } = o;
+  const { y = V(E.H - 150, E.H * 0.70), x: x0, cx = x0 ?? V(E.W / 2, E.W * 0.44), maxW: mw = V(E.W * 0.88, E.W * 0.74), size = V(58, 72), max = V(4, 3), color = '#ffffff', hi = S().ui.gold } = o;
   let i = -1; for (let k = words.length - 1; k >= 0; k--) if (globalT >= words[k].start - 0.05) { if (globalT <= words[k].end + 0.35) i = k; break; } if (i < 0) return;
   let st = 0; { let a = 0; for (let k = 0; k <= i; k++) { if (k > a && (k - a >= max || /[.!?…,]$/.test(words[k - 1].word.trim()))) a = k; } st = a; } let en = st; while (en < words.length && en - st < max) { en++; if (/[.!?…,]$/.test(words[en - 1].word.trim())) break; } const group = words.slice(st, en); const strs = group.map(w => w.word.trim().toUpperCase());
   const w0 = strs.map(s => measure(g, s, size)).reduce((a, b) => a + b, 0) + size * 0.45 * (strs.length - 1);

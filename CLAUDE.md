@@ -22,7 +22,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
    `python3 tools/parse_script.py --project projects/<slug> --script projects/<slug>/input/script.json` (dijalankan dari `studio/`)
    (Whisper/huggingface diblokir di cloud; jangan andalkan.)
 4. **Render:** dari `studio/`, selalu dengan `CHROMIUM_PATH=/opt/pw-browsers/chromium`. Cek `--sheet --scale 0.5` dulu, baru render final, lalu `python3 audio/mix.py --project projects/<slug>`.
-5. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata.
+5. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata **terhadap `brand/cek-bug.md`** (daftar bug yang pernah terjadi; tambahkan bug baru di sana).
 6. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
 
 ## Format caption (wajib, per video)
@@ -34,7 +34,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 
 ## Default produksi
 - Shorts/TikTok: 9:16, 1080p, 24 fps, caption on (di zona aman TikTok: tidak tertutup tombol kanan & deskripsi bawah, cek `safe.png`), style `emerald`, `fadeIn 0`, ending **loop** (kalimat terakhir menyambung ke kalimat pertama).
-- **Zona aman 9:16 (wajib):** caption & teks penting tidak boleh di bawah y≈1440 (area caption/username TikTok/Reels/Shorts), tidak di kanan x>930 pada y 700–1500 (tombol like/komen/share), tidak di atas y<220. Default config: `"captionStyle": {"y":1250,"x":505,"maxW":0.72}`; badge pojok kanan atas di x≈930, y≈280.
+- **Zona aman 9:16 (wajib):** caption & teks penting tidak boleh di bawah y≈1440 (area caption/username TikTok/Reels/Shorts), tidak di kanan x>930 pada y 700–1500 (tombol like/komen/share), tidak di atas y<220. **Posisi CC baku (ACC user 9 Nov, jangan diubah): sedikit di bawah tengah, pusat y=1344 (0,70 H), x=475, lebar maks 0,74 W, maks 3 kata** = default engine, jadi `captionStyle` tidak perlu diisi di config; badge pojok kanan atas di x≈930, y≈280.
 - Versi panjang: 16:9, 1080p, caption off.
 - Protagonis: stickman "kamu" dengan satu item merah-oranye `#d64a33` (maskot); nama boleh baru tiap video. Mulai proyek dengan menyalin `studio/library/` (cast + set kamar & jalan); buat set baru bila topik membutuhkan, gaya tetap sama.
 - Niche: hanya self-improvement (ScriptForge 1.1–1.5). Tolak/konfirmasi dulu bila user minta topik di luar niche.
@@ -47,7 +47,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 ## Patch yang sudah diterapkan ke engine (`studio/`), jangan ditimpa saat update plugin
 - `render.mjs`: mendukung `CHROMIUM_PATH` (Chromium bawaan container).
 - `engine/rig2d.js`: alis `worried` dan `angry` sebelumnya tertukar, sudah diperbaiki.
-- `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil; posisi 9:16 di zona aman TikTok (y 0,66 H, pusat x 0,44 W, lebar maks 0,74 W, maks 3 kata).
+- `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil; posisi 9:16 di zona aman TikTok (y 0,70 H, pusat x 0,44 W, lebar maks 0,74 W, maks 3 kata); opsi `x`/`cx` dan `maxW` pecahan/piksel.
 - `audio/sfx.py`: efek `pluck` (genjreng gitar Karplus-Strong, `detune` > 0 = fals); `audio/mix.py` meneruskan `detune` dari cue di shots.json.
 
 ## Caption & komentar pertama (berlaku setelah user ACC naskah final)

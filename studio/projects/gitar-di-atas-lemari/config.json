@@ -21,9 +21,9 @@
  },
  "loudness": -14,
  "captionStyle": {
-  "y": 1250,
-  "x": 505,
-  "maxW": 0.72
+  "y": 1344,
+  "x": 475,
+  "maxW": 0.74
  },
  "safeZone": {
   "top": 220,
