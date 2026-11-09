@@ -6,11 +6,11 @@
  "style": "emerald",
  "voiceover": "input/voiceover.mp3",
  "script": null,
- "duration": null,
+ "duration": 58.2,
  "captions": true,
  "bars": null,
  "fadeIn": 0,
- "fadeOut": 0.3,
+ "fadeOut": 0,
  "music": {
   "enabled": true,
   "gainDb": -17

@@ -24,3 +24,4 @@ Protagonis "kamu" versi stickman dengan satu item merah-oranye `#d64a33`. Nama d
 | # | Slug | Judul | Format | Status |
 |---|---|---|---|---|
 | 1 | hari-ke-10-shorts | Hari ke-10 (21 hari itu mitos) | Shorts 9:16, 52,5 dtk | selesai |
+| 2 | gitar-di-atas-lemari | Gitar di Atas Lemari (76% penyesalan = diri yang tak dikejar) | Shorts 9:16, 58,2 dtk | selesai |

@@ -79,7 +79,7 @@ def main():
         for c in cues:
             nm = c["name"]
             if re.search(r"\.(wav|mp3|ogg|flac|m4a)$", nm, re.I): snd = load_any(os.path.join(P, nm))
-            else: snd = SFX.make(nm, dur=c.get("dur"), seed=c.get("seed"), pitch=c.get("pitch"))
+            else: snd = SFX.make(nm, dur=c.get("dur"), seed=c.get("seed"), pitch=c.get("pitch"), detune=c.get("detune"))
             place(hits, snd, secs(c["t"]), db(c.get("gain", -8)))
         bed *= db(-5 * env)[:, None]
         g = db(scfg.get("gainDb", -6) + (v_rms + 18))   # SFX levels are relative to the voice level

@@ -46,6 +46,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - `render.mjs`: mendukung `CHROMIUM_PATH` (Chromium bawaan container).
 - `engine/rig2d.js`: alis `worried` dan `angry` sebelumnya tertukar, sudah diperbaiki.
 - `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil. Opsi `x` dan `maxW` ditambahkan (lewat `captionStyle` di config) untuk zona aman.
+- `audio/sfx.py`: efek `pluck` (genjreng gitar Karplus-Strong, `detune` > 0 = fals); `audio/mix.py` meneruskan `detune` dari cue di shots.json.
 
 ## Caption & komentar pertama (berlaku setelah user ACC naskah final)
 - Begitu user menyatakan **ACC/final** untuk naskah, langsung kirim **caption posting + komentar pertama** (jangan tunggu video selesai; cover tetap dibuat setelah render).

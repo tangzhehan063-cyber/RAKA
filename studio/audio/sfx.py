@@ -287,6 +287,21 @@ def buzz(dur=1.5, seed=35, **_):
     return normalize(np.stack([x * l, x * r], 1).astype(np.float32), -6)
 
 
+
+@sfx("acoustic guitar strum (Karplus-Strong); detune>0 = senar fals", 2.5)
+def pluck(dur=2.5, seed=36, detune=0.0, strum=0.035, **_):
+    n = secs(dur); r = rng(seed); out = np.zeros(n)
+    notes = [40, 45, 50, 55, 59, 64]  # E A D G B E (open strings)
+    for k, m in enumerate(notes):
+        f = midi_hz(m + (detune * (r.random() - 0.5) * 2 if detune else 0)); L = max(2, int(SR / f))
+        buf = r.uniform(-1, 1, L); y = np.zeros(n); start = int(k * strum * SR)
+        for i in range(start, n):
+            j = (i - start) % L; y[i] = buf[j]; nxt = buf[(j + 1) % L]; buf[j] = 0.996 * 0.5 * (buf[j] + nxt)
+        out += y * (0.9 - 0.08 * k)
+    out = lp(out, 5000) * expdec(n, 0.9)
+    return normalize(reverb(fade(stereo(out, 0, 0.4), 0.002, 0.3), 1.2, 0.18, seed), -2)
+
+
 def make(name, **kw):
     if name not in LIB: raise KeyError(f"unknown sfx '{name}'. Available: {', '.join(LIB)}")
     k = {"dur": LIB[name]["dur"], **{a: b for a, b in kw.items() if b is not None}}
