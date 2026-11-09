@@ -3,7 +3,8 @@
 ## Posisi terakhir (9 Nov 2026)
 - **Video #1–#3 Shorts selesai** (video, caption, cover, arsip + artifact https://claude.ai/artifact/8zT2UTpuoXUQ3wsdwNvjQC):
   #1 "Hari ke-10" (kebiasaan, 66 hari) · #2 "Jam Tiga Pagi" (overthinking, 91%) · #3 "Gitar di Atas Lemari" (penyesalan, 76%). Lokasi file: `arsip/README.md`.
-- **Video berikutnya: #4** lewat `WORKFLOW.md` (mulai langkah 1, riset tren TikTok).
+- **Video #4 "Satu Video Lagi" (begadang): naskah ACC 9 Nov, caption + komentar pertama selesai** (`naskah/satu-video-lagi.md`, `caption/satu-video-lagi-shorts.md`, cabang `claude/satu-video-lagi`). VO take 1 sudah jadi (58,32 dtk, flow ElevenLabs `NrjCQw7sjvoGeu0OlpA9`, generation `sfEKIoyPEpLpGPe5MwPY`), timeline dari Scribe sudah masuk proyek. **Lanjut langkah 5 (adegan).**
+- **PERHATIAN: `studio/projects/satu-video-lagi-shorts/input/voiceover.mp3` masih audio KOSONG (placeholder).** Ganti dengan MP3 take 1 sebelum render final; sesi Claude chat 9 Nov tidak bisa mengunduh dari `elevenlabsusercontent.com` (403), jadi MP3 perlu dikirim user ke chat.
 - Opsional: render ulang #1–#3 dengan posisi CC baru (untuk #2 pindahkan readout "PESERTA 29" di s06; untuk #3 pindahkan "PESERTA RATUSAN" dari pita CC). Versi panjang 16:9 #1 belum diproduksi (`naskah/hari-ke-10.md`).
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
@@ -17,13 +18,16 @@
 - Setelah ACC naskah: caption + komentar pertama berbahasa manusia (hasil scrape), bukan gaya AI. Setelah video: SELALU caption + cover.
 - Setiap video berdiri sendiri; konsisten di DNA/style, bukan kelanjutan cerita.
 
+- **Motion-videos = sutradara (permintaan user 9 Nov):** aturannya di `brand/sutradara.md`, dipakai tiap video. Naskah & karakter tetap gaya lama; formula terus dicari dan diukur.
+
 ## Lingkungan
 - ElevenLabs: pakai koneksi `ElevenLabs-3f8d1d88` (akun upgrade); koneksi `ElevenLabs` kena antrean gratis.
-- `elevenlabsusercontent.com` diizinkan; huggingface diblokir (jangan pakai Whisper).
-- ScrapeMedsos ±45 kredit (9 Nov).
+- `elevenlabsusercontent.com` diizinkan di sesi lama, tapi DITOLAK (403) di sesi Claude chat 9 Nov; hasil Scribe tetap bisa dibaca lewat tool ElevenLabs. Huggingface diblokir (jangan pakai Whisper).
+- ScrapeMedsos 20 kredit (9 Nov).
 - Container baru: `tools/produksi.sh setup`. Render butuh `CHROMIUM_PATH=/opt/pw-browsers/chromium` (sudah diatur di skrip).
 
 ## Log (5 terakhir; lebih lama lihat `git log`)
+- 9 Nov: Motion-videos dijadikan sutradara (`brand/sutradara.md`); naskah #4 begadang ditulis.
 - 9 Nov: skill `remotion-fitur` + paket `@remotion/transitions`, `motion-blur`, `effects` di `remotion-3d/` (sama seperti Channel-Penjelasan; belum dipakai di video).
 - 9 Nov: workflow dirapikan (distribusi: arsip + artifact + PR); STATUS diringkas; daftar cek bug `brand/cek-bug.md`; CC baku diturunkan ke 0,70 H.
 - 9 Nov: cabang Jam Tiga Pagi & Gitar digabung; Gitar jadi #3; artifact arsip diperbarui.
