@@ -14,7 +14,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - Beri 10 ide + 1 rekomendasi out-of-the-box. Tunggu pilihan user.
 
 ## 2. Fakta + naskah (1 WebSearch)
-- 1× WebSearch "standard" untuk memastikan angka + sumber. Tulis `naskah/<slug>.md` (sumber, teks TTS ±120 kata = ±55 dtk, storyboard tabel). Tunggu ACC.
+- 1× WebSearch "standard" untuk memastikan angka + sumber. Tulis `naskah/<slug>.md` (sumber, teks TTS ±120 kata = ±55 dtk, storyboard tabel dengan arahan per kalimat dari **`brand/sutradara.md`**). Tunggu ACC.
 
 ## 3. Setelah ACC (paralel dalam satu giliran)
 - Komentar: `v1_tiktok_video_comments` untuk 2 video saja, `trim:true` (≈1 kredit/video). Ringkas bila tersimpan ke file: `scrape_ringkas.py comments`.
@@ -54,7 +54,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - Ekspresi: neutral happy joy smile surprised shocked scared worried nervous angry determined sad cry smirk sleepy thinking confused awe.
 - FX: `rain dust drops rings godRays lightCone pool sparkle fog sun moon skyline windowFrame bed clock lensStreak speedLines`.
 - UI: `UI.blueprint(g)`, `UI.bpStroke()`, `UI.badge(g,{str,x,y,size,a})`, `UI.readout(g,{label,value,x,y,align,a})`; warna `S().ui.gold/cream/accent`.
-- Transisi: cut flash dip dipWhite zoom whip. SFX: whoosh swish impact hit riser freeze tick clock heartbeat pop blip counter ding shimmer stinger footstep phonebuzz thunder; ambience: rain wind roomtone city.
+- Transisi: cut flash dip dipWhite zoom whip swipe swipeBack (swipe = feed ke atas). SFX: whoosh swish impact hit riser freeze tick clock heartbeat pop blip counter ding shimmer stinger footstep phonebuzz thunder; ambience: rain wind roomtone city.
 - **Zona aman TikTok/Reels (1080×1920), wajib:** UI aplikasi menutup header atas (y < 150), kolom tombol kanan (x > 870, y 860–1560) dan deskripsi bawah (y > 1480). Caption otomatis di pita y ±1300–1390 (pusat 1344, posisi baku ACC user), x 75–875 (`engine/ui2d.js`, maks 3 kata). Teks papan/angka taruh di y 150–1260, **jangan di pita caption**; di y > 860 jangan lewat x 870. Badge pojok kanan atas: x = `E.W - V(90,110)`, y = `V(110,300)` (di bawah ikon search). `produksi.sh sheet` menghasilkan `safe.png` (merah = tertutup UI); pastikan tidak ada teks di area merah.
 
 ## Hemat token: aturan singkat

@@ -1,0 +1,501 @@
+{
+ "title": "Satu Video Lagi",
+ "duration": 58.44,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.3,
+   "line": "Satu video lagi... habis itu tidur.",
+   "scene": "BIG FACE di balik selimut, wajah diterangi HP, jempol swipe",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "swish",
+     "gain": -20.0
+    },
+    {
+     "at": 1.9,
+     "name": "swish",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 3.3,
+   "end": 5.5,
+   "line": "Kamu bilang itu jam 10.",
+   "scene": "WIDE kamar, duduk berselimut di kasur, jam dinding 22:47",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 0.6,
+     "name": "clock",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 5.5,
+   "end": 7.8,
+   "line": "Sekarang... jam 2 pagi.",
+   "scene": "Jam melompat 02:06, kamar lebih gelap, hujan",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.34,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "rain",
+    "gain": -22.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 7.8,
+   "end": 12.6,
+   "line": "Kita sering dengar: tidur enam jam itu cukup. Lama-lama badan terbiasa.",
+   "scene": "KARTU FEED: TIDUR 6 JAM = CUKUP? stempel MITOS?",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.95,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 12.6,
+   "end": 17.48,
+   "line": "Tapi peneliti Universitas Pennsylvania, tahun 2003, mengujinya.",
+   "scene": "KARTU FEED sumber: Univ. Pennsylvania 2003, 48 orang, lab",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.76,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 3.04,
+     "name": "pop",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 17.48,
+   "end": 19.94,
+   "line": "Enam jam semalam, 14 hari.",
+   "scene": "14 kotak malam terisi satu per satu",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.0,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.4,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.8,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 2.2,
+     "name": "tick",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 19.94,
+   "end": 25.24,
+   "line": "Kemampuan berpikir mereka terus turun, hingga setara dua malam penuh tanpa tidur.",
+   "scene": "Bar menyusut; 2 MALAM TANPA TIDUR emas (flash + impact)",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "riser",
+     "gain": -12.0
+    },
+    {
+     "at": 2.82,
+     "name": "impact",
+     "gain": -5.0
+    },
+    {
+     "at": 4.4,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 25.24,
+   "end": 29.08,
+   "line": "Yang paling seram? Mereka sendiri... hampir tidak sadar.",
+   "scene": "FREEZE: tokoh tersenyum di depan bar kosong, tint dingin",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "freeze",
+     "gain": -6.0
+    },
+    {
+     "at": 3.0,
+     "name": "heartbeat",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 29.08,
+   "end": 32.68,
+   "line": "Kenapa tetap begadang? Seringnya, bukan karena malas.",
+   "scene": "Kartu feed retak, gelap menutup dari tepi",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "glitch",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 32.68,
+   "end": 36.55,
+   "line": "Seharian, waktumu milik bos, dosen, orang lain.",
+   "scene": "Jam besar, tiga bayangan mengambil potongan jam",
+   "set": "clock",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.7,
+     "name": "pop",
+     "gain": -10.0
+    },
+    {
+     "at": 2.3,
+     "name": "pop",
+     "gain": -10.0
+    },
+    {
+     "at": 3.1,
+     "name": "pop",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 36.55,
+   "end": 38.76,
+   "line": "Ini satu-satunya waktu punyaku.",
+   "scene": "CLOSE-UP wajah raksasa berbisik, HP terpantul di mata",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "heartbeat",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s12",
+   "start": 38.76,
+   "end": 43.96,
+   "line": "Jadi kamu curi dari tidurmu sendiri. Dan besok, harimu makin bukan milikmu.",
+   "scene": "MOMEN KHAS: kamar jadi kartu feed, terseret ke atas; pagi 09.00 ikut terseret",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dir": -1,
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 0.8,
+     "name": "whoosh",
+     "gain": -12.0
+    },
+    {
+     "at": 2.75,
+     "name": "swish",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "rain",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s13",
+   "start": 43.96,
+   "end": 48.66,
+   "line": "Coba besok sore. 15 menit. HP mati. Waktu itu punyamu.",
+   "scene": "Layar hitam lalu 3D teras sore, HP dibalik",
+   "set": "teras3d",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -14.0
+    },
+    {
+     "at": 2.5,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28.0
+   }
+  },
+  {
+   "id": "s14",
+   "start": 48.66,
+   "end": 51.2,
+   "line": "Malamnya, kamu tidak perlu balas dendam.",
+   "scene": "Tidur nyenyak berselimut, jam 22:30, HP tertelungkup",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.8,
+     "name": "ding",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28.0
+   }
+  },
+  {
+   "id": "s15",
+   "start": 51.2,
+   "end": 55.7,
+   "line": "Begadang bukan soal malam yang kurang disiplin. Tapi siang yang bukan milikmu.",
+   "scene": "KARTU: MALAM dicoret -> SIANG emas",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.9,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 2.75,
+     "name": "shimmer",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 55.7,
+   "end": 58.44,
+   "line": "Kalau tidak... nanti malam kamu bilang lagi:",
+   "scene": "Kembali ke frame 0 (loop)",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "swish",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 29.08,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 29.08,
+   "end": 43.96,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 44.45,
+   "end": 51.2,
+   "mood": "hopeful",
+   "intensity": 0.45
+  },
+  {
+   "start": 51.2,
+   "end": 58.44,
+   "mood": "triumph",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}

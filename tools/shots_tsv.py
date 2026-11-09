@@ -2,7 +2,7 @@
 """shots.tsv (ringkas, hemat token) -> story/shots.json
 Format per baris (pisah TAB, baris diawali # = komentar):
   id  start  end  set  transisi  sfx  amb  line | scene
-  - transisi: cut | flash | dip | dipWhite | zoom | whip   (durasi default otomatis)
+  - transisi: cut | flash | dip | dipWhite | zoom | whip | swipe | swipeBack   (durasi default otomatis)
   - sfx: "0.1 thunder -12; 1.9 riser -10"  atau  -
   - amb: "rain -20"  atau  -
 Baris khusus:
@@ -14,7 +14,7 @@ Usage: python3 tools/shots_tsv.py <shots.tsv> <project_dir>
 import json, os, sys
 
 src, proj = sys.argv[1], sys.argv[2]
-DUR = {"flash": 0.3, "whip": 0.35}
+DUR = {"flash": 0.3, "whip": 0.35, "swipe": 0.32}
 shots, music, title = [], [], os.path.basename(proj)
 for raw in open(src, encoding="utf-8"):
     ln = raw.rstrip("\n")
@@ -30,7 +30,7 @@ for raw in open(src, encoding="utf-8"):
     sid, a, b, st, tr, sfx, amb, rest = c[:8]
     line, _, scene = rest.partition("|")
     d = {"id": sid, "start": float(a), "end": float(b), "line": line.strip(), "scene": scene.strip(), "set": st, "bars": None,
-         "in": {"type": tr} if tr == "cut" else {"type": tr, "dur": DUR.get(tr, 0.4)}, "sfx": [], "notes": ""}
+         "in": {"type": "swipe", "dir": -1, "dur": 0.32} if tr == "swipeBack" else {"type": tr} if tr == "cut" else {"type": tr, "dur": DUR.get(tr, 0.4)}, "sfx": [], "notes": ""}
     if sfx.strip() not in ("", "-"):
         for s in sfx.split(";"):
             at, name, gain = s.split(); d["sfx"].append({"at": float(at), "name": name, "gain": float(gain)})

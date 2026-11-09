@@ -6,6 +6,7 @@ Claude boleh terus meng-improve visual & cara bercerita (izin user 9 Nov 2026). 
 
 | Video | Eksperimen | Status |
 |---|---|---|
+| #4 Satu Video Lagi | swipe sebagai transisi + jam melompat; blueprint sebagai kartu feed; selimut sebagai item maskot; momen khas: kamar sendiri jadi kartu feed yang ikut ter-swipe; jam dicuri 3 bayangan (bos/dosen/orang lain); arahan sutradara per kalimat (`brand/sutradara.md`) | belum ada respons |
 | #3 Gitar di Atas Lemari | 1 shot 3D (gitar) di tengah adegan 2D; SFX genjreng `pluck` sebagai motif bunyi | belum ada respons |
 | #2 Jam Tiga Pagi | tokoh bayangan "Si Ramalan" sebagai personifikasi pikiran | belum ada respons |
 

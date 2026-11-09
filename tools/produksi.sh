@@ -49,7 +49,7 @@ stills)
 final)
   cd "$ST" && node render.mjs --project "$P" --workers "$WORKERS" 2>&1 | grep -iE "error|done" | tail -3
   python3 audio/mix.py --project "$P" 2>&1 | tail -1
-  exec "$0" qc "$slug" ;;
+  exec "$ROOT/tools/produksi.sh" qc "$slug" ;;
 qc)
   f=$(ls "$PA"/out/*.mp4 | head -1)
   ffprobe -v error -show_entries stream=codec_type,width,height:format=duration -of compact "$f" | tr '\n' ' '; echo
