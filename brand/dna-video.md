@@ -33,6 +33,7 @@ Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup →
 - **Papan blueprint** untuk setiap angka dan sumber; angka kunci warna emas, mitos warna coral.
 - **Badge pojok kanan atas** untuk satuan waktu/angka cerita (HARI 9, JAM 2 PAGI, 5 MENIT, Rp 10.000, dst.).
 - Wajib per video: **1 freeze-frame** (partikel melayang, tint dingin), **1 shot 3D**, **1 close-up wajah raksasa**, gerak kamera di setiap shot.
+- **Swipe ala feed (DISUKAI user 9 Nov, baku sejak #4):** perpindahan adegan utama memakai transisi `swipe` vertikal (seperti scroll TikTok), SFX `swish` 1 frame setelah gambar. Papan fakta tampil sebagai **kartu feed** (blueprint di dalam kartu bersudut bulat, kartu berikut mengintip di bawah pita CC). Tiap video kembangkan swipe dengan 1 variasi baru (lihat `brand/eksperimen.md`), bukan sekadar mengulang.
 - Caption kata per kata, kata aktif disorot emas, angka ditulis sebagai angka.
 - Set yang sudah ada di `studio/library/` boleh dipakai ulang; buat set baru bila topiknya butuh (kantor, kamar kos, warung, gym, dll.) dengan gaya yang sama.
 
