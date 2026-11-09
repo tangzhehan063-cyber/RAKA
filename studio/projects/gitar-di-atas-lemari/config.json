@@ -1,0 +1,35 @@
+{
+ "title": "Gitar di Atas Lemari",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "emerald",
+ "voiceover": "input/voiceover.mp3",
+ "script": null,
+ "duration": 58.2,
+ "captions": true,
+ "bars": null,
+ "fadeIn": 0,
+ "fadeOut": 0,
+ "music": {
+  "enabled": true,
+  "gainDb": -17
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -6
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 1250,
+  "x": 505,
+  "maxW": 0.72
+ },
+ "safeZone": {
+  "top": 220,
+  "bottom": 480,
+  "left": 70,
+  "right": 150,
+  "note": "badge pojok kanan atas: x <= 930, y >= 260"
+ }
+}

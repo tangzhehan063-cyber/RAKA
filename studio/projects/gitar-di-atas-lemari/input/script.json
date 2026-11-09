@@ -1,0 +1,579 @@
+{
+ "words": [
+  {
+   "word": "Gitar",
+   "start": 0.16,
+   "end": 0.48
+  },
+  {
+   "word": "itu...",
+   "start": 0.56,
+   "end": 1.68
+  },
+  {
+   "word": "12",
+   "start": 1.76,
+   "end": 2.16
+  },
+  {
+   "word": "tahun",
+   "start": 2.32,
+   "end": 2.72
+  },
+  {
+   "word": "di",
+   "start": 2.8,
+   "end": 2.88
+  },
+  {
+   "word": "atas",
+   "start": 3.0,
+   "end": 3.12
+  },
+  {
+   "word": "lemari.",
+   "start": 3.24,
+   "end": 3.68
+  },
+  {
+   "word": "Jam",
+   "start": 4.32,
+   "end": 4.48
+  },
+  {
+   "word": "1",
+   "start": 4.56,
+   "end": 4.72
+  },
+  {
+   "word": "pagi,",
+   "start": 4.8,
+   "end": 5.6
+  },
+  {
+   "word": "Dimas,",
+   "start": 5.72,
+   "end": 6.32
+  },
+  {
+   "word": "31",
+   "start": 6.36,
+   "end": 6.96
+  },
+  {
+   "word": "tahun,",
+   "start": 7.04,
+   "end": 7.68
+  },
+  {
+   "word": "menatapnya",
+   "start": 7.76,
+   "end": 8.24
+  },
+  {
+   "word": "lagi.",
+   "start": 8.36,
+   "end": 8.64
+  },
+  {
+   "word": "Kita",
+   "start": 9.2,
+   "end": 9.36
+  },
+  {
+   "word": "sering",
+   "start": 9.44,
+   "end": 9.68
+  },
+  {
+   "word": "dengar:",
+   "start": 9.733,
+   "end": 10.4
+  },
+  {
+   "word": "penyesalan",
+   "start": 10.48,
+   "end": 10.88
+  },
+  {
+   "word": "terbesar",
+   "start": 10.96,
+   "end": 11.52
+  },
+  {
+   "word": "adalah",
+   "start": 11.6,
+   "end": 11.92
+  },
+  {
+   "word": "kesalahan",
+   "start": 12.04,
+   "end": 12.56
+  },
+  {
+   "word": "yang",
+   "start": 12.64,
+   "end": 12.72
+  },
+  {
+   "word": "kita",
+   "start": 12.76,
+   "end": 12.88
+  },
+  {
+   "word": "buat.",
+   "start": 12.96,
+   "end": 13.6
+  },
+  {
+   "word": "Tapi",
+   "start": 13.733,
+   "end": 14.0
+  },
+  {
+   "word": "peneliti",
+   "start": 14.16,
+   "end": 14.56
+  },
+  {
+   "word": "Cornell",
+   "start": 14.72,
+   "end": 15.04
+  },
+  {
+   "word": "University,",
+   "start": 15.12,
+   "end": 15.92
+  },
+  {
+   "word": "tahun",
+   "start": 16.04,
+   "end": 16.16
+  },
+  {
+   "word": "2018,",
+   "start": 16.32,
+   "end": 17.32
+  },
+  {
+   "word": "menanyakan",
+   "start": 17.52,
+   "end": 18.0
+  },
+  {
+   "word": "penyesalan",
+   "start": 18.08,
+   "end": 18.48
+  },
+  {
+   "word": "terbesar",
+   "start": 18.56,
+   "end": 19.12
+  },
+  {
+   "word": "dalam",
+   "start": 19.16,
+   "end": 19.36
+  },
+  {
+   "word": "hidup",
+   "start": 19.44,
+   "end": 19.68
+  },
+  {
+   "word": "ratusan",
+   "start": 19.76,
+   "end": 20.24
+  },
+  {
+   "word": "orang.",
+   "start": 20.32,
+   "end": 20.88
+  },
+  {
+   "word": "76",
+   "start": 20.96,
+   "end": 21.573
+  },
+  {
+   "word": "persen...",
+   "start": 21.707,
+   "end": 22.24
+  },
+  {
+   "word": "menjawab",
+   "start": 22.32,
+   "end": 22.72
+  },
+  {
+   "word": "hal",
+   "start": 22.8,
+   "end": 22.96
+  },
+  {
+   "word": "yang",
+   "start": 23.04,
+   "end": 23.12
+  },
+  {
+   "word": "mirip.",
+   "start": 23.2,
+   "end": 23.76
+  },
+  {
+   "word": "Bukan",
+   "start": 23.84,
+   "end": 24.0
+  },
+  {
+   "word": "salah",
+   "start": 24.08,
+   "end": 24.24
+  },
+  {
+   "word": "langkah.",
+   "start": 24.32,
+   "end": 25.12
+  },
+  {
+   "word": "Tapi",
+   "start": 25.2,
+   "end": 25.36
+  },
+  {
+   "word": "diri",
+   "start": 25.44,
+   "end": 25.76
+  },
+  {
+   "word": "yang",
+   "start": 25.88,
+   "end": 26.0
+  },
+  {
+   "word": "tidak",
+   "start": 26.08,
+   "end": 26.32
+  },
+  {
+   "word": "pernah",
+   "start": 26.4,
+   "end": 26.64
+  },
+  {
+   "word": "mereka",
+   "start": 26.76,
+   "end": 26.96
+  },
+  {
+   "word": "kejar.",
+   "start": 27.04,
+   "end": 27.76
+  },
+  {
+   "word": "Kenapa",
+   "start": 27.8,
+   "end": 28.08
+  },
+  {
+   "word": "awet?",
+   "start": 28.16,
+   "end": 28.72
+  },
+  {
+   "word": "Karena",
+   "start": 28.76,
+   "end": 28.96
+  },
+  {
+   "word": "kewajiban",
+   "start": 29.04,
+   "end": 29.52
+  },
+  {
+   "word": "yang",
+   "start": 29.6,
+   "end": 29.68
+  },
+  {
+   "word": "gagal",
+   "start": 29.72,
+   "end": 30.16
+  },
+  {
+   "word": "biasanya",
+   "start": 30.32,
+   "end": 30.8
+  },
+  {
+   "word": "cepat",
+   "start": 30.88,
+   "end": 31.12
+  },
+  {
+   "word": "kita",
+   "start": 31.2,
+   "end": 31.36
+  },
+  {
+   "word": "tebus.",
+   "start": 31.44,
+   "end": 32.16
+  },
+  {
+   "word": "Mimpi...",
+   "start": 32.2,
+   "end": 33.28
+  },
+  {
+   "word": "kita",
+   "start": 33.32,
+   "end": 33.44
+  },
+  {
+   "word": "tunda.",
+   "start": 33.6,
+   "end": 34.08
+  },
+  {
+   "word": "Udah",
+   "start": 34.427,
+   "end": 34.6
+  },
+  {
+   "word": "telat.",
+   "start": 34.64,
+   "end": 35.2
+  },
+  {
+   "word": "Udah",
+   "start": 35.44,
+   "end": 35.6
+  },
+  {
+   "word": "tua.",
+   "start": 35.76,
+   "end": 36.16
+  },
+  {
+   "word": "Malu.",
+   "start": 36.56,
+   "end": 37.12
+  },
+  {
+   "word": "Dan",
+   "start": 37.568,
+   "end": 37.6
+  },
+  {
+   "word": "penyesalan",
+   "start": 37.68,
+   "end": 38.16
+  },
+  {
+   "word": "itu",
+   "start": 38.36,
+   "end": 38.56
+  },
+  {
+   "word": "tidak",
+   "start": 38.8,
+   "end": 39.12
+  },
+  {
+   "word": "pernah",
+   "start": 39.2,
+   "end": 39.44
+  },
+  {
+   "word": "selesai.",
+   "start": 39.52,
+   "end": 40.4
+  },
+  {
+   "word": "Malam",
+   "start": 40.44,
+   "end": 40.72
+  },
+  {
+   "word": "itu,",
+   "start": 40.88,
+   "end": 41.28
+  },
+  {
+   "word": "Dimas",
+   "start": 41.36,
+   "end": 41.68
+  },
+  {
+   "word": "menurunkan",
+   "start": 41.76,
+   "end": 42.24
+  },
+  {
+   "word": "gitarnya.",
+   "start": 42.32,
+   "end": 43.2
+  },
+  {
+   "word": "Senarnya",
+   "start": 43.28,
+   "end": 43.68
+  },
+  {
+   "word": "fals.",
+   "start": 43.72,
+   "end": 44.48
+  },
+  {
+   "word": "Jarinya",
+   "start": 44.56,
+   "end": 44.88
+  },
+  {
+   "word": "kaku.",
+   "start": 44.92,
+   "end": 45.52
+  },
+  {
+   "word": "Cuma",
+   "start": 45.68,
+   "end": 45.84
+  },
+  {
+   "word": "5",
+   "start": 45.92,
+   "end": 46.08
+  },
+  {
+   "word": "menit.",
+   "start": 46.16,
+   "end": 46.72
+  },
+  {
+   "word": "Tapi",
+   "start": 46.853,
+   "end": 47.12
+  },
+  {
+   "word": "untuk",
+   "start": 47.2,
+   "end": 47.36
+  },
+  {
+   "word": "pertama",
+   "start": 47.48,
+   "end": 47.84
+  },
+  {
+   "word": "kalinya...",
+   "start": 47.92,
+   "end": 48.64
+  },
+  {
+   "word": "penyesalan",
+   "start": 48.68,
+   "end": 49.12
+  },
+  {
+   "word": "itu",
+   "start": 49.2,
+   "end": 49.52
+  },
+  {
+   "word": "bergerak.",
+   "start": 49.76,
+   "end": 50.48
+  },
+  {
+   "word": "Penyesalan",
+   "start": 50.622,
+   "end": 51.04
+  },
+  {
+   "word": "bukan",
+   "start": 51.12,
+   "end": 51.28
+  },
+  {
+   "word": "soal",
+   "start": 51.36,
+   "end": 51.52
+  },
+  {
+   "word": "masa",
+   "start": 51.6,
+   "end": 51.84
+  },
+  {
+   "word": "lalu.",
+   "start": 51.88,
+   "end": 52.48
+  },
+  {
+   "word": "Tapi",
+   "start": 52.56,
+   "end": 52.72
+  },
+  {
+   "word": "arah",
+   "start": 52.88,
+   "end": 53.2
+  },
+  {
+   "word": "yang",
+   "start": 53.28,
+   "end": 53.44
+  },
+  {
+   "word": "belum",
+   "start": 53.6,
+   "end": 53.76
+  },
+  {
+   "word": "kamu",
+   "start": 53.84,
+   "end": 54.0
+  },
+  {
+   "word": "ambil.",
+   "start": 54.08,
+   "end": 54.72
+  },
+  {
+   "word": "Karena",
+   "start": 54.8,
+   "end": 54.96
+  },
+  {
+   "word": "yang",
+   "start": 55.08,
+   "end": 55.2
+  },
+  {
+   "word": "paling",
+   "start": 55.24,
+   "end": 55.52
+  },
+  {
+   "word": "kamu",
+   "start": 55.56,
+   "end": 55.68
+  },
+  {
+   "word": "sesali,",
+   "start": 55.76,
+   "end": 56.56
+  },
+  {
+   "word": "mungkin",
+   "start": 56.667,
+   "end": 56.88
+  },
+  {
+   "word": "cuma...",
+   "start": 56.96,
+   "end": 57.76
+  }
+ ]
+}

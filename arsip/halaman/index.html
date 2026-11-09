@@ -17,7 +17,24 @@ ol li::before{content:counter(s);color:var(--gold);font-weight:800}@media(max-wi
 .tip{color:#9fbfae;font-size:14px}
 </style></head><body><main>
 <h1>RAKA · <b>arsip video</b> & workflow</h1><p class="sub">Channel stickman self-improvement berbasis riset. Semua file asli tersimpan di repo <code>tangzhehan063-cyber/RAKA</code>.</p>
-<div class="grid"><article class="card"><video src="jam-tiga-pagi.mp4" poster="jam-tiga-pagi-cover.jpg" controls playsinline preload="none"></video>
+<div class="grid"><article class="card"><video src="gitar-di-atas-lemari.mp4" poster="gitar-di-atas-lemari-cover.jpg" controls playsinline preload="none"></video>
+<div class="body"><h2>#3 · Gitar di Atas Lemari <span>58 dtk</span></h2><p class="fact">Penyesalan: 76% penyesalan terbesar = diri ideal yang tak dikejar (Davidai &amp; Gilovich, Emotion 2018)</p>
+<h3>Caption TikTok/Reels</h3><pre>Penyesalan terbesar lo kayaknya bukan kesalahan lo.
+
+Peneliti Cornell nanya ratusan orang soal penyesalan terbesar dalam hidup. 76% jawabannya mirip: bukan salah langkah, tapi diri yang nggak pernah mereka kejar. (Davidai &amp; Gilovich, Emotion 2018)
+
+Yang dulu lo tinggalin di &quot;atas lemari&quot; apa? 👇
+
+#penyesalan #penyesalanterbesar #mimpiyangtertunda #selfimprovementindonesia #pengembangandiri</pre><button data-c="Penyesalan terbesar lo kayaknya bukan kesalahan lo.
+
+Peneliti Cornell nanya ratusan orang soal penyesalan terbesar dalam hidup. 76% jawabannya mirip: bukan salah langkah, tapi diri yang nggak pernah mereka kejar. (Davidai &amp; Gilovich, Emotion 2018)
+
+Yang dulu lo tinggalin di &quot;atas lemari&quot; apa? 👇
+
+#penyesalan #penyesalanterbesar #mimpiyangtertunda #selfimprovementindonesia #pengembangandiri">Salin caption</button>
+<h3>YouTube Shorts</h3><pre>76% Orang Menyesali Hal yang Sama #shorts</pre><button data-c="76% Orang Menyesali Hal yang Sama #shorts">Salin judul</button>
+<h3>Komentar pin</h3><pre>aku dulu juga gitu. belajar gambar, kebeli pen tablet, terus dianggurin 3 tahun karena ngerasa &quot;udah telat&quot;. barang kalian yang paling lama nganggur apa? gitar? buku? sepatu lari? 😭</pre><button data-c="aku dulu juga gitu. belajar gambar, kebeli pen tablet, terus dianggurin 3 tahun karena ngerasa &quot;udah telat&quot;. barang kalian yang paling lama nganggur apa? gitar? buku? sepatu lari? 😭">Salin komentar</button>
+<p class="path">Repo: <code>studio/projects/gitar-di-atas-lemari/</code> · <code>caption/gitar-di-atas-lemari.md</code></p></div></article><article class="card"><video src="jam-tiga-pagi.mp4" poster="jam-tiga-pagi-cover.jpg" controls playsinline preload="none"></video>
 <div class="body"><h2>#2 · Jam Tiga Pagi <span>56 dtk</span></h2><p class="fact">Overthinking: 91% kekhawatiran tidak terjadi (LaFreniere &amp; Newman, Behavior Therapy 2020)</p>
 <h3>Caption TikTok/Reels</h3><pre>Jam 3 pagi otakmu jago banget bohong.
 
@@ -54,7 +71,7 @@ Besok = hari ke-10-mu. Kebiasaan apa yang mau kamu mulai lagi? 👇
 <h3>YouTube Shorts</h3><pre>21 Hari Itu Mitos. Ini Angka Sebenarnya #shorts</pre><button data-c="21 Hari Itu Mitos. Ini Angka Sebenarnya #shorts">Salin judul</button>
 <h3>Komentar pin</h3><pre>Hari ke berapa kamu sekarang? Tulis angkanya 👇 (bolong kemarin juga dihitung, yang penting balik lagi)</pre><button data-c="Hari ke berapa kamu sekarang? Tulis angkanya 👇 (bolong kemarin juga dihitung, yang penting balik lagi)">Salin komentar</button>
 <p class="path">Repo: <code>studio/projects/hari-ke-10-shorts/</code> · <code>caption/hari-ke-10-shorts.md</code></p></div></article></div>
-<section><h2>Workflow cepat (detail di WORKFLOW.md)</h2><ol><li><b>Awal sesi</b><span>Baca STATUS.md saja. Container baru: <code>tools/produksi.sh setup</code>.</span></li><li><b>Ide</b><span>3–4 pencarian TikTok paralel (trim) → <code>scrape_ringkas.py</code> → 10 ide + 1 rekomendasi.</span></li><li><b>Naskah</b><span>1 WebSearch cek fakta → <code>naskah/&lt;slug&gt;.md</code> → tunggu ACC.</span></li><li><b>Setelah ACC</b><span>Komentar 2 video + caption + TTS Ghaisan dalam satu giliran.</span></li><li><b>Timeline</b><span><code>produksi.sh init</code> → Scribe → <code>produksi.sh timeline</code>.</span></li><li><b>Adegan</b><span>Tulis <code>shots.tsv</code> + kode shot (contekan API di WORKFLOW.md) → <code>produksi.sh shots</code>.</span></li><li><b>Render</b><span><code>sheet</code> sekali → <code>stills</code> untuk perbaikan → <code>final</code> di background (render+mix+QC).</span></li><li><b>Selesai</b><span><code>produksi.sh cover</code> → update STATUS + arsip → commit/push → kirim file.</span></li></ol>
+<section><h2>Workflow cepat (detail di WORKFLOW.md)</h2><ol><li><b>Awal sesi</b><span>Baca STATUS.md, <code>git fetch</code> + merge cabang <code>claude/*</code> yang belum masuk. Container baru: <code>tools/produksi.sh setup</code>.</span></li><li><b>Ide</b><span>3–4 pencarian TikTok paralel (trim) → <code>scrape_ringkas.py</code> → 10 ide + 1 rekomendasi.</span></li><li><b>Naskah</b><span>1 WebSearch cek fakta → <code>naskah/&lt;slug&gt;.md</code> → tunggu ACC.</span></li><li><b>Setelah ACC</b><span>Komentar 2 video + caption + TTS Ghaisan dalam satu giliran.</span></li><li><b>Timeline</b><span><code>produksi.sh init</code> → Scribe → <code>produksi.sh timeline</code>.</span></li><li><b>Adegan</b><span>Tulis <code>shots.tsv</code> + kode shot (contekan API di WORKFLOW.md) → <code>produksi.sh shots</code>.</span></li><li><b>Render</b><span><code>sheet</code> sekali → <code>stills</code> untuk perbaikan → <code>final</code> di background (render+mix+QC).</span></li><li><b>Selesai</b><span><code>produksi.sh cover</code> → update STATUS + arsip + <b>republish artifact ini</b> → commit/push → kirim file.</span></li></ol>
 <p class="tip">Hemat token: tidak membaca JSON mentah, 1 contact sheet per cek, render penuh di background, shot list ditulis sebagai TSV ringkas.</p></section>
 </main><script>
 document.querySelectorAll('button[data-c]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.c);b.textContent='Tersalin ✓'}catch(e){b.textContent='Salin manual'}}));
