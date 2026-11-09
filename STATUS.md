@@ -13,6 +13,7 @@
 - Arsip semua artifact: `arsip/README.md`. Halaman artifact Claude (arsip + workflow): slug `40b5677b-fc79-4023-83fe-457a59db2581`, https://claude.ai/artifact/8zT2UTpuoXUQ3wsdwNvjQC . Setiap video baru: buat pratinjau di `arsip/halaman/` lalu republish (publish_files dengan slug + base_version terakhir).
 
 ## Preferensi user (penting)
+- **(9 Nov) Satu chat = satu repo.** Kalau perlu repo lain (RAKA ↔ Channel-Penjelasan), user membuka chat baru; jangan menambah repo kedua di sesi yang sama.
 - Caption & teks penting WAJIB di zona aman TikTok (tidak tertutup tombol kanan/deskripsi bawah).
 - Bahasa Indonesia. Suka saran "out of the box".
 - Setelah video selesai: SELALU caption + cover.
