@@ -3,6 +3,7 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 
 ## Caption & teks
 1. **Posisi CC baku (ACC user 9 Nov): pusat y=1344 (0,70 H), x=475, lebar maks 0,74 W, maks 3 kata.** Sudah jadi default engine; jangan diubah per video. Video #2 pernah tertutup tombol TikTok karena CC terlalu ke kanan/bawah.
+1b. **Pita CC (y ≈ 1300–1390) harus kosong dari teks adegan.** Readout/label di adegan jangan diletakkan di pita ini (9 Nov: setelah CC diturunkan, readout "PESERTA RATUSAN" di board video Gitar tertimpa CC).
 2. **Teks penting di zona merah `safe.png`** (bawah y>1480, kanan x>880 pada y 860–1560, atas y<150). Video #2: readout "PESERTA 29" di s06 kena zona.
 3. **Teks/stiker tertutup elemen lain** (judul, badge, tokoh). Elemen kunci beat harus terlihat jelas (Channel-Penjelasan #8: matahari & awan tertutup judul).
 4. **Teks keluar layar atau bertumpuk** (stempel besar terpotong, label menimpa label lain). Pakai `nowrap` + ukuran font yang muat; beri ruang tetap untuk label.
