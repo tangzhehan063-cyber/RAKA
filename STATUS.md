@@ -14,7 +14,7 @@
 - **Posisi CC baku (ACC 9 Nov): pusat y=1344 (0,70 H)**, default engine, jangan diubah. Teks penting di zona aman TikTok.
 - Bahasa Indonesia, sederhana. Suka saran "out of the box".
 - Tahap ide: riset tren (ScrapeMedsos TikTok) + saran improvisasi topik.
-- Kirim MP4 final apa adanya (kualitas & ukuran asli, jangan dikompres ulang). Video #4 sempat tidak bisa dibuka di HP: dianggap error sekali (9 Nov).
+- Kirim MP4 final apa adanya (kualitas & ukuran asli, jangan dikompres ulang). Video #4 sempat tidak bisa dibuka di HP karena internet user lambat, bukan masalah file (9 Nov).
 - **Caption TikTok ≤150 karakter, to the point, memancing debat** (9 Nov). Komentar pin juga memancing pilih pihak.
 - Setelah ACC naskah: caption + komentar pertama berbahasa manusia (hasil scrape), bukan gaya AI. Setelah video: SELALU caption + cover.
 - Setiap video berdiri sendiri; konsisten di DNA/style, bukan kelanjutan cerita.
