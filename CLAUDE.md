@@ -34,6 +34,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 
 ## Default produksi
 - Shorts/TikTok: 9:16, 1080p, 24 fps, caption on, style `emerald`, `fadeIn 0`, ending **loop** (kalimat terakhir menyambung ke kalimat pertama).
+- **Zona aman 9:16 (wajib):** caption & teks penting tidak boleh di bawah y≈1440 (area caption/username TikTok/Reels/Shorts), tidak di kanan x>930 pada y 700–1500 (tombol like/komen/share), tidak di atas y<220. Default config: `"captionStyle": {"y":1250,"x":505,"maxW":0.72}`; badge pojok kanan atas di x≈930, y≈280.
 - Versi panjang: 16:9, 1080p, caption off.
 - Protagonis: stickman "kamu" dengan satu item merah-oranye `#d64a33` (maskot); nama boleh baru tiap video. Mulai proyek dengan menyalin `studio/library/` (cast + set kamar & jalan); buat set baru bila topik membutuhkan, gaya tetap sama.
 - Niche: hanya self-improvement (ScriptForge 1.1–1.5). Tolak/konfirmasi dulu bila user minta topik di luar niche.
@@ -44,7 +45,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 ## Patch yang sudah diterapkan ke engine (`studio/`), jangan ditimpa saat update plugin
 - `render.mjs`: mendukung `CHROMIUM_PATH` (Chromium bawaan container).
 - `engine/rig2d.js`: alis `worried` dan `angry` sebelumnya tertukar, sudah diperbaiki.
-- `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil.
+- `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil. Opsi `x` dan `maxW` ditambahkan (lewat `captionStyle` di config) untuk zona aman.
 
 ## Caption & komentar pertama (berlaku setelah user ACC naskah final)
 - Begitu user menyatakan **ACC/final** untuk naskah, langsung kirim **caption posting + komentar pertama** (jangan tunggu video selesai; cover tetap dibuat setelah render).
