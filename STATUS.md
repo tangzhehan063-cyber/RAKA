@@ -9,7 +9,8 @@
 
 ## Preferensi user
 - **Satu chat = satu repo.** Repo lain → chat baru.
-- **Setiap video selesai: arsip + artifact, lalu PR ke `main` → user klik Merge.** (User bukan programmer; jelaskan singkat bila perlu.)
+- **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan Claude langsung merge sendiri (izin user 9 Nov).** User bukan programmer; laporan cukup "sudah masuk main".
+- **Moodboard & storyboard boleh terus di-improve Claude** (izin user 9 Nov): tiap video coba 1–2 eksperimen visual/cerita baru, catat di `brand/eksperimen.md`. Yang user bilang "suka" → jadi baku di `brand/dna-video.md`.
 - **Posisi CC baku (ACC 9 Nov): pusat y=1344 (0,70 H)**, default engine, jangan diubah. Teks penting di zona aman TikTok.
 - Bahasa Indonesia, sederhana. Suka saran "out of the box".
 - Tahap ide: riset tren (ScrapeMedsos TikTok) + saran improvisasi topik.

@@ -27,7 +27,8 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - `creative_add_flow_asset_node` (generation_id) → `creative_transcribe_audio`. Bila "busy", kerjakan hal lain lalu coba lagi.
 - `tools/produksi.sh timeline <slug> "<words_download_url>"` → mencetak kalimat + waktu (dasar shot list).
 
-## 5. Adegan
+## 5. Adegan (+ 1–2 eksperimen)
+- Pilih 1–2 eksperimen moodboard/storyboard baru (lihat `brand/eksperimen.md`: jangan ulang yang ditolak, pertahankan yang disukai). Sebutkan ke user saat kirim sheet: "eksperimen kali ini: …".
 - Tulis `studio/projects/<slug>-shorts/story/shots.tsv` (contoh: `jam-tiga-pagi-shorts/story/shots.tsv`) → `tools/produksi.sh shots <slug>`.
 - Kode: `scenes/shots/01_*.js` (lokasi), `02_papan.js` (blueprint/fakta), `03_*3d.js` (1 shot 3D). Salin pola dari `studio/projects/jam-tiga-pagi-shorts/scenes/shots/` **tanpa membacanya bila contekan cukup**.
 - Set siap pakai di `studio/library/sets/`: `bedroom.js` (kalender), `street.js`, `kamar.js` (jam 03:00, meja + lampu, kertas, bayangan Si Ramalan).
@@ -43,7 +44,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 2. Kirim ke user: MP4, cover, caption (SendUserFile).
 3. Arsip: baris baru di `arsip/README.md` + `brand/brand-kit.md`; pratinjau 540p (mp4 + cover jpg) di `arsip/halaman/` + kartu di `arsip/halaman/index.html` → republish artifact arsip (slug `40b5677b-fc79-4023-83fe-457a59db2581`, `publish_files`).
 4. `STATUS.md` (2–3 baris). Commit + push.
-5. **Buat PR ke `main`** dan beri link; user klik **Merge** supaya chat berikutnya mulai lengkap.
+5. **Buat PR ke `main` lalu merge sendiri** (`merge_pull_request`, izin user 9 Nov). Laporkan singkat: "sudah masuk main".
 
 ## Contekan API engine (tidak perlu grep)
 - Import: `import { E, V, S, registerShot, layer, blurLayer, veil, ease, prog, clamp, lerp, wordTime, alpha, glow, rr, seg, circle, ring, text, FONTS, shake } from '/engine/core.js'`
