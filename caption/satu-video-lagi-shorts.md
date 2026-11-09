@@ -1,15 +1,11 @@
 # Caption: Satu Video Lagi (begadang)
 
-## TikTok / Reels
-katanya cuma satu video lagi. sekarang jam 2 😭
+## TikTok / Reels (≤150 karakter, to the point, memancing debat)
+tim tidur 6 jam, sorry. 14 malam = otak kayak 2 malam ga tidur (Sleep 2003). tapi yg salah kamu atau bosmu? #begadang #kurangtidur #metime #fyp
 
-tidur 6 jam katanya cukup, lama2 kebiasa. pas diuji 14 hari, kemampuan mikirnya turun, bisa sampe setara 2 malam ga tidur. orangnya sendiri hampir ga sadar (Van Dongen dkk, Univ. Pennsylvania, jurnal Sleep 2003).
-
-kalo begadangmu gara2 itu satu2nya me time, ini buat kamu.
-
-me time kamu jam berapa sih?
-
-#begadang #kurangtidur #metime #selfimprovement #fyp
+Alternatif:
+- begadang itu bukan malas, tapi balas dendam. 6 jam x 14 malam = kayak 2 malam ga tidur (Sleep 2003). setuju ga? #begadang #kurangtidur #metime #fyp
+- tidur 6 jam itu kurang. 14 malam = otak kayak 2 malam ga tidur (Sleep, 2003). tapi begadang demi me time salah? 👇 #begadang #kurangtidur #metime #fyp
 
 ## YouTube Shorts
 **Judul:** Tidur 6 Jam Itu Cukup? Cek Angka Ini #shorts
@@ -20,7 +16,7 @@ Begadang seringnya bukan soal malas, tapi soal siang yang bukan milikmu.
 Sumber: Van Dongen, Maislin, Mullington & Dinges (2003), Sleep 26(2):117–126, doi.org/10.1093/sleep/26.2.117
 
 ## Teks pin komentar (komentar pertama)
-jujur, kalian buka video ini jam berapa? kalo lewat jam 11, coba inget tadi siang waktunya dipake siapa 🗿
+unpopular opinion: begadang demi me time itu wajar. siang kita udah "dibeli" kantor/kampus. setuju atau cuma ngeles? 🗿
 
 ## Bukti bahasa (hasil scrape TikTok ID, 9 Nov 2026, kutipan pendek)
 - "kalo ngaa maen hp yaa ngaa tauk mau ngapain"

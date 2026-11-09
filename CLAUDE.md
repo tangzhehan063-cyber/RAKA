@@ -26,10 +26,11 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 6. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
 
 ## Format caption (wajib, per video)
+- **Caption TikTok maksimal 150 karakter total (termasuk hashtag)**, to the point, dan **memancing debat** (pendapat tegas/kontroversial ringan + pertanyaan pilih pihak, mis. "salah kamu atau bosmu?"). Permintaan user 9 Nov.
 - **Hook baris pertama** (≤ 60 karakter, berhenti scroll; jangan "Halo guys").
 - 2–3 baris isi: satu fakta kunci + sumbernya.
 - Satu pertanyaan CTA untuk komentar.
-- Hashtag: 3–5 spesifik + 1–2 luas. Jangan lebih dari 6.
+- Hashtag: 3–5 spesifik + 1–2 luas. Jangan lebih dari 6 (untuk TikTok cukup 3–4 agar muat 150 karakter).
 - Versi: **TikTok/Reels** (caption di atas), **YouTube Shorts** (judul ≤ 60 karakter dengan `#shorts`, deskripsi 2 baris + sumber), **teks pin komentar**.
 
 ## Default produksi
