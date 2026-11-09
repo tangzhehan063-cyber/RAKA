@@ -1,4 +1,4 @@
-# Gitar di Atas Lemari (penyesalan): naskah Shorts — DRAFT, menunggu ACC
+# Gitar di Atas Lemari (penyesalan): naskah Shorts — ACC 9 Nov 2026
 
 Niche: ScriptForge 1.3 mindset (penyesalan). Tokoh baru: **Dimas**, 31 tahun, hoodie merah-oranye `#d64a33`.
 
