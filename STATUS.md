@@ -1,6 +1,7 @@
 # STATUS & log kerja (baca ini dulu di sesi baru)
 
-## Posisi terakhir (8 Nov 2026)
+## Posisi terakhir (9 Nov 2026)
+- **Video #2 "Gitar di Atas Lemari" (penyesalan):** draft naskah Shorts di `naskah/gitar-di-atas-lemari.md`, MENUNGGU ACC user. Fakta: Davidai & Gilovich 2018 (76%).
 - **Channel stickman (STYLE RAKA):** video #1 "Hari ke-10" Shorts SELESAI (video, caption, cover). Versi panjang 16:9 belum diproduksi (naskah lengkap di `naskah/hari-ke-10.md`).
 - **Channel pengetahuan** dipindah ke repo `Channel-Penjelasan` (8 Nov 2026).
 
@@ -13,9 +14,10 @@
 
 ## Lingkungan
 - Network: `elevenlabsusercontent.com` sudah diizinkan di environment Default. huggingface diblokir (jangan pakai Whisper).
-- ScrapeMedsos: ±74 kredit tersisa per 8 Nov 2026.
+- ScrapeMedsos: ±46 kredit tersisa per 9 Nov 2026.
 - Container baru: `./setup.sh` (studio, remotion-3d). Render butuh `CHROMIUM_PATH=/opt/pw-browsers/chromium`.
 
 ## Log
+- 9 Nov 2026: riset tren TikTok "penyesalan terbesar" + draft naskah video #2 (penyesalan).
 - 8 Nov 2026: bagian channel pengetahuan dipindah ke repo Channel-Penjelasan.
 - 8 Nov 2026: setup Remotion+three.js, plugin GrowKaz, video Hari ke-10, repo RAKA (privat), style pengetahuan + otak 3D prosedural, alur naskah dari storyboard origami, riset ide #5.
