@@ -1,7 +1,8 @@
 # STATUS & log kerja (baca ini dulu di sesi baru)
 
 ## Posisi terakhir (9 Nov 2026)
-- **Video #2 "Gitar di Atas Lemari" (penyesalan):** naskah ACC, VO take 1 (ElevenLabs koneksi kedua `ElevenLabs-3f8d1d88`, flow `IrW3jlX2lM4Ht8EzQGR4`), Scribe, 17 shot + 1 shot 3D, cover `caption/gitar-di-atas-lemari-cover.png`, caption `caption/gitar-di-atas-lemari.md`. Render final + mix: lihat log.
+- Rekomendasi berikutnya: render ulang video #1 dengan CC zona aman (y 1250), cukup render, tanpa VO baru.
+- **Video #2 "Gitar di Atas Lemari" (penyesalan):** naskah ACC, VO take 1 (ElevenLabs koneksi kedua `ElevenLabs-3f8d1d88`, flow `IrW3jlX2lM4Ht8EzQGR4`), Scribe, 17 shot + 1 shot 3D, cover `caption/gitar-di-atas-lemari-cover.png`, caption `caption/gitar-di-atas-lemari.md`. SELESAI: `studio/projects/gitar-di-atas-lemari/out/Gitar_di_Atas_Lemari.mp4` (58,2 dtk, −14,1 LUFS, loop mulus).
 - **Channel stickman (STYLE RAKA):** video #1 "Hari ke-10" Shorts SELESAI (video, caption, cover). Versi panjang 16:9 belum diproduksi (naskah lengkap di `naskah/hari-ke-10.md`).
 - **Channel pengetahuan** dipindah ke repo `Channel-Penjelasan` (8 Nov 2026).
 
