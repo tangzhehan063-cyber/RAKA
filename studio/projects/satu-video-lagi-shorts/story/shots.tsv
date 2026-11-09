@@ -1,0 +1,19 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Satu Video Lagi
+@music 0-29.08 mystery 0.35; 29.08-43.96 sad 0.3; 44.45-51.2 hopeful 0.45; 51.2-58.44 triumph 0.45
+s01	0.0	3.3	kamar	cut	0.9 swish -20; 1.9 swish -20	roomtone -24	Satu video lagi... habis itu tidur. | BIG FACE di balik selimut, wajah diterangi HP, jempol swipe
+s02	3.3	5.5	kamar	swipe	0.04 swish -12; 0.6 clock -20	roomtone -24	Kamu bilang itu jam 10. | WIDE kamar, duduk berselimut di kasur, jam dinding 22:47
+s03	5.5	7.8	kamar	swipe	0.04 swish -12; 1.34 hit -10	rain -22	Sekarang... jam 2 pagi. | Jam melompat 02:06, kamar lebih gelap, hujan
+s04	7.8	12.6	board	swipe	0.04 swish -12; 1.7 pop -12; 3.95 hit -10	-	Kita sering dengar: tidur enam jam itu cukup. Lama-lama badan terbiasa. | KARTU FEED: TIDUR 6 JAM = CUKUP? stempel MITOS?
+s05	12.6	17.48	board	swipe	0.04 swish -12; 1.76 blip -14; 3.04 pop -10	-	Tapi peneliti Universitas Pennsylvania, tahun 2003, mengujinya. | KARTU FEED sumber: Univ. Pennsylvania 2003, 48 orang, lab
+s06	17.48	19.94	board	cut	0.6 tick -16; 1.0 tick -16; 1.4 tick -16; 1.8 tick -16; 2.2 tick -16	-	Enam jam semalam, 14 hari. | 14 kotak malam terisi satu per satu
+s07	19.94	25.24	board	cut	0.6 riser -12; 2.82 impact -5; 4.4 hit -12	-	Kemampuan berpikir mereka terus turun, hingga setara dua malam penuh tanpa tidur. | Bar menyusut; 2 MALAM TANPA TIDUR emas (flash + impact)
+s08	25.24	29.08	kamar	cut	0.0 freeze -6; 3.0 heartbeat -12	-	Yang paling seram? Mereka sendiri... hampir tidak sadar. | FREEZE: tokoh tersenyum di depan bar kosong, tint dingin
+s09	29.08	32.68	board	swipe	0.04 swish -12; 1.4 glitch -12	-	Kenapa tetap begadang? Seringnya, bukan karena malas. | Kartu feed retak, gelap menutup dari tepi
+s10	32.68	36.55	clock	cut	1.7 pop -10; 2.3 pop -10; 3.1 pop -10	-	Seharian, waktumu milik bos, dosen, orang lain. | Jam besar, tiga bayangan mengambil potongan jam
+s11	36.55	38.76	kamar	cut	0.1 heartbeat -12	roomtone -26	Ini satu-satunya waktu punyaku. | CLOSE-UP wajah raksasa berbisik, HP terpantul di mata
+s12	38.76	43.96	kamar	swipeBack	0.04 swish -12; 0.8 whoosh -12; 2.75 swish -10	rain -24	Jadi kamu curi dari tidurmu sendiri. Dan besok, harimu makin bukan milikmu. | MOMEN KHAS: kamar jadi kartu feed, terseret ke atas; pagi 09.00 ikut terseret
+s13	43.96	48.66	teras3d	dip	0.6 shimmer -14; 2.5 swish -16	wind -28	Coba besok sore. 15 menit. HP mati. Waktu itu punyamu. | Layar hitam lalu 3D teras sore, HP dibalik
+s14	48.66	51.2	kamar	dip	1.8 ding -16	roomtone -28	Malamnya, kamu tidak perlu balas dendam. | Tidur nyenyak berselimut, jam 22:30, HP tertelungkup
+s15	51.2	55.7	board	zoom	1.9 hit -12; 2.75 shimmer -12	-	Begadang bukan soal malam yang kurang disiplin. Tapi siang yang bukan milikmu. | KARTU: MALAM dicoret -> SIANG emas
+s16	55.7	58.44	kamar	dip	1.6 swish -20	roomtone -24	Kalau tidak... nanti malam kamu bilang lagi: | Kembali ke frame 0 (loop)
