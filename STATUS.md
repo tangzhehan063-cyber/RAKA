@@ -3,7 +3,7 @@
 ## Posisi terakhir (9 Nov 2026)
 - **Video #1–#4 Shorts selesai** (video, caption, cover, arsip + artifact https://claude.ai/artifact/8zT2UTpuoXUQ3wsdwNvjQC):
   #1 "Hari ke-10" (kebiasaan, 66 hari) · #2 "Jam Tiga Pagi" (overthinking, 91%) · #3 "Gitar di Atas Lemari" (penyesalan, 76%) · #4 "Satu Video Lagi" (begadang, 6 jam × 14 malam ≈ 2 malam tanpa tidur). Lokasi file: `arsip/README.md`.
-- **Video berikutnya: #5** lewat `WORKFLOW.md` (mulai langkah 1, riset tren TikTok). Tunggu respons user soal eksperimen #4 (`brand/eksperimen.md`).
+- **Video berikutnya: #5** lewat `WORKFLOW.md` (mulai langkah 1, riset tren TikTok → 10 ide). **Swipe ala feed DISUKAI user** (baku di `brand/dna-video.md`); tiap video pakai 1 variasi swipe baru dari daftar di `brand/eksperimen.md`. Usulan untuk #5: "swipe yang gagal" (layar memantul balik). Respons user soal selimut & kamar-jadi-kartu-feed belum ada.
 - Opsional: render ulang #1–#3 dengan posisi CC baru (untuk #2 pindahkan readout "PESERTA 29" di s06; untuk #3 pindahkan "PESERTA RATUSAN" dari pita CC). Versi panjang 16:9 #1 belum diproduksi (`naskah/hari-ke-10.md`).
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
