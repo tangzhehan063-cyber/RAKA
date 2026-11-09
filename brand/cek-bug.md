@@ -14,6 +14,8 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 7. **Kamera/framing terlalu dekat**: tokoh & objek utama tidak terpotong tepi.
 8. **Ekspresi alis**: `worried` vs `angry` pernah tertukar di `rig2d.js` (sudah diperbaiki); cek ekspresi sesuai emosi kalimat.
 
+7a. **Remotion 3D (`remotion-3d/`): gerak tidak dari `useCurrentFrame()`** (`useFrame()` r3f, animasi bawaan model/shader, `Math.random()` tanpa seed) → flicker saat render. `<Sequence>` di dalam `<ThreeCanvas>` wajib `layout="none"`. Detail: skill `remotion-fitur`.
+
 ## Proses
 9. Render final **setelah** user melihat sheet; kalau ada revisi saat render jalan, matikan prosesnya sampai benar-benar mati (`pgrep -fa render` kosong, `kill -9 <pid>` bila perlu).
 10. **Awal sesi:** `git fetch origin` + merge cabang `claude/*` yang belum masuk (video #2 & #3 pernah dibuat di dua cabang terpisah sehingga nomor bentrok dan artifact arsip tidak terupdate).
