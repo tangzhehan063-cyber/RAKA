@@ -1,0 +1,21 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Nunggu 1 Januari
+@music 0-13.8 mystery 0.35; 13.8-32.6 hopeful 0.4; 32.6-47.2 sad 0.3; 47.2-59.6 hopeful 0.45; 59.6-67.28 triumph 0.45
+s01	0.0	3.1	kamar	cut	0.6 tick -18; 1.2 tick -18; 1.8 tick -18	roomtone -24	Lima puluh dua hari lagi... tahun baru. | Kalender dinding raksasa, angka 52 emas, tokoh kecil di bawah
+s02	3.1	6.7	kamar	cut	2.1 scribble -10	roomtone -24	Dan kamu sudah punya rencana: mulai tanggal satu. | Spidol merah melingkari 1 JAN di kalender
+s03	6.7	10.5	board	swipe	0.04 swish -12; 1.26 swish -12; 2.38 swish -12	-	Mulai olahraga. Mulai nabung. Mulai jadi orang baru. | 3 kartu feed: sepatu, celengan, cermin
+s04	10.5	13.8	kamar	swipe	0.04 swish -12; 0.5 pop -10	roomtone -24	Tapi... nanti. Bukan sekarang. | SWIPE GAGAL: kartu memantul balik; tokoh rebahan, spidol ditaruh
+s05	13.8	15.85	board	swipe	0.04 swish -12; 0.8 pop -14; 1.1 pop -14; 1.4 pop -14	-	Ternyata kamu tidak sendirian. | Puluhan stickman memegang papan 1 JAN
+s06	15.85	21.4	board	cut	1.0 blip -14; 4.62 impact -6	-	Peneliti Wharton menemukan: setelah tahun baru, pencarian kata diet melonjak. | Grafik datar lalu lonjakan di 1 JAN, +82%
+s07	21.4	26.4	board	cut	2.1 hit -12; 3.15 hit -12; 4.1 hit -12	-	Orang lebih rajin ke gym... tiap awal minggu, awal bulan, awal semester. | Tiga lonjakan kecil: SENIN / TGL 1 / SEMESTER
+s08	26.4	32.6	kamar	flash	1.6 tear -6; 3.0 whoosh -14	roomtone -26	Tanggal baru terasa seperti halaman kosong. Diri yang lama... seolah tertinggal di halaman sebelumnya. | Kalender disobek; diri lama abu-abu jatuh bersama lembaran
+s09	32.6	34.5	board	dip	0.2 stinger -10	-	Tapi ada sisi gelapnya. | Gelap, kartu retak, SISI GELAP
+s10	34.5	40.9	board	cut	2.9 tick -16; 3.4 tick -16; 3.9 tick -16; 5.9 hit -10	-	Penelitian lanjutan menemukan: saat kita menunggu tanggal baru... usaha kita hari ini justru turun. | Bar USAHA HARI INI menyusut seiring hitung mundur
+s11	40.9	43.2	kamar	cut	0.1 heartbeat -12	roomtone -26	Toh sebentar lagi mulai dari nol. | CLOSE-UP wajah raksasa berbisik, senyum santai
+s12	43.2	47.2	kamar	cut	0.2 whoosh -14; 2.3 hit -10; 3.3 freeze -8	roomtone -24	Jadi 52 hari ini... kamu buang. Dengan sadar. | MOMEN KHAS: 52 lembar berguguran jadi debu, tokoh rebahan main HP
+s13	47.2	51.0	board	dip	3.0 pop -12	-	Padahal halaman kosong itu tidak harus menunggu kalender. | Halaman kosong melayang lepas dari kalender
+s14	51.0	55.5	board	swipe	0.04 swish -12; 1.56 swish -12; 3.56 swish -12	-	Senin juga halaman baru. Besok pagi juga. Bahkan... malam ini. | Kartu SENIN, BESOK PAGI, MALAM INI swipe
+s15	55.5	57.7	spidol3d	cut	0.3 swish -14	roomtone -26	Ambil spidol. Lingkari hari ini. | 3D: orbit tokoh mengambil spidol di depan kalender
+s16	57.7	59.6	kamar	cut	0.1 scribble -8; 1.3 shimmer -12	roomtone -26	Tulis: hari satu. | Close-up kalender, spidol menulis HARI 1
+s17	59.6	64.8	kamar	zoom	0.4 shimmer -14; 3.6 hit -12	roomtone -26	Tahun baru tidak mengubah orang. Orang yang memutuskan mulai... yang mengubah tahunnya. | Kamar pagi terang, tokoh memakai sepatu lari, kalender HARI 1
+s18	64.8	67.28	kamar	dip	1.6 tick -18	roomtone -24	Kalau tidak, tahun depan kamu bilang lagi: | Kembali ke frame 0 (loop)

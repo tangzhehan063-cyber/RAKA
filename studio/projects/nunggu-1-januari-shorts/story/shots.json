@@ -1,0 +1,553 @@
+{
+ "title": "Nunggu 1 Januari",
+ "duration": 67.28,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.1,
+   "line": "Lima puluh dua hari lagi... tahun baru.",
+   "scene": "Kalender dinding raksasa, angka 52 emas, tokoh kecil di bawah",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "tick",
+     "gain": -18.0
+    },
+    {
+     "at": 1.2,
+     "name": "tick",
+     "gain": -18.0
+    },
+    {
+     "at": 1.8,
+     "name": "tick",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 3.1,
+   "end": 6.7,
+   "line": "Dan kamu sudah punya rencana: mulai tanggal satu.",
+   "scene": "Spidol merah melingkari 1 JAN di kalender",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.1,
+     "name": "scribble",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 6.7,
+   "end": 10.5,
+   "line": "Mulai olahraga. Mulai nabung. Mulai jadi orang baru.",
+   "scene": "3 kartu feed: sepatu, celengan, cermin",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.26,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.38,
+     "name": "swish",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 10.5,
+   "end": 13.8,
+   "line": "Tapi... nanti. Bukan sekarang.",
+   "scene": "SWIPE GAGAL: kartu memantul balik; tokoh rebahan, spidol ditaruh",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s05",
+   "start": 13.8,
+   "end": 15.85,
+   "line": "Ternyata kamu tidak sendirian.",
+   "scene": "Puluhan stickman memegang papan 1 JAN",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.1,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 15.85,
+   "end": 21.4,
+   "line": "Peneliti Wharton menemukan: setelah tahun baru, pencarian kata diet melonjak.",
+   "scene": "Grafik datar lalu lonjakan di 1 JAN, +82%",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 4.62,
+     "name": "impact",
+     "gain": -6.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 21.4,
+   "end": 26.4,
+   "line": "Orang lebih rajin ke gym... tiap awal minggu, awal bulan, awal semester.",
+   "scene": "Tiga lonjakan kecil: SENIN / TGL 1 / SEMESTER",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.67,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 2.92,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 3.92,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 26.4,
+   "end": 32.6,
+   "line": "Tanggal baru terasa seperti halaman kosong. Diri yang lama... seolah tertinggal di halaman sebelumnya.",
+   "scene": "Kalender disobek; diri lama abu-abu jatuh bersama lembaran",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "tear",
+     "gain": -6.0
+    },
+    {
+     "at": 3.0,
+     "name": "whoosh",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s09",
+   "start": 32.6,
+   "end": 34.5,
+   "line": "Tapi ada sisi gelapnya.",
+   "scene": "Gelap, kartu retak, SISI GELAP",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "stinger",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 34.5,
+   "end": 40.9,
+   "line": "Penelitian lanjutan menemukan: saat kita menunggu tanggal baru... usaha kita hari ini justru turun.",
+   "scene": "Bar USAHA HARI INI menyusut seiring hitung mundur",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.9,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 3.4,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 3.9,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 5.9,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 40.9,
+   "end": 43.2,
+   "line": "Toh sebentar lagi mulai dari nol.",
+   "scene": "CLOSE-UP wajah raksasa berbisik, senyum santai",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "heartbeat",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s12",
+   "start": 43.2,
+   "end": 47.2,
+   "line": "Jadi 52 hari ini... kamu buang. Dengan sadar.",
+   "scene": "MOMEN KHAS: 52 lembar berguguran jadi debu, tokoh rebahan main HP",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -14.0
+    },
+    {
+     "at": 2.3,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 3.3,
+     "name": "freeze",
+     "gain": -8.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s13",
+   "start": 47.2,
+   "end": 51.0,
+   "line": "Padahal halaman kosong itu tidak harus menunggu kalender.",
+   "scene": "Halaman kosong melayang lepas dari kalender",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 3.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 51.0,
+   "end": 55.5,
+   "line": "Senin juga halaman baru. Besok pagi juga. Bahkan... malam ini.",
+   "scene": "Kartu SENIN, BESOK PAGI, MALAM INI swipe",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.56,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 3.56,
+     "name": "swish",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 55.5,
+   "end": 57.7,
+   "line": "Ambil spidol. Lingkari hari ini.",
+   "scene": "3D: orbit tokoh mengambil spidol di depan kalender",
+   "set": "spidol3d",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 57.7,
+   "end": 59.6,
+   "line": "Tulis: hari satu.",
+   "scene": "Close-up kalender, spidol menulis HARI 1",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "scribble",
+     "gain": -8.0
+    },
+    {
+     "at": 1.3,
+     "name": "shimmer",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s17",
+   "start": 59.6,
+   "end": 64.8,
+   "line": "Tahun baru tidak mengubah orang. Orang yang memutuskan mulai... yang mengubah tahunnya.",
+   "scene": "Kamar pagi terang, tokoh memakai sepatu lari, kalender HARI 1",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -14.0
+    },
+    {
+     "at": 3.6,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s18",
+   "start": 64.8,
+   "end": 67.28,
+   "line": "Kalau tidak, tahun depan kamu bilang lagi:",
+   "scene": "Kembali ke frame 0 (loop)",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "tick",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 13.8,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 13.8,
+   "end": 32.6,
+   "mood": "hopeful",
+   "intensity": 0.4
+  },
+  {
+   "start": 32.6,
+   "end": 47.2,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 47.2,
+   "end": 59.6,
+   "mood": "hopeful",
+   "intensity": 0.45
+  },
+  {
+   "start": 59.6,
+   "end": 67.28,
+   "mood": "triumph",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}

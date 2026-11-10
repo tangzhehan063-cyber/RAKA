@@ -18,9 +18,16 @@ Claude boleh terus meng-improve visual & cara bercerita (izin user 9 Nov 2026). 
 - **Hitungan scroll:** badge pojok menghitung jumlah swipe (12, 47, 128...) sebagai angka cerita.
 - **Swipe terbalik di loop:** akhir video swipe ke bawah kembali ke frame 0 (rewind feed).
 
+## Video #5 Nunggu 1 Januari (10 Nov) — menunggu respons user
+- **Swipe yang gagal:** kartu "MULAI SEKARANG" ditarik ke atas lalu memantul jatuh (lelucon visual "tapi… nanti").
+- **Angka riset sebagai benda fisik:** kalender hitung mundur 52 hari (dipakai di hook, momen khas, dan loop).
+- **Dua fakta berantai** (fakta → "tapi ada sisi gelapnya") + durasi naik ke 67 dtk.
+- **Item maskot dengan aksi:** spidol merah melingkari 1 Jan, lalu menulis "HARI 1" (bukan sekadar pakaian).
+- Momen khas: 52 lembar kalender lepas satu per satu jadi debu emas, freeze "DENGAN SADAR".
+- SFX baru di library: `scribble` (spidol) dan `tear` (kertas sobek).
+
 ## Ide eksperimen berikutnya (belum dicoba)
 - Transisi "match cut" benda → benda (mis. jam dinding → roda sepeda) untuk menyambung adegan.
 - Satu warna aksen per video selain merah-oranye maskot (palet emosi: biru = sedih, emas = harapan).
 - Hook visual tanpa kata 1 detik pertama (aksi tokoh dulu, baru VO).
-- Angka riset muncul sebagai benda fisik di dunia tokoh (tulisan di tembok, kalender, struk), bukan papan.
 - Akhir loop dengan kamera yang sama persis di frame pertama & terakhir.

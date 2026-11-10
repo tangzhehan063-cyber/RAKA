@@ -302,6 +302,30 @@ def pluck(dur=2.5, seed=36, detune=0.0, strum=0.035, **_):
     return normalize(reverb(fade(stereo(out, 0, 0.4), 0.002, 0.3), 1.2, 0.18, seed), -2)
 
 
+@sfx("marker / pen scribble on paper (strokes of filtered noise)", 1.0)
+def scribble(dur=1.0, seed=7, pitch=1.0, **_):
+    n = secs(dur); r = rng(seed); y = np.zeros(n)
+    pos = 0
+    while pos < n:
+        L = secs(r.uniform(0.07, 0.18))
+        if pos + L > n: L = n - pos
+        if L <= 8: break
+        seg_ = bp(noise(L, int(r.integers(1, 9999))), 1800 * pitch * (k := r.uniform(0.8, 1.25)), 4200 * pitch * k)
+        seg_ *= np.sin(np.pi * np.linspace(0, 1, L)) ** 0.8 * r.uniform(0.6, 1.0)
+        y[pos:pos + L] += seg_; pos += L + secs(r.uniform(0.0, 0.04))
+    y += hp(noise(n, seed + 3), 5000) * 0.08
+    return normalize(fade(stereo(y, 0, 0.2), 0.005, 0.03), -4)
+
+
+@sfx("paper tear / calendar page ripped off", 0.6)
+def tear(dur=0.6, seed=8, pitch=1.0, **_):
+    n = secs(dur); r = rng(seed)
+    crackle = noise(n, seed) * (r.random(n) < 0.08)
+    y = bp(crackle, 1500 * pitch, 6000 * pitch) * 2.5 + bp(noise(n, seed + 1), 800 * pitch, 2400 * pitch) * 0.5
+    y *= env_adsr(n, 0.01, 0.1, 0.7, 0.25)
+    return normalize(fade(stereo(y, 0, 0.4)), -3)
+
+
 def make(name, **kw):
     if name not in LIB: raise KeyError(f"unknown sfx '{name}'. Available: {', '.join(LIB)}")
     k = {"dur": LIB[name]["dur"], **{a: b for a, b in kw.items() if b is not None}}
