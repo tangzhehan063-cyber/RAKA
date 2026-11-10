@@ -4,6 +4,7 @@
 - **Video #1–#4 Shorts selesai** (video, caption, cover, arsip + artifact https://claude.ai/artifact/8zT2UTpuoXUQ3wsdwNvjQC):
   #1 "Hari ke-10" (kebiasaan, 66 hari) · #2 "Jam Tiga Pagi" (overthinking, 91%) · #3 "Gitar di Atas Lemari" (penyesalan, 76%) · #4 "Satu Video Lagi" (begadang, 6 jam × 14 malam ≈ 2 malam tanpa tidur). Lokasi file: `arsip/README.md`.
 - **Video #5 "Nunggu 1 Januari" selesai (10 Nov)**: fresh start effect, 67 dtk (tangga durasi naik, lihat `brand/formula.md`), eksperimen swipe gagal + kalender hitung mundur + spidol merah. Menunggu respons user & data analitik.
+- **User akan mengirim video referensi** (10 Nov) di sesi Claude Code ini: lebih baik upload MP4 (bedah per frame, tanpa kredit); link TikTok/YT = transkrip+komentar saja (±1–2 kredit). Analisis → `brand/formula.md`, terapkan ke #6.
 - **Video berikutnya: #6** (target ±75 dtk bila retensi #5 aman). Cadangan ide: membandingkan diri (4,8 jt view, 8 rb komentar), "tiba-tiba rajin nyapu".
 - (lama) Video berikutnya: #5 lewat `WORKFLOW.md` (mulai langkah 1, riset tren TikTok → 10 ide). **Swipe ala feed DISUKAI user** (baku di `brand/dna-video.md`); tiap video pakai 1 variasi swipe baru dari daftar di `brand/eksperimen.md`. Usulan untuk #5: "swipe yang gagal" (layar memantul balik). Respons user soal selimut & kamar-jadi-kartu-feed belum ada.
 - Opsional: render ulang #1–#3 dengan posisi CC baru (untuk #2 pindahkan readout "PESERTA 29" di s06; untuk #3 pindahkan "PESERTA RATUSAN" dari pita CC). Versi panjang 16:9 #1 belum diproduksi (`naskah/hari-ke-10.md`).
