@@ -20,3 +20,5 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 9. Render final **setelah** user melihat sheet; kalau ada revisi saat render jalan, matikan prosesnya sampai benar-benar mati (`pgrep -fa render` kosong, `kill -9 <pid>` bila perlu).
 10. **Awal sesi:** `git fetch origin` + merge cabang `claude/*` yang belum masuk (video #2 & #3 pernah dibuat di dua cabang terpisah sehingga nomor bentrok dan artifact arsip tidak terupdate).
 11. **Setelah video selesai:** caption + cover + baris `arsip/README.md` + pratinjau `arsip/halaman/` + republish artifact arsip.
+12. **Tokoh rebahan melayang** (#5): pose `lie` + `rot: -π/2` di set `bedroom.js` harus `y = GY + 40` (di atas kasur), bukan GY − 150. Cek still adegan tidur sebelum render.
+13. **Badge pojok kanan atas menabrak benda besar** (#5): kalender/papan besar mulai di y ≥ 380 bila ada badge.
