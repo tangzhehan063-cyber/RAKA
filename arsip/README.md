@@ -12,3 +12,4 @@ Semua file ada di repo ini. Tabel ini menunjukkan di mana tiap artifact disimpan
 Isi folder proyek: `story/shots.tsv` (shot list ringkas), `story/shots.json`, `story/bible.md`, `scenes/` (kode adegan), `timeline/` (kata + kalimat), `out/` (MP4). Proyek cover: `studio/projects/<slug>-cover/`.
 Folder `build/` tidak disimpan (bisa dibuat ulang dengan `tools/produksi.sh`).
 Halaman ringkasan (artifact Claude): https://claude.ai/artifact/8zT2UTpuoXUQ3wsdwNvjQC (sumber + pratinjau kecil di `arsip/halaman/`).
+Caption TikTok semua video (tombol Salin): https://claude.ai/artifact/GpZBXeEfm3ggEXsbsXKLNj (salinan `caption/tiktok-semua.html`).
