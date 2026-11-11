@@ -26,6 +26,12 @@ Claude boleh terus meng-improve visual & cara bercerita (izin user 9 Nov 2026). 
 - Momen khas: 52 lembar kalender lepas satu per satu jadi debu emas, freeze "DENGAN SADAR".
 - SFX baru di library: `scribble` (spidol) dan `tear` (kertas sobek).
 
+## #6 Dua Orang, Satu Gaji (11 Nov) — menunggu respons/analitik
+- **Struktur baru (permintaan user): cerita dulu, penjelasan di akhir.** 0–36 dtk dialog tanpa fakta, twist, lalu narator + riset.
+- **Dialog dua suara** (Rafiq = Si Cukup, Abay = Si Kurang), narator Ghaisan baru masuk di twist. VO dibuat per baris lalu digabung (`input/lines.json`), Scribe hanya untuk narator.
+- **Warna per adegan** (engine: `set@gaya` di shots.tsv): hangat = ember, dingin = arctic, penjelasan = ember. **Warna CC per pembicara** (`captionSpeakers` di config).
+- Momen khas: layar terbelah; garis pembelah melebar jadi layar HP, dua orang menyatu.
+
 ## Ide eksperimen berikutnya (belum dicoba)
 - Transisi "match cut" benda → benda (mis. jam dinding → roda sepeda) untuk menyambung adegan.
 - Satu warna aksen per video selain merah-oranye maskot (palet emosi: biru = sedih, emas = harapan).

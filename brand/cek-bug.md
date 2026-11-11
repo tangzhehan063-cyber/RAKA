@@ -22,3 +22,5 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 11. **Setelah video selesai:** caption + cover + baris `arsip/README.md` + pratinjau `arsip/halaman/` + republish artifact arsip.
 12. **Tokoh rebahan melayang** (#5): pose `lie` + `rot: -π/2` di set `bedroom.js` harus `y = GY + 40` (di atas kasur), bukan GY − 150. Cek still adegan tidur sebelum render.
 13. **Badge pojok kanan atas menabrak benda besar** (#5): kalender/papan besar mulai di y ≥ 380 bila ada badge.
+14. **Properti melayang / label kepanjangan** (#6, ditegur user di cover): benda yang dibawa tokoh digambar dari posisi tangan (`pose.hB`), benda di lantai pakai y = kaki tokoh; teks di properti kecil jangan dipakai (terpotong). Cek cover & still sebelum render final.
+15. **Gaya `retro` kusam kehijauan** (#6): untuk dunia hangat pakai `ember` (oranye menyala); cek warna di still ukuran penuh, bukan hanya contact sheet kecil.
