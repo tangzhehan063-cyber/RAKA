@@ -40,6 +40,13 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - Protagonis: stickman "kamu" dengan satu item merah-oranye `#d64a33` (maskot); nama boleh baru tiap video. Mulai proyek dengan menyalin `studio/library/` (cast + set kamar & jalan); buat set baru bila topik membutuhkan, gaya tetap sama.
 - Niche: hanya self-improvement (ScriptForge 1.1–1.5). Tolak/konfirmasi dulu bila user minta topik di luar niche.
 
+## Penyimpanan hasil video (aturan user 11 Nov, berlaku untuk video berikutnya)
+- **Hasil setiap video disimpan di Google Drive**: folder `RAKA` (id `1lErd-CVqlWZdbEVI5iPV3tQokyGWmWx9`) → subfolder `NN - <Judul>` berisi cover, voiceover, dan caption.
+  - Unggah dengan `create_file` + referensi `sha256:<hash>:<path>`. Salin file ke scratchpad sesi dulu.
+  - **Batas 10 MB per file**: MP4 final dikirim ke user (SendUserFile), lalu user mengunggahnya sendiri ke subfolder Drive.
+- **GitHub hanya menyimpan aset yang bisa dipakai berulang**: engine, `studio/library/`, kode adegan/proyek (`config.json`, `scenes/`, `story/`), tools, dokumen brand. MP4/MP3/PNG hasil dan `build/` tidak di-commit.
+- Pratinjau 540p untuk artifact arsip tetap boleh di `arsip/halaman/` (ukurannya kecil).
+
 ## Catatan teknis
 - **Awal sesi:** `git fetch origin` lalu merge cabang `claude/*` yang belum masuk ke cabang kerja (tiap sesi punya cabang sendiri; tanpa ini sesi baru tidak melihat video/arsip dari sesi lain).
 - **Setelah video selesai (wajib, bagian dari langkah 6):** tambah baris di `arsip/README.md`, buat pratinjau 540p di `arsip/halaman/` (mp4 + cover jpg), tambah kartu di `arsip/halaman/index.html`, lalu republish artifact arsip (slug `40b5677b-fc79-4023-83fe-457a59db2581`) dengan `publish_files`.
