@@ -8,20 +8,27 @@ Target ±75 dtk (tangga durasi). Topik: perbandingan sosial (ScriptForge 1.x, mi
   - Data AS 1987–1994, N = 8.944. Dengan penghasilan sendiri tetap, penghasilan tetangga yang lebih tinggi berkaitan dengan bahagia yang lebih rendah. (Korelasi, bukan bukti sebab pasti: di VO pakai "berkaitan/turun", bukan "menyebabkan".)
 - "Lima juta" dan "lima menit" = bagian cerita, bukan data.
 
-## Teks TTS (eleven_v4, Ghaisan)
-[calm, slow] Ada dua orang. Gajinya sama persis. Lima juta.
-Orang pertama pulang kerja, beli martabak, senyum sepanjang jalan.
-Orang kedua... gajinya sama, martabaknya sama. Tapi dia pulang dengan dada sesak.
-Kenapa?
-Orang pertama merasa cukup. Bisa nabung sedikit, bisa traktir ibunya.
-Orang kedua merasa ketinggalan. Teman SMA-nya liburan ke Jepang. Teman kantornya baru beli mobil.
-[whispering] Padahal gaji mereka nggak berubah satu rupiah pun.
-Yang aneh... dua orang ini tidur di kamar yang sama. Di kasur yang sama.
-[warm, building] Karena mereka orang yang sama. Bedanya cuma lima menit buka Instagram.
-Seorang peneliti Harvard, Erzo Luttmer, mengikuti hampir sembilan ribu orang. Hasilnya: saat penghasilan tetangga naik, rasa bahagia orang ikut turun. Padahal gajinya sendiri tetap.
-Otak kita nggak mengukur "cukup". Otak mengukur "dibanding siapa".
-Jadi kalau malam ini dadamu sesak, cek dulu. Gajimu yang kurang... atau layarmu yang terlalu ramai?
-Karena bisa jadi, di kamarmu sekarang... ada dua orang.
+## Teks (v2: DIALOG, narator hanya di penjelasan; permintaan user 11 Nov)
+Suara: **A "Si Cukup"** (hangat, santai) · **B "Si Kurang"** (lebih pelan, gelisah) · **Narator Ghaisan** (masuk di twist).
+Produksi: tiap baris TTS terpisah per suara → digabung (jeda 0,25 dtk) → Scribe untuk timestamp.
+
+A: [cheerful] Gajian, bro! Lima juta. Martabak spesial, dua!
+B: [flat] Lima juta juga... tapi kok rasanya kurang, ya.
+A: Kurang apaan? Bisa nabung, bisa traktir ibu.
+B: Kamu lihat Dito? Liburan ke Jepang. Raka baru beli mobil.
+A: Terus? Gaji kita nggak berubah satu rupiah pun.
+B: [sighs] Iya. Tapi aku ketinggalan.
+A: Ketinggalan... dari siapa?
+B: [annoyed] Udah. Matiin lampunya. Aku mau tidur.
+A: [laughs softly] Kita kan tidur di kasur yang sama.
+NARATOR: [calm, slow] Mereka memang tidur di kasur yang sama. Karena mereka orang yang sama. Bedanya cuma lima menit buka Instagram.
+NARATOR: Seorang peneliti Harvard, Erzo Luttmer, mengikuti hampir sembilan ribu orang. Saat penghasilan tetangga naik, rasa bahagia orang ikut turun. Padahal gajinya sendiri tetap.
+NARATOR: [warm, building] Otak kita nggak mengukur "cukup". Otak mengukur "dibanding siapa".
+NARATOR: Jadi kalau malam ini dadamu sesak, tanya dulu: gajimu yang kurang... atau layarmu yang terlalu ramai?
+NARATOR: [whispering] Karena bisa jadi, di kamarmu sekarang... ada dua orang yang lagi ngobrol.
+(loop → A: "Gajian, bro!")
+
+Visual dialog: tidak ada balon kata; CC berwarna sesuai pembicara (A krem-oranye, B biru es, narator emas).
 
 ## Babak & warna (eksperimen: palet terbelah, referensi style GrowKaz)
 | Babak | Detik | Isi | Palet |
