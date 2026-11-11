@@ -67,7 +67,11 @@ function state3D(shot, def, info) {
   for (const [k, v] of cache3D) if (cache3D.size >= 2) { v.dispose?.(); v.stage?.dispose?.(); cache3D.delete(k); }
   const st = def.init(three, info); cache3D.set(shot.id, st); return st;
 }
-function drawShot(buf, shot, lt) {
+function drawShot(buf, shot, lt) {   // gaya per shot (shot.style), dipulihkan setelahnya
+  const keep = E.styleId; if (shot.style && shot.style !== keep) setStyle(shot.style);
+  try { drawShot0(buf, shot, lt); } finally { if (E.styleId !== keep) setStyle(keep); }
+}
+function drawShot0(buf, shot, lt) {
   const g = buf.getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'source-over'; g.filter = 'none';
   g.fillStyle = '#000'; g.fillRect(0, 0, buf.width, buf.height); g.setTransform(E.PX, 0, 0, E.PX, 0, 0);
   const def = getShot(shot.id); const dur = shot.end - shot.start;
@@ -87,6 +91,7 @@ const barVal = (s) => (typeof (s?.bars ?? E.cfg.bars) === 'number' ? (s.bars ?? 
 
 window.renderFrame = function (f) {
   const t = f / E.fps, i = shotIndexAt(t), shot = E.shots[i], lt = t - shot.start;
+  { const sid = shot.style || E.cfg.style || 'emerald'; if (E.styleId !== sid) { setStyle(sid); buildLUT(); } }
   drawShot(bufA, shot, lt);
   const tr = shot.in || { type: 'cut' }, tdur = tr.dur ?? (tr.type === 'whip' ? 0.35 : tr.type === 'swipe' ? 0.32 : 0.5);
   const W = main.width, H = main.height; mg.setTransform(1, 0, 0, 1, 0, 0); mg.globalAlpha = 1; mg.globalCompositeOperation = 'source-over';
@@ -107,7 +112,7 @@ window.renderFrame = function (f) {
   if (shot.vignette !== false && grade.vignette > 0) { const v = mg.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.62); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, `rgba(0,0,0,${grade.vignette})`); mg.fillStyle = v; mg.fillRect(0, 0, W, H); }
   if (grade.grain > 0) { mg.save(); mg.globalAlpha = grade.grain; mg.globalCompositeOperation = 'overlay'; mg.drawImage(grainTiles[f % 4], 0, 0, W, H); mg.restore(); }
   mg.setTransform(E.PX, 0, 0, E.PX, 0, 0);
-  if (E.cfg.captions && shot.captions !== false) captions(mg, t, E.cfg.captionStyle || {});
+  if (E.cfg.captions && shot.captions !== false) { const cs = { ...(E.cfg.captionStyle || {}) }; const sp = (E.cfg.captionSpeakers || []).find(r => t >= r[0] && t < r[1]); if (sp) { cs.hi = sp[2]; if (sp[3]) cs.color = sp[3]; } captions(mg, t, cs); }
   const cur = barVal(shot), prevB = i > 0 ? barVal(E.shots[i - 1]) : cur, bar = prevB + (cur - prevB) * ease.inOut(prog(lt, 0, 0.6));
   if (bar > 0) { mg.fillStyle = '#000'; mg.fillRect(0, 0, E.W, bar); mg.fillRect(0, E.H - bar, E.W, bar); }
   const fi = E.cfg.fadeIn ?? 0.5, fo = E.cfg.fadeOut ?? 0.8, dur = window.DURATION, fade = Math.max(fi > 0 ? 1 - t / fi : 0, fo > 0 ? 1 - (dur - t) / fo : 0);

@@ -27,3 +27,4 @@ Protagonis "kamu" versi stickman dengan satu item merah-oranye `#d64a33`. Nama d
 | 2 | jam-tiga-pagi-shorts | 91% Ketakutanmu Nggak Pernah Terjadi | Shorts 9:16, 56 dtk | selesai |
 | 3 | gitar-di-atas-lemari | Gitar di Atas Lemari (76% penyesalan = diri yang tak dikejar) | Shorts 9:16, 58,2 dtk | selesai |
 | 4 | satu-video-lagi | Satu Video Lagi (begadang: 6 jam × 14 malam ≈ 2 malam tanpa tidur) | Shorts 9:16, 58,4 dtk | selesai |
+| 6 | dua-orang-satu-gaji | Dua Orang, Satu Gaji (perbandingan sosial, Luttmer 2005) | Shorts 9:16, 74 dtk | selesai |

@@ -29,8 +29,10 @@ for raw in open(src, encoding="utf-8"):
     if len(c) < 8: sys.exit(f"kolom kurang (butuh 8, TAB): {ln}")
     sid, a, b, st, tr, sfx, amb, rest = c[:8]
     line, _, scene = rest.partition("|")
+    st, _, style = st.partition("@")   # set@gaya, mis. kamar@retro
     d = {"id": sid, "start": float(a), "end": float(b), "line": line.strip(), "scene": scene.strip(), "set": st, "bars": None,
          "in": {"type": "swipe", "dir": -1, "dur": 0.32} if tr == "swipeBack" else {"type": tr} if tr == "cut" else {"type": tr, "dur": DUR.get(tr, 0.4)}, "sfx": [], "notes": ""}
+    if style: d["style"] = style
     if sfx.strip() not in ("", "-"):
         for s in sfx.split(";"):
             at, name, gain = s.split(); d["sfx"].append({"at": float(at), "name": name, "gain": float(gain)})

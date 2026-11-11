@@ -1,0 +1,19 @@
+# id	start	end	set@gaya	transisi	sfx	amb	line | scene
+@title Dua Orang, Satu Gaji
+@music 0-36.6 hopeful 0.3; 36.6-45.2 mystery 0.35; 45.2-62 sad 0.3; 62-74 hopeful 0.35
+s01	0.0	4.5	jalan@ember	cut	0.3 ding -14	city -26	A: Gajian, bro! 5 juta. Martabak spesial, dua! | Jalan senja hangat, Si Cukup jalan bawa kotak martabak, badge 5 JUTA
+s02	4.5	9.8	kamar@arctic	swipe	-	roomtone -24	B: 5 juta juga... kok rasanya kurang | Kamar biru dingin, Si Kurang duduk di kasur, martabak sama belum dibuka, HP menyala
+s03	9.8	13.4	jalan@ember	swipeBack	1.6 pop -14	city -26	A: Bisa nabung, bisa traktir ibu | Celengan + koin jatuh, Si Cukup senyum
+s04	13.4	18.4	hp@arctic	swipe	14.9 swish -16; 16.4 swish -16	roomtone -26	B: Dito Jepang, Raka mobil | Layar HP raksasa: kartu feed Gunung Fuji, mobil baru
+s05	18.4	22.4	belah@ember	flash	18.6 impact -12	-	A: Terus? Gaji kita nggak berubah | LAYAR TERBELAH: kiri hangat, kanan dingin, 5 JUTA = 5 JUTA
+s06	22.4	25.7	wajah@arctic	cut	22.5 heartbeat -12	roomtone -24	B: Iya... tapi aku ketinggalan | Wajah besar cemas, cahaya HP dari bawah
+s07	25.7	28.3	belah@ember	cut	-	-	A: Ketinggalan... dari siapa? | Si Cukup menoleh menatap ke seberang garis
+s08	28.3	32.6	kamar@arctic	cut	29.6 tick -10	roomtone -24	B: Udah, matiin lampunya | Lampu mati, tinggal cahaya HP
+s09	32.6	36.6	belah@arctic	cut	34.6 riser -12	-	A: Kita kan tidur di kasur yang sama | Kamera mundur: dua kasur ternyata satu kasur
+s10	36.6	40.1	satu@ember	flash	36.7 impact -8; 36.8 freeze -14	-	N: Mereka memang tidur di kasur yang sama | MOMEN KHAS: dua tokoh menyatu, garis pembelah jadi tepi layar HP
+s11	40.1	45.2	timer@ember	cut	42.7 tick -16	-	N: Orang yang sama. Bedanya 5 menit buka Instagram | HP + hitung 5 menit, wajah setengah hangat setengah dingin
+s12	45.2	50.6	papan@ember	swipe	46.2 pop -14; 49.8 counter -14	-	N: Peneliti Harvard Luttmer, ±9000 orang | Papan: LUTTMER 2005, 9.000 ORANG
+s13	50.6	56.9	grafik@ember	swipe	51.6 blip -16; 53.8 blip -16	-	N: Penghasilan tetangga naik, bahagia turun, gaji tetap | Grafik 3 garis
+s14	56.9	62.0	timbang@ember	swipe	58.4 stinger -12	-	N: Otak mengukur dibanding siapa | CUKUP dicoret jadi DIBANDING SIAPA?
+s15	62.0	68.9	pilih@ember	swipe	66.6 whoosh -14	-	N: Gajimu yang kurang atau layarmu yang terlalu ramai? | Dua pilihan: dompet vs HP
+s16	68.9	74.0	belah@ember	dip	-	roomtone -26	N: Di kamarmu sekarang ada dua orang | Loop: layar terbelah lagi, Si Cukup bawa martabak

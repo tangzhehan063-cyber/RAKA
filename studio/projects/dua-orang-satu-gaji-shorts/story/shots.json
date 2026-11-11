@@ -1,0 +1,410 @@
+{
+ "title": "Dua Orang, Satu Gaji",
+ "duration": 74.0,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 4.5,
+   "line": "A: Gajian, bro! 5 juta. Martabak spesial, dua!",
+   "scene": "Jalan senja hangat, Si Cukup jalan bawa kotak martabak, badge 5 JUTA",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "city",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 4.5,
+   "end": 9.8,
+   "line": "B: 5 juta juga... kok rasanya kurang",
+   "scene": "Kamar biru dingin, Si Kurang duduk di kasur, martabak sama belum dibuka, HP menyala",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "arctic",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 9.8,
+   "end": 13.4,
+   "line": "A: Bisa nabung, bisa traktir ibu",
+   "scene": "Celengan + koin jatuh, Si Cukup senyum",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dir": -1,
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "city",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 13.4,
+   "end": 18.4,
+   "line": "B: Dito Jepang, Raka mobil",
+   "scene": "Layar HP raksasa: kartu feed Gunung Fuji, mobil baru",
+   "set": "hp",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 14.9,
+     "name": "swish",
+     "gain": -16.0
+    },
+    {
+     "at": 16.4,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s05",
+   "start": 18.4,
+   "end": 22.4,
+   "line": "A: Terus? Gaji kita nggak berubah",
+   "scene": "LAYAR TERBELAH: kiri hangat, kanan dingin, 5 JUTA = 5 JUTA",
+   "set": "belah",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 18.6,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s06",
+   "start": 22.4,
+   "end": 25.7,
+   "line": "B: Iya... tapi aku ketinggalan",
+   "scene": "Wajah besar cemas, cahaya HP dari bawah",
+   "set": "wajah",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 22.5,
+     "name": "heartbeat",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s07",
+   "start": 25.7,
+   "end": 28.3,
+   "line": "A: Ketinggalan... dari siapa?",
+   "scene": "Si Cukup menoleh menatap ke seberang garis",
+   "set": "belah",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s08",
+   "start": 28.3,
+   "end": 32.6,
+   "line": "B: Udah, matiin lampunya",
+   "scene": "Lampu mati, tinggal cahaya HP",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 29.6,
+     "name": "tick",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s09",
+   "start": 32.6,
+   "end": 36.6,
+   "line": "A: Kita kan tidur di kasur yang sama",
+   "scene": "Kamera mundur: dua kasur ternyata satu kasur",
+   "set": "belah",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 34.6,
+     "name": "riser",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s10",
+   "start": 36.6,
+   "end": 40.1,
+   "line": "N: Mereka memang tidur di kasur yang sama",
+   "scene": "MOMEN KHAS: dua tokoh menyatu, garis pembelah jadi tepi layar HP",
+   "set": "satu",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 36.7,
+     "name": "impact",
+     "gain": -8.0
+    },
+    {
+     "at": 36.8,
+     "name": "freeze",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s11",
+   "start": 40.1,
+   "end": 45.2,
+   "line": "N: Orang yang sama. Bedanya 5 menit buka Instagram",
+   "scene": "HP + hitung 5 menit, wajah setengah hangat setengah dingin",
+   "set": "timer",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 42.7,
+     "name": "tick",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s12",
+   "start": 45.2,
+   "end": 50.6,
+   "line": "N: Peneliti Harvard Luttmer, ±9000 orang",
+   "scene": "Papan: LUTTMER 2005, 9.000 ORANG",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 46.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 49.8,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s13",
+   "start": 50.6,
+   "end": 56.9,
+   "line": "N: Penghasilan tetangga naik, bahagia turun, gaji tetap",
+   "scene": "Grafik 3 garis",
+   "set": "grafik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 51.6,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 53.8,
+     "name": "blip",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s14",
+   "start": 56.9,
+   "end": 62.0,
+   "line": "N: Otak mengukur dibanding siapa",
+   "scene": "CUKUP dicoret jadi DIBANDING SIAPA?",
+   "set": "timbang",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 58.4,
+     "name": "stinger",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s15",
+   "start": 62.0,
+   "end": 68.9,
+   "line": "N: Gajimu yang kurang atau layarmu yang terlalu ramai?",
+   "scene": "Dua pilihan: dompet vs HP",
+   "set": "pilih",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 66.6,
+     "name": "whoosh",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "ember"
+  },
+  {
+   "id": "s16",
+   "start": 68.9,
+   "end": 74.0,
+   "line": "N: Di kamarmu sekarang ada dua orang",
+   "scene": "Loop: layar terbelah lagi, Si Cukup bawa martabak",
+   "set": "belah",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 36.6,
+   "mood": "hopeful",
+   "intensity": 0.3
+  },
+  {
+   "start": 36.6,
+   "end": 45.2,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 45.2,
+   "end": 62.0,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 62.0,
+   "end": 74.0,
+   "mood": "hopeful",
+   "intensity": 0.35
+  }
+ ],
+ "sfx": []
+}
