@@ -43,3 +43,9 @@
 - 9 Nov: video #3 Gitar di Atas Lemari diproduksi end-to-end (set kamar+lemari+gitar, SFX pluck).
 - 8 Nov: workflow hemat token (`WORKFLOW.md`, `tools/produksi.sh`, `shots_tsv.py`, `scrape_ringkas.py`); arsip + artifact.
 - 8 Nov: video #2 Jam Tiga Pagi (set `kamar.js` bisa dipakai ulang); feedback CC tertutup tombol TikTok → zona aman.
+
+## Seri baru Stick.Tales ("What If", 11 Nov) — DIJEDA, menunggu referensi user
+- Video 1: "The Curse of Being the Emperor's Firstborn" (EN, Tiongkok kuno, caption Inggris, watermark STICK.TALES). VO 2:28 di `seri-whatif/the-emperors-firstborn/vo.mp3`, moodboard v1 + contact-sheet-v1.png di folder yang sama.
+- Proyek: `studio/projects/emperor-shorts/` (style `imperial`, caption Cinzel via `captionStyle`). Timeline = perkiraan silencedetect (`seri-whatif/tools/align_silence.py`), belum Scribe.
+- User menilai v1 banyak error. Bug diketahui: tokoh terlalu kecil; s10 split kelas/taman salah; anak di taman melayang; s11 pedang = belati & tak dipegang; s01 judul dobel dgn caption; s05 wajah kaisar harus tertutup bayangan.
+- Lanjut: user kirim screenshot referensi video "what if" stickman (+ catatan gaya) → buat moodboard v2 (palet, desain tokoh, 4–6 frame kunci) → ACC → ulang 21 shot.
