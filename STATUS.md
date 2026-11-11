@@ -43,3 +43,6 @@
 - 9 Nov: video #3 Gitar di Atas Lemari diproduksi end-to-end (set kamar+lemari+gitar, SFX pluck).
 - 8 Nov: workflow hemat token (`WORKFLOW.md`, `tools/produksi.sh`, `shots_tsv.py`, `scrape_ringkas.py`); arsip + artifact.
 - 8 Nov: video #2 Jam Tiga Pagi (set `kamar.js` bisa dipakai ulang); feedback CC tertutup tombol TikTok → zona aman.
+
+## Stick.Tales ("What If") — dipindah 11 Nov
+Seri berbahasa Inggris ini sekarang punya repo sendiri: `tangzhehan063-cyber/what-if`. Di repo RAKA hanya tersisa tambahan engine yang aman: style `flat`/`imperial`, font Cinzel, dan opsi `font`/`weight` di `captionStyle`.

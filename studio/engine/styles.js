@@ -31,6 +31,25 @@ export const STYLES = {
       void: { sky: ['#03100c', '#08201a'], rim: '#7dffb0' },
     },
   },
+  imperial: {
+    name: 'Imperial Ink', desc: 'Stick.Tales: ancient Chinese palace at night. Ink-black shadows, tarnished gold key, lacquer-red accents, aged paper highlights, heavy vignette.',
+    ink: '#0a0a0c', inkFar: '#2a2420', feature: '#f3e9d2', rimWidth: 4.5,
+    ui: { ...UI, card: 'rgba(20,14,10,.94)', cardLine: 'rgba(201,162,74,.35)', text: '#e9dfc7', sub: '#a8946a', accent: '#c4302b', gold: '#d9b25a', cream: '#efe4c8', blueprint: '#c9a24a', bpBg: '#140e0a', good: '#5f8f6a' },
+    grade: { contrast: 1.14, sat: 0.92, lift: [0.02, 0.01, 0.0], gamma: [1.02, 0.98, 0.92], gain: [1.08, 1.0, 0.84], vignette: 0.85, grain: 0.07, bloom: 0.75 },
+    moods: {
+      night: { sky: ['#07080c', '#121018', '#241a18'], rim: '#d9b25a', practical: '#ffb54a', wall: '#1a1412', floor: '#120e0c', dark: '#08070a', fog: '#2a201a', key: '#ffcf86' },
+      interiorWarm: { sky: ['#2a1410', '#5a2a18', '#8a5a2a'], rim: '#e8c26a', wall: '#3a1a14', floor: '#24120e', dark: '#120806', practical: '#ffc860', key: '#ffd38a', fog: '#6a3a22' },
+      golden: { sky: ['#3a2414', '#a8743a', '#efd59a'], rim: '#ffe08a', key: '#ffd88f' },
+      void: { sky: ['#050506', '#0e0c0e'], rim: '#9e1b1b' },
+    },
+  },
+  flat: {
+    name: 'Flat Storybook', desc: 'Stick.Tales: bright flat illustration, neutral grade, light vignette.',
+    ink: '#1b1b1f', inkFar: '#3a3a40', feature: '#ffffff', rimWidth: 0,
+    ui: { ...UI, gold: '#ffd23a', cream: '#ffffff' },
+    grade: { contrast: 1.0, sat: 1.0, lift: [0, 0, 0], gamma: [1, 1, 1], gain: [1, 1, 1], vignette: 0.15, grain: 0.015, bloom: 0.2 },
+    moods: {},
+  },
   ember: {
     name: 'Ember Forge', desc: 'Charcoal-black world lit by fire: crimson shadows, molten copper rim light, hot orange glows, heavy contrast.',
     ink: '#0c0606', inkFar: '#2e1614', feature: '#fff0e0', rimWidth: 4,
