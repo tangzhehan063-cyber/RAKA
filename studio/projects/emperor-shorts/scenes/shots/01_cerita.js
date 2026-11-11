@@ -15,7 +15,7 @@ function guard(g, x, y, s, t, i) { const r = chibi(g, { x, y, s, out: { robe: '#
 registerShot('s01', { draw(g, t, info) {
   cam(g, push(t, info, 1.08, -0.06), W / 2, 1100, (g) => { P.hall(g, t); chibi(g, { x: W / 2, y: 1640, s: 1.7, out: OUT.prince, expr: 'neutral', blink: blink(t), bob: bob(t), armL: [8, 0], armR: [8, 0] }); });
   veil(g, '#000', 0.1);
-  const a = ease.out(prog(t, 0.05, 0.4)); P.titleCard(g, 'THE CURSE', "of the Emperor's Firstborn", a, 560); P.brand(g);
+  const a = ease.out(prog(t, 0.05, 0.4)); P.titleCard(g, 'THE CURSE', "of the Emperor's Firstborn", a, 640); P.brand(g);
 }, captions: false });
 // s02 3.07–7.5 Imagine… first son of the most powerful emperor: emperor holds baby up
 registerShot('s02', { draw(g, t, info) {
@@ -44,7 +44,7 @@ registerShot('s04', { draw(g, t, info) {
       chibi(g, { x: W / 2, y: 1680, s: 1.6, kid: true, out: OUT.prince, expr: 'happy', blink: blink(t), bob: bob(t), armL: [40, 20], armR: [40, -20] }); g.restore(); }
     if (k > 0) { g.save(); g.globalAlpha = k; chibi(g, { x: W / 2, y: FL - 70, s: 1.55, out: OUT.prince, expr: 'neutral', blink: blink(t), armL: [25, 10], armR: [25, -10] }); g.restore(); } });
   if (k < 1) for (let i = 0; i < 16; i++) { const u = (t * 0.5 + i / 16) % 1; P.coin(g, (i * 211) % W, -40 + u * 1000, 13); }
-  if (k > 0.5) P.titleCard(g, 'HEIR', 'to the throne', ease.out(prog(t, tOne + 0.8, tOne + 1.3)), 420);
+  if (k > 0.5) P.titleCard(g, 'HEIR', 'to the throne', ease.out(prog(t, tOne + 0.8, tOne + 1.3)), 640);
   P.brand(g);
 } });
 // s05 19.01–24.32 But what they don't know: palace dims, prince alone, lanterns sway
@@ -60,14 +60,14 @@ registerShot('s06', { draw(g, t, info) {
   P.blurBG(g, (g) => P.hall(g, t), 0.7, 0.4, '#3a0a0a');
   chibi(g, { x: W / 2, y: 2050, s: 2.7, out: OUT.prince, expr: 'shock', sweat: true, blink: false }); g.restore();
   veil(g, '#ff3020', 0.4 * (1 - prog(t, 0, 0.5)), 'lighter');
-  const tc = rel('curse', info, 1.1); P.titleCard(g, 'CURSE', null, pop(t, tc), 560); P.brand(g);
+  const tc = rel('curse', info, 1.1); P.titleCard(g, 'CURSE', null, pop(t, tc), 640); P.brand(g);
 } });
 // s07 26.68–35.34 fate decided / not my own life / born to be next emperor: scroll unrolls a life plan
 registerShot('s07', { draw(g, t, info) {
   cam(g, push(t, info, 1.0, 0.05), W / 2, 1100, (g) => { P.study(g, t);
     const tn = rel('next', info, 7.5), lines = [['MY FATE', RED, 76], ['Study', OL, 60, prog(t, 1.2, 1.6)], ['Train', OL, 60, prog(t, 2.2, 2.6)], ['Rule', OL, 60, prog(t, 3.2, 3.6)], ['NO CHOICE', RED, 64, prog(t, 4.6, 5)]];
-    P.board(g, 170, 240, 740, 560, lines);
-    if (t > tn - 0.3) P.titleCard(g, 'NEXT EMPEROR', null, pop(t, tn), 980);
+    P.board(g, 170, 460, 740, 520, lines);
+    if (t > tn - 0.3) P.titleCard(g, 'NEXT EMPEROR', null, pop(t, tn), 1060);
     chibi(g, { x: W / 2, y: 1680, s: 1.7, kid: true, out: OUT.prince, expr: 'sad', blink: blink(t), bob: bob(t), look: [0, -0.8] }); });
   P.brand(g);
 } });
@@ -78,7 +78,7 @@ registerShot('s08', { draw(g, t, info) {
       rr(g, x - 90, 1300, 120, 80, 6); g.fillStyle = '#f3ead2'; g.fill(); g.strokeStyle = OL; g.lineWidth = 4; g.stroke(); for (let j = 0; j < 3; j++) seg(g, [[x - 70, 1320 + j * 18], [x - 70 + ((t * 40 + j * 30) % 80), 1320 + j * 18]], 4, OL); });
     chibi(g, { x: W / 2, y: 1700, s: 1.7, kid: true, out: OUT.prince, expr: 'worried', sweat: t > 4, blink: blink(t, 1), bob: bob(t), look: [Math.sin(t * 0.9), 0] }); });
   // eyes motif
-  const tw = rel('watched', info, 8.5); if (t > tw - 0.2) P.titleCard(g, 'WATCHED', null, pop(t, tw), 520);
+  const tw = rel('watched', info, 8.5); if (t > tw - 0.2) P.titleCard(g, 'WATCHED', null, pop(t, tw), 640);
   P.brand(g);
 } });
 // s09 44.77–50.71 father never saw a child, saw his successor
@@ -87,14 +87,14 @@ registerShot('s09', { draw(g, t, info) {
   cam(g, push(t, info, 1.05, 0.06), W / 2, 1100, (g) => { P.hall(g, t);
     chibi(g, { x: 720, y: 1660, s: 2.0, out: OUT.emperor, expr: 'angry', look: [1, 0], blink: blink(t), armL: [20, 10], armR: [20, -10] });
     chibi(g, { x: 280, y: 1700, s: 1.55, kid: true, out: OUT.prince, expr: 'sad', look: [1, -0.6], blink: blink(t, 1), armL: [70, 40], armR: [8, 0] }); });
-  if (t > ts - 0.3) P.titleCard(g, 'SUCCESSOR', null, pop(t, ts), 520);
+  if (t > ts - 0.3) P.titleCard(g, 'SUCCESSOR', null, pop(t, ts), 640);
   P.brand(g);
 } });
 // s10 50.71–63.24 AGE 5 study vs other children playing in gardens; memorizing kings & wars
 registerShot('s10', { draw(g, t, info) {
   const tw = rel('While', info, 5.2), tg = rel('sat', info, 8.2), inG = t > tw - 0.15 && t < tg - 0.15;
   if (!inG) cam(g, push(t, info, 1.0, 0.05), W / 2, 1100, (g) => { P.study(g, t);
-    P.board(g, 170, 240, 740, 520, [['AGE 5', RED, 90], ['History', OL, 60, prog(t, 1.4, 1.7)], ['Politics', OL, 60, prog(t, 2.3, 2.6)], ['War', OL, 60, prog(t, 3.2, 3.5)]]);
+    P.board(g, 170, 460, 740, 480, [['AGE 5', RED, 90], ['History', OL, 60, prog(t, 1.4, 1.7)], ['Politics', OL, 60, prog(t, 2.3, 2.6)], ['War', OL, 60, prog(t, 3.2, 3.5)]]);
     rr(g, 230, 1420, 620, 50, 10); g.fillStyle = '#7a4a2a'; g.fill(); g.strokeStyle = OL; g.lineWidth = 5; g.stroke();
     const r = chibi(g, { x: W / 2, y: 1650, s: 1.9, kid: true, out: OUT.prince, expr: t > tg ? 'sad' : 'worried', sweat: t > tg, blink: blink(t), look: [0, 0.8], armL: { to: [W / 2 - 110, 1410] }, armR: { to: [W / 2 + 110, 1410 + Math.sin(t * 7) * 6] } });
     rr(g, W / 2 - 150, 1386, 300, 28, 6); g.fillStyle = '#f3ead2'; g.fill(); g.stroke(); });
@@ -110,21 +110,21 @@ registerShot('s11', { draw(g, t, info) {
     const sw = Math.sin(t * 6), x = W / 2, hx = x + 140, hy = 1200 + sw * 90;
     chibi(g, { x, y: 1680, s: 1.8, kid: true, out: OUT.prince, expr: 'angry', blink: false, armL: [30, 30], armR: { to: [hx, hy] } });
     P.blade(g, hx, hy, -0.9 + sw * 0.6, 260); });
-  P.titleCard(g, 'AGE 7', null, pop(t, 0.05), 520); P.brand(g);
+  P.titleCard(g, 'AGE 7', null, pop(t, 0.05), 640); P.brand(g);
 } });
 // s12 65.54–69.97 AGE 10 command soldiers, identify enemies
 registerShot('s12', { draw(g, t, info) {
   cam(g, push(t, info, 1.0, 0.05), W / 2, 1100, (g) => { P.yard(g, t);
     for (let i = 0; i < 3; i++) guard(g, 600 + i * 190, 1560 + (i % 2) * 40, 1.1, t, i);
     chibi(g, { x: 260, y: 1700, s: 1.75, kid: true, out: OUT.prince, expr: 'angry', blink: blink(t), facing: 1, armL: [10, 0], armR: { to: [470, 1230] } }); });
-  P.titleCard(g, 'AGE 10', null, pop(t, 0.05), 520); P.brand(g);
+  P.titleCard(g, 'AGE 10', null, pop(t, 0.05), 640); P.brand(g);
 } });
 // s13 69.97–76.82 AGE 12 terrifying truth: nobody can be trusted (blur title card)
 registerShot('s13', { draw(g, t, info) {
   const tn = rel('nobody', info, 3.3);
   P.blurBG(g, (g) => P.hall(g, t), 0.3, 0.3);
   if (t < tn - 0.2) chibi(g, { x: W / 2, y: 2000, s: 2.5, out: OUT.prince, expr: 'scared', sweat: true, blink: blink(t), look: [Math.sin(t * 2) * 0.9, 0] });
-  P.titleCard(g, 'AGE 12', null, pop(t, 0.05) * (t < tn - 0.2 ? 1 : 0), 520);
+  P.titleCard(g, 'AGE 12', null, pop(t, 0.05) * (t < tn - 0.2 ? 1 : 0), 640);
   if (t >= tn - 0.2) P.titleCard(g, 'NOBODY', 'can be trusted', pop(t, tn - 0.2), 700);
   P.brand(g);
 } });
@@ -152,8 +152,8 @@ registerShot('s15', { draw(g, t, info) {
     const u = ease.in(prog(t, tc, tc + 0.8)), ly = lerp(-100, 1250, u); P.lantern(g, W / 2 + 200, ly, 1.3, 0);
     chibi(g, { x: W / 2 - 160, y: 1700, s: 1.9, out: OUT.prince, expr: u > 0.8 ? 'shock' : 'neutral', sweat: u > 0.8, blink: false, look: [1, -0.6] });
     if (u >= 1) veil(g, '#ffffff', 0.5 * (1 - prog(t, tc + 0.8, tc + 1.2)), 'lighter');
-    P.titleCard(g, 'NOT', 'an accident', pop(t, tc + 1.4), 520); }
-  if (t < ta) P.titleCard(g, 'POISON', null, pop(t, 0.9), 520);
+    P.titleCard(g, 'NOT', 'an accident', pop(t, tc + 1.4), 640); }
+  if (t < ta) P.titleCard(g, 'POISON', null, pop(t, 0.9), 640);
   P.brand(g);
 } });
 // s16 96.21–104.81 inspect meals, dagger under pillow, never turn back
@@ -185,7 +185,7 @@ registerShot('s18', { draw(g, t, info) {
     for (let i = 0; i < 14; i++) { const x = -30 + i * 85; rr(g, x - 9, 380, 18, FL - 380, 4); g.fillStyle = '#7a1a14'; g.fill(); }
     const peo = [[180, { ...OUT.kid, robe: '#a08a6a' }, 'happy'], [480, { ...OUT.kid, robe: '#6a8aa8', hat: 'bun' }, 'happy'], [800, { ...OUT.kid, robe: '#c98a5a' }, 'happy']];
     peo.forEach(([x, o, e], i) => chibi(g, { x, y: 1720, s: 1.6, out: o, expr: e, look: [0, -1], blink: blink(t, i), armL: [150, 10], armR: [100 + 20 * Math.sin(t * 3 + i), 20] })); });
-  P.titleCard(g, 'ENVIED', null, pop(t, 0.9), 520); P.brand(g);
+  P.titleCard(g, 'ENVIED', null, pop(t, 0.9), 640); P.brand(g);
 } });
 // s19 119.25–136.01 trade gold, palace, throne → ordinary childhood, friends, laugh, sleep
 registerShot('s19', { draw(g, t, info) {
@@ -210,7 +210,7 @@ registerShot('s20', { draw(g, t, info) {
   P.blurBG(g, (g) => cam(g, 1.05, W / 2, 1100, (g) => P.hall(g, t)), 0.35 + 0.3 * prog(t, 0, 6), 0.2 + 0.2 * prog(t, 0, 6));
   P.throne(g, W / 2, 1640, 1.3);
   chibi(g, { x: W / 2, y: 1530, s: 1.9, out: OUT.prince, expr: 'sad', blink: blink(t), look: [0, 0.6], armL: [20, 10], armR: [20, -10] });
-  if (t > tr - 0.3) P.titleCard(g, 'NOT A REWARD', null, pop(t, tr), 520);
+  if (t > tr - 0.3) P.titleCard(g, 'NOT A REWARD', null, pop(t, tr), 640);
   P.brand(g);
 } });
 // s21 143.33–148.45 It was a sentence: chains lock onto his wrists; ends on the hall (loops to s01)
@@ -219,7 +219,7 @@ registerShot('s21', { draw(g, t, info) {
   P.throne(g, W / 2, 1640, 1.3);
   const r = chibi(g, { x: W / 2, y: 1530, s: 1.9, out: OUT.prince, expr: 'sad', blink: blink(t), look: [0, 0.6], armL: { to: [W / 2 - 170, 1120] }, armR: { to: [W / 2 + 170, 1120] } });
   const k = ease.out(prog(t, 0.1, 0.8)); for (const [hx, hy] of r.hands) chain(g, hx, lerp(-200, -60, k), hx, hy - 20, 12);
-  P.titleCard(g, 'A SENTENCE', null, pop(t, 0.2), 520);
+  P.titleCard(g, 'A SENTENCE', null, pop(t, 0.2), 640);
   veil(g, '#000', 0.6 * prog(t, info.dur - 0.8, info.dur));
   P.brand(g);
 } });
