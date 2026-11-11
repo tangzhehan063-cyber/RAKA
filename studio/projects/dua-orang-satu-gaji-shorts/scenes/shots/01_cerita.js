@@ -15,12 +15,22 @@ const pop = (t, at, d = 0.3) => ease.outBack(prog(t, at - 0.08, at - 0.08 + d));
 const withStyle = (id, fn) => { const k = E.styleId; setStyle(id); try { fn(); } finally { setStyle(k); } };
 
 // --- props -------------------------------------------------------------------------------------------
-export function martabak(g, x, y, s = 1, open = 0) {
+export function martabak(g, x, y, s = 1) {   // (x, y) = bottom-centre of the box
   g.save(); g.translate(x, y); g.scale(s, s);
-  rr(g, -70, -46, 140, 46, 6); g.fillStyle = '#d9b27a'; g.fill();
-  g.strokeStyle = '#8a6532'; g.lineWidth = 3; g.stroke();
-  g.save(); g.translate(-70, -46); g.rotate(-open * 1.2); rr(g, 0, -6, 140, 10, 4); g.fillStyle = '#e6c38c'; g.fill(); g.restore();
-  text(g, 'MARTABAK', 0, -22, { size: 20, color: '#7a3b1c', font: FONTS.ui, weight: 900 });
+  g.fillStyle = 'rgba(0,0,0,.25)'; g.beginPath(); g.ellipse(4, 2, 78, 10, 0, 0, Math.PI * 2); g.fill();
+  rr(g, -70, -40, 140, 40, 4); g.fillStyle = '#c99a5b'; g.fill();                       // front
+  g.beginPath(); g.moveTo(-70, -40); g.lineTo(-48, -62); g.lineTo(92, -62); g.lineTo(70, -40); g.closePath(); g.fillStyle = '#e2bd84'; g.fill(); // top
+  g.beginPath(); g.moveTo(70, -40); g.lineTo(92, -62); g.lineTo(92, -22); g.lineTo(70, 0); g.closePath(); g.fillStyle = '#a97c43'; g.fill();   // side
+  g.strokeStyle = '#d63a2a'; g.lineWidth = 4; g.beginPath(); g.moveTo(0, 0); g.lineTo(0, -40); g.lineTo(22, -62); g.moveTo(-59, -51); g.lineTo(81, -51); g.stroke();
+  g.restore();
+}
+// kresek (plastic bag) hanging from a hand at (hx, hy), box visible inside
+export function kresek(g, hx, hy, s = 1) {
+  g.save(); g.translate(hx, hy); g.scale(s, s);
+  g.strokeStyle = 'rgba(245,240,230,.9)'; g.lineWidth = 5; g.beginPath(); g.moveTo(-26, 34); g.quadraticCurveTo(0, -14, 26, 34); g.stroke();
+  martabak(g, 0, 104, 0.62);
+  g.beginPath(); g.moveTo(-34, 30); g.quadraticCurveTo(-52, 70, -46, 110); g.lineTo(52, 110); g.quadraticCurveTo(56, 70, 34, 30); g.closePath();
+  g.fillStyle = 'rgba(250,246,238,.38)'; g.fill(); g.strokeStyle = 'rgba(255,255,255,.55)'; g.lineWidth = 2.5; g.stroke();
   g.restore();
 }
 export function phone(g, x, y, s = 1, glowA = 1, color = ICE) {
@@ -48,7 +58,7 @@ function warmWorld(g, t, o = {}) {
   const GY = r.GY, x = o.x ?? E.W * 0.42 + (o.walk ? 40 * Math.sin(t * 0.5) : 0);
   const pose = o.pose || (o.walk ? walkPose(t * 1.6) : breathe(POSES.relaxed, t, 0.5, 2));
   drawFigure(g, { x, y: GY, s: o.s ?? 2.0, facing: o.facing ?? 1, outfit: HERO, pose, expr: o.expr || 'happy', look: o.look || [0.3, 0], blink: (t % 3.1) > 2.98, rim: { color: r.M.rim, dir: [1, -1] } });
-  if (o.box !== false) martabak(g, x + 46 * (o.s ?? 2.0) * (o.facing ?? 1), GY - 120 * (o.s ?? 2.0), 0.6 * (o.s ?? 2.0));
+  if (o.box !== false) { const sc = o.s ?? 2.0, fc = o.facing ?? 1; kresek(g, x + pose.hB[0] * sc * fc, GY + pose.hB[1] * sc, sc * 0.75); }
   return r;
 }
 // Si Kurang: kamar biru malam, duduk di kasur, martabak tak disentuh, HP menyala
@@ -58,7 +68,7 @@ function coldWorld(g, t, o = {}) {
   const GY = r.GY, x = o.x ?? E.W * 0.5, s = o.s ?? 2.0;
   const f = { x, y: GY - 70, s, facing: o.facing ?? -1, outfit: HERO, pose: breathe(POSES.sit, t, 0.4, 4), expr: o.expr || 'worried', look: o.look || [-0.4, 0.6], blink: (t % 2.6) > 2.5, rim: { color: ICE, dir: [-1, -1] } };
   drawFigure(g, f);
-  if (o.box !== false) martabak(g, x + 110 * s, GY, 0.6 * s, 0);
+  if (o.box !== false) martabak(g, x + 100 * s, GY - 66, 0.55 * s);   // on the floor by his feet, untouched
   const px = x + 34 * s * f.facing, py = GY - 70 - 95 * s;
   if (o.phone !== false) phone(g, px, py, 1.1 * s, o.glowA ?? 1);
   return { ...r, px, py };
@@ -68,7 +78,7 @@ function coldWorld(g, t, o = {}) {
 function split(g, t, o = {}) {
   const mid = o.mid ?? E.W / 2, gap = o.gap ?? 0;
   g.save(); g.beginPath(); g.rect(-E.W, -E.H, mid - gap + E.W, E.H * 3); g.clip();
-  g.save(); g.translate(-E.W * 0.22 + (o.shiftL || 0), 0); withStyle('retro', () => warmWorld(g, t, { s: 1.75, ...(o.L || {}) })); g.restore();
+  g.save(); g.translate(-E.W * 0.22 + (o.shiftL || 0), 0); withStyle('ember', () => warmWorld(g, t, { s: 1.75, ...(o.L || {}) })); g.restore();
   g.restore();
   g.save(); g.beginPath(); g.rect(mid + gap, -E.H, E.W * 2, E.H * 3); g.clip();
   g.save(); g.translate(E.W * 0.22 + (o.shiftR || 0), 0); withStyle('arctic', () => coldWorld(g, t, { s: 1.75, ...(o.R || {}) })); g.restore();
@@ -107,7 +117,7 @@ registerShot('s03', { draw(g, t, info) {
   const tn = rel('nabung', info, 1.5);
   piggy(g, E.W * 0.7, 900, 0.9, clamp((t - tn) / 0.6));
   const tt = rel('traktir', info, 2.3), a = pop(t, tt);
-  if (a > 0) { g.save(); g.translate(E.W * 0.7, 560); g.scale(a, a); martabak(g, 0, 0, 1.4); text(g, 'BUAT IBU ♥', 0, 60, { size: 40, color: WARM, font: FONTS.ui, weight: 900 }); g.restore(); }
+  if (a > 0) { g.save(); g.translate(E.W * 0.7, 560); g.scale(a, a); martabak(g, 0, 20, 1.4); text(g, 'BUAT IBU ♥', 0, 80, { size: 40, color: WARM, font: FONTS.ui, weight: 900 }); g.restore(); }
   badge(g, 'CUKUP', 1, WARM);
 } });
 
@@ -218,7 +228,7 @@ registerShot('s11', { draw(g, t, info) {
   g.fillStyle = '#0b0605'; g.fillRect(0, 0, E.W, E.H);
   const cx = E.W / 2, cy = 640, r = 300;
   g.save(); g.beginPath(); g.rect(0, 0, cx, E.H); g.clip(); glow(g, cx - 250, cy, 700, WARM, 0.3);
-  withStyle('retro', () => bigFace(g, cx, cy, r, { outfit: HERO, expr: 'happy', look: [0, 0], blink: false, rimColor: WARM, rimSide: -1 })); g.restore();
+  withStyle('ember', () => bigFace(g, cx, cy, r, { outfit: HERO, expr: 'happy', look: [0, 0], blink: false, rimColor: WARM, rimSide: -1 })); g.restore();
   g.save(); g.beginPath(); g.rect(cx, 0, E.W, E.H); g.clip(); glow(g, cx + 250, cy, 700, ICE, 0.3);
   withStyle('arctic', () => bigFace(g, cx, cy, r, { outfit: HERO, expr: 'worried', look: [0, 0], blink: false, rimColor: ICE, rimSide: 1 })); g.restore();
   g.fillStyle = alpha('#fff', 0.8); g.fillRect(cx - 3, cy - r * 1.2, 6, r * 2.4);

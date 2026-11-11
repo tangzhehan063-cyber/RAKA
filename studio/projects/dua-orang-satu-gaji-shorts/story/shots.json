@@ -21,7 +21,7 @@
     }
    ],
    "notes": "",
-   "style": "retro",
+   "style": "ember",
    "amb": {
     "name": "city",
     "gain": -26.0
@@ -68,7 +68,7 @@
     }
    ],
    "notes": "",
-   "style": "retro",
+   "style": "ember",
    "amb": {
     "name": "city",
     "gain": -26.0
@@ -125,7 +125,7 @@
     }
    ],
    "notes": "",
-   "style": "retro"
+   "style": "ember"
   },
   {
    "id": "s06",
@@ -165,7 +165,7 @@
    },
    "sfx": [],
    "notes": "",
-   "style": "retro"
+   "style": "ember"
   },
   {
    "id": "s08",
@@ -373,7 +373,7 @@
    },
    "sfx": [],
    "notes": "",
-   "style": "retro",
+   "style": "ember",
    "amb": {
     "name": "roomtone",
     "gain": -26.0
