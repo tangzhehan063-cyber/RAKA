@@ -29,7 +29,16 @@ export function bedroom(g, t = 0) { g.fillStyle = linGrad(g, 0, 0, 0, FL, ['#2a3
 export function bed(g, x, y) { rr(g, x - 300, y - 120, 600, 120, 16); g.fillStyle = '#7a3a1e'; g.fill(); g.strokeStyle = OL; g.lineWidth = 5; g.stroke(); rr(g, x - 290, y - 170, 580, 60, 20); g.fillStyle = '#c9302a'; g.fill(); g.stroke(); rr(g, x - 290, y - 200, 150, 50, 22); g.fillStyle = '#f6efe0'; g.fill(); g.stroke(); rr(g, x - 320, y - 330, 40, 330, 8); g.fillStyle = '#5a2a14'; g.fill(); g.stroke(); }
 export function gate(g, t = 0) { garden(g, t); rr(g, -200, 0, W + 400, 380, 0); g.fillStyle = '#c9302a'; g.fill(); g.strokeStyle = OL; g.lineWidth = 5; g.stroke(); poly(g, [[-220, 380], [W + 220, 380], [W + 100, 300], [-100, 300]], '#3a5a6a'); sign(g, W / 2, 200, 'PALACE');
   for (let i = 0; i < 14; i++) { const x = -30 + i * 85; rr(g, x - 9, 380, 18, FL - 380, 4); g.fillStyle = '#7a1a14'; g.fill(); g.strokeStyle = OL; g.lineWidth = 3; g.stroke(); circle(g, x, 400, 12, GOLD); } }
-export function blurBG(g, fn, desat = 0, dark = 0, tint = '#1c2638') { g.save(); g.filter = `blur(14px) saturate(${1 - desat})`; fn(g); g.restore(); if (dark) veil(g, tint, dark); }
+const BLUR = new Map();
+export function blurBG(g, fn, desat = 0, dark = 0, tint = '#1c2638') {
+  // cached: the blurred backdrop is rendered once per (scene source, quantized desat) and reused every frame (canvas blur is CPU-heavy)
+  const q = (v) => Math.round(v * 20) / 20, key = fn.toString() + '|' + q(desat) + '|' + g.canvas.width;
+  let c = BLUR.get(key);
+  if (!c) { c = document.createElement('canvas'); c.width = g.canvas.width; c.height = g.canvas.height; const x = c.getContext('2d'); x.setTransform(g.getTransform());
+    x.filter = `blur(14px) saturate(${1 - q(desat)})`; fn(x); BLUR.set(key, c); if (BLUR.size > 10) BLUR.delete(BLUR.keys().next().value); }
+  g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.drawImage(c, 0, 0); g.restore();
+  if (dark) veil(g, tint, dark);
+}
 export function bowl(g, bx, by, s = 1, poison = 0, t = 0) { g.save(); g.translate(bx, by); g.scale(s, s); g.fillStyle = '#f6f2e8'; g.beginPath(); g.ellipse(0, 0, 130, 30, 0, 0, Math.PI * 2); g.fill(); g.beginPath(); g.moveTo(-130, 0); g.quadraticCurveTo(0, 150, 130, 0); g.fill(); g.strokeStyle = OL; g.lineWidth = 6; g.stroke(); seg(g, [[-110, 36], [110, 36]], 6, '#3a6ab0'); g.fillStyle = poison ? '#5fbf7a' : '#d9b07a'; g.beginPath(); g.ellipse(0, 0, 115, 22, 0, 0, Math.PI * 2); g.fill(); g.restore();
   if (poison) { glow(g, bx, by - 40, 260 * s, '#7affa0', 0.45 * poison); for (let i = 0; i < 4; i++) { const u = ((t * 0.7 + i * 0.25) % 1); circle(g, bx - 40 + i * 28 + Math.sin(t * 3 + i) * 10, by - 30 - u * 220 * s, 14 * (1 - u), alpha('#7affa0', 0.7 * poison)); } } }
 export function blade(g, x, y, rot, len = 120, kind = 'dagger') { g.save(); g.translate(x, y); g.rotate(rot); poly(g, [[0, -9], [len, 0], [0, 9]], '#e3e9f0'); g.strokeStyle = OL; g.lineWidth = 4; g.stroke(); seg(g, [[0, -22], [0, 22]], 10, GOLD); rr(g, -44, -8, 44, 16, 5); g.fillStyle = '#7a3a1e'; g.fill(); g.stroke(); g.restore(); }
