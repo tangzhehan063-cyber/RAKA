@@ -43,6 +43,13 @@ export const STYLES = {
       void: { sky: ['#050506', '#0e0c0e'], rim: '#9e1b1b' },
     },
   },
+  flat: {
+    name: 'Flat Storybook', desc: 'Stick.Tales: bright flat illustration, neutral grade, light vignette.',
+    ink: '#1b1b1f', inkFar: '#3a3a40', feature: '#ffffff', rimWidth: 0,
+    ui: { ...UI, gold: '#ffd23a', cream: '#ffffff' },
+    grade: { contrast: 1.0, sat: 1.0, lift: [0, 0, 0], gamma: [1, 1, 1], gain: [1, 1, 1], vignette: 0.15, grain: 0.015, bloom: 0.2 },
+    moods: {},
+  },
   ember: {
     name: 'Ember Forge', desc: 'Charcoal-black world lit by fire: crimson shadows, molten copper rim light, hot orange glows, heavy contrast.',
     ink: '#0c0606', inkFar: '#2e1614', feature: '#fff0e0', rimWidth: 4,
