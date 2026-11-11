@@ -3,7 +3,7 @@
  "aspect": "9:16",
  "resolution": "1080p",
  "fps": 24,
- "style": "imperial",
+ "style": "flat",
  "voiceover": "input/voiceover.mp3",
  "script": null,
  "duration": 148.45,
@@ -21,7 +21,11 @@
  },
  "loudness": -14,
  "captionStyle": {
-  "font": "Cinzel",
-  "weight": 900
+  "font": "Fredoka",
+  "weight": 700,
+  "max": 2,
+  "hi": "#ffd23a",
+  "y": 1380,
+  "size": 88
  }
 }

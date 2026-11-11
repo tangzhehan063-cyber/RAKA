@@ -49,3 +49,4 @@
 - Proyek: `studio/projects/emperor-shorts/` (style `imperial`, caption Cinzel via `captionStyle`). Timeline = perkiraan silencedetect (`seri-whatif/tools/align_silence.py`), belum Scribe.
 - User menilai v1 banyak error. Bug diketahui: tokoh terlalu kecil; s10 split kelas/taman salah; anak di taman melayang; s11 pedang = belati & tak dipegang; s01 judul dobel dgn caption; s05 wajah kaisar harus tertutup bayangan.
 - Lanjut: user kirim screenshot referensi video "what if" stickman (+ catatan gaya) → buat moodboard v2 (palet, desain tokoh, 4–6 frame kunci) → ACC → ulang 21 shot.
+- 11 Nov (lanjutan): gaya diganti ke referensi (kepala besar + hanfu, istana terang, style `flat`, caption Fredoka maks 2 kata y=1380). Rig `scenes/chibi.js` (IK tangan `{to:[x,y]}`), set `scenes/sets/palace.js`, 21 shot di `scenes/shots/01_cerita.js`. Contact sheet v2 siap; berikutnya: ACC → `tools/produksi.sh final emperor` → caption + cover.
