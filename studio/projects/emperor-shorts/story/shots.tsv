@@ -1,0 +1,24 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title The Curse of Being the Emperor's Firstborn
+@music 0-19.0 mystery 0.35; 19.0-50.7 sad 0.3; 50.7-86.4 mystery 0.4; 86.4-111.5 mystery 0.5; 111.5-136.0 sad 0.35; 136.0-148.45 sad 0.3
+s01	0.0	3.07	scroll	cut	0.0 stinger -10	-	Title | judul di gulungan, mahkota raksasa
+s02	3.07	7.5	hall	dip	0.2 shimmer -16	roomtone -26	Imagine being born... | bayi di bawah mahkota
+s03	7.5	9.17	hall	cut	0.1 swish -16	roomtone -26	blessed | bangsawan membungkuk
+s04	9.17	19.01	hall	zoom	0.2 shimmer -14; 5.0 riser -16	roomtone -26	wealth, throne | hujan emas, tumbuh ke takhta
+s05	19.01	24.32	hall	dip	0.2 heartbeat -14	wind -28	But what they don't know | bayangan kaisar
+s06	24.32	26.68	void	flash	0.0 impact -6	-	Sometimes, a curse | mahkota retak, kilat merah
+s07	26.68	35.34	scroll	dip	0.3 whoosh -16	wind -30	fate decided | gulungan menulis takdir
+s08	35.34	44.77	hall	dip	0.5 heartbeat -16	wind -28	watched | mata di kegelapan
+s09	44.77	50.71	hall	cut	0.2 swish -16	roomtone -28	father, successor | kaisar membelakangi, anak berlutut
+s10	50.71	63.24	class	zoom	0.1 hit -12	roomtone -28	age five | kelas dingin vs taman
+s11	63.24	65.54	class	whip	0.2 swish -10; 1.0 swish -10	-	seven, sword | latihan pedang
+s12	65.54	69.97	field	whip	0.2 impact -12	wind -28	ten, soldiers | memerintah prajurit
+s13	69.97	76.82	hall	dip	3.4 stinger -8	wind -26	twelve, nobody trusted | judul NOBODY
+s14	76.82	86.36	hall	cut	0.3 hit -14	wind -28	brothers, nobles, smiles | topeng retak
+s15	86.36	96.21	void	dip	1.5 heartbeat -10; 6.0 impact -8	wind -26	poison, assassins | mangkuk racun, pembunuh
+s16	96.21	104.81	bedroom	dip	0.3 swish -18	wind -30	dagger under pillow | kasur + belati
+s17	104.81	111.49	hall	zoom	0.1 freeze -12	-	Imagine that | wajah besar, mata terbuka
+s18	111.49	119.25	gate	dip	0.2 whoosh -16	city -30	envied | rakyat di gerbang
+s19	119.25	136.01	hall	dip	0.5 riser -18	wind -30	trade everything, friends | emas jadi abu, mimpi masa kecil
+s20	136.01	143.33	hall	dip	0.1 hit -14	wind -28	But I couldn't | takhta sendirian
+s21	143.33	148.45	void	flash	0.0 impact -6	-	a sentence | mahkota jadi rantai
