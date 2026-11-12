@@ -17,7 +17,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - Beri 10 ide + 1 rekomendasi out-of-the-box. Tunggu pilihan user.
 
 ## 2. Fakta + naskah (1 WebSearch)
-- 1× WebSearch "standard" untuk memastikan angka + sumber. Tulis `naskah/<slug>.md` (sumber, teks TTS ±120 kata = ±55 dtk, storyboard tabel dengan arahan per kalimat dari **`brand/sutradara.md`**). Tunggu ACC.
+- 1–2× WebSearch "standard": 1 studi utama + 1 sumber pendukung. Tulis `naskah/<slug>.md` dengan struktur `brand/dna-video.md` §2 (framework v2: hook adegan "salah" → cermin → konflik → twist riset → hening → aksi & perubahan nyata → loop; sumber, teks TTS ±130–165 kata = ±60–75 dtk, storyboard tabel dengan arahan per kalimat dari **`brand/sutradara.md`**). Tunggu ACC.
 
 ## 3. Setelah ACC (paralel dalam satu giliran)
 - Komentar: `v1_tiktok_video_comments` untuk 2 video saja, `trim:true` (≈1 kredit/video). Ringkas bila tersimpan ke file: `scrape_ringkas.py comments`.
