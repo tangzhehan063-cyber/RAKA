@@ -1,6 +1,7 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
 ## Posisi terakhir (12 Nov 2026)
+- **Hemat ElevenLabs (12 Nov)**: 1 take, hanya naskah final, revisi per kalimat, 1 flow per video; draf suara lewat workflow GitHub Actions "Gemini TTS" (`naskah/*.txt` → `audio/*.wav`, secret `GEMINI_API_KEY`) atau `python3 tools/gemini_tts.py`. Aturan lengkap di CLAUDE.md.
 - **Panel Studio (12 Nov)**: kontrol RAKA lewat tab RAKA di https://claude.ai/artifact/4Aiv5HDCLRRfVLdEapvt3s (ACC/revisi per tahap, ide, daftar video, tempat referensi: link/MP4/gambar ≤20 MB). Cara pakai: `WORKFLOW.md` langkah 0.
 - **Video #7 "Ditolak Duluan" selesai (12 Nov)**: kalah 1 poin di seleksi kerja (Wang, Jones & Wang 2019), 59 dtk, kerangka baru `brand/kerangka-cerita.md` (Pukulan ke-99: cerita dulu, riset jadi plot twist), momen hening 2 dtk + teks diketik (pengganti bisikan). Ide ditulis tanpa scrape (permintaan user).
 - **Video #6 "Dua Orang, Satu Gaji" selesai (11 Nov)**: perbandingan sosial (Luttmer 2005), 74 dtk, format DIALOG (2 suara) + narator di akhir, warna per adegan (ember/arctic). PR https://github.com/tangzhehan063-cyber/RAKA/pull/13. Menunggu ACC user untuk merge.

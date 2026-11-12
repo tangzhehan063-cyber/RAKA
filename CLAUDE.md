@@ -14,7 +14,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 
 ## Alur wajib setiap video
 1. **Naskah:** ide lewat ScriptForge (`prompts/ScriptForge.pdf`: niche, 10 ide); **struktur naskah ikut framework v2** di `brand/dna-video.md` §2 + `brand/kerangka-cerita.md` (tokoh beraksi, ending = perubahan nyata). Riset: 1 studi utama + 1 pendukung. Jangan mengarang statistik; sebut sumber dan kata "median"/"perkiraan" bila perlu.
-2. **Voiceover:** ElevenLabs, model `eleven_v4`, voice **Ghaisan** `vLsH4ENK3zGpAuW1lSh4`.
+2. **Voiceover:** ElevenLabs, model `eleven_v4`, voice **Ghaisan** `vLsH4ENK3zGpAuW1lSh4`, **1 take, hanya versi final** (lihat "Aturan hemat ElevenLabs"). Draf: `naskah/<slug>.txt` → workflow GitHub Actions "Gemini TTS" → `audio/<slug>.wav`.
    - Di teks TTS, tulis angka sebagai kata ("enam puluh enam"), pakai tag arahan `[calm, slow]`, `[warm, building]`. **Jangan pakai `[whispering]`/bisikan** (user tidak suka, 12 Nov); momen emosional diganti hening + teks di layar.
    - Unduh audio dari `elevenlabsusercontent.com` (host ini harus diizinkan di network environment).
 3. **Timestamp:** ElevenLabs Scribe (`creative_add_flow_asset_node` lalu `creative_transcribe_audio`). Unduh `words.json`, lalu:
@@ -24,6 +24,13 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 4. **Render:** dari `studio/`, selalu dengan `CHROMIUM_PATH=/opt/pw-browsers/chromium`. Cek `--sheet --scale 0.5` dulu, baru render final, lalu `python3 audio/mix.py --project projects/<slug>`.
 5. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata **terhadap `brand/cek-bug.md`** (daftar bug yang pernah terjadi; tambahkan bug baru di sana).
 6. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
+
+## Aturan hemat ElevenLabs (wajib, permintaan user 12 Nov)
+1. **Selalu 1 take**: `creative_generate_speech` dengan `generations_count: 1`, bukan 2 (bawaan konektor = 2, jadi wajib diisi).
+2. **Naskah final dulu**: ElevenLabs baru dipanggil setelah naskah dinyatakan final dan di-ACC user (tombol ACC di panel atau "ACC" di chat).
+3. **Revisi hanya kalimat yang berubah**: generate ulang kalimat itu saja (1 take), lalu sambung ke VO lama dengan ffmpeg (potong di jeda kalimat, crossfade ±30 ms), lalu ulang timestamp. Jangan generate ulang naskah penuh.
+4. **Draf & tes pakai Gemini TTS atau edge-tts** (`python3 tools/gemini_tts.py`, atau workflow GitHub Actions "Gemini TTS" di repo RAKA). ElevenLabs hanya untuk versi final.
+5. **Satu flow per video**: buat `creative_create_flow` sekali, catat `flow_id` di naskah/STATUS video itu, dan pakai lagi untuk semua generate & transkripsi video yang sama. Jangan buat flow baru untuk video yang sama.
 
 ## Format caption (wajib, per video)
 - **Caption TikTok maksimal 150 karakter total (termasuk hashtag)**, to the point, dan **memancing debat** (pendapat tegas/kontroversial ringan + pertanyaan pilih pihak, mis. "salah kamu atau bosmu?"). Permintaan user 9 Nov.
