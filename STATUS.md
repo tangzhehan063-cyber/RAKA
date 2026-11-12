@@ -14,6 +14,7 @@
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
 ## Preferensi user
+- **Tanpa bisikan di VO** (12 Nov). Puncak emosi = hening ±1 dtk + teks diketik di layar. Struktur naskah: `brand/kerangka-cerita.md`.
 - **Satu chat = satu repo.** Repo lain → chat baru.
 - **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan Claude langsung merge sendiri (izin user 9 Nov).** User bukan programmer; laporan cukup "sudah masuk main".
 - **Moodboard & storyboard boleh terus di-improve Claude** (izin user 9 Nov): tiap video coba 1–2 eksperimen visual/cerita baru, catat di `brand/eksperimen.md`. Yang user bilang "suka" → jadi baku di `brand/dna-video.md`.
