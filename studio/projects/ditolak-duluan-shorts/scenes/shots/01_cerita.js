@@ -94,13 +94,15 @@ function office(g, t) {
   glow(g, 540, 500, 700, ICE, 0.12);
   g.fillStyle = '#121822'; g.fillRect(0, 1150, E.W, E.H);
 }
-function chair(g, x, y) { rr(g, x - 70, y - 90, 140, 16, 6); g.fillStyle = '#3b475e'; g.fill(); seg(g, [[x - 60, y - 80], [x - 60, y]], 8, '#3b475e'); seg(g, [[x + 60, y - 80], [x + 60, y]], 8, '#3b475e'); rr(g, x - 70, y - 230, 16, 150, 6); g.fill(); }
+export function chair(g, x, y, s = 1.9, facing = 1) { const h = 72 * s, c = '#3b475e', bx = x - facing * 60;
+  rr(g, x - 70, y - h, 140, 16, 6); g.fillStyle = c; g.fill(); seg(g, [[x - 58, y - h], [x - 58, y]], 8, c); seg(g, [[x + 58, y - h], [x + 58, y]], 8, c);
+  rr(g, bx - 8, y - h - 150, 16, 150, 6); g.fillStyle = c; g.fill(); }
 registerShot('s03', { draw(g, t, info) {
   office(g, t);
   const GY = 1150;
-  chair(g, 340, GY); chair(g, 740, GY);
-  drawFigure(g, { x: 330, y: GY - 10, s: 1.9, facing: 1, outfit: HERO, pose: breathe(POSES.sit, t, 0.3, 2), expr: 'nervous', look: [1, 0], blink: (t % 2.4) > 2.3, rim: { color: ICE, dir: [1, -1] } });
-  drawFigure(g, { x: 750, y: GY - 10, s: 1.9, facing: -1, outfit: SANDI, pose: breathe(POSES.sit, t, 0.3, 5), expr: 'neutral', look: [-1, 0], blink: (t % 2.9) > 2.8, rim: { color: ICE, dir: [-1, -1] } });
+  chair(g, 330, GY, 1.9, 1); chair(g, 750, GY, 1.9, -1);
+  drawFigure(g, { x: 330, y: GY, s: 1.9, facing: 1, outfit: HERO, pose: breathe(POSES.sit, t, 0.3, 2), expr: 'nervous', look: [1, 0], blink: (t % 2.4) > 2.3, rim: { color: ICE, dir: [1, -1] } });
+  drawFigure(g, { x: 750, y: GY, s: 1.9, facing: -1, outfit: SANDI, pose: breathe(POSES.sit, t, 0.3, 5), expr: 'neutral', look: [-1, 0], blink: (t % 2.9) > 2.8, rim: { color: ICE, dir: [-1, -1] } });
   const a1 = ease.out(prog(t, rel('Bima', info, 2.0), rel('Bima', info, 2.0) + 0.4)), a2 = ease.out(prog(t, rel('Sandi.', info, 2.8), rel('Sandi.', info, 2.8) + 0.4));
   text(g, 'BIMA', 330, 620, { size: 48, color: '#ff8a6b', font: FONTS.ui, weight: 900, spacing: 4, alpha: a1 });
   text(g, 'SANDI', 750, 620, { size: 48, color: '#7fb3ff', font: FONTS.ui, weight: 900, spacing: 4, alpha: a2 });
@@ -145,8 +147,7 @@ registerShot('s05', { draw(g, t, info) {
 registerShot('s06', { draw(g, t, info) {
   const r = room(g, t, { mood: 'night', clock: '23:58', z: 1.08 - 0.03 * ease.inOut(t / info.dur) });
   const GY = r.GY;
-  rr(g, E.W * 0.14, GY - 170, E.W * 0.72, 90, 20); g.fillStyle = '#2b3550'; g.fill();
-  drawFigure(g, { x: E.W * 0.3, y: GY - 10, s: 1.6, rot: -Math.PI / 2, facing: 1, outfit: HERO, pose: POSES.lie, expr: 'sad', look: [0, -1], blink: false, rim: { color: ICE, dir: [0, -1] } });
+  drawFigure(g, { x: E.W * 0.2, y: GY - 70, s: 2.0, facing: 1, outfit: HERO, pose: breathe(POSES.sit, t, 0.3, 4), expr: 'sad', look: [0.2, -0.8], blink: (t % 3.4) > 3.3, rim: { color: ICE, dir: [1, -1] } });
   const a = ease.out(prog(t, rel('poin', info, 0.7), rel('poin', info, 0.7) + 0.6));
   text(g, '1 POIN', E.W / 2, 560 - 20 * Math.sin(t * 1.5), { size: 110, color: S().ui.gold, font: FONTS.ui, weight: 900, glow: 26, glowColor: alpha(S().ui.gold, 0.5), alpha: a });
   badge(g, '23:58', 1, ICE);

@@ -4,7 +4,7 @@ import { drawFigure, POSES, breathe } from '/engine/rig2d.js';
 import * as UI from '/engine/ui2d.js';
 import { kamar } from '../sets/kamar.js';
 import { HERO } from '../cast.js';
-import { letter, hammering } from './01_cerita.js';
+import { letter, hammering, chair } from './01_cerita.js';
 
 const rel = (w, info, fb) => (wordTime(w, info.shot.start - 0.1) ?? info.shot.start + fb) - info.shot.start;
 const CARD = [60, 190, E.W - 120, 1080];
@@ -78,16 +78,17 @@ registerShot('s14', { draw(g, t, info) {
 } });
 
 // penutup di kamar
-function room(g, t, o = {}) { return kamar(g, t, { z: o.z ?? 1.05, x: 0 }, { mood: 'evening', clock: '20:15', lamp: 1 }); }
+function room(g, t, o = {}) { return kamar(g, t, { z: o.z ?? 1.05, x: o.cx ?? 0 }, { mood: 'evening', clock: '20:15', lamp: 1 }); }
 registerShot('s15', { draw(g, t, info) {
-  const r = room(g, t, { z: 1.1 - 0.04 * ease.inOut(t / info.dur) });
-  const GY = r.GY, x = E.W * 0.4;
+  const r = room(g, t, { z: 1.0, cx: 0 });
+  const GY = r.GY, [dx] = r.desk, x = dx - 270;
+  chair(g, x, GY, 2.0, 1);
   drawFigure(g, { x, y: GY, s: 2.0, facing: 1, outfit: HERO, pose: breathe(POSES.sit, t, 0.3, 3), expr: 'determined', look: [1, 0.3], blink: (t % 3) > 2.9, rim: { color: r.M.rim, dir: [1, -1] } });
-  // laptop
-  const lx = x + 200, ly = GY - 300;
+  // laptop di atas meja
+  const lx = dx - 20, ly = GY - 152;
   rr(g, lx - 110, ly - 140, 220, 140, 10); g.fillStyle = '#1b2433'; g.fill(); rr(g, lx - 100, ly - 130, 200, 120, 6); g.fillStyle = '#dfe9ff'; g.fill();
   text(g, 'LAMARAN #2', lx, ly - 70, { size: 26, color: '#1b2433', font: FONTS.ui, weight: 900 });
-  rr(g, lx - 130, ly, 260, 16, 6); g.fillStyle = '#2a3446'; g.fill();
+  rr(g, lx - 130, ly - 6, 260, 12, 6); g.fillStyle = '#2a3446'; g.fill();
   glow(g, lx, ly - 70, 300, '#dfe9ff', 0.2);
   const a = ease.out(prog(t, rel('wajar.', info, 1.0), rel('wajar.', info, 1.0) + 0.4));
   text(g, 'SAKIT ITU WAJAR', E.W / 2, 420, { size: 64, color: S().ui.gold, font: FONTS.ui, weight: 900, spacing: 3, alpha: a, glow: 18, glowColor: alpha(S().ui.gold, 0.4) });

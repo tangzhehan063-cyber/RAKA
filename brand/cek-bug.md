@@ -24,3 +24,4 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 13. **Badge pojok kanan atas menabrak benda besar** (#5): kalender/papan besar mulai di y ≥ 380 bila ada badge.
 14. **Properti melayang / label kepanjangan** (#6, ditegur user di cover): benda yang dibawa tokoh digambar dari posisi tangan (`pose.hB`), benda di lantai pakai y = kaki tokoh; teks di properti kecil jangan dipakai (terpotong). Cek cover & still sebelum render final.
 15. **Gaya `retro` kusam kehijauan** (#6): untuk dunia hangat pakai `ember` (oranye menyala); cek warna di still ukuran penuh, bukan hanya contact sheet kecil.
+- Kursi: dudukan harus setinggi pinggul pose sit (72×s), sandaran di belakang pinggul; tokoh sit tidak boleh melayang tanpa kursi/kasur; pose lie+rot melayang, hindari (#7 s03/s06/s15).
