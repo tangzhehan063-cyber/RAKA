@@ -55,3 +55,4 @@ Contoh: "Disiplin bukan soal tidak pernah jatuh. Tapi seberapa cepat kamu kembal
 - Jangan melanjutkan cerita/tokoh video lalu kecuali diminta.
 - Jangan motivasi kosong tanpa data. Jangan "Halo guys". Jangan dinding teks di layar.
 - Jangan ganti voice, style, atau warna maskot tanpa persetujuan user.
+- **Struktur naskah wajib: `brand/kerangka-cerita.md` (Pukulan ke-99).**
