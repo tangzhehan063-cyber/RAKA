@@ -1,0 +1,81 @@
+name: Gemini TTS (draf suara)
+
+# naskah/*.txt -> audio/*.wav dengan Gemini TTS. Draf/tes saja; ElevenLabs hanya untuk versi final.
+# Butuh secret repo GEMINI_API_KEY (Settings > Secrets and variables > Actions).
+# Opsional (Settings > Variables): GEMINI_TTS_MODEL, GEMINI_TTS_VOICE, GEMINI_TTS_STYLE.
+
+on:
+  push:
+    paths:
+      - "naskah/*.txt"
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Satu file (mis. naskah/hari-ke-10.txt). Kosong = semua yang berubah"
+        required: false
+        default: ""
+      force:
+        description: "Buat ulang walau teks tidak berubah"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gemini-tts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[skip tts]') }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Buat audio
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_TTS_MODEL: ${{ vars.GEMINI_TTS_MODEL }}
+          GEMINI_TTS_VOICE: ${{ vars.GEMINI_TTS_VOICE }}
+          GEMINI_TTS_STYLE: ${{ vars.GEMINI_TTS_STYLE }}
+          INPUT_FILE: ${{ inputs.file }}
+          INPUT_FORCE: ${{ inputs.force }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::Secret GEMINI_API_KEY belum diisi (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+          [ -z "$GEMINI_TTS_VOICE" ] && unset GEMINI_TTS_VOICE
+          ARGS=""
+          [ "$INPUT_FORCE" = "true" ] && ARGS="--force"
+          if [ -n "$INPUT_FILE" ]; then
+            python3 tools/gemini_tts.py $ARGS "$INPUT_FILE"
+          else
+            python3 tools/gemini_tts.py $ARGS --all
+          fi
+
+      - name: Simpan audio ke repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f audio/*.wav audio/.tts-hash.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Tidak ada audio baru."
+          else
+            git commit -m "Draf suara Gemini TTS [skip tts]"
+            git push
+          fi
+
+      - name: Unggah audio sebagai artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gemini-tts-audio
+          path: audio/*.wav
+          if-no-files-found: ignore
+          retention-days: 14

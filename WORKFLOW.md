@@ -22,7 +22,8 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 ## 3. Setelah ACC (paralel dalam satu giliran)
 - Komentar: `v1_tiktok_video_comments` untuk 2 video saja, `trim:true` (≈1 kredit/video). Ringkas bila tersimpan ke file: `scrape_ringkas.py comments`.
 - Tulis `caption/<slug>-shorts.md` (format CLAUDE.md) **dan** mulai TTS di giliran yang sama.
-- ElevenLabs: `creative_create_flow` → `creative_generate_speech` (`eleven_v4`, voice `vLsH4ENK3zGpAuW1lSh4`). Kalau take ke-2 "free busy", pakai 1 take saja (tidak ditagih).
+- Draf suara dulu (gratis): simpan teks TTS ke `naskah/<slug>.txt` lalu push → workflow "Gemini TTS" membuat `audio/<slug>.wav` (atau `python3 tools/gemini_tts.py naskah/<slug>.txt`).
+- Final: `creative_create_flow` **sekali per video** (catat `flow_id`) → `creative_generate_speech` (`eleven_v4`, voice `vLsH4ENK3zGpAuW1lSh4`, **`generations_count: 1`**), hanya setelah naskah ACC. Revisi = kalimat yang berubah saja, disambung (aturan hemat di CLAUDE.md).
 - Sambil menunggu: tulis kode adegan (langkah 5). Poll status seperlunya (tiap poll = token).
 
 ## 4. VO → timeline (2 perintah)
