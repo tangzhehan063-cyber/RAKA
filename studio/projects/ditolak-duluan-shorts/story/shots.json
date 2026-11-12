@@ -1,0 +1,463 @@
+{
+ "title": "Ditolak Duluan",
+ "duration": 59.3,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.94,
+   "line": "Surat penolakan dipaku di dinding",
+   "scene": "Bima memaku surat ke dinding",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.7,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 2.3,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 2.9,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 3.94,
+   "end": 6.06,
+   "line": "Lurus, kayak piagam",
+   "scene": "Close-up surat berbingkai emas seperti piagam",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 4.9,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 6.06,
+   "end": 9.64,
+   "line": "Seleksi akhir, Bima dan Sandi",
+   "scene": "Ruang tunggu final, dua kursi",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "arctic",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 9.64,
+   "end": 12.92,
+   "line": "87 lawan 86",
+   "scene": "MOMEN KHAS papan skor 87 vs 86",
+   "set": "skor",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 10.4,
+     "name": "counter",
+     "gain": -14.0
+    },
+    {
+     "at": 12.3,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s05",
+   "start": 12.92,
+   "end": 15.0,
+   "line": "Kalah jauh masih bisa diterima",
+   "scene": "Bar 87 vs 60",
+   "set": "skor",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s06",
+   "start": 15.0,
+   "end": 18.52,
+   "line": "Kalah satu poin kepikiran sampai tidur",
+   "scene": "Bima rebahan mata terbuka, 1 POIN melayang",
+   "set": "malam",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 16.2,
+     "name": "tick",
+     "gain": -14.0
+    },
+    {
+     "at": 17.2,
+     "name": "tick",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s07",
+   "start": 18.52,
+   "end": 21.46,
+   "line": "Sandi upload ID card",
+   "scene": "Feed: Sandi + ID card",
+   "set": "feed",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 19.6,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "sakura"
+  },
+  {
+   "id": "s08",
+   "start": 21.46,
+   "end": 24.84,
+   "line": "Tante nanya di grup keluarga",
+   "scene": "Chat grup keluarga",
+   "set": "chat",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 22.6,
+     "name": "phonebuzz",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "sakura"
+  },
+  {
+   "id": "s09",
+   "start": 24.84,
+   "end": 29.0,
+   "line": "Ngetik, hapus, ngetik lagi",
+   "scene": "Bubble ketik-hapus, tak terkirim",
+   "set": "chat",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 25.2,
+     "name": "blip",
+     "gain": -18.0
+    },
+    {
+     "at": 26.0,
+     "name": "blip",
+     "gain": -18.0
+    },
+    {
+     "at": 26.6,
+     "name": "blip",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "style": "sakura"
+  },
+  {
+   "id": "s10",
+   "start": 29.0,
+   "end": 31.24,
+   "line": "(hening)",
+   "scene": "Layar gelap: diketik \"harusnya itu aku\" lalu dihapus",
+   "set": "hening",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 29.3,
+     "name": "blip",
+     "gain": -20.0
+    },
+    {
+     "at": 29.6,
+     "name": "blip",
+     "gain": -20.0
+    },
+    {
+     "at": 29.9,
+     "name": "blip",
+     "gain": -20.0
+    },
+    {
+     "at": 30.2,
+     "name": "blip",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s11",
+   "start": 31.24,
+   "end": 36.6,
+   "line": "Riset 1000+ ilmuwan muda",
+   "scene": "Papan riset, titik-titik 1.184",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 32.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 33.2,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "retro"
+  },
+  {
+   "id": "s12",
+   "start": 36.6,
+   "end": 40.04,
+   "line": "Lolos tipis vs gagal tipis",
+   "scene": "Garis batas, dua kelompok",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 37.0,
+     "name": "whoosh",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "retro"
+  },
+  {
+   "id": "s13",
+   "start": 40.04,
+   "end": 42.28,
+   "line": "Banyak yang berhenti",
+   "scene": "Titik oranye keluar",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 40.8,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "retro"
+  },
+  {
+   "id": "s14",
+   "start": 42.28,
+   "end": 48.36,
+   "line": "10 tahun kemudian",
+   "scene": "Grafik dua garis, gagal tipis menyalip",
+   "set": "grafik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 43.2,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 46.6,
+     "name": "stinger",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "retro"
+  },
+  {
+   "id": "s15",
+   "start": 48.36,
+   "end": 51.38,
+   "line": "Sakitnya wajar",
+   "scene": "Bima buka laptop, LAMARAN #2",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 51.38,
+   "end": 54.84,
+   "line": "Yang rugi cuma yang berhenti",
+   "scene": "YANG RUGI: YANG BERHENTI",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 52.8,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s17",
+   "start": 54.84,
+   "end": 59.3,
+   "line": "Loop: memaku surat",
+   "scene": "Surat kedua dipaku di samping yang pertama",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 56.0,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 56.6,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "style": "ember",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 28.9,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 31.2,
+   "end": 42.3,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 42.3,
+   "end": 59.3,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}

@@ -1,6 +1,7 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## Posisi terakhir (11 Nov 2026)
+## Posisi terakhir (12 Nov 2026)
+- **Video #7 "Ditolak Duluan" selesai (12 Nov)**: kalah 1 poin di seleksi kerja (Wang, Jones & Wang 2019), 59 dtk, kerangka baru `brand/kerangka-cerita.md` (Pukulan ke-99: cerita dulu, riset jadi plot twist), momen hening 2 dtk + teks diketik (pengganti bisikan). Ide ditulis tanpa scrape (permintaan user).
 - **Video #6 "Dua Orang, Satu Gaji" selesai (11 Nov)**: perbandingan sosial (Luttmer 2005), 74 dtk, format DIALOG (2 suara) + narator di akhir, warna per adegan (ember/arctic). PR https://github.com/tangzhehan063-cyber/RAKA/pull/13. Menunggu ACC user untuk merge.
 - **Cara kerja baru (permintaan user 11 Nov): langkah demi langkah, minta review di tiap tahap** (naskah → caption+suara → VO → contact sheet → render → distribusi). Cerita dulu, penjelasan di akhir. Warna jangan hanya hijau-gelap; kombinasikan gaya GrowKaz (ember, arctic, sakura, retro).
 
@@ -14,6 +15,7 @@
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
 ## Preferensi user
+- **Tanpa bisikan di VO** (12 Nov). Puncak emosi = hening ±1 dtk + teks diketik di layar. Struktur naskah: `brand/kerangka-cerita.md`.
 - **Satu chat = satu repo.** Repo lain → chat baru.
 - **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan Claude langsung merge sendiri (izin user 9 Nov).** User bukan programmer; laporan cukup "sudah masuk main".
 - **Moodboard & storyboard boleh terus di-improve Claude** (izin user 9 Nov): tiap video coba 1–2 eksperimen visual/cerita baru, catat di `brand/eksperimen.md`. Yang user bilang "suka" → jadi baku di `brand/dna-video.md`.
@@ -34,6 +36,7 @@
 - Container baru: `tools/produksi.sh setup`. Render butuh `CHROMIUM_PATH=/opt/pw-browsers/chromium` (sudah diatur di skrip).
 
 ## Log (5 terakhir; lebih lama lihat `git log`)
+- 12 Nov: video #7 Ditolak Duluan selesai (17 shot). Bug kursi/tokoh melayang dicatat di cek-bug.md. User tidak suka bisikan di VO.
 - 10 Nov: video #5 Nunggu 1 Januari selesai (18 shot, 1 shot 3D spidol). `brand/formula.md` dibuat (tangga durasi + tabel analitik). SFX baru `scribble`, `tear`. ScrapeMedsos tersisa ±7 kredit.
 - 9 Nov: video #4 Satu Video Lagi selesai (16 shot, kartu feed + swipe, momen khas kamar jadi kartu feed, 1 shot 3D teras). VO bisa diunduh langsung dari ElevenLabs (`creative_get_generations` → full_res_url → curl). `produksi.sh final` kini memanggil QC dengan path absolut.
 - 9 Nov: Motion-videos dijadikan sutradara (`brand/sutradara.md`); naskah #4 begadang ditulis.
