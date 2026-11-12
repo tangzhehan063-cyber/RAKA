@@ -5,20 +5,23 @@ Setiap video **berdiri sendiri**: topik, cerita, dan tokohnya baru. Jangan melan
 Yang sama hanyalah *cara bercerita, tampilan, dan suara* di bawah ini, supaya penonton langsung mengenali "ini video channel itu".
 
 ## 1. Isi (wajib)
-- **Satu fakta riset yang bisa dicek** per video, dengan sumber (peneliti/institusi + tahun). Tanpa fakta = bukan video channel ini.
+- **Satu fakta riset yang bisa dicek** per video, dengan sumber (peneliti/institusi + tahun) **+ 1 sumber pendukung** (framework v2). Tanpa fakta = bukan video channel ini.
 - Pola **"mitos vs kenyataan"**: buka keyakinan umum, lalu patahkan dengan data.
 - Akhir yang **memberi satu langkah kecil** yang bisa dilakukan besok, bukan sekadar "semangat!".
 - Jujur pada data: pakai "median", "perkiraan", "masih diperdebatkan" bila memang begitu. Jangan mengarang angka atau kutipan.
 
-## 2. Struktur Shorts (±50–60 dtk, 9:16)
+## 2. Struktur Shorts (framework v2 + "Pukulan ke-99", ±60–75 dtk, 9:16)
 | Detik | Bagian | Ciri |
 |---|---|---|
-| 0–4 | **Hook adegan** | Tokoh di momen gagal/ragu yang relatable, kalimat pendek, ada angka atau hari |
-| 4–12 | **Mitos** | "Kita sering dengar…" + angka mitos di papan blueprint, stempel **MITOS?** |
-| 12–25 | **Fakta** | Sumber riset + angka kunci meledak emas (flash + impact) |
-| 25–36 | **Twist emosional** | Close-up wajah raksasa, "suara di kepala" berbisik, kegelapan menutup |
-| 36–45 | **Titik balik** | Pindah ke fajar/terang, tokoh melakukan versi terkecil dari tindakan |
-| 45–55 | **Kalimat penutup + loop** | Satu kalimat tanda tangan, lalu kalimat terakhir menyambung ke kalimat pertama |
+| 0–8 | **Hook: adegan biasa yang "salah"** | Tokoh melakukan hal yang tampak sia-sia/gagal (pukulan ke-40 ke batu), kalimat pendek, ada angka atau hari |
+| 8–20 | **Cermin** | Perasaan diam-diam penonton ("kok nggak ada hasil"); mitos boleh muncul di papan blueprint + stempel **MITOS?** |
+| 20–40 | **Konflik & eskalasi** | Orang lain mengejek/membandingkan/menyuruh menyerah; taruhan naik tiap shot |
+| 40–55 | **Twist = 1 fakta riset** | Sumber (peneliti + tahun) + angka kunci emas: yang tak terlihat ternyata sedang terjadi |
+| 55–57 | **Hening** | 1–2 dtk sunyi + teks diketik di layar (pengganti bisikan) |
+| 57–70 | **Aksi & perubahan nyata** | Tokoh **bertindak**, hasilnya **terlihat** (batu pecah, kebiasaan jadi, angka berubah); pindah ke fajar/emas; + 1 langkah kecil untuk besok |
+| akhir | **Loop** | Kalimat terakhir menyambung ke kalimat pertama |
+
+Ending tidak boleh terbuka: tokoh RAKA selalu sampai pada perubahan. Tidak ada nasihat ("kamu harus…") sebelum twist. Satu metafora fisik per video = momen khas + cover.
 
 Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup → 3–5 beat → Payoff → Outro) dengan elemen visual yang sama.
 
@@ -39,7 +42,7 @@ Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup →
 
 ## 5. Suara
 - Voiceover **Ghaisan** (`vLsH4ENK3zGpAuW1lSh4`), `eleven_v4`, tenang dan hangat, orang kedua ("kamu"), kalimat pendek dengan jeda.
-- Tag arahan: `[calm, slow]` untuk hook, `[whispering]` untuk suara di kepala, `[warm, building]` untuk penutup.
+- Tag arahan: `[calm, slow]` untuk hook, `[warm, building]` untuk penutup. **Tanpa `[whispering]`** (user 12 Nov): suara di kepala diganti hening + teks diketik.
 - Musik: busur **mystery → sad → hopeful → triumph**; SFX: thunder/rain di awal, freeze, impact pada angka kunci, riser sebelum reveal, shimmer saat bangkit. Master −14 LUFS.
 
 ## 6. Kalimat tanda tangan

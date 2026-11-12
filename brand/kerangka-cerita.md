@@ -12,6 +12,7 @@ Inti: cerita yang menyamar jadi nasihat. Penonton datang untuk cerita, pulang de
 | 6 | Loop | Kalimat akhir menyambung ke pembuka | 72–75 |
 
 Aturan:
+0. **(Framework v2, 12 Nov, keputusan user)** Setelah twist riset: **hening 1–2 dtk + teks diketik**, lalu tokoh **bertindak dan ada perubahan nyata yang terlihat** (batu pecah, kebiasaan jadi) + 1 langkah kecil untuk besok. Ending tidak boleh terbuka. Riset: 1 studi utama (peneliti + tahun) + 1 sumber pendukung. Dokumen lengkap: Channel-Penjelasan `framework/content-framework-3-channel-v2.md`.
 1. Tidak ada nasihat ("kamu harus…") sebelum babak 4.
 2. Satu metafora fisik per video = momen visual khas + cover.
 3. Tokoh = penonton yang sedikit lebih jauh, bukan guru.

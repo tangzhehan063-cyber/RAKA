@@ -13,7 +13,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 **Setiap video berdiri sendiri**: topik, cerita, dan tokoh baru. Yang konsisten adalah DNA video (struktur, visual, suara, fakta riset), bukan kelanjutan cerita. Jangan melanjutkan cerita/tokoh video lalu kecuali user meminta. Komunikasi dengan user: Bahasa Indonesia.
 
 ## Alur wajib setiap video
-1. **Naskah:** pakai alur ScriptForge (`prompts/ScriptForge.pdf`): niche, 10 ide, naskah. Jangan mengarang statistik; sebut sumber dan kata "median"/"perkiraan" bila perlu.
+1. **Naskah:** ide lewat ScriptForge (`prompts/ScriptForge.pdf`: niche, 10 ide); **struktur naskah ikut framework v2** di `brand/dna-video.md` §2 + `brand/kerangka-cerita.md` (tokoh beraksi, ending = perubahan nyata). Riset: 1 studi utama + 1 pendukung. Jangan mengarang statistik; sebut sumber dan kata "median"/"perkiraan" bila perlu.
 2. **Voiceover:** ElevenLabs, model `eleven_v4`, voice **Ghaisan** `vLsH4ENK3zGpAuW1lSh4`.
    - Di teks TTS, tulis angka sebagai kata ("enam puluh enam"), pakai tag arahan `[calm, slow]`, `[warm, building]`. **Jangan pakai `[whispering]`/bisikan** (user tidak suka, 12 Nov); momen emosional diganti hening + teks di layar.
    - Unduh audio dari `elevenlabsusercontent.com` (host ini harus diizinkan di network environment).

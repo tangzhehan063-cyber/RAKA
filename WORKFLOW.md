@@ -7,6 +7,9 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - `STATUS.md` (posisi + preferensi). `brand/dna-video.md` hanya kalau perlu ingat struktur.
 - JANGAN baca: `prompts/ScriptForge.pdf`, kode shot video lama, engine. Contekan API ada di bawah.
 - Container baru: `tools/produksi.sh setup` (npm + numpy/scipy, ±1 mnt).
+- **Panel Studio** (tab RAKA): https://claude.ai/artifact/4Aiv5HDCLRRfVLdEapvt3s (slug `19a6f0e4-8170-4760-b8cc-959939f686ea`). Panggil `watch` (claude-artifacts) supaya tombol panel membangunkan chat. Perintah datang sebagai komentar "[Panel Studio · RAKA] …" (`read_comments`, balas `reply_comment`). Tiap pindah tahap perbarui `raka-aktif/sekarang` lewat `db_write` (nn, judul, seri, tahap 0–7 = Ide/Naskah/Caption & suara/VO/Contact sheet/Render/Distribusi/Selesai, menunggu true saat minta review, catatan, naskah). Video selesai → `raka-videos/vNN`; ide → `raka-ide/iNN` (urut, judul, catatan, rek). **Referensi** user di `raka-ref` (url, catatan, file = id aset): baca `db_list` + `read_asset`, bedah → `brand/formula.md`, set `dibedah: true`.
+
+- **Konfirmasi di SETIAP tahap (permintaan user 12 Nov, berlaku semua channel):** selesai satu tahap → unggah hasilnya ke panel sebagai pratinjau (`upload_asset` claude-artifacts ke slug panel; gambar/contact sheet, MP3 VO, potongan video ≤20 MB), tulis `pratinjau: [{id, tipe, label}]` + `menunggu: true` + `catatan` di dokumen aktif channel, lalu BERHENTI sampai user menekan ACC atau mengirim revisi. Revisi dikerjakan di tahap itu saja, bukan menunggu video jadi. Pesan "[Panel Studio …] … Gaya visual: X (mesin dari repo Y)" = pakai mesin gambar repo Y untuk video ini (clone repo Y bila perlu); framework berpikir tetap dari channel asal.
 
 ## 1. Ide (≤ 4 kredit ScrapeMedsos)
 - `v1_tiktok_search_keyword` × 3–4 paralel: `region:"ID"`, `date_posted:"last-3-months"`, `sort_by:"most-liked"`, `trim:true`.
@@ -14,7 +17,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - Beri 10 ide + 1 rekomendasi out-of-the-box. Tunggu pilihan user.
 
 ## 2. Fakta + naskah (1 WebSearch)
-- 1× WebSearch "standard" untuk memastikan angka + sumber. Tulis `naskah/<slug>.md` (sumber, teks TTS ±120 kata = ±55 dtk, storyboard tabel dengan arahan per kalimat dari **`brand/sutradara.md`**). Tunggu ACC.
+- 1–2× WebSearch "standard": 1 studi utama + 1 sumber pendukung. Tulis `naskah/<slug>.md` dengan struktur `brand/dna-video.md` §2 (framework v2: hook adegan "salah" → cermin → konflik → twist riset → hening → aksi & perubahan nyata → loop; sumber, teks TTS ±130–165 kata = ±60–75 dtk, storyboard tabel dengan arahan per kalimat dari **`brand/sutradara.md`**). Tunggu ACC.
 
 ## 3. Setelah ACC (paralel dalam satu giliran)
 - Komentar: `v1_tiktok_video_comments` untuk 2 video saja, `trim:true` (≈1 kredit/video). Ringkas bila tersimpan ke file: `scrape_ringkas.py comments`.
