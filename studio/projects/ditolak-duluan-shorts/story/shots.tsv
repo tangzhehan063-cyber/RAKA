@@ -1,0 +1,20 @@
+# id	start	end	set@gaya	transisi	sfx	amb	line | scene
+@title Ditolak Duluan
+@music 0-28.9 sad 0.3; 31.2-42.3 mystery 0.35; 42.3-59.3 hopeful 0.4
+s01	0.0	3.94	kamar@ember	cut	1.7 hit -10; 2.3 hit -10; 2.9 hit -8	roomtone -24	Surat penolakan dipaku di dinding | Bima memaku surat ke dinding
+s02	3.94	6.06	kamar@ember	cut	4.9 shimmer -16	roomtone -24	Lurus, kayak piagam | Close-up surat berbingkai emas seperti piagam
+s03	6.06	9.64	ruang@arctic	swipe	-	roomtone -26	Seleksi akhir, Bima dan Sandi | Ruang tunggu final, dua kursi
+s04	9.64	12.92	skor@arctic	flash	10.4 counter -14; 12.3 impact -10	-	87 lawan 86 | MOMEN KHAS papan skor 87 vs 86
+s05	12.92	15.0	skor@arctic	cut	-	-	Kalah jauh masih bisa diterima | Bar 87 vs 60
+s06	15.0	18.52	malam@arctic	dip	16.2 tick -14; 17.2 tick -14	roomtone -26	Kalah satu poin kepikiran sampai tidur | Bima rebahan mata terbuka, 1 POIN melayang
+s07	18.52	21.46	feed@sakura	swipe	19.6 pop -14	-	Sandi upload ID card | Feed: Sandi + ID card
+s08	21.46	24.84	chat@sakura	swipe	22.6 phonebuzz -14	-	Tante nanya di grup keluarga | Chat grup keluarga
+s09	24.84	29.0	chat@sakura	cut	25.2 blip -18; 26.0 blip -18; 26.6 blip -18	-	Ngetik, hapus, ngetik lagi | Bubble ketik-hapus, tak terkirim
+s10	29.0	31.24	hening@arctic	cut	29.3 blip -20; 29.6 blip -20; 29.9 blip -20; 30.2 blip -20	-	(hening) | Layar gelap: diketik "harusnya itu aku" lalu dihapus
+s11	31.24	36.6	papan@retro	dipWhite	32.4 pop -14; 33.2 counter -14	-	Riset 1000+ ilmuwan muda | Papan riset, titik-titik 1.184
+s12	36.6	40.04	papan@retro	swipe	37.0 whoosh -16	-	Lolos tipis vs gagal tipis | Garis batas, dua kelompok
+s13	40.04	42.28	papan@retro	cut	40.8 swish -16	-	Banyak yang berhenti | Titik oranye keluar
+s14	42.28	48.36	grafik@retro	swipe	43.2 riser -14; 46.6 stinger -12	-	10 tahun kemudian | Grafik dua garis, gagal tipis menyalip
+s15	48.36	51.38	kamar@ember	dip	-	roomtone -24	Sakitnya wajar | Bima buka laptop, LAMARAN #2
+s16	51.38	54.84	kamar@ember	cut	52.8 hit -12	roomtone -24	Yang rugi cuma yang berhenti | YANG RUGI: YANG BERHENTI
+s17	54.84	59.3	kamar@ember	cut	56.0 hit -10; 56.6 hit -10	roomtone -24	Loop: memaku surat | Surat kedua dipaku di samping yang pertama
