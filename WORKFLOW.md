@@ -7,6 +7,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - `STATUS.md` (posisi + preferensi). `brand/dna-video.md` hanya kalau perlu ingat struktur.
 - JANGAN baca: `prompts/ScriptForge.pdf`, kode shot video lama, engine. Contekan API ada di bawah.
 - Container baru: `tools/produksi.sh setup` (npm + numpy/scipy, ±1 mnt).
+- **Panel Studio** (tab RAKA): https://claude.ai/artifact/4Aiv5HDCLRRfVLdEapvt3s (slug `19a6f0e4-8170-4760-b8cc-959939f686ea`). Panggil `watch` (claude-artifacts) supaya tombol panel membangunkan chat. Perintah datang sebagai komentar "[Panel Studio · RAKA] …" (`read_comments`, balas `reply_comment`). Tiap pindah tahap perbarui `raka-aktif/sekarang` lewat `db_write` (nn, judul, seri, tahap 0–7 = Ide/Naskah/Caption & suara/VO/Contact sheet/Render/Distribusi/Selesai, menunggu true saat minta review, catatan, naskah). Video selesai → `raka-videos/vNN`; ide → `raka-ide/iNN` (urut, judul, catatan, rek). **Referensi** user di `raka-ref` (url, catatan, file = id aset): baca `db_list` + `read_asset`, bedah → `brand/formula.md`, set `dibedah: true`.
 
 ## 1. Ide (≤ 4 kredit ScrapeMedsos)
 - `v1_tiktok_search_keyword` × 3–4 paralel: `region:"ID"`, `date_posted:"last-3-months"`, `sort_by:"most-liked"`, `trim:true`.
