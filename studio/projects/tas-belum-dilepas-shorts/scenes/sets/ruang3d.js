@@ -6,7 +6,7 @@ import { POSES } from '/engine/rig2d.js';
 import { DONI, BAG } from '../cast.js';
 
 const U = 1 / 140;
-export const SEAT = { x: 1.45, z: -0.6 };            // posisi Doni duduk (feet)
+export const SEAT = { x: 1.45, z: -0.6 };            // x = pinggul Doni saat duduk (kaki jatuh di x≈1.12, depan sofa)            // posisi Doni duduk (feet)
 export const DOOR = { x: -1.9, z: -2.36 };           // tengah pintu di dinding belakang
 export const HOOK = { x: -1.0, y: 1.55, z: -2.3 };
 export const A = [-1.9, 0.012, -1.75], B = [1.5, 0.012, -0.6];   // jalur lantai pintu -> sofa
@@ -44,10 +44,20 @@ export function buildRoom(T, st, o = {}) {
   const hH = new TH.Group(), hM = new TH.Group(); hH.position.set(cx, cy, cz + 0.06); hM.position.set(cx, cy, cz + 0.075); st.add(hH, hM);
   hH.add(T.box(0.03, 0.17, 0.01, '#1b1b1f', 0, 0.085, 0)); hM.add(T.box(0.02, 0.25, 0.01, '#1b1b1f', 0, 0.125, 0));
   st.add(T.sphere(0.02, BAG, cx, cy, cz + 0.09));
-  // sofa (menempel dinding kanan, menghadap -x)
-  const sc = shade('#5c7088', md === 'night' ? -0.3 : 0), sd = shade(sc, -0.3);
-  st.add(T.box(0.95, 0.42, 2.1, sc, 1.6, 0.21, SEAT.z), T.box(0.22, 0.95, 2.1, sd, 2.05, 0.62, SEAT.z), T.box(0.95, 0.62, 0.2, sc, 1.6, 0.31, SEAT.z - 1.0), T.box(0.95, 0.62, 0.2, sc, 1.6, 0.31, SEAT.z + 1.0));
-  st.add(T.box(0.85, 0.09, 1.9, shade(sc, 0.15), 1.58, 0.46, SEAT.z));
+  // karpet + sofa (menghadap -x): alas lantai berdiri di depan sofa, kaki Doni di lantai depan alas sofa
+  const sofaC = shade('#3f7f86', md === 'night' ? -0.35 : 0), sofaD = shade(sofaC, -0.3), sofaL = shade(sofaC, 0.22), legC = '#2a1c18';
+  st.add(T.box(2.6, 0.012, 3.0, shade('#d9a441', md === 'night' ? -0.4 : -0.1), 1.1, 0.006, SEAT.z));                   // karpet kuning
+  for (const dz of [-0.95, 0.95]) st.add(T.box(0.07, 0.1, 0.07, legC, 1.2, 0.05, SEAT.z + dz), T.box(0.07, 0.1, 0.07, legC, 1.65, 0.05, SEAT.z + dz));
+  st.add(T.box(0.62, 0.3, 1.9, sofaD, 1.45, 0.26, SEAT.z));                                                               // dudukan (rangka)
+  st.add(T.box(0.58, 0.12, 0.88, sofaL, 1.46, 0.47, SEAT.z - 0.45), T.box(0.58, 0.12, 0.88, sofaL, 1.46, 0.47, SEAT.z + 0.45)); // 2 bantal duduk
+  st.add(T.box(0.2, 0.62, 1.9, sofaC, 1.86, 0.65, SEAT.z));                                                               // sandaran
+  st.add(T.box(0.09, 0.36, 0.78, sofaL, 1.72, 0.7, SEAT.z - 0.45).rotateZ(0.12), T.box(0.09, 0.36, 0.78, sofaL, 1.72, 0.7, SEAT.z + 0.45).rotateZ(0.12)); // bantal sandaran
+  st.add(T.box(0.78, 0.34, 0.16, sofaC, 1.5, 0.52, SEAT.z - 1.0), T.box(0.78, 0.34, 0.16, sofaC, 1.5, 0.52, SEAT.z + 1.0));  // lengan sofa
+  st.add(T.box(0.8, 0.06, 0.2, sofaL, 1.5, 0.71, SEAT.z - 1.0), T.box(0.8, 0.06, 0.2, sofaL, 1.5, 0.71, SEAT.z + 1.0));
+  // meja samping + lampu duduk, tanaman
+  st.add(T.box(0.42, 0.5, 0.42, '#7a4a30', 1.55, 0.25, SEAT.z - 1.5), T.box(0.46, 0.04, 0.46, '#5a3220', 1.55, 0.52, SEAT.z - 1.5));
+  st.add(T.cyl(0.03, 0.05, 0.34, '#2a1c18', 1.55, 0.71, SEAT.z - 1.5), T.cone(0.2, 0.26, '#f2d9a0', 1.55, 1.01, SEAT.z - 1.5, 16));
+  st.add(T.cyl(0.14, 0.11, 0.26, '#a8553a', 2.3, 0.13, SEAT.z + 1.2), T.sphere(0.3, '#4f8a55', 2.3, 0.55, SEAT.z + 1.2), T.sphere(0.22, '#3d7a48', 2.4, 0.78, SEAT.z + 1.25));
   // sepatu rapi di dekat pintu
   const shoes = new TH.Group(); shoes.position.set(DOOR.x - 0.2, 0, -1.9); shoes.visible = false; st.add(shoes);
   for (const dz of [0, 0.22]) { shoes.add(T.box(0.3, 0.12, 0.11, '#23262e', 0, 0.06, dz)); shoes.add(T.box(0.3, 0.025, 0.115, '#efe8d8', 0, 0.012, dz)); }
