@@ -46,55 +46,17 @@ const arrive = (g, t, info, xFn) => {
   layer(g, cam, 1, (g) => doni(g, t, { x, facing: 1, pose: walkPose(x / 24, { stride: 22, lean: 4 }), expr: 'sleepy', look: [0.5, 0.2], phone: false }));
   badge(g, '18:00');
 };
-registerShot('s01', { draw(g, t, info) { arrive(g, t, info, (t) => WALK0 + SPEED * t); } });
-registerShot('s18', { draw(g, t, info) { arrive(g, t, info, (t, i) => WALK0 - SPEED * (i.dur - t)); } });
 
 // ---- s02: tas masih di punggung, sepatu masih nempel -> duduk ---------------------------------------
-registerShot('s02', { draw(g, t, info) {
-  const cam = { z: 1.5, x: 240, y: 170 }, tSit = 1.8;
-  const { GY: G } = ruang(g, t, cam, { mood: 'golden', min: 2, door: 1 });
-  let r; layer(g, cam, 1, (g) => { r = doni(g, t, { x: seatX(), facing: -1, pose: standSitPose(t, tSit), expr: 'sleepy', look: [-0.5, 0.3], phone: false }); });
-  const tb = rel('masih', info, 0.2), ts = rel('sepatu', info, 1.5);
-  const [bx, by] = toScreen(cam, r.bp[0], r.bp[1]); UI.callout(g, t, { at: [bx, by], to: [bx + 150, by - 170], str: 'TAS', start: tb, color: '#ff8a6a', size: 64 });
-  const [fx, fy] = toScreen(cam, seatX() - 30, G + 4); UI.callout(g, t, { at: [fx, fy], to: [fx - 120, fy - 130], str: 'SEPATU', start: ts, color: S().ui.cream, size: 64 });
-  badge(g, '18:01');
-} });
 
 // ---- s03: duduk, buka HP -----------------------------------------------------------------------
-registerShot('s03', { draw(g, t, info) {
-  const cam = { z: 1.55 + 0.08 * ease.inOut(t / info.dur), x: 240, y: 170 };
-  ruang(g, t, cam, { mood: 'golden', min: 5, door: 1 });
-  const tp = rel('HP', info, 1.5);
-  layer(g, cam, 1, (g) => doni(g, t, { x: seatX(), phone: true, phoneOn: ease.out(prog(t, tp - 0.1, tp + 0.2)) }));
-  badge(g, '18:05');
-} });
 
 // ---- s04: "lima menit dulu... mandi... makan" (gelembung pikiran) --------------------------------
 function iconShower(g, x, y, s, a) { g.save(); g.globalAlpha *= a; g.translate(x, y); g.scale(s, s); seg(g, [[-24, -26], [8, -26], [24, -10]], 6, S().ink); circle(g, 26, -4, 14, S().ink);
   for (let i = -1; i <= 1; i++) seg(g, [[26 + i * 12, 16], [26 + i * 15, 34]], 4, '#4a8fd0'); g.restore(); }
 function iconPlate(g, x, y, s, a) { g.save(); g.globalAlpha *= a; g.translate(x, y); g.scale(s, s); circle(g, 0, 4, 26, S().ink); circle(g, 0, 4, 17, '#efe8d8'); seg(g, [[-42, -18], [-42, 26]], 5, S().ink); seg(g, [[42, -18], [42, 26]], 5, S().ink); g.restore(); }
-registerShot('s04', { draw(g, t, info) {
-  const cam = { z: 1.55, x: 240, y: 170 };
-  ruang(g, t, cam, { mood: 'golden', min: 8, door: 1 });
-  let r; layer(g, cam, 1, (g) => { r = doni(g, t, { x: seatX(), phone: true, look: [0.4, 0.9] }); });
-  const [hx, hy] = toScreen(cam, r.f.x, r.f.y - 210 * r.f.s);
-  const tm = rel('mandi', info, 1.6), tk = rel('makan', info, 2.6);
-  [[tm, -170, -150, iconShower], [tk, 10, -300, iconPlate]].forEach(([at, dx, dy, ic]) => {
-    const a = ease.outBack(prog(t, at - 0.1, at + 0.25)); if (a <= 0) return;
-    g.save(); g.translate(hx + dx, hy + dy); g.scale(clamp(a), clamp(a)); UI.bubble(g, 0, 0, { w: 210, h: 160, dots: false, color: '#f4efe6' }); ic(g, 0, 0, 1.6, 1); g.restore();
-  });
-  badge(g, '18:08');
-} });
 
 // ---- s05: jam melompat 18:30 -> 19:00, Doni tidak bergerak ----------------------------------------
-registerShot('s05', { draw(g, t, info) {
-  const t30 = rel('Setengah', info, 0.6), t7 = rel('Jam', info, 2.4), min = t < t30 ? 8 + 22 * ease.inOut(prog(t, 0, t30)) : t < t7 ? 30 + 0 : 60;
-  const cam = { z: 1.1, x: 90, y: 90 }, dusk = t >= t7;
-  ruang(g, t, cam, { mood: dusk ? 'dusk' : 'golden', min, door: 1, dim: dusk ? 0.08 : 0 });
-  layer(g, cam, 1, (g) => doni(g, t, { phone: true, x: seatX(), expr: dusk ? 'sleepy' : 'neutral' }));
-  if (Math.abs(t - t7) < 0.12) veil(g, '#ffffff', 0.25 * (1 - Math.abs(t - t7) / 0.12));
-  badge(g, hhmm(t < t30 ? 8 + 22 * ease.inOut(prog(t, 0, t30)) : min));
-} });
 
 // ---- s06: wajah besar, perut bunyi, capek ----------------------------------------------------------
 registerShot('s06', { draw(g, t, info) {
@@ -113,18 +75,6 @@ registerShot('s06', { draw(g, t, info) {
 } });
 
 // ---- s07: suara kecil di kepala: "Dari tadi ngapain aja?" ------------------------------------------
-registerShot('s07', { draw(g, t, info) {
-  const cam = { z: 1.3, x: 220, y: 150 };
-  ruang(g, t, cam, { mood: 'night', min: 90, door: 1, dim: 0.12 });
-  let r; layer(g, cam, 1, (g) => { r = doni(g, t, { x: seatX(), phone: true, expr: 'worried', look: [0.2, 0.9] }); });
-  const ta = rel('Dari', info, 1.4), a = ease.outBack(prog(t, ta - 0.05, ta + 0.3));
-  if (a > 0) { const [hx, hy] = toScreen(cam, r.f.x, r.f.y - 230 * r.f.s);
-    g.save(); g.translate(E.W / 2 - 20, 470 + Math.sin(t * 1.7) * 6); g.scale(clamp(a), clamp(a));
-    UI.bubble(g, 0, 0, { w: 860, h: 170, dots: false, color: '#10131c' });
-    text(g, 'Dari tadi ngapain aja?', 0, 2, { size: 64, color: '#f4efe6', font: FONTS.ui, weight: 900 }); g.restore(); }
-  veil(g, '#101840', 0.12, 'color');
-  badge(g, '19:30');
-} });
 
 // ---- s08: layar HP: mengetik jawaban, menghapus, scroll lagi ---------------------------------------
 registerShot('s08', { draw(g, t, info) {
@@ -163,29 +113,8 @@ registerShot('s13', { draw(g, t, info) {
 
 // ---- s14: ritual: pintu ditutup, tas digantung, sepatu dilepas, baru duduk --------------------------
 const tick = (g, x, y, a) => { if (a <= 0) return; g.save(); g.globalAlpha *= clamp(a); const k = ease.outBack(clamp(a)); g.translate(x, y); g.scale(k, k); circle(g, 0, 0, 34, S().ui.gold); seg(g, [[-14, 2], [-4, 13], [16, -12]], 8, '#1b1b1f'); g.restore(); };
-registerShot('s14', { draw(g, t, info) {
-  const tc = rel('ditutup', info, 0.9), tg = rel('digantung', info, 2.6), tl = rel('dilepas', info, 4.4), td = rel('duduk', info, 6.0);
-  const cam = { z: 1.15, x: 30, y: 90 };
-  const open = 1 - ease.inOut(prog(t, tc - 0.1, tc + 0.45)), hung = t >= tg, shoesOff = t >= tl;
-  ruang(g, t, cam, { mood: 'interiorWarm', min: 0, door: open, bagOnHook: hung, bagSwing: hung ? 0.08 * Math.sin((t - tg) * 9) * Math.exp(-(t - tg) * 2.2) : 0, shoes: shoesOff });
-  const walkK = ease.inOut(prog(t, tl + 0.2, td)), x = lerp(320, seatX(), walkK), sat = t >= td;
-  const pose = sat ? SIT_PHONE : walkK > 0 && walkK < 1 ? walkPose(t * 7, { stride: 22 }) : t > tg - 0.3 && t < tg + 0.3 ? POSES.reach : POSES.relaxed;
-  layer(g, cam, 1, (g) => doni(g, t, { x, facing: walkK > 0 ? 1 : (t < tg + 0.2 ? 1 : -1), pose: sat ? breathe(SIT_PHONE, t, 0.5, 2) : pose, bag: t < tg, phone: sat, phoneOn: 0.6, expr: sat ? 'smile' : 'determined', look: [0.4, 0.2] }));
-  const [hx, hy] = hookPos(); const [sx0, sy0] = toScreen(cam, hx, hy + 60), [sx1, sy1] = toScreen(cam, doorBox().x + 130, GY() - 300), [sx2, sy2] = toScreen(cam, doorBox().x + 110, GY() + 10);
-  tick(g, sx1 + 150, sy1, prog(t, tc + 0.4, tc + 0.7)); tick(g, sx0 + 80, sy0, prog(t, tg + 0.2, tg + 0.5)); tick(g, sx2 + 80, sy2 + 30, prog(t, tl + 0.2, tl + 0.5));
-  badge(g, '18:10');
-} });
 
 // ---- s15: jalur lama putus, Doni bangun & pergi ke dapur -------------------------------------------
-registerShot('s15', { draw(g, t, info) {
-  const tp = rel('putus', info, 2.4), cut = ease.inOut(prog(t, tp - 0.2, tp + 0.5)), up = t > 0.6;
-  const cam = { z: 1.1, x: 120, y: 190 };
-  ruang(g, t, cam, { mood: 'interiorWarm', min: 12, door: 0, bagOnHook: true, shoes: true, rail: ease.out(prog(t, 0.1, 0.9)), railCut: cut });
-  const wk = ease.inOut(prog(t, 0.7, info.dur));
-  layer(g, cam, 1, (g) => doni(g, t, { x: lerp(seatX(), seatX() + 520, wk), facing: 1, bag: false, pose: t < 1.3 ? posesAt(t, [[0, SIT_PHONE], [0.6, POSES.stand]], 0.6) : walkPose(t * 7, { stride: 22 }), expr: 'smile', phone: false }));
-  if (cut > 0 && cut < 1) FX.sparkle(g, ...toScreen(cam, (doorBox().x + 130 + seatX()) / 2 * 0.85 + 70, GY() + 40), 40 * (1 - cut * 0.5), '#ffd49a', 0.9 * (1 - cut * 0.6));
-  badge(g, '18:12');
-} });
 
 // ---- s16: mandi + makan: wajah besar rambut basah, nasi hangat ---------------------------------
 registerShot('s16', { draw(g, t, info) {
@@ -204,9 +133,3 @@ registerShot('s16', { draw(g, t, info) {
 } });
 
 // ---- s17: 19:30, santai beneran: tas di gantungan, sepatu rapi, HP ---------------------------------
-registerShot('s17', { draw(g, t, info) {
-  const cam = { z: 1.2, x: 180, y: 120 };
-  ruang(g, t, cam, { mood: 'night', min: 90, door: 0, bagOnHook: true, shoes: true, lamp: 1 });
-  layer(g, cam, 1, (g) => doni(g, t, { x: seatX(), bag: false, phone: true, expr: 'smile', pose: breathe({ ...SIT_PHONE, head: [14, -176] }, t, 0.5, 4), look: [0.3, 0.7] }));
-  badge(g, '19:30');
-} });
