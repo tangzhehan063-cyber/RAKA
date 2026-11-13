@@ -45,7 +45,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 
 ## 7. Cover + distribusi (wajib, urut)
 1. Cover: salin `studio/projects/jam-tiga-pagi-cover/` → ganti teks/adegan di `scenes/shots/cover.js` → `tools/produksi.sh cover <slug>`.
-2. Kirim ke user: MP4, cover, caption (SendUserFile).
+2. **Drive (aturan user 13 Nov):** buat subfolder `NN - <Judul>` di folder RAKA (`1lErd-CVqlWZdbEVI5iPV3tQokyGWmWx9`) lalu unggah `cover.png`, `caption.md` (TikTok/Reels, Shorts, komentar pin), `naskah.md` (teks TTS + sumber), `voiceover-*.mp3` (`create_file`, `base64Content` = `sha256:<hash>:<path>`, file dari scratchpad). Kirim ke chat HANYA MP4 (SendUserFile) + link folder Drive; jangan kirim cover/caption/suara ke chat.
 3. Arsip: baris baru di `arsip/README.md` + `brand/brand-kit.md`; pratinjau 540p (mp4 + cover jpg) di `arsip/halaman/` + kartu di `arsip/halaman/index.html` → republish artifact arsip (slug `40b5677b-fc79-4023-83fe-457a59db2581`, `publish_files`).
 4. `STATUS.md` (2–3 baris). Commit + push.
 5. **Buat PR ke `main` lalu merge sendiri** (`merge_pull_request`, izin user 9 Nov). Laporkan singkat: "sudah masuk main".

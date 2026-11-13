@@ -53,6 +53,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - **Hasil setiap video disimpan di Google Drive**: folder `RAKA` (id `1lErd-CVqlWZdbEVI5iPV3tQokyGWmWx9`) → subfolder `NN - <Judul>` berisi cover, voiceover, dan caption.
   - Unggah dengan `create_file` + referensi `sha256:<hash>:<path>`. Salin file ke scratchpad sesi dulu.
   - **Batas 10 MB per file**: MP4 final dikirim ke user (SendUserFile), lalu user mengunggahnya sendiri ke subfolder Drive.
+- **Laporan akhir video (aturan user 13 Nov, seperti Channel-Penjelasan): di chat HANYA kirim MP4 (SendUserFile) + link folder Drive.** Cover, caption (TikTok/Reels, YouTube Shorts, komentar pin), naskah/teks TTS, dan suara (mp3) diunggah ke subfolder Drive `NN - <Judul>`, bukan dikirim ke chat. Caption & komentar pertama tetap boleh ditempel di chat saat naskah di-ACC (sebelum video), tapi versi akhirnya ada di Drive. Suara WAV dikonversi ke mp3 (konektor Drive maks ±3 MB per panggilan).
 - **GitHub hanya menyimpan aset yang bisa dipakai berulang**: engine, `studio/library/`, kode adegan/proyek (`config.json`, `scenes/`, `story/`), tools, dokumen brand. MP4/MP3/PNG hasil dan `build/` tidak di-commit.
 - Pratinjau 540p untuk artifact arsip tetap boleh di `arsip/halaman/` (ukurannya kecil).
 
