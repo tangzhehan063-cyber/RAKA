@@ -92,7 +92,7 @@ const barVal = (s) => (typeof (s?.bars ?? E.cfg.bars) === 'number' ? (s.bars ?? 
 
 window.renderFrame = function (f) {
   const t = f / E.fps, i = shotIndexAt(t), shot = E.shots[i], lt = t - shot.start;
-  { const sid = shot.style || E.cfg.style || 'emerald'; if (E.styleId !== sid) { setStyle(sid); buildLUT(); } }
+  { const sid = new URLSearchParams(location.search).get('style') || shot.style || E.cfg.style || 'emerald'; if (E.styleId !== sid) { setStyle(sid); buildLUT(); } }
   drawShot(bufA, shot, lt);
   const tr = shot.in || { type: 'cut' }, tdur = tr.dur ?? (tr.type === 'whip' ? 0.35 : tr.type === 'swipe' ? 0.32 : 0.5);
   const W = main.width, H = main.height; mg.setTransform(1, 0, 0, 1, 0, 0); mg.globalAlpha = 1; mg.globalCompositeOperation = 'source-over';
