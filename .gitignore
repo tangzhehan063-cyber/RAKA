@@ -6,3 +6,5 @@ __pycache__/
 *.pyc
 studio/projects/*/out/
 studio/projects/*/input/*.mp3
+caption/*.png
+caption/*.mp4

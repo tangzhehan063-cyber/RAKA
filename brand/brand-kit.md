@@ -13,7 +13,7 @@ Protagonis "kamu" versi stickman dengan satu item merah-oranye `#d64a33`. Nama d
 - Struktur Shorts: hook (detik 0–4) → mitos → fakta + angka → twist emosional → kembali → kalimat penutup yang loop ke awal.
 
 ## Suara
-- Voiceover: ElevenLabs **Ghaisan** (`vLsH4ENK3zGpAuW1lSh4`), `eleven_v4`, tenang dan hangat; tanpa bisikan (12 Nov). 1 take, versi final saja; draf pakai Gemini TTS.
+- Voiceover: mesin dan suara dipilih user tiap video (pernah dipakai: ElevenLabs Ghaisan, `eleven_v4`), tenang dan hangat; tanpa bisikan (12 Nov). 1 take, versi final saja; draf pakai Gemini TTS.
 - Narasi orang kedua ("kamu"), kalimat pendek, jeda.
 - Musik: mystery → sad → hopeful → triumph (generator plugin), −17 dB di bawah suara, master −14 LUFS.
 

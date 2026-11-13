@@ -4,10 +4,8 @@ name: Gemini TTS (draf suara)
 # Butuh secret repo GEMINI_API_KEY (Settings > Secrets and variables > Actions).
 # Opsional (Settings > Variables): GEMINI_TTS_MODEL, GEMINI_TTS_VOICE, GEMINI_TTS_STYLE.
 
+# Hanya manual (workflow_dispatch): push naskah tidak lagi memicu TTS otomatis, supaya suara/mesin selalu dipilih user dulu.
 on:
-  push:
-    paths:
-      - "naskah/*.txt"
   workflow_dispatch:
     inputs:
       file:

@@ -41,7 +41,7 @@ Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup →
 - Set yang sudah ada di `studio/library/` boleh dipakai ulang; buat set baru bila topiknya butuh (kantor, kamar kos, warung, gym, dll.) dengan gaya yang sama.
 
 ## 5. Suara
-- Voiceover **Ghaisan** (`vLsH4ENK3zGpAuW1lSh4`), `eleven_v4`, tenang dan hangat, orang kedua ("kamu"), kalimat pendek dengan jeda.
+- Voiceover: mesin dan suara **dipilih user tiap video** (CLAUDE.md langkah 2; pernah dipakai: Ghaisan, `eleven_v4`), tenang dan hangat, orang kedua ("kamu"), kalimat pendek dengan jeda.
 - Tag arahan: `[calm, slow]` untuk hook, `[warm, building]` untuk penutup. **Tanpa `[whispering]`** (user 12 Nov): suara di kepala diganti hening + teks diketik.
 - Musik: busur **mystery → sad → hopeful → triumph**; SFX: thunder/rain di awal, freeze, impact pada angka kunci, riser sebelum reveal, shimmer saat bangkit. Master −14 LUFS.
 
