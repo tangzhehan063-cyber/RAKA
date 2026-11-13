@@ -11,8 +11,8 @@ Pakai:
 
 Variabel lingkungan (opsional):
   GEMINI_TTS_MODEL  model TTS; bila kosong dicoba berurutan dari daftar MODELS di bawah
-  GEMINI_TTS_VOICE  nama suara Gemini (bawaan "Achernar")
-  GEMINI_TTS_STYLE  arahan gaya baca di depan teks (bawaan: DEFAULT_STYLE, ekspresif hangat)
+  GEMINI_TTS_VOICE  nama suara Gemini (bawaan "Charon")
+  GEMINI_TTS_STYLE  arahan gaya baca yang ditaruh di depan teks
   EDGE_TTS_VOICE    suara edge-tts (bawaan "id-ID-ArdiNeural")
 
 File teks yang tidak berubah dilewati (hash di audio/.tts-hash.json), jadi kuota tidak terbuang.
@@ -73,9 +73,6 @@ def _pcm_from_response(res):
     return raw              # PCM 16-bit mono 24 kHz
 
 
-DEFAULT_STYLE = "Bacakan dengan ekspresif dan hangat, nada naik turun jelas, suara agak rendah dan lembut (tidak nyaring), tempo santai:"
-
-
 def gemini_pcm(text, key, voice, model_pref):
     models = [model_pref] if model_pref else MODELS
     voice_shapes = [{"prebuiltVoiceConfig": {"voiceName": voice}}, {"voice": voice}]
@@ -123,8 +120,8 @@ def main():
     files = sorted(set(a.files + (glob.glob("naskah/*.txt") if a.all else [])))
     if not files:
         ap.error("beri file naskah .txt atau --all")
-    voice = (os.environ.get("GEMINI_TTS_VOICE") or "Achernar") if a.engine == "gemini" else os.environ.get("EDGE_TTS_VOICE", "id-ID-ArdiNeural")
-    style = (os.environ.get("GEMINI_TTS_STYLE") or DEFAULT_STYLE).strip()
+    voice = os.environ.get("GEMINI_TTS_VOICE", "Charon") if a.engine == "gemini" else os.environ.get("EDGE_TTS_VOICE", "id-ID-ArdiNeural")
+    style = os.environ.get("GEMINI_TTS_STYLE", "").strip()
     model = os.environ.get("GEMINI_TTS_MODEL", "").strip()
     key = os.environ.get("GEMINI_API_KEY", "")
     if a.engine == "gemini" and not key:

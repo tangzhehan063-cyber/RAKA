@@ -36,3 +36,18 @@ Aturan turunan: **terang/saturasi = naik-turun mood; hue = penanda suasana**. Se
 2. Maksimal 2 palet per video (3 bila ada adegan riset).
 3. Cek `brand/cek-bug.md` dan contact sheet (`--styles a,b,c --at t1,t2`) sebelum memilih.
 4. `paper` malam masih kusam (abu); gunakan hanya untuk adegan siang.
+
+## Matriks emosi × waktu (uji 13 Nov, shot kamar malam vs pagi dari video #3)
+Prinsip pembeda: **emosi memilih keluarga palet, waktu memilih terang/gelap-nya**. Jadi malam dan pagi dari emosi yang sama tetap satu keluarga warna, tapi beda kecerahan (Valdez & Mehrabian: terang = lebih senang & aman).
+
+| Emosi \ Waktu | Malam | Pagi / siang |
+|---|---|---|
+| Sedih / sepi | `arctic` (dingin, hampa) atau `clay` (cokelat redup) | `clay` terang rendah; `paper` untuk pagi yang pucat |
+| Cemas / takut | `indigo` (biru pekat, titik kuning) | `indigo` mood `golden` (belum diuji) |
+| Pulih / hangat | `lavender` atau `sakura` (lembut) | `clay` / `paper` (hangat terang) |
+| Marah / frustrasi | `ember` | `ember` mood `golden` |
+| Riset / data | `arctic` atau `indigo` | `paper` |
+
+Hasil lihat mata: malam `indigo` paling sinematik dan beda jelas dari emerald; `clay` malam kusam-cokelat (cocok untuk sedih, kurang untuk cemas); `retro` malam terlalu zaitun/kotor, jangan dipakai untuk malam; `paper` pagi paling terang dan jelas beda dari malam. Cara pakai per adegan: tambah `"style": "<id>"` pada shot di `story/shots.json`.
+
+**Batas yang ditemukan:** adegan 3D (orbit/teras) punya pencahayaan sendiri sehingga pagi 3D tetap gelap di semua palet. Untuk adegan pagi 3D, naikkan terang lampu di adegannya, bukan hanya ganti palet.
