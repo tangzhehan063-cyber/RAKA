@@ -1,4 +1,4 @@
-# Caption: Tas Belum Dilepas (Shorts, video #8) — DRAF
+# Caption: Tas Belum Dilepas (Shorts, video #8)
 
 ## TikTok / Instagram Reels (149 karakter)
 Pulang kerja langsung duduk bukan istirahat, itu autopilot (Wood 2002). Tim sofa atau tim mandi dulu? #pulangkerja #burnout #selfimprovementindonesia

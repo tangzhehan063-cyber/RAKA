@@ -25,3 +25,11 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 14. **Properti melayang / label kepanjangan** (#6, ditegur user di cover): benda yang dibawa tokoh digambar dari posisi tangan (`pose.hB`), benda di lantai pakai y = kaki tokoh; teks di properti kecil jangan dipakai (terpotong). Cek cover & still sebelum render final.
 15. **Gaya `retro` kusam kehijauan** (#6): untuk dunia hangat pakai `ember` (oranye menyala); cek warna di still ukuran penuh, bukan hanya contact sheet kecil.
 - Kursi: dudukan harus setinggi pinggul pose sit (72×s), sandaran di belakang pinggul; tokoh sit tidak boleh melayang tanpa kursi/kasur; pose lie+rot melayang, hindari (#7 s03/s06/s15).
+
+## #8 Tas Belum Dilepas (13 Nov)
+- **Kaki menembus dasar sofa 3D** (tokoh terlihat berlutut di atas "kasur"): sofa harus dangkal (dudukan ±0,6 m), pinggul tokoh di atas dudukan, kaki jatuh di LANTAI DEPAN sofa. Jangan pakai kotak padat menjangkau lantai di bawah kaki.
+- **Furnitur dekat kamera orbit menutupi layar** (lampu meja raksasa): taruh benda kecil di sisi jauh dari lintasan kamera.
+- **Kamera 3D potret terlalu sempit**: pintu/sofa terpotong. Pakai fov vertikal ±60 dan jarak ±8 m untuk shot lebar; jarak antar objek utama ≤ 4 m.
+- **Bayangan dinding samping** menggelapkan pintu: `castShadow = false` untuk dinding samping.
+- **Overlay merah di contact sheet bukan bagian video** (zona aman TikTok dari `tools/safezone.py`): kirim ke user versi tanpa overlay (susun `build/sheets/s*_*.png`).
+- Kata-kata callout/teks tidak boleh jatuh di pita caption (y≈1290–1400).
