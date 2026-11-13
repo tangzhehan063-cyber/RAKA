@@ -1,0 +1,21 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Tas Belum Dilepas
+@music 0-32.63 sad 0.3; 32.63-56.13 mystery 0.3; 61.36-82.0 hopeful 0.45
+s01	0.0	2.74	ruang@clay	cut	0.2 footstep -14; 0.7 footstep -14; 1.2 footstep -14; 1.7 footstep -14; 2.2 footstep -14	roomtone -26	Jam 6 sore, Doni baru sampai rumah. | WIDE ruang tamu sore, Doni masuk dari pintu, tas di punggung, jam 18:00
+s02	2.74	5.5	ruang@clay	cut	1.0 blip -16; 1.9 blip -16	roomtone -26	Tas masih di punggung, sepatu masih nempel. | MEDIUM berdiri di sofa; callout TAS dan SEPATU; duduk
+s03	5.5	7.91	ruang@clay	cut	1.5 pop -14	roomtone -26	Dia duduk di sofa, buka HP. | Duduk, layar HP menyala
+s04	7.91	11.52	ruang@clay	cut	2.3 pop -12; 3.2 pop -12	roomtone -26	Lima menit dulu, pikirnya. Habis itu mandi, habis itu makan. | Gelembung pikiran: mandi, makan
+s05	11.52	15.34	ruang@clay	dip	0.5 tick -16; 1.1 tick -16; 2.4 clock -20	roomtone -26	Setengah tujuh dia masih di situ. Jam 7 juga. | Jam melompat 18:30 -> 19:00, Doni tidak bergerak, langit sore jadi petang
+s06	15.34	22.91	ruang@indigo	cut	1.8 hit -16	roomtone -26	Perutnya udah bunyi, badannya lengket, dia sadar semua itu. Katanya duduk itu istirahat, tapi capeknya nggak ilang-ilang. | BIG FACE lelah, GRUUUK, keringat
+s07	22.91	27.24	ruang@indigo	dip	1.5 heartbeat -16	roomtone -26	Jam setengah delapan. Ada suara kecil di kepalanya: Dari tadi ngapain aja? | Malam, gelembung gelap "Dari tadi ngapain aja?"
+s08	27.24	32.63	ruang@indigo	cut	2.1 swish -14; 3.4 swish -14; 4.2 swish -14	-	Doni nggak punya jawaban. Ya udah, scroll lagi, biar suaranya diem. | Layar HP: mengetik jawaban lalu dihapus, scroll lagi
+s09	32.63	36.07	board@arctic	swipe	0.04 swish -12; 1.0 blip -16; 2.0 blip -16	-	Ada penelitian yang nyuruh orang nyatet kegiatannya tiap jam. | KARTU: 24 jam dicatat
+s10	36.07	43.68	board@arctic	swipe	0.04 swish -12; 3.7 riser -12; 5.0 impact -5	-	Peneliti, Wendy Wood, nemu sekitar 43 persen tindakan harian itu kebiasaan yang jalan sendiri, sementara kepala mikirin hal lain. | KARTU: 100 orang, 43 menyala, 43%
+s11	43.68	48.63	board@arctic	swipe	0.04 swish -12; 2.0 pop -12; 3.0 pop -12; 3.7 pop -12; 4.2 hit -10	-	Buat Doni, pintu rumah itu pemicunya: masuk, duduk, HP, sepaket. | KARTU: PINTU -> DUDUK -> HP, SATU PAKET
+s12	48.63	55.48	board@arctic	swipe	0.04 swish -12; 4.0 blip -14	-	Studi lama soal televisi juga ngelihat pola mirip: makin lama orang duduk, cenderung makin ngantuk dan makin susah bangun. | KARTU: grafik lama duduk vs ngantuk
+s13	55.48	61.36	ruang@indigo	dip	-	-	Jadi sofa itu nggak pernah dia pilih. Tubuhnya cuma ngikutin jalur lama. | HENING: teks diketik "Tubuhmu udah hafal jalurnya", jalur pintu -> sofa
+s14	61.36	68.73	ruang@clay	dip	0.9 hit -14; 2.7 pop -12; 4.5 pop -12; 6.0 pop -12	roomtone -26	Besoknya Doni ngubah satu hal aja: pintu ditutup, tas digantung, sepatu dilepas, baru duduk. | RITUAL: pintu ditutup, tas digantung, sepatu dilepas, duduk
+s15	68.73	72.39	ruang@clay	cut	2.4 tear -10	roomtone -26	Sofanya tetap di situ, tapi jalur lamanya putus. | Jalur lantai putus, Doni bangun dan pergi
+s16	72.39	74.98	ruang@clay	cut	1.0 pop -14	roomtone -26	Jam 7 kurang dia udah mandi dan makan. | BIG FACE senang, rambut basah, nasi hangat
+s17	74.98	79.17	ruang@clay	dip	2.0 ding -16	roomtone -26	Jam setengah delapan dia main HP, dan kali ini beneran santai. | Duduk santai, tas di gantungan, sepatu rapi
+s18	79.17	82.0	ruang@clay	dip	-	roomtone -26	Sore berikutnya, jam 6, Doni baru sampai rumah. | LOOP: kembali ke pintu jam 18:00

@@ -14,10 +14,12 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 
 ## Alur wajib setiap video
 1. **Naskah:** ide lewat ScriptForge (`prompts/ScriptForge.pdf`: niche, 10 ide); **struktur naskah ikut framework v2** di `brand/dna-video.md` §2 + `brand/kerangka-cerita.md` (tokoh beraksi, ending = perubahan nyata). Riset: 1 studi utama + 1 pendukung. Jangan mengarang statistik; sebut sumber dan kata "median"/"perkiraan" bila perlu.
-2. **Voiceover:** ElevenLabs, model `eleven_v4`, voice **Ghaisan** `vLsH4ENK3zGpAuW1lSh4`, **1 take, hanya versi final** (lihat "Aturan hemat ElevenLabs"). Draf: `naskah/<slug>.txt` → workflow GitHub Actions "Gemini TTS" → `audio/<slug>.wav`.
+2. **Voiceover (pilih mesin dulu):** **sebelum membuat VO final, SELALU tanya user: pakai Gemini TTS atau ElevenLabs?** (AskUserQuestion; jangan pilih sendiri, jangan panggil ElevenLabs sebelum dijawab). **Berhenti sampai pemilihan mesin:** suara, gaya baca, dan pengambilan hasilnya diatur & di-review user sendiri (channel ini dan Channel-Penjelasan punya karakter suara berbeda; jangan menyamakan atau menetapkan default suara). Hanya setup API yang disamakan dengan Channel-Penjelasan.
+   - **Gemini TTS**: `naskah/<slug>.txt` → workflow GitHub Actions "Gemini TTS" atau `python3 tools/gemini_tts.py` (setup API sama dengan Channel-Penjelasan) → `audio/<slug>.wav`. Timestamp: `python3 tools/align_teks.py audio/<slug>.wav naskah/<slug>.txt <words.json>`, lalu `scribe_to_timeline.py`.
+   - **ElevenLabs**: lihat "Aturan hemat ElevenLabs" (1 take, hanya versi final). Timestamp lewat Scribe (langkah 3).
    - Di teks TTS, tulis angka sebagai kata ("enam puluh enam"), pakai tag arahan `[calm, slow]`, `[warm, building]`. **Jangan pakai `[whispering]`/bisikan** (user tidak suka, 12 Nov); momen emosional diganti hening + teks di layar.
    - Unduh audio dari `elevenlabsusercontent.com` (host ini harus diizinkan di network environment).
-3. **Timestamp:** ElevenLabs Scribe (`creative_add_flow_asset_node` lalu `creative_transcribe_audio`). Unduh `words.json`, lalu:
+3. **Timestamp:** VO ElevenLabs → Scribe; VO Gemini → `tools/align_teks.py` (lihat langkah 2). Scribe (`creative_add_flow_asset_node` lalu `creative_transcribe_audio`). Unduh `words.json`, lalu:
    `python3 tools/scribe_to_timeline.py <words.json> studio/projects/<slug>/input/script.json`
    `python3 tools/parse_script.py --project projects/<slug> --script projects/<slug>/input/script.json` (dijalankan dari `studio/`)
    (Whisper/huggingface diblokir di cloud; jangan andalkan.)
