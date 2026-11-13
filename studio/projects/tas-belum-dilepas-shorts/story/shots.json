@@ -1,0 +1,561 @@
+{
+ "title": "Tas Belum Dilepas",
+ "duration": 82.0,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.74,
+   "line": "Jam 6 sore, Doni baru sampai rumah.",
+   "scene": "WIDE ruang tamu sore, Doni masuk dari pintu, tas di punggung, jam 18:00",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "footstep",
+     "gain": -14.0
+    },
+    {
+     "at": 0.7,
+     "name": "footstep",
+     "gain": -14.0
+    },
+    {
+     "at": 1.2,
+     "name": "footstep",
+     "gain": -14.0
+    },
+    {
+     "at": 1.7,
+     "name": "footstep",
+     "gain": -14.0
+    },
+    {
+     "at": 2.2,
+     "name": "footstep",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.74,
+   "end": 5.5,
+   "line": "Tas masih di punggung, sepatu masih nempel.",
+   "scene": "MEDIUM berdiri di sofa; callout TAS dan SEPATU; duduk",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 1.9,
+     "name": "blip",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 5.5,
+   "end": 7.91,
+   "line": "Dia duduk di sofa, buka HP.",
+   "scene": "Duduk, layar HP menyala",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 7.91,
+   "end": 11.52,
+   "line": "Lima menit dulu, pikirnya. Habis itu mandi, habis itu makan.",
+   "scene": "Gelembung pikiran: mandi, makan",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s05",
+   "start": 11.52,
+   "end": 15.34,
+   "line": "Setengah tujuh dia masih di situ. Jam 7 juga.",
+   "scene": "Jam melompat 18:30 -> 19:00, Doni tidak bergerak, langit sore jadi petang",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.1,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 2.4,
+     "name": "clock",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s06",
+   "start": 15.34,
+   "end": 22.91,
+   "line": "Perutnya udah bunyi, badannya lengket, dia sadar semua itu. Katanya duduk itu istirahat, tapi capeknya nggak ilang-ilang.",
+   "scene": "BIG FACE lelah, GRUUUK, keringat",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.8,
+     "name": "hit",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s07",
+   "start": 22.91,
+   "end": 27.24,
+   "line": "Jam setengah delapan. Ada suara kecil di kepalanya: Dari tadi ngapain aja?",
+   "scene": "Malam, gelembung gelap \"Dari tadi ngapain aja?\"",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s08",
+   "start": 27.24,
+   "end": 32.63,
+   "line": "Doni nggak punya jawaban. Ya udah, scroll lagi, biar suaranya diem.",
+   "scene": "Layar HP: mengetik jawaban lalu dihapus, scroll lagi",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 3.4,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 4.2,
+     "name": "swish",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo"
+  },
+  {
+   "id": "s09",
+   "start": 32.63,
+   "end": 36.07,
+   "line": "Ada penelitian yang nyuruh orang nyatet kegiatannya tiap jam.",
+   "scene": "KARTU: 24 jam dicatat",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 2.0,
+     "name": "blip",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s10",
+   "start": 36.07,
+   "end": 43.68,
+   "line": "Peneliti, Wendy Wood, nemu sekitar 43 persen tindakan harian itu kebiasaan yang jalan sendiri, sementara kepala mikirin hal lain.",
+   "scene": "KARTU: 100 orang, 43 menyala, 43%",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 3.7,
+     "name": "riser",
+     "gain": -12.0
+    },
+    {
+     "at": 5.0,
+     "name": "impact",
+     "gain": -5.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s11",
+   "start": 43.68,
+   "end": 48.63,
+   "line": "Buat Doni, pintu rumah itu pemicunya: masuk, duduk, HP, sepaket.",
+   "scene": "KARTU: PINTU -> DUDUK -> HP, SATU PAKET",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 4.2,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s12",
+   "start": 48.63,
+   "end": 55.48,
+   "line": "Studi lama soal televisi juga ngelihat pola mirip: makin lama orang duduk, cenderung makin ngantuk dan makin susah bangun.",
+   "scene": "KARTU: grafik lama duduk vs ngantuk",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 4.0,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s13",
+   "start": 55.48,
+   "end": 61.36,
+   "line": "Jadi sofa itu nggak pernah dia pilih. Tubuhnya cuma ngikutin jalur lama.",
+   "scene": "HENING: teks diketik \"Tubuhmu udah hafal jalurnya\", jalur pintu -> sofa",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "indigo"
+  },
+  {
+   "id": "s14",
+   "start": 61.36,
+   "end": 68.73,
+   "line": "Besoknya Doni ngubah satu hal aja: pintu ditutup, tas digantung, sepatu dilepas, baru duduk.",
+   "scene": "RITUAL: pintu ditutup, tas digantung, sepatu dilepas, duduk",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "hit",
+     "gain": -14.0
+    },
+    {
+     "at": 2.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 4.5,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 6.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s15",
+   "start": 68.73,
+   "end": 72.39,
+   "line": "Sofanya tetap di situ, tapi jalur lamanya putus.",
+   "scene": "Jalur lantai putus, Doni bangun dan pergi",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "tear",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 72.39,
+   "end": 74.98,
+   "line": "Jam 7 kurang dia udah mandi dan makan.",
+   "scene": "BIG FACE senang, rambut basah, nasi hangat",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s17",
+   "start": 74.98,
+   "end": 79.17,
+   "line": "Jam setengah delapan dia main HP, dan kali ini beneran santai.",
+   "scene": "Duduk santai, tas di gantungan, sepatu rapi",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 2.0,
+     "name": "ding",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s18",
+   "start": 79.17,
+   "end": 82.0,
+   "line": "Sore berikutnya, jam 6, Doni baru sampai rumah.",
+   "scene": "LOOP: kembali ke pintu jam 18:00",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 32.63,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 32.63,
+   "end": 56.13,
+   "mood": "mystery",
+   "intensity": 0.3
+  },
+  {
+   "start": 61.36,
+   "end": 82.0,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}
