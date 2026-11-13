@@ -1,14 +1,14 @@
 # Caption: Tas Belum Dilepas (Shorts, video #8)
 
-## TikTok / Instagram Reels (149 karakter)
-Pulang kerja langsung duduk bukan istirahat, itu autopilot (Wood 2002). Tim sofa atau tim mandi dulu? #pulangkerja #burnout #selfimprovementindonesia
+## TikTok / Instagram Reels (137 karakter)
+Pulang kerja langsung duduk? Sekitar 43% kebiasaan harian jalan otomatis (Wood 2002). Tim sofa atau tim mandi dulu? #pulangkerja #burnout
 
 ## Komentar pertama (pin)
-Jujur aku dulu juga gitu, sampai rumah tas masih nempel, "lima menit doang" taunya jam tujuh. Kalian biasanya baru gerak jam berapa? 😅
+Aku dulu juga gitu: sampai rumah tas masih nempel, "lima menit doang", taunya udah jam tujuh. Kalian biasanya baru gerak jam berapa? 😅
 
 ## YouTube Shorts
 **Judul:** Kenapa Kita Duduk Dulu Setelah Pulang Kerja #shorts
-**Deskripsi:** Sekitar 43% tindakan harian itu kebiasaan otomatis (Wood, Quinn & Kashy 2002). Pintu rumah jadi pemicu: masuk, duduk, HP.
+**Deskripsi:** Sekitar 43% tindakan harian itu kebiasaan otomatis (Wood, Quinn & Kashy 2002). Pintu rumah jadi pemicunya: masuk, duduk, HP.
 Coba besok: pintu tertutup, tas digantung, sepatu lepas, baru duduk. Sumber: J Pers Soc Psychol 83(6).
 
 ## Bukti bahasa
