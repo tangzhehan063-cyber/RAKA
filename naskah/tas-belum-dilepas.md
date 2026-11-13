@@ -1,7 +1,7 @@
-# #8 Tas Belum Dilepas (draf 2 ACC user 13 Nov, kerangka Pukulan ke-99 + framework v2)
+# #8 Tas Belum Dilepas (draf 3 dihumanisasi, ACC draf 2 user 13 Nov, kerangka Pukulan ke-99 + framework v2)
 
 Topik: pulang kerja jam 17.00, sampai rumah 18.00, lalu cuma duduk main HP sampai 19.30 (menunda mandi, makan, dst). Tokoh: Doni (tas kerja merah-oranye #d64a33 = maskot; tas inilah item yang "belum dilepas").
-Momen visual khas/cover: **tas yang tak pernah dilepas** (masih di punggung sampai jam 21.00) + teks cover "BELUM PULANG".
+Momen visual khas/cover: **tas yang tak pernah dilepas** (masih di punggung sampai jam 19.30) + teks cover "BELUM PULANG".
 Eksperimen: (1) satu item maskot jadi penanda cerita (tas dilepas = pulang); (2) jam dinding sebagai penghitung bisu 18:00 → 19:30 tanpa tokoh berpindah (match cut jam → jam).
 
 ## Riset (ringkas, dengan kejujuran)
@@ -13,25 +13,25 @@ Eksperimen: (1) satu item maskot jadi penanda cerita (tas dilepas = pulang); (2)
 ## Naskah per babak (±68 dtk; draf 2: jam 18:00 → 19:30, dipangkas)
 | Babak | Visual (palet) | Narasi |
 |---|---|---|
-| 1 Adegan "salah" (0–7) | Jam dinding 18:00. Doni masuk, langsung duduk di sofa, tas masih di punggung, sepatu terpasang, HP menyala. *(clay golden, cahaya sore)* | Jam enam sore. Doni baru sampai rumah. Tasnya belum dilepas. Sepatunya juga. Dia cuma duduk, lalu buka HP. |
-| 2 Cermin (7–23) | Match cut jam: 18:00 → 18:30 → 19:00, Doni tidak bergerak; cahaya jendela memudar. Perutnya bunyi. *(clay → indigo)* | Lima menit dulu, katanya. Habis itu mandi, habis itu makan. Setengah tujuh dia masih di situ. Jam tujuh juga. Perutnya bunyi, badannya lengket, dia tahu semuanya. Dia bukan malas. Dia capek. Tapi kok istirahatnya nggak terasa istirahat? |
-| 3 Suara di kepala (23–38) | Jam 19:30. Sofa seperti menarik tubuhnya; di layar HP muncul "komentar" kecil: "ngapain aja dari tadi?" *(indigo)* | Jam setengah delapan. Ada suara kecil di kepalanya, "Dari tadi ngapain aja?" Dia nggak punya jawaban, jadi dia scroll lagi, biar suara itu diam. *(VO hening ±1,5 dtk, musik mati; di layar HP diketik huruf per huruf: "tadi cuma mau lima menit" lalu dihapus pelan)* |
-| 4 Balik sudut pandang (38–55) | Kamera mundur: pintu di kiri, sofa di kanan, garis tipis di lantai menghubungkan keduanya seperti rel. Papan riset: 43%, Wood 2002. *(arctic/indigo)* | Ternyata ini bukan soal kemauan. Peneliti Wendy Wood mencatat kegiatan orang tiap jam. Sekitar empat puluh tiga persen tindakan harian itu kebiasaan otomatis, jalan sendiri sambil kepala mikirin hal lain. Pintu rumah itu pemicunya: masuk, duduk, HP. Satu paket. Studi lama soal televisi juga menemukan, makin lama duduk, orang cenderung makin ngantuk dan makin susah bangun. |
-| 5 Validasi + aksi (55–66) | Teks diketik: "Kamu bukan malas. Kamu lagi autopilot." Sore berikutnya: Doni di pintu, **tas digantung**, sepatu dilepas, baru duduk. Jam 18:45 sudah makan nasi hangat; HP di meja; jam 19:30 santai beneran. *(clay hangat, lampu kuning dapur)* | Kamu nggak lagi istirahat. Kamu lagi autopilot. Besoknya Doni cuma ubah satu hal: begitu pintu tertutup, tas digantung, sepatu dilepas, baru duduk. Nggak melawan sofa. Cuma memutus paketnya. Jam tujuh kurang dia sudah mandi dan makan. Jam setengah delapan dia main HP, dan kali ini rasanya santai beneran. |
+| 1 Adegan "salah" (0–7) | Jam dinding 18:00. Doni masuk, langsung duduk di sofa, tas masih di punggung, sepatu terpasang, HP menyala. *(clay golden, cahaya sore)* | Jam enam sore, Doni baru sampai rumah. Tas masih di punggung, sepatu masih nempel. Dia duduk di sofa, buka HP. |
+| 2 Cermin (7–23) | Match cut jam: 18:00 → 18:30 → 19:00, Doni tidak bergerak; cahaya jendela memudar. Perutnya bunyi. *(clay → indigo)* | Lima menit dulu, pikirnya. Habis itu mandi, habis itu makan. Setengah tujuh dia masih di situ. Jam tujuh juga. Perutnya udah bunyi, badannya lengket, dia sadar semua itu. Katanya duduk itu istirahat, tapi capeknya nggak ilang-ilang. |
+| 3 Suara di kepala (23–38) | Jam 19:30. Sofa seperti menarik tubuhnya; di layar HP muncul "komentar" kecil: "ngapain aja dari tadi?" *(indigo)* | Jam setengah delapan. Ada suara kecil di kepalanya: "Dari tadi ngapain aja?" Doni nggak punya jawaban. Ya udah, scroll lagi, biar suaranya diem. *(VO hening ±1,5 dtk, musik mati; di layar HP diketik huruf per huruf: "tadi cuma mau lima menit" lalu dihapus pelan)* |
+| 4 Balik sudut pandang (38–55) | Kamera mundur: pintu di kiri, sofa di kanan, garis tipis di lantai menghubungkan keduanya seperti rel. Papan riset: 43%, Wood 2002. *(arctic/indigo)* | Ada penelitian yang nyuruh orang nyatet kegiatannya tiap jam. Peneliti, Wendy Wood, nemu sekitar empat puluh tiga persen tindakan harian itu kebiasaan yang jalan sendiri, sementara kepala mikirin hal lain. Buat Doni, pintu rumah itu pemicunya: masuk, duduk, HP, sepaket. Studi lama soal televisi juga ngelihat pola mirip: makin lama orang duduk, cenderung makin ngantuk dan makin susah bangun. |
+| 5 Validasi + aksi (55–66) | Teks diketik: "Tubuhmu udah hafal jalurnya." Sore berikutnya: Doni di pintu, **tas digantung**, sepatu dilepas, baru duduk. Jam 18:45 sudah makan nasi hangat; HP di meja; jam 19:30 santai beneran. *(clay hangat, lampu kuning dapur)* | Jadi sofa itu nggak pernah dia pilih. Tubuhnya cuma ngikutin jalur lama. Besoknya Doni ngubah satu hal aja: pintu ditutup, tas digantung, sepatu dilepas, baru duduk. Sofanya tetap di situ, tapi jalur lamanya putus. Jam tujuh kurang dia udah mandi dan makan. Jam setengah delapan dia main HP, dan kali ini beneran santai. |
 | 6 Loop (66–69) | Kembali ke jam 18:00, pintu terbuka, Doni masuk. | Sore berikutnya, jam enam, Doni baru sampai rumah. |
 
 ## Teks TTS (angka jadi kata; tanpa bisikan)
-Jam enam sore. Doni baru sampai rumah. Tasnya belum dilepas. Sepatunya juga. Dia cuma duduk, lalu buka HP.
+Jam enam sore, Doni baru sampai rumah. Tas masih di punggung, sepatu masih nempel. Dia duduk di sofa, buka HP.
 
-Lima menit dulu, katanya. Habis itu mandi, habis itu makan. Setengah tujuh dia masih di situ. Jam tujuh juga. Perutnya bunyi, badannya lengket, dia tahu semuanya. Dia bukan malas. Dia capek. Tapi kok istirahatnya nggak terasa istirahat?
+Lima menit dulu, pikirnya. Habis itu mandi, habis itu makan. Setengah tujuh dia masih di situ. Jam tujuh juga. Perutnya udah bunyi, badannya lengket, dia sadar semua itu. Katanya duduk itu istirahat, tapi capeknya nggak ilang-ilang.
 
-Jam setengah delapan. Ada suara kecil di kepalanya, "Dari tadi ngapain aja?" Dia nggak punya jawaban, jadi dia scroll lagi, biar suara itu diam.
+Jam setengah delapan. Ada suara kecil di kepalanya: "Dari tadi ngapain aja?" Doni nggak punya jawaban. Ya udah, scroll lagi, biar suaranya diem.
 
-Ternyata ini bukan soal kemauan. Peneliti Wendy Wood mencatat kegiatan orang tiap jam. Sekitar empat puluh tiga persen tindakan harian itu kebiasaan otomatis, jalan sendiri sambil kepala mikirin hal lain. Pintu rumah itu pemicunya: masuk, duduk, HP. Satu paket. Studi lama soal televisi juga menemukan, makin lama duduk, orang cenderung makin ngantuk dan makin susah bangun.
+Ada penelitian yang nyuruh orang nyatet kegiatannya tiap jam. Peneliti, Wendy Wood, nemu sekitar empat puluh tiga persen tindakan harian itu kebiasaan yang jalan sendiri, sementara kepala mikirin hal lain. Buat Doni, pintu rumah itu pemicunya: masuk, duduk, HP, sepaket. Studi lama soal televisi juga ngelihat pola mirip: makin lama orang duduk, cenderung makin ngantuk dan makin susah bangun.
 
-Kamu nggak lagi istirahat. Kamu lagi autopilot.
+Jadi sofa itu nggak pernah dia pilih. Tubuhnya cuma ngikutin jalur lama.
 
-Besoknya Doni cuma ubah satu hal: begitu pintu tertutup, tas digantung, sepatu dilepas, baru duduk. Nggak melawan sofa. Cuma memutus paketnya. Jam tujuh kurang dia sudah mandi dan makan. Jam setengah delapan dia main HP, dan kali ini rasanya santai beneran.
+Besoknya Doni ngubah satu hal aja: pintu ditutup, tas digantung, sepatu dilepas, baru duduk. Sofanya tetap di situ, tapi jalur lamanya putus. Jam tujuh kurang dia udah mandi dan makan. Jam setengah delapan dia main HP, dan kali ini beneran santai.
 
 Sore berikutnya, jam enam, Doni baru sampai rumah.
 
