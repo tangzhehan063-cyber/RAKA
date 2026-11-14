@@ -3,7 +3,8 @@
 ## Posisi terakhir (13 Nov 2026)
 - **Palet warna selesai (13 Nov)**: style baru `paper`, `indigo`, `clay`, `lavender` + perbaikan `--style` di `studio/engine/player.js`. Panduan emosi × waktu di `brand/palet-emosi.md` (per adegan lewat `"style"` di shots.json). User ACC arah warna.
 - **VO**: hanya tanya user Gemini atau ElevenLabs, lalu berhenti (suara diatur user; channel punya karakter beda). `tools/align_teks.py` ditambahkan.
-- **Video #8 "Tas Belum Dilepas" SELESAI RENDER (13 Nov)**: hibrid 2D+3D, 82 dtk, -14,1 LUFS, MP4 dikirim ke user (45 MB), cover + caption + arsip sudah. Render 3D memakan ±29 mnt (WORKERS=nproc-1). Belum ada PR ke main; belum diunggah ke Drive (user). Sebelumnya: naskah draf 2 di-ACC (jam 18:00→19:30), caption draf ada (scrape gagal: kredit habis). VO: user pilih **Gemini TTS** dan mengambil suaranya sendiri; teks TTS siap di `naskah/tas-belum-dilepas.md` (JANGAN buat `naskah/*.txt` di repo: push memicu workflow dengan suara default). Setelah user kirim WAV: `align_teks.py` → timeline → adegan.\n- **Berikutnya**: lanjut #8 setelah VO; user juga akan membahas karakteristik animasi.
+- **Video #8 "Tas Belum Dilepas" SELESAI RENDER (13 Nov)**: hibrid 2D+3D, 82 dtk, -14,1 LUFS, MP4 dikirim ke user (45 MB), cover + caption + arsip sudah. Render 3D memakan ±29 mnt (WORKERS=nproc-1). Belum ada PR ke main; belum diunggah ke Drive (user). Sebelumnya: naskah draf 2 di-ACC (jam 18:00→19:30), caption draf ada (scrape gagal: kredit habis). VO: user pilih **Gemini TTS** dan mengambil suaranya sendiri; teks TTS siap di `naskah/tas-belum-dilepas.md` (JANGAN buat `naskah/*.txt` di repo: push memicu workflow dengan suara default). Setelah user kirim WAV: `align_teks.py` → timeline → adegan.
+- **Berikutnya**: lanjut #8 setelah VO; user juga akan membahas karakteristik animasi.
 
 ## Posisi sebelumnya (12 Nov 2026)
 - **Hemat ElevenLabs (12 Nov)**: 1 take, hanya naskah final, revisi per kalimat, 1 flow per video; draf suara lewat workflow GitHub Actions "Gemini TTS" (`naskah/*.txt` → `audio/*.wav`, secret `GEMINI_API_KEY`) atau `python3 tools/gemini_tts.py`. Aturan lengkap di CLAUDE.md.
@@ -24,7 +25,7 @@
 ## Preferensi user
 - **Tanpa bisikan di VO** (12 Nov). Puncak emosi = hening ±1 dtk + teks diketik di layar. Struktur naskah: `brand/kerangka-cerita.md`.
 - **Satu chat = satu repo.** Repo lain → chat baru.
-- **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan Claude langsung merge sendiri (izin user 9 Nov).** User bukan programmer; laporan cukup "sudah masuk main".
+- **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan (merge: lihat `KEPUTUSAN.md`, belum diputuskan; jangan merge sendiri).** User bukan programmer; laporan cukup "sudah masuk main".
 - **Moodboard & storyboard boleh terus di-improve Claude** (izin user 9 Nov): tiap video coba 1–2 eksperimen visual/cerita baru, catat di `brand/eksperimen.md`. Yang user bilang "suka" → jadi baku di `brand/dna-video.md`.
 - **Posisi CC baku (ACC 9 Nov): pusat y=1344 (0,70 H)**, default engine, jangan diubah. Teks penting di zona aman TikTok.
 - Bahasa Indonesia, sederhana. Suka saran "out of the box".

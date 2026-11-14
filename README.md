@@ -3,6 +3,7 @@
 | Folder | Isi |
 |---|---|
 | `CLAUDE.md` | Aturan kerja untuk Claude (alur produksi, voice, caption wajib) |
+| `WORKFLOW.md`, `STATUS.md`, `KEPUTUSAN.md` | Alur cepat langkah 0–7, posisi terakhir, daftar keputusan user |
 | `brand/` | DNA video (ciri khas wajib), brand kit, bio, arsip konten |
 | `naskah/` | Naskah per video + sumber fakta |
 | `caption/` | Caption posting per video |
