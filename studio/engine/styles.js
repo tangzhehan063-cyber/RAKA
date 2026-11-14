@@ -95,10 +95,10 @@ export const STYLES = {
     },
   },
   lembut: {
-    name: 'Lembut Terang', desc: 'RAKA: dunia terang dan hangat, tanpa neon, tanpa rim/outline, bloom hampir nol; tokoh arang lembut (bukan hitam pekat), dinding pastel, kontras halus.',
-    ink: '#2b2f3a', inkFar: '#9a98a6', feature: '#ffffff', rimWidth: 0,
-    ui: { ...UI, card: 'rgba(255,250,240,.96)', cardLine: 'rgba(43,47,58,.18)', text: '#2a3150', sub: '#6b7190', accent: '#d64a33', gold: '#a8620f', cream: '#2b2f3a', blueprint: '#3f6fb8', bpBg: '#f4ecdc', good: '#2f8a57' },
-    grade: { contrast: 1.0, sat: 0.92, lift: [0.08, 0.07, 0.06], gamma: [1.04, 1.02, 1.0], gain: [1.02, 1.0, 0.95], vignette: 0.18, grain: 0.03, bloom: 0.06 },
+    name: 'Lembut Terang', desc: 'RAKA: dunia terang pastel, kontras sangat halus, tanpa neon, tanpa rim/outline (2D dan 3D), bloom hampir nol; tokoh arang lembut, bayangan tipis.',
+    ink: '#3d4352', inkFar: '#a4a2b0', feature: '#fffdf8', rimWidth: 0, outline3D: false,
+    ui: { ...UI, card: 'rgba(255,250,240,.96)', cardLine: 'rgba(43,47,58,.18)', text: '#2a3150', sub: '#6b7190', accent: '#d64a33', gold: '#8a4f0c', cream: '#2b2f3a', blueprint: '#3f6fb8', bpBg: '#f4ecdc', good: '#2f8a57' },
+    grade: { contrast: 0.93, sat: 0.84, lift: [0.12, 0.11, 0.1], gamma: [1.06, 1.04, 1.02], gain: [1.0, 0.99, 0.96], vignette: 0.08, grain: 0.02, bloom: 0.03 },
     moods: {
       day: { sky: ['#cfe0ee', '#e6eef2', '#f7f1e4'], ambient: '#b8b0a4', key: '#fffaf0', rim: '#fffaf0', wall: '#e9dcc6', floor: '#c9b49a', dark: '#5a5468', practical: '#f2b441', fog: '#eef0ea' },
       golden: { sky: ['#f2c58a', '#f8dcae', '#fff1d4'], ambient: '#c4a68a', key: '#fff0d0', rim: '#fff0d0', wall: '#ecd2b0', floor: '#c9a27c', dark: '#5a4638', practical: '#f2b441', fog: '#f4d9b0' },
