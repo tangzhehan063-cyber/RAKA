@@ -56,11 +56,11 @@ registerShot('s10', { draw(g, t, info) {
 registerShot('s11', { draw(g, t, info) {
   const t1 = rel('49', info, 1.4), tk = rel('kelewat', info, 3.1);
   card(g, t, info, (g, ui, bp) => {
-    text(g, 'HARI SAMPAI SELESAI', E.W / 2, 300, { size: 48, color: alpha(bp, 0.95), font: FONTS.ui, weight: 900, spacing: 4 });
+    text(g, 'HARI SAMPAI SELESAI', E.W / 2, 300, { size: 48, color: alpha(bp, 0.95), font: FONTS.ui, weight: 900, spacing: 4, alpha: 1 - prog(t, tk - 0.3, tk) });
     axis(g, bp);
     pillar(g, 230, 34, 1, alpha(ui.cream, 0.6), 'TEBAKAN', ui);
     pillar(g, 540, 49, prog(t, t1 - 0.3, t1 + 0.6), ui.accent || '#ff6a50', 'TERBURUK', ui);
-    const a = pop(t, tk, 0.4); if (a > 0) { g.save(); g.translate(E.W / 2, 380); g.scale(a, a); text(g, 'ITU PUN KELEWAT', 0, 0, { size: 70, color: ui.gold, font: FONTS.ui, weight: 900, glow: 20, glowColor: alpha(ui.gold, 0.5) }); g.restore(); }
+    const a = pop(t, tk, 0.4); if (a > 0) { g.save(); g.translate(380, 290); g.scale(a, a); text(g, 'ITU PUN KELEWAT', 0, 0, { size: 54, color: ui.gold, font: FONTS.ui, weight: 900, glow: 20, glowColor: alpha(ui.gold, 0.5) }); g.restore(); }
   }, { over: (g, ui) => { const k = 1 + 0.35 * ease.out(prog(t, tk - 0.2, tk + 0.8)); g.save(); g.translate(850, BASE); g.scale(1, k); g.translate(-850, -BASE); pillar(g, 850, 55, 1, ui.gold, 'KENYATAAN', ui, { numIn: true }); g.restore(); } });
 } });
 
