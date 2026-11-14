@@ -1,6 +1,13 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## Posisi terakhir (13 Nov 2026)
+## Posisi terakhir (14 Nov 2026) — mulai chat baru dari sini
+- **Gaya rumah baru `lembut`** (branch `gaya-lembut`, PR terbuka): terang pastel, tanpa neon, tokoh 3D tanpa garis tepi bercahaya (`studio/engine/three-kit.js` opsi `outline3D`). `tools/produksi.sh init` kini memberi `style: 'lembut'` ke proyek baru. User ACC arah ini ("pakai style ini dulu"). Video #1–#8 tidak berubah.
+- **Belum dikerjakan untuk gaya lembut**: warna set masih tertulis langsung di kode (`sets/ruang3d.js`, `ruang.js`, `kamar.js`, `bedroom.js`, `street.js`: sofa hijau tosca, lantai kayu, pintu) dan bentuk benda masih kotak-kotak; caption masih putih bergaris hitam tebal (gaya ACC 9 Nov). Ini kandidat perbaikan berikutnya; tanya user dulu untuk caption.
+- **Skill `sutradara` + `tools/cek-sutradara.py` + `tools/cek-visual.py`** (branch `sutradara-raka`, PR #20 terbuka): porting dari Channel-Penjelasan. `produksi.sh sheet` menjalankan cek otomatis.
+- **Engine tetap GrowKaz** (keputusan user 14 Nov): uji Remotion + three.js untuk RAKA ditolak ("jelek"); jangan pindah engine.
+- **Berikutnya**: merge PR #20 dan PR gaya-lembut, lalu video #9 dengan gaya `lembut` (mulai dari ide; kredit ScrapeMedsos habis → ide tanpa scrape). #8: PR ke main dan unggah MP4 ke Drive masih menggantung.
+
+## Posisi sebelumnya (13 Nov 2026)
 - **Palet warna selesai (13 Nov)**: style baru `paper`, `indigo`, `clay`, `lavender` + perbaikan `--style` di `studio/engine/player.js`. Panduan emosi × waktu di `brand/palet-emosi.md` (per adegan lewat `"style"` di shots.json). User ACC arah warna.
 - **VO**: hanya tanya user Gemini atau ElevenLabs, lalu berhenti (suara diatur user; channel punya karakter beda). `tools/align_teks.py` ditambahkan.
 - **Video #8 "Tas Belum Dilepas" SELESAI RENDER (13 Nov)**: hibrid 2D+3D, 82 dtk, -14,1 LUFS, MP4 dikirim ke user (45 MB), cover + caption + arsip sudah. Render 3D memakan ±29 mnt (WORKERS=nproc-1). Belum ada PR ke main; belum diunggah ke Drive (user). Sebelumnya: naskah draf 2 di-ACC (jam 18:00→19:30), caption draf ada (scrape gagal: kredit habis). VO: user pilih **Gemini TTS** dan mengambil suaranya sendiri; teks TTS siap di `naskah/tas-belum-dilepas.md` (JANGAN buat `naskah/*.txt` di repo: push memicu workflow dengan suara default). Setelah user kirim WAV: `align_teks.py` → timeline → adegan.
