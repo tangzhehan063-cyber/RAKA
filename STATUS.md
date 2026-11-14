@@ -1,7 +1,7 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
 ## Posisi terakhir (14 Nov 2026)
-- **Video #9: tahap ide (14 Nov)**. ScrapeMedsos 0 kredit, ide ditulis tanpa scrape. 10 ide dikirim, menunggu pilihan user. Cabang sesi lama (loving-newton, stoic-feynman, vigilant-keller) sudah digabung ke cabang kerja.
+- **Video #9 "Skripsi Dua Minggu" (14 Nov)**: planning fallacy (Buehler, Griffin & Ross 1994: tebakan 34 hari, terburuk 49, nyata 55; ±30% tepat). Naskah draf 2 di `naskah/skripsi-dua-minggu.md`, MENUNGGU ACC. Tanpa scrape (kredit 0). Cabang sesi lama sudah digabung.
 
 ## Posisi sebelumnya (13 Nov 2026)
 - **Palet warna selesai (13 Nov)**: style baru `paper`, `indigo`, `clay`, `lavender` + perbaikan `--style` di `studio/engine/player.js`. Panduan emosi × waktu di `brand/palet-emosi.md` (per adegan lewat `"style"` di shots.json). User ACC arah warna.
