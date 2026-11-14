@@ -1,0 +1,22 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Skripsi Dua Minggu
+@music 0-18.0 hopeful 0.3; 18.0-31.4 sad 0.3; 31.4-50.3 mystery 0.3; 53.55-82.78 hopeful 0.45
+s01	0.0	4.55	kos@paper	cut	1.4 pop -12	roomtone -26	Dua minggu. Itu tulisan di kertas kecil yang Bima tempel di laptop. | MEDIUM siang kamar kos, Bima menempel kertas merah-oranye "2 MINGGU" di laptop
+s02	4.55	7.15	kos@paper	cut	0.6 ding -16	roomtone -26	Bab dua skripsi, beres dua minggu. | Close laptop: dokumen BAB 2 0%, Bima mengangguk yakin, badge HARI 1
+s03	7.15	10.1	kos@paper	dip	0.3 tick -16; 0.6 tick -16; 0.9 tick -16	roomtone -26	Hari keempat belas, bab duanya baru setengah. | Layar: progress 50%, kalender dicoret sampai 14, badge HARI 14
+s04	10.1	15.0	kos@paper	cut	1.0 tear -10; 2.6 pop -12	roomtone -26	Kertasnya disobek, diganti yang baru: dua minggu lagi, kali ini pasti. | Kertas disobek, kertas baru "2 MINGGU LAGI" ditempel di atasnya (lapis 2)
+s05	15.0	18.0	meja3d@indigo	dip	1.6 tear -12; 2.0 pop -12	-	Dua minggu kemudian, kertasnya diganti lagi. | 3D: orbit meja senja, tumpukan kertas bertambah (lapis 3), badge HARI 28
+s06	18.0	20.55	hp@indigo	swipe	0.2 phonebuzz -14; 1.0 pop -14	-	Di grup, temannya kirim foto pakai toga. | Layar HP: grup "Angkatan 21", foto toga + "akhirnya!!"
+s07	20.55	26.06	kos@indigo	cut	0.1 phonebuzz -12; 1.2 phonebuzz -12	roomtone -28	Ibunya nelpon: Kapan sidang? Jawabannya masih sama: Dua minggu lagi, Bu. | Malam, Bima di kasur dengan HP; gelembung "Kapan sidang?" dan jawaban "Dua minggu lagi, Bu."
+s08	26.06	31.4	kos@indigo	cut	2.4 heartbeat -16	-	Tumpukan kertas di laptop makin tebal, dan dia mulai mikir, mungkin aku emang pemalas. | BIG FACE cemas, cahaya laptop, tumpukan kertas di latar; kata "PEMALAS?" coral
+s09	31.4	38.15	board@arctic	swipe	0.04 swish -12; 1.2 blip -16; 3.0 counter -16	-	Tahun 94, peneliti Roger Buehler nanya ke 37 mahasiswa tugas akhir: kelarnya kapan? | KARTU: 1994 ROGER BUEHLER, 37 mahasiswa, "KELARNYA KAPAN?"
+s10	38.15	42.7	board@arctic	swipe	0.04 swish -12; 1.0 riser -14; 2.9 impact -6	-	Rata-rata nebak 34 hari. Kenyataannya 55 hari. | KARTU: tiang TEBAKAN 34 lalu tiang KENYATAAN 55 (emas) menjulang
+s11	42.7	47.1	board@arctic	swipe	0.04 swish -12; 1.4 pop -12; 3.1 hit -8	-	Tebakan skenario paling buruknya, 49 hari, itu pun kelewat. | KARTU: tiang TERBURUK 49 (coral) muncul, tiang 55 menembus atas kartu, "ITU PUN KELEWAT"
+s12	47.1	50.3	board@arctic	swipe	0.04 swish -12; 1.2 blip -14; 1.5 blip -14; 1.8 blip -14	-	Cuma sekitar 30 persen yang selesai sesuai tebakannya. | KARTU: 10 tokoh, 3 menyala emas, "±30% TEPAT"
+s13	50.3	53.55	hening@arctic	dip	-	-	Bima nggak pemalas. | HENING freeze-frame partikel: teks diketik "skenario terburukmu pun masih terlalu optimis."
+s14	53.55	60.0	board@arctic	cut	1.0 whoosh -14; 4.0 swish -14	-	Otaknya bikin rencana pakai jalan yang paling mulus, terus lupa sama pengalamannya sendiri. | KARTU: jalan RENCANA lurus mulus vs jalan KENYATAAN berliku; folder PENGALAMAN pudar
+s15	60.0	63.1	kos@indigo	dip	0.8 tear -10; 1.2 tear -12; 1.6 tear -12	roomtone -26	Malam itu semua kertasnya dicabut. | Malam, lampu meja menyala, Bima mencabut tumpukan kertas, kertas berhamburan
+s16	63.1	67.6	laptop@clay	cut	0.4 blip -16; 2.6 ding -14	-	Dia buka catatan lama: bab satu dulu makan lima minggu. | Layar laptop: folder BAB 1, tanggal mulai-selesai, "= 5 MINGGU" emas
+s17	67.6	73.0	kos@clay	dip	1.4 scribble -14; 2.4 scribble -14; 3.4 scribble -14	roomtone -26	Bab dua dikasih lima minggu juga, dipecah jadi potongan kecil, satu per hari. | Dinding: 35 kertas kecil, dicoret satu per satu; cahaya pindah ke pagi emas, badge HARI berjalan
+s18	73.0	77.3	kos@clay	cut	2.6 stinger -10	roomtone -26	Minggu kelima, dosennya nulis satu kata: ACC. | Pagi emas, layar laptop "ACC" stempel emas, Bima bersorak
+s19	77.3	82.78	kos@paper	dip	-	roomtone -26	Di kamar sebelah, temannya nempel kertas kecil di laptop. Tulisannya: dua minggu. | LOOP: kamar sebelah, teman kos menempel kertas "2 MINGGU" (sama dengan framing s01)

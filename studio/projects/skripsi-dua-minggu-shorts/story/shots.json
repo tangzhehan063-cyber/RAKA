@@ -1,0 +1,572 @@
+{
+ "title": "Skripsi Dua Minggu",
+ "duration": 82.78,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 4.55,
+   "line": "Dua minggu. Itu tulisan di kertas kecil yang Bima tempel di laptop.",
+   "scene": "MEDIUM siang kamar kos, Bima menempel kertas merah-oranye \"2 MINGGU\" di laptop",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "paper",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 4.55,
+   "end": 7.15,
+   "line": "Bab dua skripsi, beres dua minggu.",
+   "scene": "Close laptop: dokumen BAB 2 0%, Bima mengangguk yakin, badge HARI 1",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "ding",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "paper",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 7.15,
+   "end": 10.1,
+   "line": "Hari keempat belas, bab duanya baru setengah.",
+   "scene": "Layar: progress 50%, kalender dicoret sampai 14, badge HARI 14",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 0.6,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 0.9,
+     "name": "tick",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "paper",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 10.1,
+   "end": 15.0,
+   "line": "Kertasnya disobek, diganti yang baru: dua minggu lagi, kali ini pasti.",
+   "scene": "Kertas disobek, kertas baru \"2 MINGGU LAGI\" ditempel di atasnya (lapis 2)",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "tear",
+     "gain": -10.0
+    },
+    {
+     "at": 2.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "paper",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s05",
+   "start": 15.0,
+   "end": 18.0,
+   "line": "Dua minggu kemudian, kertasnya diganti lagi.",
+   "scene": "3D: orbit meja senja, tumpukan kertas bertambah (lapis 3), badge HARI 28",
+   "set": "meja3d",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "tear",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo"
+  },
+  {
+   "id": "s06",
+   "start": 18.0,
+   "end": 20.55,
+   "line": "Di grup, temannya kirim foto pakai toga.",
+   "scene": "Layar HP: grup \"Angkatan 21\", foto toga + \"akhirnya!!\"",
+   "set": "hp",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "phonebuzz",
+     "gain": -14.0
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo"
+  },
+  {
+   "id": "s07",
+   "start": 20.55,
+   "end": 26.06,
+   "line": "Ibunya nelpon: Kapan sidang? Jawabannya masih sama: Dua minggu lagi, Bu.",
+   "scene": "Malam, Bima di kasur dengan HP; gelembung \"Kapan sidang?\" dan jawaban \"Dua minggu lagi, Bu.\"",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "phonebuzz",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "phonebuzz",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28.0
+   }
+  },
+  {
+   "id": "s08",
+   "start": 26.06,
+   "end": 31.4,
+   "line": "Tumpukan kertas di laptop makin tebal, dan dia mulai mikir, mungkin aku emang pemalas.",
+   "scene": "BIG FACE cemas, cahaya laptop, tumpukan kertas di latar; kata \"PEMALAS?\" coral",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo"
+  },
+  {
+   "id": "s09",
+   "start": 31.4,
+   "end": 38.15,
+   "line": "Tahun 94, peneliti Roger Buehler nanya ke 37 mahasiswa tugas akhir: kelarnya kapan?",
+   "scene": "KARTU: 1994 ROGER BUEHLER, 37 mahasiswa, \"KELARNYA KAPAN?\"",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 3.0,
+     "name": "counter",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s10",
+   "start": 38.15,
+   "end": 42.7,
+   "line": "Rata-rata nebak 34 hari. Kenyataannya 55 hari.",
+   "scene": "KARTU: tiang TEBAKAN 34 lalu tiang KENYATAAN 55 (emas) menjulang",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 2.9,
+     "name": "impact",
+     "gain": -6.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s11",
+   "start": 42.7,
+   "end": 47.1,
+   "line": "Tebakan skenario paling buruknya, 49 hari, itu pun kelewat.",
+   "scene": "KARTU: tiang TERBURUK 49 (coral) muncul, tiang 55 menembus atas kartu, \"ITU PUN KELEWAT\"",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.1,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s12",
+   "start": 47.1,
+   "end": 50.3,
+   "line": "Cuma sekitar 30 persen yang selesai sesuai tebakannya.",
+   "scene": "KARTU: 10 tokoh, 3 menyala emas, \"±30% TEPAT\"",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 1.5,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s13",
+   "start": 50.3,
+   "end": 53.55,
+   "line": "Bima nggak pemalas.",
+   "scene": "HENING freeze-frame partikel: teks diketik \"skenario terburukmu pun masih terlalu optimis.\"",
+   "set": "hening",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s14",
+   "start": 53.55,
+   "end": 60.0,
+   "line": "Otaknya bikin rencana pakai jalan yang paling mulus, terus lupa sama pengalamannya sendiri.",
+   "scene": "KARTU: jalan RENCANA lurus mulus vs jalan KENYATAAN berliku; folder PENGALAMAN pudar",
+   "set": "board",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "whoosh",
+     "gain": -14.0
+    },
+    {
+     "at": 4.0,
+     "name": "swish",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "arctic"
+  },
+  {
+   "id": "s15",
+   "start": 60.0,
+   "end": 63.1,
+   "line": "Malam itu semua kertasnya dicabut.",
+   "scene": "Malam, lampu meja menyala, Bima mencabut tumpukan kertas, kertas berhamburan",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "tear",
+     "gain": -10.0
+    },
+    {
+     "at": 1.2,
+     "name": "tear",
+     "gain": -12.0
+    },
+    {
+     "at": 1.6,
+     "name": "tear",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "style": "indigo",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 63.1,
+   "end": 67.6,
+   "line": "Dia buka catatan lama: bab satu dulu makan lima minggu.",
+   "scene": "Layar laptop: folder BAB 1, tanggal mulai-selesai, \"= 5 MINGGU\" emas",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 2.6,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "clay"
+  },
+  {
+   "id": "s17",
+   "start": 67.6,
+   "end": 73.0,
+   "line": "Bab dua dikasih lima minggu juga, dipecah jadi potongan kecil, satu per hari.",
+   "scene": "Dinding: 35 kertas kecil, dicoret satu per satu; cahaya pindah ke pagi emas, badge HARI berjalan",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.4,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 2.4,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 3.4,
+     "name": "scribble",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s18",
+   "start": 73.0,
+   "end": 77.3,
+   "line": "Minggu kelima, dosennya nulis satu kata: ACC.",
+   "scene": "Pagi emas, layar laptop \"ACC\" stempel emas, Bima bersorak",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.6,
+     "name": "stinger",
+     "gain": -10.0
+    }
+   ],
+   "notes": "",
+   "style": "clay",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s19",
+   "start": 77.3,
+   "end": 82.78,
+   "line": "Di kamar sebelah, temannya nempel kertas kecil di laptop. Tulisannya: dua minggu.",
+   "scene": "LOOP: kamar sebelah, teman kos menempel kertas \"2 MINGGU\" (sama dengan framing s01)",
+   "set": "kos",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "style": "paper",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 18.0,
+   "mood": "hopeful",
+   "intensity": 0.3
+  },
+  {
+   "start": 18.0,
+   "end": 31.4,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 31.4,
+   "end": 50.3,
+   "mood": "mystery",
+   "intensity": 0.3
+  },
+  {
+   "start": 53.55,
+   "end": 82.78,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}

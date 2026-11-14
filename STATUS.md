@@ -1,7 +1,7 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
 ## Posisi terakhir (14 Nov 2026)
-- **Video #9 "Skripsi Dua Minggu" (14 Nov)**: planning fallacy (Buehler, Griffin & Ross 1994: tebakan 34 hari, terburuk 49, nyata 55; ±30% tepat). Naskah draf 2 ACC user (14 Nov), caption draf di `caption/skripsi-dua-minggu-shorts.md`. VO: user pilih **Gemini TTS** dan mengambil suaranya sendiri (teks TTS di naskah; JANGAN buat `naskah/*.txt`). Setelah WAV dikirim: align_teks → timeline → animatic → adegan. Tanpa scrape (kredit 0). Cabang sesi lama sudah digabung.
+- **Video #9 "Skripsi Dua Minggu" (14 Nov)**: planning fallacy (Buehler 1994). Naskah ACC. VO Gemini (Charon) dibuat Claude atas permintaan user (jeda dirapatkan + hening 1,6 dtk; 82,8 dtk; WAV di scratchpad sesi, tidak di repo). Proyek `studio/projects/skripsi-dua-minggu-shorts` (19 shot, 1 shot 3D s05). Contact sheet dikirim, MENUNGGU ACC sebelum render final.
 
 ## Posisi sebelumnya (13 Nov 2026)
 - **Palet warna selesai (13 Nov)**: style baru `paper`, `indigo`, `clay`, `lavender` + perbaikan `--style` di `studio/engine/player.js`. Panduan emosi × waktu di `brand/palet-emosi.md` (per adegan lewat `"style"` di shots.json). User ACC arah warna.
