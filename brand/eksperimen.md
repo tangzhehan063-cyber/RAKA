@@ -33,6 +33,11 @@ Claude boleh terus meng-improve visual & cara bercerita (izin user 9 Nov 2026). 
 - **Warna per adegan** (engine: `set@gaya` di shots.tsv): hangat = ember, dingin = arctic, penjelasan = ember. **Warna CC per pembicara** (`captionSpeakers` di config).
 - Momen khas: layar terbelah; garis pembelah melebar jadi layar HP, dua orang menyatu.
 
+## #9 Skripsi Dua Minggu (14 Nov)
+- **Tumpukan kertas tempel sebagai penghitung bisu**: item maskot (kertas merah-oranye "2 MINGGU") menumpuk tiap janji molor, lalu dicabut semua saat titik balik. Respons user: belum ada.
+- **Tiang data menembus kartu riset** (s11): tiang "kenyataan 55 hari" membesar keluar dari kartu blueprint. Respons user: belum ada.
+- Loop dengan framing yang sama (s19 = s01, tokoh berganti ke teman kos). Respons user: belum ada.
+
 ## Ide eksperimen berikutnya (belum dicoba)
 - Transisi "match cut" benda → benda (mis. jam dinding → roda sepeda) untuk menyambung adegan.
 - Satu warna aksen per video selain merah-oranye maskot (palet emosi: biru = sedih, emas = harapan).

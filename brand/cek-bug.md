@@ -33,3 +33,4 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 - **Bayangan dinding samping** menggelapkan pintu: `castShadow = false` untuk dinding samping.
 - **Overlay merah di contact sheet bukan bagian video** (zona aman TikTok dari `tools/safezone.py`): kirim ke user versi tanpa overlay (susun `build/sheets/s*_*.png`).
 - Kata-kata callout/teks tidak boleh jatuh di pita caption (y≈1290–1400).
+- **Teks stempel menabrak angka tiang grafik** (#9 s11): judul/stempel di atas grafik batang harus di luar jangkauan angka tiang tertinggi (dan tiang yang membesar keluar kartu); cek still di detik kata pemicunya, bukan hanya awal shot.

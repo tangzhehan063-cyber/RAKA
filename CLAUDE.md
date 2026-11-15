@@ -53,6 +53,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - **Hasil setiap video disimpan di Google Drive**: folder `RAKA` (id `1lErd-CVqlWZdbEVI5iPV3tQokyGWmWx9`) → subfolder `NN - <Judul>` berisi cover, voiceover, dan caption.
   - Unggah dengan `create_file` + referensi `sha256:<hash>:<path>`. Salin file ke scratchpad sesi dulu.
   - **Batas 10 MB per file**: MP4 final dikirim ke user (SendUserFile), lalu user mengunggahnya sendiri ke subfolder Drive.
+- **Laporan akhir video (aturan user 13 Nov, seperti Channel-Penjelasan): di chat HANYA kirim MP4 (SendUserFile) + link folder Drive.** Cover, caption (TikTok/Reels, YouTube Shorts, komentar pin), naskah/teks TTS, dan suara (mp3) diunggah ke subfolder Drive `NN - <Judul>`, bukan dikirim ke chat. Caption & komentar pertama tetap boleh ditempel di chat saat naskah di-ACC (sebelum video), tapi versi akhirnya ada di Drive. Suara WAV dikonversi ke mp3 (konektor Drive maks ±3 MB per panggilan).
 - **GitHub hanya menyimpan aset yang bisa dipakai berulang**: engine, `studio/library/`, kode adegan/proyek (`config.json`, `scenes/`, `story/`), tools, dokumen brand. MP4/MP3/PNG hasil dan `build/` tidak di-commit.
 - Pratinjau 540p untuk artifact arsip tetap boleh di `arsip/halaman/` (ukurannya kecil).
 
@@ -70,6 +71,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - `audio/sfx.py`: efek `pluck` (genjreng gitar Karplus-Strong, `detune` > 0 = fals); `audio/mix.py` meneruskan `detune` dari cue di shots.json.
 
 ## Caption & komentar pertama (berlaku setelah user ACC naskah final)
+- **Humanizer wajib (perintah user 13 Nov, berlaku untuk semua teks publik):** naskah, caption, judul (termasuk alternatif), deskripsi, komentar pin, dan komentar pertama SELALU dilewatkan skill `anthropic-skills:humanizer` (hapus pola "bukan X tapi Y", penutup satu baris, triad paksa, tanda "—", dan sapaan khas AI) sebelum dikirim ke user atau diunggah ke Drive. Fakta, angka, dan sumber tidak boleh berubah; batas karakter caption tetap berlaku.
 - Begitu user menyatakan **ACC/final** untuk naskah, langsung kirim **caption posting + komentar pertama** (jangan tunggu video selesai; cover tetap dibuat setelah render).
 - **Wajib riset bahasa manusia dulu:** pakai ScrapeMedsos (TikTok `v1_tiktok_search_keyword` region ID, lalu komentar video teratas dengan `v1_tiktok_video_comments`, bila perlu YouTube) untuk topik yang sama. Catat kata, singkatan, dan gaya yang benar-benar dipakai orang (mis. "jeglek", "kopong", "rembes", "wkwk", "auto", "relate banget").
 - Tulis caption & komentar pertama meniru ritme itu: kalimat pendek, boleh tidak baku, emoji secukupnya (0–2), tanpa frasa khas AI ("Yuk simak!", "Tahukah kamu", "di era modern ini", "mari kita", "penting untuk diingat", tanda "—" berlebihan, daftar berpoin di caption).
