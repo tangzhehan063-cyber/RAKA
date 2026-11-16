@@ -13,43 +13,106 @@ const REACH = { ...POSES.sit, head: [12, -180], sh: [6, -146], eF: [48, -150], h
 const EAT = { ...POSES.sit, head: [14, -178], sh: [6, -146], eF: [40, -160], hF: [34, -200], eB: [28, -110], hB: [60, -114] };
 const CHEER = { ...POSES.sit, head: [6, -184], sh: [2, -150], eF: [36, -196], hF: [44, -250], eB: [-26, -194], hB: [-30, -250] };
 
-// ---- benda ------------------------------------------------------------------------------------------
+// ---- benda (digambar mirip aslinya) -----------------------------------------------------------------
+const rnd = (i, seed = 1) => { const x = Math.sin(i * 12.9898 + seed * 78.233) * 43758.5453; return x - Math.floor(x); };
+// gumpalan tak beraturan yang mulus (kurva kuadrat lewat titik tengah)
+function blob(g, rx, ry, seed = 1, wob = 0.14, n = 12) {
+  const P = []; for (let i = 0; i < n; i++) { const a = (i / n) * Math.PI * 2, k = 1 + (rnd(i, seed) - 0.5) * 2 * wob; P.push([Math.cos(a) * rx * k, Math.sin(a) * ry * k]); }
+  g.beginPath(); const m = (a, b) => [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]; let st = m(P[n - 1], P[0]); g.moveTo(st[0], st[1]);
+  for (let i = 0; i < n; i++) { const e = m(P[i], P[(i + 1) % n]); g.quadraticCurveTo(P[i][0], P[i][1], e[0], e[1]); } g.closePath();
+}
+function broccoli(g, x, y, s = 1) {
+  g.save(); g.translate(x, y); g.scale(s, s);
+  rr(g, -6, -4, 12, 22, 4); g.fillStyle = '#a9cf86'; g.fill();
+  for (const [dx, dy, r] of [[-14, -12, 13], [0, -22, 15], [14, -12, 13], [0, -8, 12]]) circle(g, dx, dy, r, '#4f9a4a');
+  for (const [dx, dy] of [[-16, -14], [-4, -26], [10, -22], [16, -10], [2, -10], [-8, -4]]) circle(g, dx, dy, 3.4, '#3b7f3c');
+  circle(g, -2, -28, 4, '#79bd6e'); g.restore();
+}
+function drumstick(g, x, y, s = 1, rot = 0) {
+  g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
+  rr(g, 24, -7, 36, 14, 7); g.fillStyle = '#f5ecd8'; g.fill(); circle(g, 61, -7, 8, '#f5ecd8'); circle(g, 61, 7, 8, '#f5ecd8');
+  g.beginPath(); g.moveTo(-36, 2); g.bezierCurveTo(-42, -32, 8, -42, 30, -14); g.bezierCurveTo(38, -2, 32, 12, 20, 20); g.bezierCurveTo(0, 34, -36, 28, -36, 2); g.closePath();
+  g.fillStyle = '#c98230'; g.fill(); g.strokeStyle = '#8f5518'; g.lineWidth = 3.5; g.stroke();
+  g.beginPath(); g.moveTo(-26, -8); g.bezierCurveTo(-24, -26, 2, -32, 18, -16); g.strokeStyle = '#e8b062'; g.lineWidth = 6; g.lineCap = 'round'; g.stroke();
+  for (let i = 0; i < 9; i++) circle(g, -24 + rnd(i, 3) * 48, -8 + rnd(i, 7) * 26, 2.4, '#9a5d1c');
+  g.restore();
+}
+function pisang(g, x, y, s, rot) {   // pisang goreng: melengkung, ujung lancip, kulit tepung bergelombang
+  g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
+  g.beginPath(); g.moveTo(-56, 8); g.bezierCurveTo(-48, -22, 10, -34, 56, -10); g.bezierCurveTo(58, -4, 52, 2, 44, 4); g.bezierCurveTo(8, -6, -24, 6, -50, 18); g.bezierCurveTo(-56, 18, -58, 14, -56, 8); g.closePath();
+  g.fillStyle = '#e3a843'; g.fill(); g.strokeStyle = '#b3752a'; g.lineWidth = 3.5; g.lineJoin = 'round'; g.stroke();
+  g.beginPath(); g.moveTo(-40, 2); g.bezierCurveTo(-24, -14, 10, -20, 38, -8); g.strokeStyle = '#f6d27c'; g.lineWidth = 5; g.lineCap = 'round'; g.stroke();
+  for (let i = 0; i < 12; i++) { const u = rnd(i, 5); circle(g, -46 + u * 92, -14 + rnd(i, 9) * 18 - u * 6, 2.2, '#b9792a'); }
+  g.restore();
+}
+function bakwan(g, x, y, s, rot) {   // bakwan sayur: gumpalan bergerigi dengan potongan wortel & daun bawang
+  g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
+  blob(g, 40, 30, 11, 0.2, 14); g.fillStyle = '#d6923a'; g.fill(); g.strokeStyle = '#a56a22'; g.lineWidth = 3.5; g.stroke();
+  blob(g, 24, 15, 4, 0.2, 10); g.translate(-6, -8); g.fillStyle = '#ebb560'; g.fill(); g.translate(6, 8);
+  for (let i = 0; i < 7; i++) { const px = -26 + rnd(i, 2) * 52, py = -16 + rnd(i, 6) * 32; seg(g, [[px, py], [px + 9, py - 5 + rnd(i, 4) * 10]], 3.4, '#6fa05a'); }
+  for (let i = 0; i < 4; i++) circle(g, -22 + rnd(i, 8) * 44, -14 + rnd(i, 1) * 28, 3.6, '#e98a3c');
+  g.restore();
+}
+function tahu(g, x, y, s, rot) {   // tahu isi: kotak membulat, belahan di atas dan cabai hijau
+  g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
+  rr(g, -34, -28, 68, 56, 14); g.fillStyle = '#dca048'; g.fill(); g.strokeStyle = '#a8701f'; g.lineWidth = 3.5; g.stroke();
+  rr(g, -26, -22, 52, 24, 10); g.fillStyle = '#efbd6a'; g.fill();
+  seg(g, [[-20, -6], [20, -6]], 5, '#8c5a1a'); g.save(); g.translate(14, -10); g.rotate(-0.4); g.beginPath(); g.ellipse(0, 0, 20, 7, 0, 0, Math.PI * 2); g.fillStyle = '#4f9a3c'; g.fill(); g.restore();
+  for (let i = 0; i < 8; i++) circle(g, -26 + rnd(i, 3) * 52, 4 + rnd(i, 5) * 18, 2.2, '#a8701f'); g.restore();
+}
+function mendoan(g, x, y, s, rot) {   // tempe mendoan: tipis lebar, tepi bergelombang, bintik daun bawang
+  g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
+  g.beginPath(); g.moveTo(-44, 10); for (let i = 0; i <= 12; i++) { const u = i / 12; g.lineTo(-44 + u * 88, -22 * Math.sin(u * Math.PI) * 0.7 + 10 - 22 * Math.sin(u * Math.PI) * 0.4 + Math.sin(u * 30) * 2); }
+  for (let i = 12; i >= 0; i--) { const u = i / 12; g.lineTo(-44 + u * 88, 18 + Math.sin(u * 22) * 2.4); } g.closePath();
+  g.fillStyle = '#ecd277'; g.fill(); g.strokeStyle = '#b8932f'; g.lineWidth = 3.2; g.stroke();
+  for (let i = 0; i < 12; i++) circle(g, -34 + rnd(i, 4) * 68, -2 + rnd(i, 2) * 16, 2.6, '#5e9a44'); g.restore();
+}
+const JENIS = [pisang, bakwan, tahu, mendoan, pisang, bakwan];
+export function gorengan(g, x, y, s = 1, rot = 0, k = 0) { JENIS[k % JENIS.length](g, x, y, s, rot); }
+export function boxGorengan(g, x, y, s = 1, n = 6) {   // nampan kertas cokelat berisi gorengan campur
+  g.save(); g.fillStyle = 'rgba(0,0,0,.14)'; g.beginPath(); g.ellipse(x, y + 2, 126 * s, 10 * s, 0, 0, Math.PI * 2); g.fill(); g.restore();
+  const POS = [[-62, -52], [4, -62], [66, -50], [-30, -34], [38, -30], [-84, -30]];
+  for (let i = 0; i < Math.min(n, 6); i++) gorengan(g, x + POS[i][0] * s, y + POS[i][1] * s, 0.78 * s, (rnd(i, 9) - 0.5) * 0.5, i);
+  g.beginPath(); g.moveTo(x - 118 * s, y - 34 * s); g.lineTo(x + 118 * s, y - 34 * s); g.lineTo(x + 100 * s, y); g.lineTo(x - 100 * s, y); g.closePath(); g.fillStyle = '#c79a66'; g.fill();
+  g.beginPath(); g.moveTo(x - 118 * s, y - 34 * s); g.lineTo(x + 118 * s, y - 34 * s); g.lineTo(x + 114 * s, y - 24 * s); g.lineTo(x - 114 * s, y - 24 * s); g.closePath(); g.fillStyle = '#dcb584'; g.fill();
+  for (let i = 0; i < 4; i++) { g.save(); g.globalAlpha *= 0.28; g.beginPath(); g.ellipse(x - 70 * s + i * 46 * s, y - 14 * s, 14 * s, 6 * s, 0, 0, Math.PI * 2); g.fillStyle = '#e0a23a'; g.fill(); g.restore(); }
+}
 // kotak bekal: x tengah, y permukaan meja. open 0..1 (tutup terangkat), dust 0..1
 export function kotak(g, x, y, s = 1, o = {}) {
   const open = o.open || 0, w = 190 * s, h = 96 * s, col = o.color || BEKAL;
-  g.save(); g.fillStyle = 'rgba(0,0,0,.18)'; g.beginPath(); g.ellipse(x, y + 2, w * 0.58, 10 * s, 0, 0, Math.PI * 2); g.fill(); g.restore();
-  rr(g, x - w / 2, y - h, w, h, 14 * s); g.fillStyle = shade(col, -0.18); g.fill();
-  if (open > 0.05) {   // isi: sayur + ayam
-    rr(g, x - w / 2 + 10 * s, y - h + 6 * s, w - 20 * s, h * 0.5, 10 * s); g.fillStyle = '#f4ead6'; g.fill();
-    for (let i = 0; i < 6; i++) circle(g, x - w / 2 + (30 + i * 26) * s, y - h + (26 + (i % 2) * 6) * s, 12 * s, i % 3 === 2 ? '#7db36a' : '#5c9a52');
-    g.save(); g.translate(x + 30 * s, y - h + 28 * s); g.rotate(-0.3); rr(g, -36 * s, -14 * s, 72 * s, 28 * s, 14 * s); g.fillStyle = '#c98a4a'; g.fill(); g.restore();
+  g.save(); g.fillStyle = 'rgba(0,0,0,.16)'; g.beginPath(); g.ellipse(x, y + 2, w * 0.58, 10 * s, 0, 0, Math.PI * 2); g.fill(); g.restore();
+  rr(g, x - w / 2, y - h, w, h, 14 * s); g.fillStyle = shade(col, -0.12); g.fill();
+  if (open > 0.05) {   // isi: dua sekat, brokoli + irisan wortel, ayam goreng paha
+    rr(g, x - w / 2 + 8 * s, y - h + 6 * s, w - 16 * s, h * 0.62, 10 * s); g.fillStyle = '#fbf4e6'; g.fill();
+    seg(g, [[x + 2 * s, y - h + 10 * s], [x + 2 * s, y - h + h * 0.62]], 3 * s, '#e3d6bb');
+    broccoli(g, x - 44 * s, y - h + 40 * s, 0.9 * s); broccoli(g, x - 14 * s, y - h + 42 * s, 0.75 * s);
+    for (const [dx, dy] of [[-62, 52], [-30, 56]]) { circle(g, x + dx * s, y - h + (dy - 8) * s, 8 * s, '#f0983e'); circle(g, x + dx * s, y - h + (dy - 8) * s, 3.4 * s, '#f8c47a'); }
+    drumstick(g, x + 38 * s, y - h + 44 * s, 0.72 * s, -0.25);
   }
   g.save(); g.translate(x - w / 2 - 6 * s - open * 20 * s, y - h - 4 * s - open * 64 * s); g.rotate(-open * 0.18);
   rr(g, 0, -22 * s, w + 12 * s, 26 * s, 12 * s); g.fillStyle = col; g.fill();
   rr(g, w / 2 - 16 * s, -12 * s, 44 * s, 10 * s, 5 * s); g.fillStyle = shade(col, 0.35); g.fill(); g.restore();
-  if (o.dust) { g.save(); g.globalAlpha *= 0.55 * o.dust; rr(g, x - w / 2, y - h - 20 * s, w, h + 20 * s, 14 * s); g.fillStyle = '#d8d2c6'; g.fill(); g.restore(); }
+  if (o.dust) { g.save(); g.globalAlpha *= 0.5 * o.dust; rr(g, x - w / 2, y - h - 20 * s, w, h + 20 * s, 14 * s); g.fillStyle = '#d8d2c6'; g.fill(); g.restore(); }
 }
-export function gorengan(g, x, y, s = 1, rot = 0) {
-  g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
-  g.beginPath(); g.ellipse(0, 0, 34, 20, 0, 0, Math.PI * 2); g.fillStyle = '#e0a23a'; g.fill();
-  g.beginPath(); g.ellipse(-6, -5, 20, 9, 0, 0, Math.PI * 2); g.fillStyle = '#f0c05a'; g.fill();
-  circle(g, 12, 3, 5, '#c07a22'); circle(g, -14, 6, 4, '#c07a22'); g.restore();
+export function bungkus(g, x, y, n, s = 1) {   // gumpalan kertas minyak: bersudut, ada lipatan dan noda minyak
+  for (let i = 0; i < Math.ceil(n); i++) { const k = ease.outBack(clamp(n - i)); if (k <= 0) continue; const px = x + ((i * 53) % 150 - 75) * s, py = y - ((i * 31) % 60) * s - 20 * s;
+    g.save(); g.translate(px, py); g.scale(k * s, k * s); g.rotate(rnd(i, 3) * 3);
+    g.beginPath(); for (let j = 0; j < 9; j++) { const a = (j / 9) * Math.PI * 2, r = 20 + rnd(j + i * 9, 2) * 12; (j ? g.lineTo : g.moveTo).call(g, Math.cos(a) * r, Math.sin(a) * r * 0.85); } g.closePath();
+    g.fillStyle = '#eadcb6'; g.fill(); g.strokeStyle = '#bba873'; g.lineWidth = 2.5; g.lineJoin = 'round'; g.stroke();
+    seg(g, [[-10, -6], [4, 4]], 2.5, '#bba873'); seg(g, [[2, -12], [12, -2]], 2.5, '#bba873'); seg(g, [[-14, 8], [-2, 12]], 2.5, '#bba873');
+    g.beginPath(); g.ellipse(6, 6, 9, 6, 0.4, 0, Math.PI * 2); g.fillStyle = 'rgba(214,160,60,.35)'; g.fill(); g.restore(); }
 }
-export function boxGorengan(g, x, y, s = 1, n = 6) {
-  g.save(); g.fillStyle = 'rgba(0,0,0,.16)'; g.beginPath(); g.ellipse(x, y + 2, 120 * s, 10 * s, 0, 0, Math.PI * 2); g.fill(); g.restore();
-  for (let i = 0; i < n; i++) gorengan(g, x - 70 * s + (i % 3) * 70 * s, y - 36 * s - Math.floor(i / 3) * 26 * s, s, ((i * 37) % 9 - 4) / 18);
-  rr(g, x - 110 * s, y - 54 * s, 220 * s, 54 * s, 8 * s); g.fillStyle = '#b98a58'; g.fill();
-  rr(g, x - 110 * s, y - 54 * s, 220 * s, 12 * s, 6 * s); g.fillStyle = '#d0a672'; g.fill();
-}
-export function bungkus(g, x, y, n, s = 1) {   // gumpalan kertas minyak
-  for (let i = 0; i < n; i++) { const k = ease.outBack(clamp(n - i)); if (k <= 0) continue; const px = x + ((i * 53) % 150 - 75) * s, py = y - ((i * 31) % 70) * s - 14 * s;
-    circle(g, px, py, 24 * s * k, '#e9d9b8'); circle(g, px - 6 * s, py - 6 * s, 12 * s * k, '#f6ecd4'); seg(g, [[px - 14 * s, py + 4 * s], [px + 12 * s, py - 6 * s]], 3 * s, alpha('#9a8460', 0.7)); }
-}
-export function geprek(g, x, y, s = 1) {
-  rr(g, x - 100 * s, y - 70 * s, 200 * s, 70 * s, 12 * s); g.fillStyle = '#f7f4ee'; g.fill();
-  g.beginPath(); g.ellipse(x - 30 * s, y - 52 * s, 50 * s, 20 * s, 0, 0, Math.PI * 2); g.fillStyle = '#fffdf6'; g.fill();
-  g.save(); g.translate(x + 42 * s, y - 50 * s); g.rotate(0.15); rr(g, -48 * s, -18 * s, 96 * s, 36 * s, 16 * s); g.fillStyle = '#c4812f'; g.fill(); g.restore();
-  circle(g, x + 70 * s, y - 62 * s, 9 * s, '#b83a2a');
+export function geprek(g, x, y, s = 1) {   // boks styrofoam: nasi, ayam geprek renyah + sambal, irisan timun
+  g.save(); g.translate(x, y); g.scale(s, s);
+  g.beginPath(); g.moveTo(-104, -52); g.lineTo(104, -52); g.lineTo(92, 0); g.lineTo(-92, 0); g.closePath(); g.fillStyle = '#f4f1ea'; g.fill(); g.strokeStyle = '#d6d0c2'; g.lineWidth = 3; g.stroke();
+  rr(g, -98, -60, 196, 20, 8); g.fillStyle = '#fffdf8'; g.fill(); g.stroke();
+  g.beginPath(); g.moveTo(-84, -56); g.bezierCurveTo(-84, -112, -18, -112, -18, -56); g.closePath(); g.fillStyle = '#fffdf5'; g.fill(); g.strokeStyle = '#e4dcc8'; g.lineWidth = 2.5; g.stroke();
+  for (let i = 0; i < 12; i++) seg(g, [[-76 + rnd(i, 1) * 52, -64 - rnd(i, 2) * 38], [-72 + rnd(i, 1) * 52, -60 - rnd(i, 2) * 38]], 2.4, '#e2d9c1');
+  g.save(); g.translate(40, -70); blob(g, 56, 24, 21, 0.18, 14); g.fillStyle = '#c98a36'; g.fill(); g.strokeStyle = '#8f5a1a'; g.lineWidth = 3.5; g.stroke(); g.restore();
+  for (let i = 0; i < 14; i++) circle(g, -8 + rnd(i, 3) * 96, -82 + rnd(i, 4) * 26, 3.2, '#e8b45c');
+  g.save(); g.translate(46, -78); blob(g, 28, 12, 5, 0.25, 10); g.fillStyle = '#c0301c'; g.fill(); g.restore();
+  for (let i = 0; i < 6; i++) circle(g, 28 + rnd(i, 6) * 36, -84 + rnd(i, 7) * 12, 2.2, '#f0d890');
+  for (const dx of [-20, -2]) { circle(g, dx, -38, 12, '#8fbf6a'); circle(g, dx, -38, 8, '#c9e2a8'); } g.restore();
 }
 // deret kotak kecil penghitung hari; broken = kotak ke-7 retak
 export function dayRow(g, x, y, n, o = {}) {
@@ -65,26 +128,26 @@ export function dayRow(g, x, y, n, o = {}) {
 // o { mood, rani:{pose,expr,look}|false, dito:{x,pose}|false, items:fn(g,top,tx), who:'rani'|'dito' }
 const CAMD = (z, fx = 520, fy = 1180, sx = 540, sy = 1100) => { const zz = 1 + (z - 1) * 0.85; return { z, x: (fx - 540 - (sx - 540) / zz) / 0.85, y: (fy - 960 - (sy - 960) / zz) / 0.85 }; };
 export function pantri(g, t, cam, o = {}) {
-  const md = o.mood || 'day', M = mood(md), G = GY(), CX = E.W / 2, wall = shade(M.wall, -0.1);
+  const md = o.mood || 'day', M = mood(md), G = GY(), CX = E.W / 2, wall = shade(M.wall, 0.04);
   const wx = CX - 380, wy = G - 1010, ww = 470, wh = 480;
   layer(g, cam, 0.45, (g) => {
-    g.fillStyle = linGrad(g, 0, -E.H, 0, G, [shade(wall, -0.15), wall]); g.fillRect(-E.W, -E.H, E.W * 3, G + E.H);
-    FX.windowFrame(g, { x: wx, y: wy, w: ww, h: wh, cols: 2, rows: 2, frame: shade(wall, -0.4), bar: 12 }, (g, x, y, w, h) => {
+    g.fillStyle = linGrad(g, 0, -E.H, 0, G, [shade(wall, -0.04), wall]); g.fillRect(-E.W, -E.H, E.W * 3, G + E.H);
+    FX.windowFrame(g, { x: wx, y: wy, w: ww, h: wh, cols: 2, rows: 2, frame: shade(wall, -0.22), bar: 12 }, (g, x, y, w, h) => {
       backdrop(g, M.sky, [x, y, w, h]); FX.sun(g, x + w * 0.5, y + h * 0.85, 46, '#fff3dc', M.key, 4);
-      FX.skyline(g, { x, y: y + h, w, maxH: h * 0.35, color: alpha(shade(wall, -0.5), 0.85), windowColor: alpha(M.practical, 0.4), lit: 0.1, seed: 11 });
+      FX.skyline(g, { x, y: y + h, w, maxH: h * 0.35, color: alpha(shade(M.sky[0], -0.12), 0.55), windowColor: alpha(M.practical, 0.35), lit: 0.1, seed: 11 });
     });
     glow(g, wx + ww / 2, wy + wh / 2, ww * 0.9, M.key, 0.2);
     if (o.wall) o.wall(g, G);
   });
   layer(g, cam, 0.85, (g) => {
-    g.fillStyle = linGrad(g, 0, G, 0, G + 500, [shade(M.floor, -0.05), shade(M.dark, -0.15)]); g.fillRect(-E.W, G, E.W * 3, E.H * 2);
+    g.fillStyle = linGrad(g, 0, G, 0, G + 500, [shade(M.floor, 0.06), shade(M.floor, -0.1)]); g.fillRect(-E.W, G, E.W * 3, E.H * 2);
     FX.pool(g, wx + ww * 0.6, G + 60, ww * 0.7, 60, M.key, 0.2);
     const tx = CX + 90, top = G - 150, tw = 560;   // meja
-    rr(g, tx - tw / 2, top, tw, 20, 8); g.fillStyle = shade(wall, -0.35); g.fill();
-    seg(g, [[tx - tw / 2 + 26, top + 14], [tx - tw / 2 + 26, G]], 12, shade(wall, -0.5)); seg(g, [[tx + tw / 2 - 26, top + 14], [tx + tw / 2 - 26, G]], 12, shade(wall, -0.5));
+    rr(g, tx - tw / 2, top, tw, 20, 8); g.fillStyle = '#d9b88e'; g.fill();
+    seg(g, [[tx - tw / 2 + 26, top + 14], [tx - tw / 2 + 26, G]], 12, '#b8966c'); seg(g, [[tx + tw / 2 - 26, top + 14], [tx + tw / 2 - 26, G]], 12, '#b8966c');
     const bx = CX - 210;   // kursi Rani
-    seg(g, [[bx - 40, G - 86], [bx + 34, G - 86]], 12, shade(wall, -0.55)); seg(g, [[bx - 36, G - 86], [bx - 42, G - 200]], 10, shade(wall, -0.55));
-    seg(g, [[bx - 30, G - 80], [bx - 34, G]], 7, shade(wall, -0.55)); seg(g, [[bx + 28, G - 80], [bx + 32, G]], 7, shade(wall, -0.55));
+    seg(g, [[bx - 40, G - 86], [bx + 34, G - 86]], 12, '#a9a6b6'); seg(g, [[bx - 36, G - 86], [bx - 42, G - 200]], 10, '#a9a6b6');
+    seg(g, [[bx - 30, G - 80], [bx - 34, G]], 7, '#a9a6b6'); seg(g, [[bx + 28, G - 80], [bx + 32, G]], 7, '#a9a6b6');
     if (o.rani !== false) { const r = o.rani || {}; drawFigure(g, { x: bx, y: G, s: 1.25, facing: 1, outfit: RANI, pose: r.pose || breathe(TYPE, t, 0.5, 3), expr: r.expr || 'neutral', look: r.look || [0.9, 0.1], blink: (t % 3.4) > 3.27, rim: { color: M.key, dir: [1, -0.2], w: 3 } }); }
     if (o.dito) { const d = o.dito; drawFigure(g, { x: d.x, y: G, s: 1.25, facing: -1, outfit: DITO, pose: d.pose || breathe(POSES.stand, t, 0.5, 7), expr: d.expr || 'smile', look: [-0.9, 0], blink: (t % 3.9) > 3.8, rim: { color: M.key, dir: [-1, -0.2], w: 3 } }); }
     if (o.items) o.items(g, top, tx);
@@ -93,10 +156,10 @@ export function pantri(g, t, cam, o = {}) {
 }
 
 const items = (o = {}) => (g, top, tx) => {
-  if (o.kotak !== false) kotak(g, tx - 130 + (o.kx || 0), top, 1, { open: o.open, dust: o.dust });
-  if (o.gor) boxGorengan(g, tx + 120, top, 1, o.gor);
-  if (o.geprek) { geprek(g, tx + 110, top, 0.8); geprek(g, tx + 190, top - 6, 0.7); }
-  if (o.bungkus) bungkus(g, tx + 30, top, o.bungkus);
+  if (o.kotak !== false) kotak(g, tx - 160 + (o.kx || 0), top, 0.46, { open: o.open, dust: o.dust });
+  if (o.gor) boxGorengan(g, tx + 10, top, 0.62, o.gor);
+  if (o.geprek) { geprek(g, tx - 70, top, 0.5); geprek(g, tx + 20, top - 2, 0.46); }
+  if (o.bungkus) bungkus(g, tx + 60, top, o.bungkus, 0.7);
   if (o.extra) o.extra(g, top, tx);
 };
 const wallRow = (n, o = {}) => (g, G) => dayRow(g, E.W / 2 + 60, G - 640, n, o);
@@ -110,7 +173,7 @@ registerShot('s01', { draw(g, t, info) {
 } });
 // s02 2.9–6.2: tutup dibuka, sayur dan ayam
 registerShot('s02', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(3.0, 3.4, k), 560, 1090, 540, 1080), to = rel('berisi', info, 1.0);
+  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(4.0, 4.5, k), 440, 1100, 540, 1000), to = rel('berisi', info, 1.0);
   pantri(g, t, cam, { mood: 'day', wall: wallRow(6), items: items({ open: ease.out(prog(t, to - 0.3, to + 0.3)) }), rani: { expr: 'happy', pose: posesAt(t, [[0, TYPE], [to - 0.2, REACH], [to + 0.8, TYPE]], 0.4) } });
 } });
 // s03 6.2–8.8: hari ketujuh, Dito datang membawa gorengan
@@ -124,9 +187,9 @@ registerShot('s03', { draw(g, t, info) {
 } });
 // s04 8.8–11.1: ambil satu, enak banget
 registerShot('s04', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(2.2, 2.5, k), 500, 1130, 540, 1100), te = rel('banget', info, 1.2);
+  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.6, 1.75, k), 500, 1130, 540, 1100), te = rel('banget', info, 1.2);
   pantri(g, t, cam, { mood: 'day', wall: wallRow(7, { broken: true }), rani: { pose: posesAt(t, [[0, REACH], [0.5, REACH], [0.9, EAT]], 0.3), expr: t > te - 0.3 ? 'joy' : 'smile', look: [0.7, -0.1] },
-    items: (g, top, tx) => { items({ gor: 5 })(g, top, tx); const f = ease.inOut(prog(t, 0.2, 0.9)), x = lerp(tx + 70, 400, f), y = lerp(top - 40, top - 250, f); if (f < 1 || t < 1.6) gorengan(g, x, y, 0.8, -0.3); } });
+    items: (g, top, tx) => { items({ gor: 5 })(g, top, tx); const f = ease.inOut(prog(t, 0.2, 0.9)), x = lerp(tx + 10, 400, f), y = lerp(top - 40, top - 250, f); if (f < 1 || t < 1.6) gorengan(g, x, y, 0.55, -0.3, 0); } });
 } });
 // s05 11.1–14.7: "ya sudah, sudah gagal" (wajah besar)
 registerShot('s05', { draw(g, t, info) {
@@ -138,14 +201,14 @@ registerShot('s05', { draw(g, t, info) {
 } });
 // s06 14.7–17.4: gorengan kedua, ketiga, keempat; stempel TELANJUR
 registerShot('s06', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.9, 2.1, k), 500, 1130, 540, 1100), n = 6 - Math.floor(clamp(t / 0.7) * 3 + 0.001), nb = 1 + prog(t, 0.2, 2.2) * 5;
+  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.6, 1.8, k), 500, 1130, 540, 1100), n = 6 - Math.floor(clamp(t / 0.7) * 3 + 0.001), nb = 1 + prog(t, 0.2, 2.2) * 5;
   pantri(g, t, cam, { mood: 'day', wall: wallRow(7, { broken: true }), rani: { pose: posesAt(t, [[0, EAT], [0.5, REACH], [0.8, EAT], [1.4, REACH], [1.7, EAT]], 0.3), expr: 'joy' }, items: items({ gor: Math.max(1, n), bungkus: nb }) });
   [['KEDUA', 0.2], ['KETIGA', 1.0], ['KEEMPAT', 1.8]].forEach(([w, a0], i) => { const a = ease.outBack(prog(t, a0, a0 + 0.3)); if (a <= 0) return; g.save(); g.translate(E.W / 2 + (i - 1) * 40, 760 + i * 110); g.rotate((i - 1) * 0.07); g.scale(a, a);
     text(g, `GORENGAN ${w}`, 0, 0, { size: 62, color: '#b8321f', font: FONTS.ui, weight: 900, spacing: 2, glow: 8, glowColor: alpha('#fff', 0.5) }); g.restore(); });
 } });
 // s07 17.4–20.5: sorenya pesan ayam geprek dua porsi
 registerShot('s07', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.7, 1.9, k), 500, 1130, 540, 1100);
+  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.6, 1.75, k), 500, 1130, 540, 1100);
   pantri(g, t, cam, { mood: 'dusk', wall: wallRow(7, { broken: true }), rani: { pose: posesAt(t, [[0, TYPE], [1.0, EAT]], 0.4), expr: 'determined' }, items: items({ geprek: 1, bungkus: 6, kx: -60, dust: 0.2 }) });
   const a = ease.outBack(prog(t, 1.0, 1.4)); if (a > 0) { g.save(); g.translate(E.W / 2, 800); g.scale(a, a); text(g, '2 PORSI', 0, 0, { size: 110, color: '#b8321f', font: FONTS.ui, weight: 900, spacing: 4, glow: 12, glowColor: alpha('#fff', 0.4) }); g.restore(); }
 } });
@@ -159,7 +222,7 @@ registerShot('s09', { draw(g, t, info) {
 } });
 // s16 47.1–51.6: tekad cukup; stempel TELANJUR membelah
 registerShot('s16', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.8, 2.0, k), 500, 1130, 540, 1100), ts = rel('telanjur', info, 2.3);
+  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.6, 1.8, k), 500, 1130, 540, 1100), ts = rel('telanjur', info, 2.3);
   pantri(g, t, cam, { mood: 'golden', wall: wallRow(7, { broken: true }), rani: { pose: posesAt(t, [[0, TYPE], [0.6, POSES.sit]], 0.5), expr: 'smile' }, items: items({ bungkus: 6 }) });
   const a = ease.outBack(prog(t, ts - 0.4, ts)), s = clamp((t - (ts + 1.1)) / 0.8); if (a > 0) { g.save(); g.translate(E.W / 2, 600); g.rotate(-0.1); g.scale(a, a); g.globalAlpha *= 1 - s;
     const ofs = s * 90; g.save(); g.beginPath(); g.rect(-400, -100, 800, 100); g.clip(); g.translate(-ofs, -ofs * 0.4); g.rotate(-s * 0.2);
@@ -168,7 +231,7 @@ registerShot('s16', { draw(g, t, info) {
 } });
 // s17 51.6–56.8: besoknya, kotak bekal dibuka lagi (pagi emas)
 registerShot('s17', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(2.0, 2.4, k), 500, 1120, 540, 1090), to = rel('buka', info, 1.0), tm = rel('makan', info, 3.3);
+  const k = ease.inOut(t / info.dur), cam = CAMD(lerp(1.7, 2.0, k), 500, 1120, 540, 1090), to = rel('buka', info, 1.0), tm = rel('makan', info, 3.3);
   pantri(g, t, cam, { mood: 'golden', wall: wallRow(7 + ease.out(prog(t, tm, tm + 0.6)), { broken: true }), items: items({ open: ease.out(prog(t, to, to + 0.5)) }),
     rani: { pose: posesAt(t, [[0, TYPE], [to - 0.2, REACH], [to + 0.8, TYPE], [tm, EAT], [tm + 0.6, TYPE]], 0.4), expr: t > tm ? 'happy' : 'determined' } });
   FX.dust(g, t, { count: 14, color: '#ffe9b0', a: 0.18 });

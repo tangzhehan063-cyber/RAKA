@@ -13,7 +13,7 @@ registerShot('s08', {
     const win = T.windowPane(1.1, 0.9, { glowColor: '#f2a27a', cols: 2, rows: 2, power: 0.9 }); win.position.set(-1.3, 1.6, -1.14); st.add(win);
     st.add(T.box(1.4, 0.05, 0.7, '#a07858', 0, TOP, -0.6));
     for (const [x, z] of [[-0.65, -0.9], [0.65, -0.9], [-0.65, -0.3], [0.65, -0.3]]) st.add(T.box(0.05, TOP, 0.05, '#7a5a40', x, TOP / 2, z));
-    st.add(T.box(0.24, 0.1, 0.16, BEKAL, -0.25, TOP + 0.075, -0.6), T.box(0.25, 0.03, 0.17, '#e86a50', -0.25, TOP + 0.14, -0.6));   // kotak bekal tertutup
+    st.add(T.box(0.17, 0.07, 0.115, BEKAL, -0.25, TOP + 0.055, -0.6), T.box(0.18, 0.022, 0.125, '#e86a50', -0.25, TOP + 0.101, -0.6));   // kotak bekal tertutup
     const wads = [];
     for (let i = 0; i < 9; i++) { const w = T.sphere(0.04, '#efe2c4', 0.12 + ((i * 37) % 60) / 300, TOP + 0.07 + ((i * 23) % 30) / 500, -0.7 + ((i * 17) % 40) / 200); w.visible = false; st.add(w); wads.push(w); }
     st.add(T.box(0.45, 0.05, 0.45, '#8a8f9a', -0.55, 0.45, 0.05), T.box(0.45, 0.5, 0.05, '#8a8f9a', -0.55, 0.72, 0.27));   // kursi kosong

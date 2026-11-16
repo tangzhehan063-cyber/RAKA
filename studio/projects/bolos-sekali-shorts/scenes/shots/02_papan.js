@@ -16,16 +16,21 @@ function card(g, t, info, draw) {
 const pop = (t, at, d = 0.3) => ease.outBack(prog(t, at - 0.08, at - 0.08 + d));
 const mini = (g, x, y, s, col) => { circle(g, x, y - 12 * s, 8 * s, col); seg(g, [[x, y - 3 * s], [x, y + 14 * s]], 5 * s, col); seg(g, [[x - 8 * s, y + 26 * s], [x, y + 14 * s], [x + 8 * s, y + 26 * s]], 4 * s, col); };
 const SRC = 'Herman & Mack, 1975';
-function glass(g, x, y, s, col, fill = 1) {   // gelas milkshake
-  g.save(); g.translate(x, y); g.scale(s, s);
-  g.beginPath(); g.moveTo(-48, -150); g.lineTo(48, -150); g.lineTo(34, 0); g.lineTo(-34, 0); g.closePath(); g.strokeStyle = col; g.lineWidth = 7; g.lineJoin = 'round'; g.stroke();
-  g.beginPath(); g.moveTo(-44 + 4 * (1 - fill) * 0, -150 + 150 * (1 - fill)); g.lineTo(44, -150 + 150 * (1 - fill)); g.lineTo(34 + 10 * fill * 0, 0); g.lineTo(-34, 0); g.closePath(); g.fillStyle = alpha(col, 0.35); g.fill();
-  seg(g, [[14, -150], [36, -210]], 7, col); g.restore();
+function glass(g, x, y, s, col) {   // gelas milkshake: isi bergelombang, krim kocok, sedotan
+  g.save(); g.translate(x, y); g.scale(s, s); g.lineJoin = 'round'; g.lineCap = 'round';
+  g.beginPath(); g.moveTo(-50, -170); g.lineTo(50, -170); g.lineTo(36, 0); g.quadraticCurveTo(0, 12, -36, 0); g.closePath(); g.fillStyle = alpha(col, 0.12); g.fill(); g.strokeStyle = col; g.lineWidth = 6; g.stroke();
+  g.beginPath(); g.moveTo(-47, -132); g.quadraticCurveTo(-24, -146, 0, -132); g.quadraticCurveTo(24, -118, 47, -132); g.lineTo(35, -6); g.quadraticCurveTo(0, 6, -35, -6); g.closePath(); g.fillStyle = alpha(col, 0.34); g.fill();
+  for (const [dy, w] of [[-176, 52], [-198, 38], [-216, 22]]) { g.beginPath(); g.ellipse(0, dy, w, 14, 0, 0, Math.PI * 2); g.fillStyle = alpha('#fff', 0.85); g.fill(); g.strokeStyle = col; g.lineWidth = 5; g.stroke(); }
+  seg(g, [[14, -190], [40, -268]], 9, '#fff'); seg(g, [[14, -190], [40, -268]], 5, col); g.restore();
 }
-function cone(g, x, y, s, col) {   // es krim
-  g.save(); g.translate(x, y); g.scale(s, s);
-  g.beginPath(); g.moveTo(-34, -70); g.lineTo(34, -70); g.lineTo(0, 0); g.closePath(); g.fillStyle = alpha(col, 0.5); g.fill(); g.strokeStyle = col; g.lineWidth = 6; g.stroke();
-  circle(g, 0, -92, 42, alpha(col, 0.5)); g.beginPath(); g.arc(0, -92, 42, 0, Math.PI * 2); g.stroke(); g.restore();
+function cone(g, x, y, s, col) {   // es krim: kerucut wafel berpola kotak-kotak + dua bola dengan lelehan
+  g.save(); g.translate(x, y); g.scale(s, s); g.lineJoin = 'round'; g.lineCap = 'round';
+  g.beginPath(); g.moveTo(-40, -76); g.lineTo(40, -76); g.lineTo(0, 6); g.closePath(); g.fillStyle = alpha(col, 0.3); g.fill(); g.strokeStyle = col; g.lineWidth = 5; g.stroke();
+  g.save(); g.beginPath(); g.moveTo(-40, -76); g.lineTo(40, -76); g.lineTo(0, 6); g.closePath(); g.clip();
+  for (let i = -3; i <= 3; i++) { seg(g, [[i * 16 - 30, -76], [i * 16 + 30, 6]], 2.5, alpha(col, 0.8)); seg(g, [[i * 16 + 30, -76], [i * 16 - 30, 6]], 2.5, alpha(col, 0.8)); } g.restore();
+  g.beginPath(); g.arc(0, -100, 36, 0, Math.PI * 2); g.fillStyle = alpha(col, 0.28); g.fill(); g.strokeStyle = col; g.lineWidth = 5; g.stroke();
+  g.beginPath(); g.moveTo(-46, -78); for (let i = 0; i < 4; i++) g.quadraticCurveTo(-46 + i * 23 + 6, -60 - (i % 2) * 8, -46 + (i + 1) * 23, -78); g.fillStyle = alpha(col, 0.35); g.fill(); g.stroke();
+  g.beginPath(); g.arc(0, -150, 30, 0, Math.PI * 2); g.fillStyle = alpha(col, 0.28); g.fill(); g.stroke(); circle(g, 0, -184, 6, col); g.restore();
 }
 
 // s10 28.6–33.1: "Tahun 75, Herman dan Mack ngasih milkshake ke orang yang lagi diet."
@@ -43,9 +48,9 @@ registerShot('s10', { draw(g, t, info) {
 registerShot('s11', { draw(g, t, info) {
   card(g, t, info, (g, ui, bp) => {
     const t1 = rel('tes', info, 0.5), t2 = rel('Habis', info, 1.9), t3 = rel('es', info, 2.5);
-    const a = ease.outBack(prog(t, t1 - 0.2, t1 + 0.3)); if (a > 0) { glass(g, 330, 760, 2.0 * a, ui.cream); text(g, '"TES RASA"', 330, 880, { size: 44, color: ui.cream, font: FONTS.ui, weight: 900, spacing: 3 }); }
+    const a = ease.outBack(prog(t, t1 - 0.2, t1 + 0.3)); if (a > 0) { glass(g, 330, 880, 1.6 * a, ui.cream); text(g, '"TES RASA"', 330, 960, { size: 44, color: ui.cream, font: FONTS.ui, weight: 900, spacing: 3 }); }
     const k = ease.out(prog(t, t2 - 0.2, t2 + 0.3)); if (k > 0) seg(g, [[470, 640], [470 + 140 * k, 640]], 8, alpha(bp, 0.9));
-    const b = ease.outBack(prog(t, t3 - 0.2, t3 + 0.3)); if (b > 0) { cone(g, 760, 760, 2.4 * b, ui.gold); text(g, 'ES KRIM', 760, 900, { size: 54, color: ui.gold, font: FONTS.ui, weight: 900, spacing: 3 }); }
+    const b = ease.outBack(prog(t, t3 - 0.2, t3 + 0.3)); if (b > 0) { cone(g, 760, 880, 1.8 * b, ui.gold); text(g, 'ES KRIM', 760, 960, { size: 54, color: ui.gold, font: FONTS.ui, weight: 900, spacing: 3 }); }
     text(g, 'DIUKUR: BERAPA YANG DIMAKAN', E.W / 2, 1090, { size: 38, color: alpha(bp, 0.9), font: FONTS.ui, weight: 900, spacing: 2, alpha: ease.out(prog(t, t3 + 0.5, t3 + 0.9)) });
   });
 } });
