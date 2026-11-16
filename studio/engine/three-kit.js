@@ -72,7 +72,7 @@ export function crowd3D(o = {}) { const { rows = 12, perRow = 80, width = 60, st
 // ---------- 3D stick figure (shares POSES with the 2D rig) ----------
 const U = 1 / 140; // 2D rig units -> metres (figure ≈ 1.7 m)
 export function figure3D(outfit = {}, o = {}) {
-  const st = S(), ink = mat(st.ink, { roughness: 0.75 }), rimC = o.rim || '#ffd39b', out = new THREE.MeshBasicMaterial({ color: C(rimC), side: THREE.BackSide });
+  const st = S(), ink = mat(st.ink, { roughness: 0.75 }), rimC = o.rim || '#ffd39b', out = new THREE.MeshBasicMaterial({ color: C(rimC), side: THREE.BackSide, visible: st.outline3D !== false });   // style.outline3D=false: tanpa garis tepi bercahaya
   const root = new THREE.Group(), g = new THREE.Group(); root.add(g); g.scale.setScalar((o.s || 1) * (outfit.kid ? 0.72 : 1));
   const cylGeo = new THREE.CylinderGeometry(1, 1, 1, 12), sphGeo = new THREE.SphereGeometry(1, 16, 12);
   const clothes = outfit.top && outfit.top !== 'none' ? mat(outfit.top === 'labcoat' ? '#ebe7f0' : outfit.color || '#d64a33') : null;

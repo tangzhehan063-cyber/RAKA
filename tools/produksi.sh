@@ -26,7 +26,7 @@ init)
   cd "$ST" && python3 tools/new_project.py --name "${slug}-shorts" --voice "$src" --aspect 9:16 --resolution 1080p --fps 24 --title "$slug" --captions
   cp library/cast.js "$P/scenes/" && cp library/sets/*.js "$P/scenes/sets/"
   python3 - "$P/config.json" <<'EOF'
-import json,sys; p=sys.argv[1]; c=json.load(open(p)); c.update(fadeIn=0, fadeOut=0.3); json.dump(c,open(p,'w'),indent=1)
+import json,sys; p=sys.argv[1]; c=json.load(open(p)); c.update(fadeIn=0, fadeOut=0.3, style='lembut')   # gaya rumah RAKA sejak 14 Nov (terang, tanpa neon/outline); json.dump(c,open(p,'w'),indent=1)
 EOF
   echo "init ok: $P" ;;
 timeline)

@@ -14,6 +14,5 @@ Tambahkan baris baru di bawah, jangan mengedit yang lama (beri tanggal). Bila do
 | 13 Nov | Workflow Gemini TTS hanya manual (`workflow_dispatch`), tidak otomatis saat push | `.github/workflows/gemini-tts.yml` |
 
 | 14 Nov | Skill `sutradara` diporting dari Channel-Penjelasan ke RAKA; `tools/cek-sutradara.py` dan `tools/cek-visual.py` memeriksa ritme, kamera, suara, palet, warna | `.claude/skills/sutradara/SKILL.md` |
-
-## Belum diputuskan (perlu jawaban user)
-- **Siapa yang merge PR:** `CLAUDE.md` menulis "user Merge", sedangkan `WORKFLOW.md` langkah 7 dan `STATUS.md` menulis "Claude merge sendiri (izin 9 Nov)". Sampai ada jawaban, **jangan merge sendiri**.
+| 14 Nov | Engine tetap GrowKaz (bukan Remotion); gaya rumah `lembut` untuk video baru | `STATUS.md`, `brand/palet-emosi.md` |
+| 16 Nov | Setiap video selesai: PR ke `main` lalu Claude langsung merge sendiri (semua channel); rollback lewat Revert PR | `CLAUDE.md`, `WORKFLOW.md` |

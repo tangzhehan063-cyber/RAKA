@@ -14,6 +14,9 @@ Tujuan: palet tidak lagi hijau-neon di semua video, tapi dipilih dari emosi ceri
 ## Yang hanya praktik sinematografi (bukan bukti lab)
 Warna dingin + desaturasi terasa serius/dingin, warna hangat terasa dekat/nostalgia, palet cerah terasa ringan. Sumber: [Noam Kroll](https://noamkroll.com/the-psychology-of-color-grading-its-emotional-impact-on-your-audience/). Anggap sebagai titik awal, bukan fakta.
 
+## Gaya rumah (14 Nov 2026): `lembut`
+Keputusan user: video RAKA berikutnya memakai gaya **`lembut`** (Lembut Terang) sebagai dasar: dunia terang pastel, kontras halus (0,93), saturasi 0,84, tanpa neon, tanpa rim/garis tepi bercahaya (2D dan 3D, `outline3D: false`), bloom hampir nol, tokoh arang lembut. Palet di tabel bawah dipakai per adegan hanya bila emosinya menuntut (maks 2 palet per video). **Jangan isi `"style"` per shot kalau tidak perlu**: style per shot mengalahkan style video.
+
 ## Peta emosi → palet RAKA
 Aturan turunan: **terang/saturasi = naik-turun mood; hue = penanda suasana**. Sedih = turunkan saturasi + kecerahan, bukan sekadar "biru".
 

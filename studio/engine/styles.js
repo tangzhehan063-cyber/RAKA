@@ -94,6 +94,22 @@ export const STYLES = {
       void: { sky: ['#2a1c1a', '#3a2622'], rim: '#e8603a' },
     },
   },
+  lembut: {
+    name: 'Lembut Terang', desc: 'RAKA: dunia terang pastel, kontras sangat halus, tanpa neon, tanpa rim/outline (2D dan 3D), bloom hampir nol; tokoh arang lembut, bayangan tipis.',
+    ink: '#3d4352', inkFar: '#a4a2b0', feature: '#fffdf8', rimWidth: 0, outline3D: false,
+    ui: { ...UI, card: 'rgba(255,250,240,.96)', cardLine: 'rgba(43,47,58,.18)', text: '#2a3150', sub: '#6b7190', accent: '#d64a33', gold: '#8a4f0c', cream: '#2b2f3a', blueprint: '#3f6fb8', bpBg: '#f4ecdc', good: '#2f8a57' },
+    grade: { contrast: 0.93, sat: 0.84, lift: [0.12, 0.11, 0.1], gamma: [1.06, 1.04, 1.02], gain: [1.0, 0.99, 0.96], vignette: 0.08, grain: 0.02, bloom: 0.03 },
+    moods: {
+      day: { sky: ['#cfe0ee', '#e6eef2', '#f7f1e4'], ambient: '#b8b0a4', key: '#fffaf0', rim: '#fffaf0', wall: '#e9dcc6', floor: '#c9b49a', dark: '#5a5468', practical: '#f2b441', fog: '#eef0ea' },
+      golden: { sky: ['#f2c58a', '#f8dcae', '#fff1d4'], ambient: '#c4a68a', key: '#fff0d0', rim: '#fff0d0', wall: '#ecd2b0', floor: '#c9a27c', dark: '#5a4638', practical: '#f2b441', fog: '#f4d9b0' },
+      dusk: { sky: ['#c9a0a8', '#e8bfa8', '#f6dcc0'], ambient: '#b49a98', key: '#ffe6c8', rim: '#ffe6c8', wall: '#dcbcae', floor: '#b0907e', dark: '#4a3a40', practical: '#f2b441', fog: '#ecd0c0' },
+      night: { sky: ['#5a6a8e', '#7f8fb0', '#b0bcd4'], ambient: '#7a86a6', key: '#e6ecff', rim: '#e6ecff', wall: '#8f99b4', floor: '#6c7492', dark: '#2e3448', practical: '#ffcf8a', fog: '#a8b2cc' },
+      storm: { sky: ['#6a7488', '#8c96a8', '#b4bcc8'], ambient: '#7c8494', key: '#eef2f8', rim: '#eef2f8', wall: '#8a92a2', floor: '#6a7282', dark: '#30343e', practical: '#f2c46a', fog: '#b0b8c4' },
+      interiorWarm: { sky: ['#f3d9b8', '#f6e4c8', '#fbefdc'], ambient: '#c8b29a', key: '#fff1da', rim: '#fff1da', wall: '#e8cfb0', floor: '#c9a17e', dark: '#5a4a44', practical: '#f2b441', fog: '#f0dcc0' },
+      interiorCool: { sky: ['#c8d6e4', '#dce6f0'], ambient: '#a8b4c4', key: '#f4f8ff', rim: '#f4f8ff', wall: '#c8d2de', floor: '#9aa8b8', dark: '#3a4450', practical: '#f2c46a', fog: '#d4dce6' },
+      void: { sky: ['#efe6d8', '#e6dccb'], ambient: '#cbbfae', key: '#ffffff', rim: '#d64a33', wall: '#e6dccb', floor: '#d4c8b4', dark: '#5a5048', practical: '#f2b441', fog: '#efe6d8' },
+    },
+  },
   lavender: {
     name: 'Dusty Lavender', desc: 'Soft violet and peach: muted lavender shadows, warm peach key, gentle haze. Quiet, modern, not neon.',
     ink: '#1e1832', inkFar: '#5a5080', feature: '#fff6f0', rimWidth: 3,
