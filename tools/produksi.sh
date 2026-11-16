@@ -6,7 +6,8 @@
 #   tools/produksi.sh init     <slug> <url|mp3>     # unduh VO, buat proyek, salin library, default Shorts
 #   tools/produksi.sh timeline <slug> <words_url|json>  # Scribe words.json -> timeline (angka jadi digit)
 #   tools/produksi.sh shots    <slug>               # story/shots.tsv -> story/shots.json
-#   tools/produksi.sh sheet    <slug>               # contact sheet 0.5x + overlay zona aman TikTok -> build/sheets/safe.png (CEK DENGAN MATA)
+#   tools/produksi.sh cek      <slug>               # cek sutradara (ritme, transisi, kamera, waktu baca, suara, palet, animasi); GAGAL wajib diperbaiki
+#   tools/produksi.sh sheet    <slug>               # cek sutradara + contact sheet 0.5x + overlay zona aman TikTok -> build/sheets/safe.png (CEK DENGAN MATA)
 #   tools/produksi.sh stills   <slug> 1.2,30.5      # still tertentu 0.5x -> build/stills/sheet_01.png
 #   tools/produksi.sh final    <slug>               # render penuh + mix + QC (jalankan di background)
 #   tools/produksi.sh qc       <slug>               # durasi, audio, LUFS, contact sheet video jadi
@@ -40,7 +41,9 @@ EOF
   ;;
 shots)
   python3 "$ROOT/tools/shots_tsv.py" "$PA/story/shots.tsv" "$PA" ;;
+cek) python3 "$ROOT/tools/cek-sutradara.py" "$slug" ;;
 sheet)
+  python3 "$ROOT/tools/cek-sutradara.py" "$slug" || echo "!! cek-sutradara: ada GAGAL, perbaiki dulu"
   cd "$ST" && node render.mjs --project "$P" --sheet --scale 0.5 --workers "$WORKERS" 2>&1 | grep -iE "error|wrote" | tail -3
   python3 "$ROOT/tools/safezone.py" "$PA/build/sheets/safe.png" $(ls "$PA"/build/sheets/s*_*.png | sort -V) ;;   # sheet + zona aman TikTok
 stills)

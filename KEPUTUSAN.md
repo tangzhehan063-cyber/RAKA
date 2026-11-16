@@ -13,5 +13,7 @@ Tambahkan baris baru di bawah, jangan mengedit yang lama (beri tanggal). Bila do
 | 13 Nov | Animatic ringan: `python3 tools/animatic.py <slug>` dicek sebelum kode adegan | `WORKFLOW.md` langkah 5 |
 | 13 Nov | Workflow Gemini TTS hanya manual (`workflow_dispatch`), tidak otomatis saat push | `.github/workflows/gemini-tts.yml` |
 
+| 14 Nov | Skill `sutradara` diporting dari Channel-Penjelasan ke RAKA; `tools/cek-sutradara.py` dan `tools/cek-visual.py` memeriksa ritme, kamera, suara, palet, warna | `.claude/skills/sutradara/SKILL.md` |
+
 ## Belum diputuskan (perlu jawaban user)
 - **Siapa yang merge PR:** `CLAUDE.md` menulis "user Merge", sedangkan `WORKFLOW.md` langkah 7 dan `STATUS.md` menulis "Claude merge sendiri (izin 9 Nov)". Sampai ada jawaban, **jangan merge sendiri**.

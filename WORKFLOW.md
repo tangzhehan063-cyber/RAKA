@@ -38,6 +38,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - Set siap pakai di `studio/library/sets/`: `bedroom.js` (kalender), `street.js`, `kamar.js` (jam 03:00, meja + lampu, kertas, bayangan Si Ramalan).
 
 ## 6. Cek visual → render (1 sheet, perbaikan via stills)
+- **Sutradara:** `tools/produksi.sh sheet` kini otomatis menjalankan `python3 tools/cek-sutradara.py <slug>` (ritme, transisi, kamera, waktu baca, suara, palet, animasi; GAGAL wajib diperbaiki; panduan: skill `.claude/skills/sutradara/SKILL.md`). Setelah sheet jadi: `python3 tools/cek-visual.py frame studio/projects/<slug>-shorts/build/sheets/s*_*.png` (warna, kontras, neon).
 - `tools/produksi.sh sheet <slug>` → lihat 1 gambar `build/sheets/safe.png` (still + overlay zona aman TikTok), cocokkan dengan **`brand/cek-bug.md`**. Kirim sheet ke user sebelum final.
 - Perbaiki → `tools/produksi.sh stills <slug> 12.3,40.1` (hanya shot yang diubah).
 - **Jangan hentikan render** kecuali perubahan memang untuk video ini.
