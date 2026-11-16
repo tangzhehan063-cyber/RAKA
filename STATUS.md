@@ -5,7 +5,7 @@
 - **Skill `sutradara`** + `tools/cek-sutradara.py` + `tools/cek-visual.py` sudah di main (PR #20).
 - **Engine tetap GrowKaz** (user 14 Nov): uji Remotion + three.js untuk RAKA ditolak; jangan pindah engine.
 - **Aturan merge (16 Nov)**: setiap video selesai → PR ke main → Claude langsung merge sendiri.
-- **Berikutnya**: video #10 dengan gaya `lembut` (mulai dari ide).
+- **Video #10 "Bolos Sekali" (16 Nov)**: ide dipilih user (what-the-hell effect, formula validasi). Naskah draf 1 di `naskah/bolos-sekali.md`, **menunggu ACC user**. ScrapeMedsos kredit 0 (caption tanpa riset bahasa). Berikutnya setelah ACC: caption, tanya mesin VO (Gemini/ElevenLabs), lalu adegan.
 
 ## Posisi sebelumnya (14 Nov 2026)
 - **Video #9 "Skripsi Dua Minggu" SELESAI (14 Nov)**: planning fallacy (Buehler 1994), 82,8 dtk, −14,0 LUFS, 19 shot + 1 shot 3D. VO Gemini (Charon) dibuat Claude atas permintaan user. MP4 dikirim ke user (33 MB); Drive folder `09 - Skripsi Dua Minggu` (id 1vFyVkw55SFHZsWJXxERQdXc-TjdOqf_m) berisi cover, VO, caption, naskah. Bug s11 (stempel menabrak angka) diperbaiki dengan render ulang potongan 42,7–47,5 dtk lalu disambung. Arsip + artifact diperbarui. PR https://github.com/tangzhehan063-cyber/RAKA/pull/22 menunggu merge user (lihat KEPUTUSAN.md).
