@@ -1,4 +1,4 @@
-# #10 Bolos Sekali (draf 1, ±185 kata ≈ 72 dtk, kerangka Pukulan ke-99 + framework v2, formula "validasi")
+# #10 Bolos Sekali (draf 2, ACC user 16 Nov, ±185 kata ≈ 72 dtk, kerangka Pukulan ke-99 + framework v2, formula "validasi")
 
 Topik: *what-the-hell effect* (counter-regulatory eating). Satu gorengan "salah" berubah jadi sekotak karena pikiran "sudah telanjur". Tokoh: Rani, pekerja kantoran, hari ketujuh membawa bekal.
 Item maskot `#d64a33`: **kotak bekal merah-oranye**. Momen khas/cover: kotak bekal yang tutupnya tertutup debu/terabaikan di sudut meja sementara bungkus gorengan menumpuk, lalu dibuka lagi di akhir. Teks cover: "SUDAH TELANJUR".
@@ -18,7 +18,7 @@ Eksperimen: (1) penghitung hari bekal sebagai deretan kotak kecil di atas meja, 
 | 3 Suara di kepala (20–33) | Hari-hari berikutnya: kotak bekal masih tertutup, debu halus, teman menawari lagi. Close-up wajah raksasa Rani menunduk. *(indigo, malam)* | Kotak bekalnya baru dibuka lagi minggu depan, itu pun cuma buat dicuci. Rani cuma bisa bilang ke diri sendiri: dasar nggak punya tekad. |
 | 4 Balik sudut pandang (33–52) | Shot 3D: kamera mundur dari meja Rani menembus ke papan blueprint. Dua milkshake, dua es krim, tiga mangkuk tinggi-rendah: orang diet setelah milkshake makan lebih banyak. Sumber Herman & Mack 1975. *(arctic)* | Tahun tujuh puluh lima, peneliti Herman dan Mack ngasih milkshake ke orang yang lagi diet. Katanya tes rasa. Habis itu mereka ditawari es krim. Yang tadi minum milkshake malah makan es krim lebih banyak. Satu milkshake efeknya hampir sama kuat dengan dua. Psikolog Janet Polivy belakangan menyebutnya efek "what the hell". |
 | 5a Hening (52–54) | Musik mati. Teks diketik di layar: "yang bikin habis sekotak: sudah telanjur". *(arctic)* | *(hening ±1,5 dtk)* |
-| 5b Validasi + aksi (54–68) | Rani menatap kotak bekal merah. Pagi emas. Dia membukanya, makan, tanpa drama. Deret kotak kecil: satu kotak baru ditambahkan. *(clay, golden)* | Rani nggak kekurangan tekad. Gorengan pertama cuma satu gorengan. Yang menghabiskan sekotak itu kalimat "sudah telanjur". Besoknya Rani buka kotak bekal merahnya lagi. Nggak puasa buat nebus, nggak menghukum diri. Makan bekal seperti biasa, jam yang sama. |
+| 5b Validasi + aksi (54–68) | Rani menatap kotak bekal merah. Pagi emas. Dia membukanya, makan, tanpa drama. Deret kotak kecil: satu kotak baru ditambahkan. *(clay, golden)* | Rani ternyata punya tekad yang cukup. Yang bikin habis sekotak itu pikiran "sudah telanjur". Besoknya dia buka kotak bekal merahnya lagi dan makan seperti biasa. |
 | 6 Loop (68–72) | Meja sebelah: Dito menaruh kotak bekal, ada yang membuka kotak gorengan. | Di meja sebelah, Dito juga sudah enam hari bawa bekal. Hari ini ada yang bawa gorengan. |
 
 ## Teks TTS (angka jadi kata; tanpa bisikan)
@@ -30,7 +30,7 @@ Hari ketujuh, ada yang bawa gorengan. Rani ambil satu. Enak banget. Terus dia mi
 
 [calm, slow] Tahun tujuh puluh lima, peneliti Herman dan Mack ngasih milkshake ke orang yang lagi diet. Katanya tes rasa. Habis itu mereka ditawari es krim. Yang tadi minum milkshake malah makan es krim lebih banyak. Satu milkshake efeknya hampir sama kuat dengan dua. Psikolog Janet Polivy belakangan menyebutnya efek "what the hell".
 
-[warm, building] Rani nggak kekurangan tekad. Gorengan pertama cuma satu gorengan. Yang menghabiskan sekotak itu kalimat "sudah telanjur". Besoknya Rani buka kotak bekal merahnya lagi. Nggak puasa buat nebus, nggak menghukum diri. Makan bekal seperti biasa, jam yang sama.
+[warm, building] Rani ternyata punya tekad yang cukup. Yang bikin habis sekotak itu pikiran "sudah telanjur". Besoknya dia buka kotak bekal merahnya lagi dan makan seperti biasa.
 
 [calm] Di meja sebelah, Dito juga sudah enam hari bawa bekal. Hari ini ada yang bawa gorengan.
 
