@@ -1,6 +1,13 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## Posisi terakhir (14 Nov 2026)
+## Posisi terakhir (16 Nov 2026)
+- **Gaya rumah `lembut`** (terang pastel, tanpa neon, tokoh 3D tanpa garis tepi bercahaya lewat `outline3D: false` di `studio/engine/three-kit.js`) jadi default proyek baru (`produksi.sh init`). Diuji lewat still video #8 (salinan tanpa style per shot); user ACC. Video #1–#9 tidak berubah. Belum: warna set masih tertulis langsung di kode set (sofa, lantai, pintu), bentuk benda belum diperhalus, caption belum diubah.
+- **Skill `sutradara`** + `tools/cek-sutradara.py` + `tools/cek-visual.py` sudah di main (PR #20).
+- **Engine tetap GrowKaz** (user 14 Nov): uji Remotion + three.js untuk RAKA ditolak; jangan pindah engine.
+- **Aturan merge (16 Nov)**: setiap video selesai → PR ke main → Claude langsung merge sendiri.
+- **Berikutnya**: video #10 dengan gaya `lembut` (mulai dari ide).
+
+## Posisi sebelumnya (14 Nov 2026)
 - **Video #9 "Skripsi Dua Minggu" SELESAI (14 Nov)**: planning fallacy (Buehler 1994), 82,8 dtk, −14,0 LUFS, 19 shot + 1 shot 3D. VO Gemini (Charon) dibuat Claude atas permintaan user. MP4 dikirim ke user (33 MB); Drive folder `09 - Skripsi Dua Minggu` (id 1vFyVkw55SFHZsWJXxERQdXc-TjdOqf_m) berisi cover, VO, caption, naskah. Bug s11 (stempel menabrak angka) diperbaiki dengan render ulang potongan 42,7–47,5 dtk lalu disambung. Arsip + artifact diperbarui. PR https://github.com/tangzhehan063-cyber/RAKA/pull/22 menunggu merge user (lihat KEPUTUSAN.md).
 
 ## Posisi sebelumnya (13 Nov 2026)
@@ -29,7 +36,7 @@
 - **Laporan akhir video (13 Nov): di chat hanya MP4 + link Drive; cover, caption, naskah, suara (mp3) diunggah ke Drive `NN - Judul`** (seperti Channel-Penjelasan). #8: https://drive.google.com/drive/folders/1AAUO9vTfCugFJkTIjTJlrEBYE-1zb3Lc
 - **Tanpa bisikan di VO** (12 Nov). Puncak emosi = hening ±1 dtk + teks diketik di layar. Struktur naskah: `brand/kerangka-cerita.md`.
 - **Satu chat = satu repo.** Repo lain → chat baru.
-- **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan (merge: lihat `KEPUTUSAN.md`, belum diputuskan; jangan merge sendiri).** User bukan programmer; laporan cukup "sudah masuk main".
+- **Setiap video selesai: arsip + artifact, lalu PR ke `main` dan Claude langsung merge sendiri (aturan user 16 Nov).** User bukan programmer; laporan cukup "sudah masuk main".
 - **Moodboard & storyboard boleh terus di-improve Claude** (izin user 9 Nov): tiap video coba 1–2 eksperimen visual/cerita baru, catat di `brand/eksperimen.md`. Yang user bilang "suka" → jadi baku di `brand/dna-video.md`.
 - **Posisi CC baku (ACC 9 Nov): pusat y=1344 (0,70 H)**, default engine, jangan diubah. Teks penting di zona aman TikTok.
 - Bahasa Indonesia, sederhana. Suka saran "out of the box".

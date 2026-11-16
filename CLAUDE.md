@@ -1,7 +1,7 @@
 # Repo RAKA: channel stickman self-improvement
 
 Repo ini hanya untuk channel stickman (STYLE RAKA). Channel pengetahuan ("fakta rumah", editorial 3D) ada di repo terpisah **`tangzhehan063-cyber/Channel-Penjelasan`**; jangan campur gaya.
-**Alur kerja cepat ada di `WORKFLOW.md` (langkah 0–7, termasuk distribusi: arsip + artifact + PR ke `main` → user Merge).** **Di awal setiap sesi, baca `STATUS.md`**, lalu kerjakan video dengan `WORKFLOW.md` + `tools/produksi.sh` (hemat token & waktu) (posisi terakhir & preferensi user), dan perbarui `STATUS.md` setiap ada kemajuan.
+**Alur kerja cepat ada di `WORKFLOW.md` (langkah 0–7, termasuk distribusi: arsip + artifact + PR ke `main` → **Claude langsung merge sendiri**, aturan user 16 Nov, setiap video, semua channel).** **Di awal setiap sesi, baca `STATUS.md`**, lalu kerjakan video dengan `WORKFLOW.md` + `tools/produksi.sh` (hemat token & waktu) (posisi terakhir & preferensi user), dan perbarui `STATUS.md` setiap ada kemajuan.
 Aturan umum: Bahasa Indonesia, fakta riset dengan sumber, **caption posting + cover wajib setelah setiap video**.
 
 ---
@@ -43,7 +43,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 - Versi: **TikTok/Reels** (caption di atas), **YouTube Shorts** (judul ≤ 60 karakter dengan `#shorts`, deskripsi 2 baris + sumber), **teks pin komentar**.
 
 ## Default produksi
-- Shorts/TikTok: 9:16, 1080p, 24 fps, caption on (di zona aman TikTok: tidak tertutup tombol kanan & deskripsi bawah, cek `safe.png`), style **dipilih per adegan dari `brand/palet-emosi.md`** (`emerald` hanya bila cocok dengan emosinya; bukan default), `fadeIn 0`, ending **loop** (kalimat terakhir menyambung ke kalimat pertama).
+- Shorts/TikTok: 9:16, 1080p, 24 fps, caption on (di zona aman TikTok: tidak tertutup tombol kanan & deskripsi bawah, cek `safe.png`), style default **`lembut`** (Lembut Terang, keputusan user 14 Nov: terang pastel, tanpa neon, tanpa rim/outline bercahaya; `studio/engine/styles.js`); palet lain dari `brand/palet-emosi.md` hanya bila adegan butuh emosi berbeda (`emerald` bukan default), `fadeIn 0`, ending **loop** (kalimat terakhir menyambung ke kalimat pertama).
 - **Zona aman 9:16 (wajib):** caption & teks penting tidak boleh di bawah y>1480 (nama/deskripsi/nav), tidak di kanan x>880 pada y 860–1560 (tombol like/komen/share), tidak di atas y<150 (header). **Sumber angka tunggal: `tools/safezone.py`** (angka komposit dari panduan pihak ketiga, bukan spesifikasi resmi platform; ubah di skrip itu saja). **Posisi CC baku (ACC user 9 Nov, jangan diubah): sedikit di bawah tengah, pusat y=1344 (0,70 H), x=475, lebar maks 0,74 W, maks 3 kata** = default engine, jadi `captionStyle` tidak perlu diisi di config; badge pojok kanan atas di x≈930, y≈280.
 - Versi panjang: 16:9, 1080p, caption off.
 - Protagonis: stickman "kamu" dengan satu item merah-oranye `#d64a33` (maskot); nama boleh baru tiap video. Mulai proyek dengan menyalin `studio/library/` (cast + set kamar & jalan); buat set baru bila topik membutuhkan, gaya tetap sama.
