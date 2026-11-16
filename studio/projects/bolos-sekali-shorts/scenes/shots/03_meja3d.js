@@ -44,28 +44,11 @@ registerShot('s08', {
     };
     geprek(0.2, -0.5, 0.3); geprek(0.14, -0.76, -0.2);
 
-    // bungkus gorengan: kertas minyak kusut. Bola halus berresolusi tinggi dengan kerutan bertingkat + warna lebih gelap di lipatan.
-    const wads = [];
-    for (let i = 0; i < 10; i++) {
-      const r = 0.036 + rnd(i, 2) * 0.014, geo = new TH.SphereGeometry(1, 48, 32), pos = geo.attributes.position, col = [], sd = i * 3.7;
-      for (let j = 0; j < pos.count; j++) {
-        const x = pos.getX(j), y = pos.getY(j), z = pos.getZ(j);
-        const f = Math.sin(x * 4.1 + sd) * Math.sin(y * 3.7 + sd * 2) * Math.sin(z * 4.5 + sd * 3);
-        const w = Math.abs(Math.sin(x * 9 + y * 7 + sd)) * Math.abs(Math.sin(z * 8 - y * 6 + sd * 2));   // garis lipatan
-        const k = 1 + 0.2 * f - 0.12 * (1 - w) * 0.6 + 0.04 * Math.sin(x * 17 + z * 13 + sd);
-        pos.setXYZ(j, x * k * r * 1.05, y * k * r * 0.82, z * k * r);
-        const sh = 0.78 + 0.22 * w + 0.12 * f; col.push(0.93 * sh, 0.87 * sh, 0.74 * sh);
-      }
-      geo.setAttribute('color', new TH.Float32BufferAttribute(col, 3)); geo.computeVertexNormals();
-      const m = new TH.Mesh(geo, T.mat('#ffffff', { vertexColors: true })); m.position.set(-0.08 + ((i * 37) % 70) / 450, ky + 0.034 + ((i * 23) % 20) / 600, -0.5 - ((i * 17) % 40) / 220);
-      m.rotation.set(i, i * 2, 0); m.visible = false; m.castShadow = true; st.add(m); wads.push(m);
-    }
     // debu melayang
     const dust = []; for (let i = 0; i < 16; i++) { const d = T.sphere(0.006, T.basic('#fff6e0'), 0, 0, 0); st.add(d); dust.push(d); }
-    return { stage: st, wads, dust };
+    return { stage: st, dust };
   },
   draw(s, t, info, T) {
-    s.wads.forEach((m, i) => { m.visible = t > 0.2 + i * 0.3; });
     s.dust.forEach((d, i) => d.position.set(-0.7 + rnd(i, 3) * 1.4 + Math.sin(t * 0.5 + i) * 0.04, TOP + 0.1 + rnd(i, 5) * 0.6 + Math.sin(t * 0.7 + i * 2) * 0.03, -0.9 + rnd(i, 7) * 0.9));
     const k = ease.inOut(clamp(t / info.dur)), a = lerp(-0.4, 0.12, k), r = lerp(1.85, 1.45, k), tgt = [-0.06, TOP - 0.1, -0.64];
     s.stage.camera.position.set(tgt[0] + Math.sin(a) * r, TOP + 0.5 - 0.15 * k, tgt[2] + Math.cos(a) * r); s.stage.camera.lookAt(...tgt);
