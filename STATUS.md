@@ -5,7 +5,7 @@
 - **Skill `sutradara`** + `tools/cek-sutradara.py` + `tools/cek-visual.py` sudah di main (PR #20).
 - **Engine tetap GrowKaz** (user 14 Nov): uji Remotion + three.js untuk RAKA ditolak; jangan pindah engine.
 - **Aturan merge (16 Nov)**: setiap video selesai → PR ke main → Claude langsung merge sendiri.
-- **Berikutnya**: video #10 dengan gaya `lembut` (mulai dari ide).
+- **Video #10 "Bolos Sekali" SELESAI (16 Nov)**: what-the-hell effect (Herman & Mack 1975), 62,8 dtk, −14,1 LUFS, 19 shot + 1 shot 3D meja, gaya lembut. VO Gemini (Charon, dibuat Claude atas permintaan user). Drive folder `10 - Bolos Sekali` (id 1HFUg0tdibRI7HyRPUBb2EMls9_xo_VYj): cover, caption, naskah, VO mp3. Arsip + artifact diperbarui. Catatan: riset bahasa caption belum (ScrapeMedsos kredit 0). Bug celah dinding-lantai (garis hitam) di set pantri sudah diperbaiki sebelum render final. Formula topik "validasi" dicatat di `brand/formula.md`.
 
 ## Posisi sebelumnya (14 Nov 2026)
 - **Video #9 "Skripsi Dua Minggu" SELESAI (14 Nov)**: planning fallacy (Buehler 1994), 82,8 dtk, −14,0 LUFS, 19 shot + 1 shot 3D. VO Gemini (Charon) dibuat Claude atas permintaan user. MP4 dikirim ke user (33 MB); Drive folder `09 - Skripsi Dua Minggu` (id 1vFyVkw55SFHZsWJXxERQdXc-TjdOqf_m) berisi cover, VO, caption, naskah. Bug s11 (stempel menabrak angka) diperbaiki dengan render ulang potongan 42,7–47,5 dtk lalu disambung. Arsip + artifact diperbarui. PR https://github.com/tangzhehan063-cyber/RAKA/pull/22 menunggu merge user (lihat KEPUTUSAN.md).

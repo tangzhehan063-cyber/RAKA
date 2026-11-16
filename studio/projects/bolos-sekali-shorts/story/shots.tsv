@@ -1,0 +1,22 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Bolos Sekali
+@music 0-20.5 hopeful 0.3; 20.5-28.6 sad 0.3; 28.6-45.9 mystery 0.3; 47.1-62.76 hopeful 0.45
+s01	0.0	2.9	pantri	cut	0.5 pop -14; 1.0 pop -14; 1.5 pop -14	roomtone -26	Rani sudah enam hari bawa bekal ke kantor. | MEDIUM pantri siang, Rani duduk, kotak bekal merah-oranye di meja, deret 6 kotak kecil di dinding
+s02	2.9	6.2	pantri	cut	1.0 ding -16	roomtone -26	Kotak bekal merahnya selalu berisi sayur dan ayam. | CLOSE kotak bekal dibuka: sayur hijau dan ayam
+s03	6.2	8.8	pantri	dip	0.3 whoosh -14; 1.3 pop -12	roomtone -26	Hari ketujuh, ada yang bawa gorengan. | Dito membawa kotak gorengan, kotak ke-7 di dinding retak, badge HARI 7
+s04	8.8	11.1	pantri	cut	0.9 pop -12; 1.6 ding -14	roomtone -26	Rani ambil satu. Enak banget. | Rani ambil satu gorengan, wajah senang
+s05	11.1	14.7	pantri	dip	2.5 impact -8	-	Terus dia mikir: ya sudah, hari ini kan sudah gagal. | BIG FACE Rani berpikir, "SUDAH GAGAL" coral
+s06	14.7	17.4	pantri	cut	0.2 pop -12; 1.0 pop -12; 1.8 pop -12	roomtone -26	Gorengan kedua, ketiga, keempat. | Gorengan habis satu-satu, bungkus menumpuk
+s07	17.4	20.5	pantri	dip	1.0 pop -12; 1.4 blip -14	roomtone -26	Sorenya dia pesan ayam geprek dua porsi. | Sore, dua box ayam geprek, "2 PORSI"
+s08	20.5	24.5	meja3d	swipe	0.04 swish -12; 1.5 tick -16; 2.5 tick -16	-	Kotak bekalnya baru dibuka lagi minggu depan, itu pun cuma buat dicuci. | 3D orbit meja pantri, kotak bekal tertutup, bungkus menumpuk, HARI 12
+s09	24.5	28.6	pantri	dip	2.0 heartbeat -16	-	Rani cuma bisa bilang ke diri sendiri: dasar nggak punya tekad. | BIG FACE sedih, "NGGAK PUNYA TEKAD?"
+s10	28.6	33.1	papan	swipe	0.04 swish -12; 1.2 blip -16; 3.0 impact -8	-	Tahun 75, peneliti Herman dan Mack ngasih milkshake ke orang yang lagi diet. | KARTU: 1975 HERMAN & MACK, orang yang lagi diet
+s11	33.1	36.8	papan	swipe	0.04 swish -12; 0.6 pop -12; 2.2 pop -12	-	Katanya tes rasa. Habis itu mereka ditawari es krim. | KARTU: gelas milkshake "TES RASA" lalu es krim
+s12	36.8	39.9	papan	swipe	0.04 swish -12; 1.0 riser -14; 2.0 hit -8	-	Yang tadi minum milkshake malah makan es krim lebih banyak. | KARTU: dua tiang, tanpa vs sesudah milkshake, "LEBIH BANYAK"
+s13	39.9	42.8	papan	swipe	0.04 swish -12; 1.4 blip -14; 2.2 hit -8	-	Satu milkshake efeknya hampir sama kuat dengan dua. | KARTU: 1 vs 2 milkshake tiang hampir sama
+s14	42.8	45.95	papan	swipe	0.04 swish -12; 1.6 impact -8	-	Psikolog Janet Polivy belakangan menyebutnya efek what the hell. | KARTU: JANET POLIVY, WHAT THE HELL
+s15	45.95	47.1	papan	dip	-	-	(hening) | HENING teks diketik: sudah telanjur
+s16	47.1	51.6	pantri	dip	2.0 stinger -10	roomtone -26	Rani ternyata punya tekad yang cukup. Yang bikin habis sekotak itu pikiran sudah telanjur. | Pagi emas, stempel SUDAH TELANJUR membelah dan lenyap
+s17	51.6	56.8	pantri	dip	1.4 pop -12; 3.3 ding -14	roomtone -26	Besoknya dia buka kotak bekal merahnya lagi dan makan seperti biasa. | Pagi emas, kotak bekal dibuka, makan, kotak ke-8 muncul
+s18	56.8	60.3	pantri	dip	0.5 pop -14; 1.0 pop -14; 1.5 pop -14	roomtone -26	Di meja sebelah, Dito juga sudah enam hari bawa bekal. | LOOP: bingkai sama s01, deret 6 kotak
+s19	60.3	62.76	pantri	cut	0.2 whoosh -14; 1.0 pop -12	roomtone -26	Hari ini ada yang bawa gorengan. | Dito datang membawa gorengan (sama dengan s03)

@@ -20,3 +20,8 @@ Naik +10 dtk per video **selama retensi tidak turun**; kalau % selesai turun jel
 | #2 | | | | | |
 | #3 | | | | | |
 | #4 | | | | | |
+
+## Formula topik "validasi" (catatan user 16 Nov 2026)
+- Video skripsi (#9) banyak impresi: penonton suka topik yang **mewajarkan kesulitan mereka** ("bukan cuma kamu, otaknya/sistemnya memang begitu"). Cari topik sejenis: keluhan relate + efek ilmiah bernama + studi.
+- Pengaman: ending tetap 1 langkah kecil nyata (kerangka v2), supaya validasi tidak jadi pembenaran kosong.
+- Daftar ide (belum dipilih): what-the-hell effect, present bias (nabung), lembur (Pencavel), kronotipe, ikatan lemah (Granovetter), attention residue, konteks belajar, false hope, 200 jam persahabatan, hedonic adaptation.
