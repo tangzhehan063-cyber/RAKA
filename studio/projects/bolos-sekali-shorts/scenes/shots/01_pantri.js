@@ -89,18 +89,26 @@ export function kotak(g, x, y, s = 1, o = {}) {
     for (const [dx, dy] of [[-62, 52], [-30, 56]]) { circle(g, x + dx * s, y - h + (dy - 8) * s, 8 * s, '#f0983e'); circle(g, x + dx * s, y - h + (dy - 8) * s, 3.4 * s, '#f8c47a'); }
     drumstick(g, x + 38 * s, y - h + 44 * s, 0.72 * s, -0.25);
   }
-  g.save(); g.translate(x - w / 2 - 6 * s - open * 20 * s, y - h - 4 * s - open * 64 * s); g.rotate(-open * 0.18);
-  rr(g, 0, -22 * s, w + 12 * s, 26 * s, 12 * s); g.fillStyle = col; g.fill();
-  rr(g, w / 2 - 16 * s, -12 * s, 44 * s, 10 * s, 5 * s); g.fillStyle = shade(col, 0.35); g.fill(); g.restore();
+  if (open > 0.05) {   // tutup terbuka ke belakang: trapesium bertumpu pada tepi atas kotak
+    const lh = 62 * s * open;
+    g.save(); g.globalCompositeOperation = 'source-over';
+    g.beginPath(); g.moveTo(x - w / 2 - 4 * s, y - h); g.lineTo(x + w / 2 + 4 * s, y - h); g.lineTo(x + w / 2 - 6 * s, y - h - lh); g.lineTo(x - w / 2 + 6 * s, y - h - lh); g.closePath();
+    g.fillStyle = shade(col, 0.08); g.fill(); g.beginPath(); g.moveTo(x - w / 2 + 14 * s, y - h - 6 * s); g.lineTo(x + w / 2 - 14 * s, y - h - 6 * s); g.lineTo(x + w / 2 - 18 * s, y - h - lh + 8 * s); g.lineTo(x - w / 2 + 18 * s, y - h - lh + 8 * s); g.closePath(); g.fillStyle = shade(col, -0.1); g.fill(); g.restore();
+  } else {
+    rr(g, x - w / 2 - 6 * s, y - h - 22 * s, w + 12 * s, 26 * s, 12 * s); g.fillStyle = col; g.fill();
+    rr(g, x - 22 * s, y - h - 12 * s, 44 * s, 10 * s, 5 * s); g.fillStyle = shade(col, 0.35); g.fill();
+  }
   if (o.dust) { g.save(); g.globalAlpha *= 0.5 * o.dust; rr(g, x - w / 2, y - h - 20 * s, w, h + 20 * s, 14 * s); g.fillStyle = '#d8d2c6'; g.fill(); g.restore(); }
 }
-export function bungkus(g, x, y, n, s = 1) {   // gumpalan kertas minyak: bersudut, ada lipatan dan noda minyak
+export function bungkus(g, x, y, n, s = 1) {   // gumpalan kertas minyak: bentuk lunak tak beraturan, lipatan melengkung, noda minyak
   for (let i = 0; i < Math.ceil(n); i++) { const k = ease.outBack(clamp(n - i)); if (k <= 0) continue; const px = x + ((i * 53) % 150 - 75) * s, py = y - ((i * 31) % 60) * s - 20 * s;
     g.save(); g.translate(px, py); g.scale(k * s, k * s); g.rotate(rnd(i, 3) * 3);
-    g.beginPath(); for (let j = 0; j < 9; j++) { const a = (j / 9) * Math.PI * 2, r = 20 + rnd(j + i * 9, 2) * 12; (j ? g.lineTo : g.moveTo).call(g, Math.cos(a) * r, Math.sin(a) * r * 0.85); } g.closePath();
-    g.fillStyle = '#eadcb6'; g.fill(); g.strokeStyle = '#bba873'; g.lineWidth = 2.5; g.lineJoin = 'round'; g.stroke();
-    seg(g, [[-10, -6], [4, 4]], 2.5, '#bba873'); seg(g, [[2, -12], [12, -2]], 2.5, '#bba873'); seg(g, [[-14, 8], [-2, 12]], 2.5, '#bba873');
-    g.beginPath(); g.ellipse(6, 6, 9, 6, 0.4, 0, Math.PI * 2); g.fillStyle = 'rgba(214,160,60,.35)'; g.fill(); g.restore(); }
+    blob(g, 27, 22, i + 3, 0.2, 11); g.fillStyle = '#ecdfbd'; g.fill();
+    g.save(); blob(g, 27, 22, i + 3, 0.2, 11); g.clip();
+    for (let j = 0; j < 4; j++) { const a = rnd(j + i * 5, 2) * 6, r = 6 + rnd(j, 4) * 14; g.beginPath(); g.arc(Math.cos(a) * 10, Math.sin(a) * 8, r, a, a + 1.9); g.strokeStyle = 'rgba(150,126,78,.55)'; g.lineWidth = 2.6; g.lineCap = 'round'; g.stroke(); }
+    g.beginPath(); g.ellipse(7, 6, 11, 7, 0.4, 0, Math.PI * 2); g.fillStyle = 'rgba(214,160,60,.28)'; g.fill();
+    g.beginPath(); g.ellipse(-8, -9, 9, 5, -0.5, 0, Math.PI * 2); g.fillStyle = 'rgba(255,255,255,.4)'; g.fill(); g.restore();
+    blob(g, 27, 22, i + 3, 0.2, 11); g.strokeStyle = '#bba873'; g.lineWidth = 2.4; g.stroke(); g.restore(); }
 }
 export function geprek(g, x, y, s = 1) {   // boks styrofoam: nasi, ayam geprek renyah + sambal, irisan timun
   g.save(); g.translate(x, y); g.scale(s, s);
