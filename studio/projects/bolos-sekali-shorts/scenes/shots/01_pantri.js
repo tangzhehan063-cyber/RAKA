@@ -139,7 +139,7 @@ export function pantri(g, t, cam, o = {}) {
   const md = o.mood || 'day', M = mood(md), G = GY(), CX = E.W / 2, wall = shade(M.wall, 0.04);
   const wx = CX - 380, wy = G - 1010, ww = 470, wh = 480;
   layer(g, cam, 0.45, (g) => {
-    g.fillStyle = linGrad(g, 0, -E.H, 0, G, [shade(wall, -0.04), wall]); g.fillRect(-E.W, -E.H, E.W * 3, G + E.H);
+    g.fillStyle = linGrad(g, 0, -E.H, 0, G, [shade(wall, -0.04), wall]); g.fillRect(-E.W, -E.H, E.W * 3, G + E.H * 2);
     FX.windowFrame(g, { x: wx, y: wy, w: ww, h: wh, cols: 2, rows: 2, frame: shade(wall, -0.22), bar: 12 }, (g, x, y, w, h) => {
       backdrop(g, M.sky, [x, y, w, h]); FX.sun(g, x + w * 0.5, y + h * 0.85, 46, '#fff3dc', M.key, 4);
       FX.skyline(g, { x, y: y + h, w, maxH: h * 0.35, color: alpha(shade(M.sky[0], -0.12), 0.55), windowColor: alpha(M.practical, 0.35), lit: 0.1, seed: 11 });
