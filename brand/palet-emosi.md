@@ -61,3 +61,4 @@ Hasil lihat mata: malam `indigo` paling sinematik dan beda jelas dari emerald; `
 - Per adegan tetap boleh pindah palet lewat `"style"` di `shots.json` untuk emosi (sedih, riset, klimaks).
 - `produksi.sh init` menulis `style='lembut'`; ubah `style` di `config.json` proyek setelah init, dan cek kontras/neon dengan `python3 tools/cek-visual.py frame ...` (gaya gelap seperti indigo/lavender butuh set yang tidak ditulis dengan warna lembut tetap di kode).
 - Riwayat: #1–#7 emerald/campur, #8–#9 paper/indigo/arctic/clay, #10–#11 lembut.
+- **Dua lapis, bukan salah satu (klarifikasi 17 Nov):** (1) gaya dasar berganti tiap video; (2) palet per adegan tetap mengikuti emosi seperti #8 dan #9. Video yang semua adegannya satu palet (mis. #10 dan #11: `lembut` 19 shot) dianggap temuan, bukan OK. Jangan menafsirkan "gaya rumah" sebagai satu palet untuk seluruh adegan.
