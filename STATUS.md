@@ -3,7 +3,7 @@
 ## Posisi terakhir (17 Nov 2026)
 - **Video #11 "Keranjang Kosong" SELESAI (17 Nov)**: choice overload (Iyengar & Lepper 2000; hasil studi lain campur, VO menyebutnya), kasus belanja skincare/pelembap, 76,3 dtk, −14,3 LUFS, 19 shot + 1 shot 3D meja selai, gaya lembut. VO Gemini (Charon, dibuat Claude atas pilihan user). Drive folder `11 - Keranjang Kosong` (id 1kR1Ykf0GBnXvmgmeLmM-PEpCcEc0kz0D): cover, caption, naskah, VO. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Keranjang = HUD pojok kanan atas (aman dari tombol TikTok); laptop menghadap penonton seperti #9.
 - **Formula validasi terbukti (user 17 Nov)**: #9 dan #10 banyak disukai; terapkan ke banyak kasus lain (`brand/formula.md`, ide cadangan di sana). **Berikutnya**: video #12 (mulai dari ide; isi kredit ScrapeMedsos untuk riset bahasa).
-- **Palet per adegan WAJIB (user 13 Nov, ditegaskan 17 Nov)**: #10 dan #11 salah menyeragamkan lembut 19 shot; mulai #12 pakai dasar berganti + palet per adegan.
+- **Warna = ikut TEMA video (user 17 Nov)**, bukan wajib per adegan. Per adegan hanya untuk pergeseran emosi besar (maks 2–3 palet per video, aturan `cek-sutradara`).
 - **Gaya visual (user 17 Nov)**: gaya dasar BERGANTI tiap video (bukan lembut terus); lihat aturan di `brand/palet-emosi.md`. #12 jangan lembut. Set di kode (`01_*.js`) memakai warna pastel tetap, jadi untuk gaya lain gunakan token mood/style, bukan warna tertulis.
 - Catatan teknis: set kamar/pantri bisa dipakai ulang (`studio/projects/*/scenes/shots/01_*.js`); wall layer harus dibuat lebih tinggi dari lantai (celah parallax = garis hitam); jangan pakai `rm` dengan wildcard (diblokir).
 
