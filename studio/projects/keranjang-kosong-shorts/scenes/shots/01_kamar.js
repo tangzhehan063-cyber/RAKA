@@ -87,26 +87,31 @@ export function kamar(g, t, cam, o = {}) {
   });
   return { G, top: G - 150, tx: CX + 90, bx: CX - 210, M };
 }
+export function hudCart(g, n = 0, a = 1) {   // penghitung keranjang di pojok kanan atas (posisi badge baku, aman dari UI TikTok)
+  const x = E.W - 190, y = 292; g.save(); g.globalAlpha *= a;
+  rr(g, x - 130, y - 52, 260, 104, 52); g.fillStyle = 'rgba(255,253,248,.9)'; g.fill(); g.strokeStyle = 'rgba(43,47,58,.14)'; g.lineWidth = 3; g.stroke();
+  cart(g, x - 62, y + 2, 0.62, 0); text(g, String(n), x + 58, y + 4, { size: 70, color: n > 0 ? '#2f8a57' : KERANJANG, font: FONTS.ui, weight: 900 }); g.restore();
+}
 export const hud = (g, str, a = 1) => UI.badge(g, { str, x: E.W - V(90, 110), y: V(110, 300), a, color: '#8a4f0c' });
 
 // ---- shot kamar ---------------------------------------------------------------------------------------------
-const kc = (o = {}) => (g, top, tx) => { cart(g, tx - 70, top - 260, 0.62, o.n ?? 0); };   // di atas laptop: aman dari kolom tombol TikTok
+const kc = (o = {}) => undefined;   // keranjang kini HUD pojok kanan atas (hudCart)
 // s01 0–2.4: Dewi mau beli satu pelembap
 registerShot('s01', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.5, 1.7, k)), { mood: 'dusk', hour: 20, items: kc({ n: 0 }), dewi: { expr: 'smile', pose: TYPE } });
-  FX.dust(g, t, { count: 10, color: '#fff2d0', a: 0.1 }); hud(g, 'KERANJANG 0', ease.out(prog(t, 0.4, 0.8)));
+  kamar(g, t, CAMD(lerp(1.5, 1.7, k)), { mood: 'dusk', hour: 20, dewi: { expr: 'smile', pose: TYPE } });
+  FX.dust(g, t, { count: 10, color: '#fff2d0', a: 0.1 }); hudCart(g, 0, ease.out(prog(t, 0.4, 0.8)));
 } });
 // s07 20.5–23.9: jam 11, keranjang masih kosong
 registerShot('s07', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.7, 1.9, k)), { mood: 'interiorCool', hour: 23, items: kc({ n: 0 }), dewi: { pose: SLUMP, expr: 'sad', look: [0.5, 0.4] }, screenColor: '#9fb4e8' });
-  hud(g, 'KERANJANG 0', 1);
+  kamar(g, t, CAMD(lerp(1.7, 1.9, k)), { mood: 'interiorCool', hour: 23, dewi: { pose: SLUMP, expr: 'sad', look: [0.5, 0.4] }, screenColor: '#9fb4e8' });
+  hudCart(g, 0, 1);
 } });
 // s08 23.9–29.3: wajah besar, "kenapa susah milih?"
 registerShot('s08', { draw(g, t, info) {
   const tq = rel('kenapa', info, 2.6), cx = E.W / 2 - 20, cy = 800, r = 270;
-  blurLayer(g, 12, (g) => kamar(g, t, { z: 2.0, x: 120, y: 250 }, { mood: 'interiorCool', hour: 23, dewi: false, items: kc({ n: 0 }) }), null, 1);
+  blurLayer(g, 12, (g) => kamar(g, t, { z: 2.0, x: 120, y: 250 }, { mood: 'interiorCool', hour: 23, dewi: false }), null, 1);
   veil(g, '#e8e0f0', 0.28);
   bigFace(g, cx, cy, r, { outfit: DEWI, expr: t > tq ? 'confused' : 'sad', blink: (t % 3.2) > 3.08, look: [0.3, 0.5], rimColor: '#9fb4e8', rimSide: 1, tilt: 0.05 });
   for (let i = 0; i < 4; i++) { const a = ease.outBack(prog(t, tq + i * 0.25, tq + i * 0.25 + 0.3)); if (a > 0) { g.save(); g.translate(cx + 330 - i * 170, cy - 330 - (i % 2) * 90); g.scale(a, a); text(g, '?', 0, 0, { size: 130 - i * 14, color: '#ff8a78', font: FONTS.ui, weight: 900 }); g.restore(); } }
@@ -114,21 +119,21 @@ registerShot('s08', { draw(g, t, info) {
 // s14 57.5–60.0: pagi, lega ("wajar")
 registerShot('s14', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.7, 1.9, k)), { mood: 'golden', hour: 9, items: kc({ n: 0 }), dewi: { pose: posesAt(t, [[0, SLUMP], [0.8, TYPE]], 0.5), expr: 'smile' } });
+  kamar(g, t, CAMD(lerp(1.7, 1.9, k)), { mood: 'golden', hour: 9, dewi: { pose: posesAt(t, [[0, SLUMP], [0.8, TYPE]], 0.5), expr: 'smile' } });
   FX.dust(g, t, { count: 14, color: '#ffe9b0', a: 0.18 }); hud(g, 'WAJAR', ease.out(prog(t, 0.5, 0.9)));
 } });
 // s17 67.0–70.6: paket sampai, pelembap dipakai
 registerShot('s17', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur), tp = rel('sampai', info, 0.8), td = rel('dipakai', info, 2.6);
-  kamar(g, t, CAMD(lerp(1.9, 2.2, k), 520, 1130, 540, 1100), { mood: 'golden', hour: 11, dewi: { pose: posesAt(t, [[0, TYPE], [td - 0.3, { ...POSES.sit, head: [14, -178], sh: [6, -146], eF: [40, -160], hF: [34, -200], eB: [28, -110], hB: [60, -114] }]], 0.4), expr: t > td ? 'joy' : 'smile' },
-    items: (g, top, tx) => { cart(g, tx - 70, top - 260, 0.62, 1);
+  kamar(g, t, CAMD(lerp(1.6, 1.8, k), 520, 1130, 540, 1100), { mood: 'golden', hour: 11, dewi: { pose: posesAt(t, [[0, TYPE], [td - 0.3, { ...POSES.sit, head: [14, -178], sh: [6, -146], eF: [40, -160], hF: [34, -200], eB: [28, -110], hB: [60, -114] }]], 0.4), expr: t > td ? 'joy' : 'smile' },
+    items: (g, top, tx) => {
       const a = ease.outBack(prog(t, tp - 0.3, tp + 0.2)); if (a > 0) { g.save(); g.translate(tx + 100, top); g.scale(a, a); rr(g, -50, -64, 100, 64, 6); g.fillStyle = '#c79a66'; g.fill(); rr(g, -50, -64, 100, 14, 4); g.fillStyle = '#dcb584'; g.fill(); seg(g, [[0, -64], [0, 0]], 8, '#efe3c4'); g.restore(); }
       if (t > tp + 0.7) produk(g, tx + 20, top - 4, 0.62 * ease.outBack(prog(t, tp + 0.7, tp + 1.0)), 0); } });
-  FX.dust(g, t, { count: 12, color: '#ffe9b0', a: 0.18 });
+  FX.dust(g, t, { count: 12, color: '#ffe9b0', a: 0.18 }); hudCart(g, 1, 1);
 } });
 // s18 70.6–73.2: kamar sebelah, bingkai sama s01
 registerShot('s18', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.5, 1.7, k)), { mood: 'dusk', hour: 20, items: kc({ n: 0 }), dewi: { expr: 'smile', pose: TYPE } });
-  FX.dust(g, t, { count: 10, color: '#fff2d0', a: 0.1 }); hud(g, 'KERANJANG 0', 1);
+  kamar(g, t, CAMD(lerp(1.5, 1.7, k)), { mood: 'dusk', hour: 20, dewi: { expr: 'smile', pose: TYPE } });
+  FX.dust(g, t, { count: 10, color: '#fff2d0', a: 0.1 }); hudCart(g, 0, 1);
 } });
