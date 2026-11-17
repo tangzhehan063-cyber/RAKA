@@ -76,10 +76,13 @@ export function kamar(g, t, cam, o = {}) {
     seg(g, [[bx - 30, G - 80], [bx - 34, G]], 7, '#a9a6b6'); seg(g, [[bx + 28, G - 80], [bx + 32, G]], 7, '#a9a6b6');
     if (o.dewi !== false) { const r = o.dewi || {}; drawFigure(g, { x: bx, y: G, s: 1.25, facing: 1, outfit: DEWI, pose: r.pose || breathe(TYPE, t, 0.5, 3), expr: r.expr || 'neutral', look: r.look || [0.9, 0.1], blink: (t % 3.4) > 3.27, rim: { color: M.key, dir: [1, -0.2], w: 3 } }); }
     if (o.teman) { const d = o.teman; drawFigure(g, { x: d.x, y: G, s: 1.25, facing: -1, outfit: TEMAN2, pose: d.pose || breathe(POSES.stand, t, 0.5, 7), expr: d.expr || 'smile', look: [-0.9, 0], blink: (t % 3.9) > 3.8, rim: { color: M.key, dir: [-1, -0.2], w: 3 } }); }
-    // laptop (tampak samping) di meja
-    const lx = tx - 90; rr(g, lx - 80, top - 12, 160, 12, 4); g.fillStyle = '#2b2f3a'; g.fill();
-    g.save(); g.translate(lx - 70, top - 12); g.rotate(-1.75); rr(g, 0, -100, 8, 110, 3); g.restore();
-    rr(g, lx - 80, top - 118, 8, 108, 3); g.fillStyle = '#2b2f3a'; g.fill(); rr(g, lx - 72, top - 112, 134, 96, 4); g.fillStyle = alpha(o.screenColor || '#cfe6ff', o.screen ?? 0.9); g.fill();
+    // laptop menghadap penonton (seperti video #9): alas trapesium + layar
+    const lx = tx - 70, w = 200, h = 136, sc = o.screenColor || '#cfe6ff';
+    g.beginPath(); g.moveTo(lx - w / 2 - 14, top); g.lineTo(lx + w / 2 + 14, top); g.lineTo(lx + w / 2, top - 10); g.lineTo(lx - w / 2, top - 10); g.closePath(); g.fillStyle = '#4a4f5e'; g.fill();
+    rr(g, lx - w / 2, top - 10 - h, w, h, 8); g.fillStyle = '#4a4f5e'; g.fill();
+    rr(g, lx - w / 2 + 8, top - 2 - h, w - 16, h - 16, 4); g.fillStyle = alpha(sc, o.screen ?? 0.95); g.fill();
+    for (let r = 0; r < 2; r++) for (let c = 0; c < 4; c++) { rr(g, lx - w / 2 + 18 + c * 42, top - h + 8 + r * 50, 34, 42, 5); g.fillStyle = 'rgba(255,255,255,.7)'; g.fill(); rr(g, lx - w / 2 + 25 + c * 42, top - h + 18 + r * 50, 20, 20, 4); g.fillStyle = PAL[(c + r * 4) % PAL.length]; g.fill(); }
+    glow(g, lx, top - 10 - h / 2, 220, sc, 0.14);
     if (o.items) o.items(g, top, tx);
   });
   return { G, top: G - 150, tx: CX + 90, bx: CX - 210, M };
@@ -119,8 +122,8 @@ registerShot('s17', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur), tp = rel('sampai', info, 0.8), td = rel('dipakai', info, 2.6);
   kamar(g, t, CAMD(lerp(1.9, 2.2, k), 520, 1130, 540, 1100), { mood: 'golden', hour: 11, dewi: { pose: posesAt(t, [[0, TYPE], [td - 0.3, { ...POSES.sit, head: [14, -178], sh: [6, -146], eF: [40, -160], hF: [34, -200], eB: [28, -110], hB: [60, -114] }]], 0.4), expr: t > td ? 'joy' : 'smile' },
     items: (g, top, tx) => { cart(g, tx + 150, top - 110, 0.55, 1);
-      const a = ease.outBack(prog(t, tp - 0.3, tp + 0.2)); if (a > 0) { g.save(); g.translate(tx + 30, top); g.scale(a, a); rr(g, -50, -64, 100, 64, 6); g.fillStyle = '#c79a66'; g.fill(); rr(g, -50, -64, 100, 14, 4); g.fillStyle = '#dcb584'; g.fill(); seg(g, [[0, -64], [0, 0]], 8, '#efe3c4'); g.restore(); }
-      if (t > tp + 0.7) produk(g, tx - 40, top - 4, 0.62 * ease.outBack(prog(t, tp + 0.7, tp + 1.0)), 0); } });
+      const a = ease.outBack(prog(t, tp - 0.3, tp + 0.2)); if (a > 0) { g.save(); g.translate(tx + 100, top); g.scale(a, a); rr(g, -50, -64, 100, 64, 6); g.fillStyle = '#c79a66'; g.fill(); rr(g, -50, -64, 100, 14, 4); g.fillStyle = '#dcb584'; g.fill(); seg(g, [[0, -64], [0, 0]], 8, '#efe3c4'); g.restore(); }
+      if (t > tp + 0.7) produk(g, tx + 20, top - 4, 0.62 * ease.outBack(prog(t, tp + 0.7, tp + 1.0)), 0); } });
   FX.dust(g, t, { count: 12, color: '#ffe9b0', a: 0.18 });
 } });
 // s18 70.6–73.2: kamar sebelah, bingkai sama s01
