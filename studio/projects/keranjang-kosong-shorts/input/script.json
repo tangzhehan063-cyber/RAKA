@@ -1,0 +1,834 @@
+{
+"words": [
+{
+"word": "Dewi",
+"start": 0.421,
+"end": 0.644
+},
+{
+"word": "cuma",
+"start": 0.644,
+"end": 0.867
+},
+{
+"word": "mau",
+"start": 0.867,
+"end": 1.034
+},
+{
+"word": "beli",
+"start": 1.034,
+"end": 1.257
+},
+{
+"word": "satu",
+"start": 1.257,
+"end": 1.48
+},
+{
+"word": "pelembap.",
+"start": 1.48,
+"end": 1.926
+},
+{
+"word": "Budgetnya",
+"start": 2.428,
+"end": 2.958
+},
+{
+"word": "jelas,",
+"start": 2.958,
+"end": 3.253
+},
+{
+"word": "di",
+"start": 3.484,
+"end": 3.586
+},
+{
+"word": "bawah",
+"start": 3.586,
+"end": 3.841
+},
+{
+"word": "150000.",
+"start": 3.841,
+"end": 4.861
+},
+{
+"word": "Jam",
+"start": 5.88,
+"end": 6.069
+},
+{
+"word": "8",
+"start": 6.069,
+"end": 6.512
+},
+{
+"word": "malam",
+"start": 6.512,
+"end": 6.828
+},
+{
+"word": "dia",
+"start": 6.828,
+"end": 7.018
+},
+{
+"word": "buka",
+"start": 7.018,
+"end": 7.271
+},
+{
+"word": "marketplace.",
+"start": 7.271,
+"end": 7.966
+},
+{
+"word": "Hasilnya",
+"start": 8.703,
+"end": 9.177
+},
+{
+"word": "2000",
+"start": 9.177,
+"end": 9.592
+},
+{
+"word": "lebih",
+"start": 9.592,
+"end": 9.888
+},
+{
+"word": "produk.",
+"start": 9.888,
+"end": 10.244
+},
+{
+"word": "Dia",
+"start": 11.298,
+"end": 11.542
+},
+{
+"word": "buka",
+"start": 11.542,
+"end": 11.868
+},
+{
+"word": "tab",
+"start": 11.868,
+"end": 12.112
+},
+{
+"word": "satu,",
+"start": 12.112,
+"end": 12.437
+},
+{
+"word": "tab",
+"start": 12.713,
+"end": 13.015
+},
+{
+"word": "dua,",
+"start": 13.015,
+"end": 13.317
+},
+{
+"word": "tab",
+"start": 13.636,
+"end": 13.804
+},
+{
+"word": "23.",
+"start": 13.804,
+"end": 14.475
+},
+{
+"word": "Ulasan",
+"start": 15.605,
+"end": 15.927
+},
+{
+"word": "yang",
+"start": 15.927,
+"end": 16.141
+},
+{
+"word": "satu",
+"start": 16.141,
+"end": 16.356
+},
+{
+"word": "bilang",
+"start": 16.356,
+"end": 16.678
+},
+{
+"word": "bikin",
+"start": 16.678,
+"end": 16.946
+},
+{
+"word": "glowing,",
+"start": 16.946,
+"end": 17.322
+},
+{
+"word": "yang",
+"start": 17.892,
+"end": 18.097
+},
+{
+"word": "lain",
+"start": 18.097,
+"end": 18.302
+},
+{
+"word": "bilang",
+"start": 18.302,
+"end": 18.609
+},
+{
+"word": "bikin",
+"start": 18.609,
+"end": 18.866
+},
+{
+"word": "jerawatan.",
+"start": 18.866,
+"end": 19.327
+},
+{
+"word": "Jam",
+"start": 21.027,
+"end": 21.164
+},
+{
+"word": "11,",
+"start": 21.164,
+"end": 21.483
+},
+{
+"word": "keranjangnya",
+"start": 21.779,
+"end": 22.351
+},
+{
+"word": "masih",
+"start": 22.351,
+"end": 22.589
+},
+{
+"word": "kosong.",
+"start": 22.589,
+"end": 22.875
+},
+{
+"word": "Dia",
+"start": 24.09,
+"end": 24.265
+},
+{
+"word": "nutup",
+"start": 24.265,
+"end": 24.558
+},
+{
+"word": "laptop",
+"start": 24.558,
+"end": 24.91
+},
+{
+"word": "sambil",
+"start": 24.91,
+"end": 25.261
+},
+{
+"word": "mikir:",
+"start": 25.261,
+"end": 25.554
+},
+{
+"word": "kenapa",
+"start": 26.188,
+"end": 26.482
+},
+{
+"word": "milih",
+"start": 26.482,
+"end": 26.727
+},
+{
+"word": "satu",
+"start": 26.727,
+"end": 26.923
+},
+{
+"word": "skincare",
+"start": 26.923,
+"end": 27.315
+},
+{
+"word": "aja",
+"start": 27.315,
+"end": 27.462
+},
+{
+"word": "susah",
+"start": 27.462,
+"end": 27.707
+},
+{
+"word": "banget?",
+"start": 27.707,
+"end": 28.001
+},
+{
+"word": "Tahun",
+"start": 29.619,
+"end": 29.871
+},
+{
+"word": "2000,",
+"start": 29.871,
+"end": 30.225
+},
+{
+"word": "peneliti",
+"start": 30.523,
+"end": 31.0
+},
+{
+"word": "Sheena",
+"start": 31.0,
+"end": 31.358
+},
+{
+"word": "Iyengar",
+"start": 31.358,
+"end": 31.775
+},
+{
+"word": "dan",
+"start": 31.775,
+"end": 31.954
+},
+{
+"word": "Mark",
+"start": 31.954,
+"end": 32.192
+},
+{
+"word": "Lepper",
+"start": 32.192,
+"end": 32.55
+},
+{
+"word": "bikin",
+"start": 32.55,
+"end": 33.143
+},
+{
+"word": "meja",
+"start": 33.143,
+"end": 33.381
+},
+{
+"word": "cicip",
+"start": 33.381,
+"end": 33.679
+},
+{
+"word": "selai",
+"start": 33.679,
+"end": 33.977
+},
+{
+"word": "di",
+"start": 33.977,
+"end": 34.096
+},
+{
+"word": "supermarket.",
+"start": 34.096,
+"end": 34.752
+},
+{
+"word": "Satu",
+"start": 35.714,
+"end": 35.953
+},
+{
+"word": "hari",
+"start": 35.953,
+"end": 36.193
+},
+{
+"word": "ada",
+"start": 36.193,
+"end": 36.372
+},
+{
+"word": "24",
+"start": 36.372,
+"end": 37.151
+},
+{
+"word": "rasa,",
+"start": 37.151,
+"end": 37.391
+},
+{
+"word": "hari",
+"start": 38.021,
+"end": 38.285
+},
+{
+"word": "lain",
+"start": 38.285,
+"end": 38.548
+},
+{
+"word": "cuma",
+"start": 38.548,
+"end": 38.812
+},
+{
+"word": "enam.",
+"start": 38.812,
+"end": 39.075
+},
+{
+"word": "Meja",
+"start": 40.179,
+"end": 40.404
+},
+{
+"word": "yang",
+"start": 40.404,
+"end": 40.63
+},
+{
+"word": "banyak",
+"start": 40.63,
+"end": 40.969
+},
+{
+"word": "rasanya",
+"start": 40.969,
+"end": 41.364
+},
+{
+"word": "lebih",
+"start": 41.364,
+"end": 41.646
+},
+{
+"word": "ramai,",
+"start": 41.646,
+"end": 41.929
+},
+{
+"word": "tapi",
+"start": 42.289,
+"end": 42.53
+},
+{
+"word": "yang",
+"start": 42.53,
+"end": 42.771
+},
+{
+"word": "beli",
+"start": 42.771,
+"end": 43.012
+},
+{
+"word": "di",
+"start": 43.012,
+"end": 43.132
+},
+{
+"word": "sana",
+"start": 43.132,
+"end": 43.373
+},
+{
+"word": "cuma",
+"start": 43.373,
+"end": 43.614
+},
+{
+"word": "sekitar",
+"start": 43.614,
+"end": 44.035
+},
+{
+"word": "tiga",
+"start": 44.035,
+"end": 44.276
+},
+{
+"word": "persen.",
+"start": 44.276,
+"end": 44.637
+},
+{
+"word": "Di",
+"start": 45.669,
+"end": 45.811
+},
+{
+"word": "meja",
+"start": 45.811,
+"end": 46.096
+},
+{
+"word": "enam",
+"start": 46.096,
+"end": 46.381
+},
+{
+"word": "rasa,",
+"start": 46.381,
+"end": 46.666
+},
+{
+"word": "sekitar",
+"start": 46.878,
+"end": 47.241
+},
+{
+"word": "30",
+"start": 47.241,
+"end": 47.708
+},
+{
+"word": "persen.",
+"start": 47.708,
+"end": 48.02
+},
+{
+"word": "Penelitian",
+"start": 49.247,
+"end": 49.799
+},
+{
+"word": "lain",
+"start": 49.799,
+"end": 50.02
+},
+{
+"word": "memang",
+"start": 50.02,
+"end": 50.352
+},
+{
+"word": "hasilnya",
+"start": 50.352,
+"end": 50.794
+},
+{
+"word": "campur,",
+"start": 50.794,
+"end": 51.125
+},
+{
+"word": "tapi",
+"start": 51.528,
+"end": 51.751
+},
+{
+"word": "efeknya",
+"start": 51.751,
+"end": 52.14
+},
+{
+"word": "paling",
+"start": 52.14,
+"end": 52.475
+},
+{
+"word": "sering",
+"start": 52.475,
+"end": 52.809
+},
+{
+"word": "muncul",
+"start": 52.809,
+"end": 53.143
+},
+{
+"word": "kalau",
+"start": 53.143,
+"end": 53.422
+},
+{
+"word": "pilihannya",
+"start": 53.422,
+"end": 53.979
+},
+{
+"word": "banyak",
+"start": 53.979,
+"end": 54.522
+},
+{
+"word": "dan",
+"start": 54.522,
+"end": 54.689
+},
+{
+"word": "kita",
+"start": 54.689,
+"end": 54.912
+},
+{
+"word": "belum",
+"start": 54.912,
+"end": 55.191
+},
+{
+"word": "tahu",
+"start": 55.191,
+"end": 55.413
+},
+{
+"word": "maunya",
+"start": 55.413,
+"end": 55.748
+},
+{
+"word": "apa.",
+"start": 55.748,
+"end": 55.915
+},
+{
+"word": "Susah",
+"start": 57.694,
+"end": 57.929
+},
+{
+"word": "milih",
+"start": 57.929,
+"end": 58.164
+},
+{
+"word": "di",
+"start": 58.164,
+"end": 58.258
+},
+{
+"word": "depan",
+"start": 58.258,
+"end": 58.494
+},
+{
+"word": "2000",
+"start": 58.494,
+"end": 58.823
+},
+{
+"word": "pilihan",
+"start": 58.823,
+"end": 59.153
+},
+{
+"word": "itu",
+"start": 59.153,
+"end": 59.294
+},
+{
+"word": "wajar.",
+"start": 59.294,
+"end": 59.529
+},
+{
+"word": "Besoknya",
+"start": 60.243,
+"end": 60.741
+},
+{
+"word": "Dewi",
+"start": 60.741,
+"end": 60.99
+},
+{
+"word": "tulis",
+"start": 60.99,
+"end": 61.301
+},
+{
+"word": "tiga",
+"start": 61.301,
+"end": 61.55
+},
+{
+"word": "syarat,",
+"start": 61.55,
+"end": 61.924
+},
+{
+"word": "buka",
+"start": 62.196,
+"end": 62.463
+},
+{
+"word": "dua",
+"start": 62.463,
+"end": 62.663
+},
+{
+"word": "toko,",
+"start": 62.663,
+"end": 62.93
+},
+{
+"word": "bandingin",
+"start": 62.93,
+"end": 63.531
+},
+{
+"word": "tiga",
+"start": 63.531,
+"end": 63.798
+},
+{
+"word": "produk,",
+"start": 63.798,
+"end": 64.199
+},
+{
+"word": "dan",
+"start": 64.199,
+"end": 64.399
+},
+{
+"word": "checkout",
+"start": 64.399,
+"end": 64.933
+},
+{
+"word": "dalam",
+"start": 64.933,
+"end": 65.266
+},
+{
+"word": "15",
+"start": 65.266,
+"end": 65.867
+},
+{
+"word": "menit.",
+"start": 65.867,
+"end": 66.201
+},
+{
+"word": "Dua",
+"start": 67.3,
+"end": 67.46
+},
+{
+"word": "hari",
+"start": 67.46,
+"end": 67.673
+},
+{
+"word": "kemudian",
+"start": 67.673,
+"end": 68.1
+},
+{
+"word": "pelembapnya",
+"start": 68.1,
+"end": 68.686
+},
+{
+"word": "sampai",
+"start": 68.686,
+"end": 69.006
+},
+{
+"word": "dan",
+"start": 69.006,
+"end": 69.166
+},
+{
+"word": "langsung",
+"start": 69.166,
+"end": 69.592
+},
+{
+"word": "dipakai.",
+"start": 69.592,
+"end": 69.965
+},
+{
+"word": "Di",
+"start": 70.974,
+"end": 71.085
+},
+{
+"word": "kamar",
+"start": 71.085,
+"end": 71.361
+},
+{
+"word": "sebelah,",
+"start": 71.361,
+"end": 71.748
+},
+{
+"word": "temannya",
+"start": 71.748,
+"end": 72.19
+},
+{
+"word": "buka",
+"start": 72.19,
+"end": 72.411
+},
+{
+"word": "marketplace.",
+"start": 72.411,
+"end": 73.019
+},
+{
+"word": "Mau",
+"start": 73.363,
+"end": 73.518
+},
+{
+"word": "beli",
+"start": 73.518,
+"end": 73.725
+},
+{
+"word": "pelembap.",
+"start": 73.725,
+"end": 74.14
+},
+{
+"word": "Hasilnya",
+"start": 74.843,
+"end": 75.286
+},
+{
+"word": "2000",
+"start": 75.286,
+"end": 75.674
+},
+{
+"word": "lebih",
+"start": 75.674,
+"end": 75.951
+},
+{
+"word": "produk.",
+"start": 75.951,
+"end": 76.283
+}
+]
+}
