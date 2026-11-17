@@ -7,6 +7,7 @@
 #   tools/produksi.sh timeline <slug> <words_url|json>  # Scribe words.json -> timeline (angka jadi digit)
 #   tools/produksi.sh shots    <slug>               # story/shots.tsv -> story/shots.json
 #   tools/produksi.sh cek      <slug>               # cek sutradara (ritme, transisi, kamera, waktu baca, suara, palet, animasi); GAGAL wajib diperbaiki
+#   tools/produksi.sh palet    <slug> [gaya,gaya,..] [t1,t2]  # perbandingan gaya warna untuk pilihan user (WAJIB sebelum sheet) -> build/styles/style_grid.png
 #   tools/produksi.sh sheet    <slug>               # cek sutradara + contact sheet 0.5x + overlay zona aman TikTok -> build/sheets/safe.png (CEK DENGAN MATA)
 #   tools/produksi.sh stills   <slug> 1.2,30.5      # still tertentu 0.5x -> build/stills/sheet_01.png
 #   tools/produksi.sh final    <slug>               # render penuh + mix + QC (jalankan di background)
@@ -42,6 +43,11 @@ EOF
 shots)
   python3 "$ROOT/tools/shots_tsv.py" "$PA/story/shots.tsv" "$PA" ;;
 cek) python3 "$ROOT/tools/cek-sutradara.py" "$slug" ;;
+palet)
+  styles="${3:-paper,clay,lembut,sakura,lavender,indigo,arctic,ember}"
+  times="${4:-$(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); n=d["duration"]; print("%.1f,%.1f" % (n*0.12, n*0.62))' "$PA/story/shots.json")}"
+  cd "$ST" && node render.mjs --project "$P" --styles "$styles" --at "$times" 2>&1 | grep -iE "error|wrote" | tail -2
+  echo "$PA/build/styles/style_grid.png (urutan atas-bawah: $styles; kolom = $times dtk)" ;;
 sheet)
   python3 "$ROOT/tools/cek-sutradara.py" "$slug" || echo "!! cek-sutradara: ada GAGAL, perbaiki dulu"
   cd "$ST" && node render.mjs --project "$P" --sheet --scale 0.5 --workers "$WORKERS" 2>&1 | grep -iE "error|wrote" | tail -3

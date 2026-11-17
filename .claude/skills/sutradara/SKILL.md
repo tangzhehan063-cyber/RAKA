@@ -58,3 +58,6 @@ Urutan nilai film: **suara → ritme → kamera → penyutradaraan**. Frame cant
 - #7 ditolak-duluan: **1 GAGAL**: 4 palet (ember, arctic, retro, sakura); video ini lebih dulu dari aturan palet 13 Nov. Kamera 2D tidak terdeteksi bergerak (0%).
 - #5 nunggu-1-januari: 0 GAGAL, 6 SARAN (emerald 100% shot; kamera bergerak hanya 6% adegan).
 - `cek-visual.py` pada 4 still #8: 0 GAGAL, 0 SARAN.
+
+## Pilihan warna sebelum contact sheet (aturan user 17 Nov)
+Sebelum `produksi.sh sheet`, jalankan `tools/produksi.sh palet <slug> "gayaA,gayaB,gayaC"` dengan gaya dari tabel "Pilihan palet menurut tema" di `brand/palet-emosi.md`, kirim `style_grid.png` + 1 rekomendasi ke user, dan tunggu pilihannya. Warna mengikuti tema video; gaya dasar berganti antar video.
