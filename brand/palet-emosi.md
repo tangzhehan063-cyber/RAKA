@@ -54,3 +54,27 @@ Prinsip pembeda: **emosi memilih keluarga palet, waktu memilih terang/gelap-nya*
 Hasil lihat mata: malam `indigo` paling sinematik dan beda jelas dari emerald; `clay` malam kusam-cokelat (cocok untuk sedih, kurang untuk cemas); `retro` malam terlalu zaitun/kotor, jangan dipakai untuk malam; `paper` pagi paling terang dan jelas beda dari malam. Cara pakai per adegan: tambah `"style": "<id>"` pada shot di `story/shots.json`.
 
 **Batas yang ditemukan:** adegan 3D (orbit/teras) punya pencahayaan sendiri sehingga pagi 3D tetap gelap di semua palet. Untuk adegan pagi 3D, naikkan terang lampu di adegannya, bukan hanya ganti palet.
+
+## Aturan rotasi gaya dasar (keputusan user 17 Nov 2026)
+- Gaya dasar **berganti tiap video**; `lembut` bukan lagi default tunggal. Alasan: #10 dan #11 sama-sama lembut, risiko monoton dan "tidak enak dilihat" bila terus sama.
+- Pilih gaya dasar dari tabel emosi di atas sesuai topik/suasana video (paper, clay, lavender, arctic, sakura, retro, ember, indigo, lembut). **Jangan memakai gaya dasar yang sama dua video berturut-turut.**
+- Per adegan tetap boleh pindah palet lewat `"style"` di `shots.json` untuk emosi (sedih, riset, klimaks).
+- `produksi.sh init` menulis `style='lembut'`; ubah `style` di `config.json` proyek setelah init, dan cek kontras/neon dengan `python3 tools/cek-visual.py frame ...` (gaya gelap seperti indigo/lavender butuh set yang tidak ditulis dengan warna lembut tetap di kode).
+- Riwayat: #1–#7 emerald/campur, #8–#9 paper/indigo/arctic/clay, #10–#11 lembut.
+- **Koreksi (17 Nov, user):** warna mengikuti **tema video**, tidak harus ganti per adegan. Pindah palet per adegan hanya bila memang ada pergeseran emosi besar, dan tetap dalam batas `cek-sutradara` (maks 2 palet, 3 bila ada adegan riset/papan). Yang harus dihindari: gaya dasar yang sama berulang antar video berturut-turut.
+
+## Pilihan palet menurut tema (dasar rekomendasi sebelum contact sheet)
+Tampilkan 2–3 gaya dari baris tema yang cocok, dengan 1 rekomendasi; user memilih. Jalankan `tools/produksi.sh palet <slug> "a,b,c"`.
+
+| Tema video | Rekomendasi utama | Alternatif | Alasan singkat |
+|---|---|---|---|
+| Belajar, ingatan, data (kurva lupa, riset) | `arctic` | `paper` | Dingin-bersih, fokus ke angka |
+| Cemas, overthinking, malam, kritik (bias negatif) | `indigo` | `lavender` | Biru pekat + titik kuning, sinematik |
+| Sayang berhenti, penyesalan (sunk cost) | `clay` | `retro` (siang saja) | Hangat redup, manusiawi |
+| Malu, sosial, diperhatikan (spotlight, imposter) | `sakura` | `lavender` | Lembut, rentan, tidak keras |
+| Harapan, awal baru, libur, ringan | `paper` | `lembut` | Terang, pleasure tinggi |
+| Marah, frustrasi, ditolak | `ember` (sebentar) | `indigo` | Arousal tinggi, pakai hemat |
+| Tenang, refleksi, pulih | `lavender` | `clay` | Saturasi sedang, aman |
+| Kejutan/peringatan teknologi | `emerald` | `arctic` | Glow = energi tinggi; bukan default |
+
+Catatan: gaya dasar tidak boleh sama dua video berturut-turut. Riwayat dasar: #8–#9 emerald+palet adegan, #10–#11 lembut.

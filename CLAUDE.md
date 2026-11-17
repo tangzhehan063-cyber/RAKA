@@ -23,9 +23,10 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
    `python3 tools/scribe_to_timeline.py <words.json> studio/projects/<slug>/input/script.json`
    `python3 tools/parse_script.py --project projects/<slug> --script projects/<slug>/input/script.json` (dijalankan dari `studio/`)
    (Whisper/huggingface diblokir di cloud; jangan andalkan.)
-4. **Render:** dari `studio/`, selalu dengan `CHROMIUM_PATH=/opt/pw-browsers/chromium`. Cek `--sheet --scale 0.5` dulu, baru render final, lalu `python3 audio/mix.py --project projects/<slug>`.
-5. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata **terhadap `brand/cek-bug.md`** (daftar bug yang pernah terjadi; tambahkan bug baru di sana).
-6. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
+4. **Pilihan warna (WAJIB, aturan user 17 Nov):** sebelum contact sheet, tampilkan perbandingan gaya warna (`tools/produksi.sh palet <slug> "gayaA,gayaB,gayaC"`) dari rekomendasi tema di `brand/palet-emosi.md` + 1 rekomendasi; user memilih. Warna mengikuti tema video; gaya dasar berganti antar video (jangan sama dua video berturut-turut).
+5. **Render:** dari `studio/`, selalu dengan `CHROMIUM_PATH=/opt/pw-browsers/chromium`. Cek `--sheet --scale 0.5` dulu, baru render final, lalu `python3 audio/mix.py --project projects/<slug>`.
+6. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata **terhadap `brand/cek-bug.md`** (daftar bug yang pernah terjadi; tambahkan bug baru di sana).
+7. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
 
 ## Aturan hemat ElevenLabs (wajib, permintaan user 12 Nov)
 1. **Selalu 1 take**: `creative_generate_speech` dengan `generations_count: 1`, bukan 2 (bawaan konektor = 2, jadi wajib diisi).

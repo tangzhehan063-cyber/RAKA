@@ -34,3 +34,12 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 - **Overlay merah di contact sheet bukan bagian video** (zona aman TikTok dari `tools/safezone.py`): kirim ke user versi tanpa overlay (susun `build/sheets/s*_*.png`).
 - Kata-kata callout/teks tidak boleh jatuh di pita caption (y≈1290–1400).
 - **Teks stempel menabrak angka tiang grafik** (#9 s11): judul/stempel di atas grafik batang harus di luar jangkauan angka tiang tertinggi (dan tiang yang membesar keluar kartu); cek still di detik kata pemicunya, bukan hanya awal shot.
+
+## #10–#11 (16–17 Nov): bug yang lolos dari cek otomatis
+- **Celah dinding-lantai = garis hitam** (set pantri/kamar): lapisan dinding (kedalaman 0,45) harus digambar sampai di bawah garis lantai (G + 2 H), kalau tidak parallax membuka celah hitam. Terlihat di contact sheet sebagai garis gelap di bawah meja.
+- **Laptop terbalik** (#11): jangan gambar laptop tampak samping dengan engsel di sisi jauh dari tokoh. Pakai laptop menghadap penonton seperti #9 (alas trapesium + layar).
+- **Ikon/benda di kolom tombol TikTok** (#11): jangan taruh benda penting di x>870 pada y 860–1560 (area merah di `safe.png`). Penghitung/HUD ditaruh di pojok kanan atas (x≈930, y≈290).
+- **HUD menabrak benda lain**: jam dinding, judul layar, dan badge bisa bertumpuk di pojok kanan atas; cek di still penuh pada beberapa zoom.
+- **Ukuran benda tidak proporsional** (#10): kotak bekal terlalu besar dibanding tokoh; benda kecil diskalakan ±0,45 dari tokoh dan digambar mirip aslinya (bukan bulatan/kotak).
+- **Bentuk "origami" 3D** (#10): kertas kusut dari ikosahedron terlihat berfaset; pakai bola resolusi tinggi dengan normal halus, atau hapus bila tidak perlu.
+- **`cek-sutradara` tidak mendeteksi**: kamera bergerak (selalu 0%), palet monoton antar video, objek terlalu kecil. Mata manusia tetap perlu cek `safe.png`.
