@@ -1,6 +1,11 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## Posisi terakhir (16 Nov 2026)
+## Posisi terakhir (17 Nov 2026)
+- **Video #11 "Keranjang Kosong" SELESAI (17 Nov)**: choice overload (Iyengar & Lepper 2000; hasil studi lain campur, VO menyebutnya), kasus belanja skincare/pelembap, 76,3 dtk, −14,3 LUFS, 19 shot + 1 shot 3D meja selai, gaya lembut. VO Gemini (Charon, dibuat Claude atas pilihan user). Drive folder `11 - Keranjang Kosong` (id 1kR1Ykf0GBnXvmgmeLmM-PEpCcEc0kz0D): cover, caption, naskah, VO. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Keranjang = HUD pojok kanan atas (aman dari tombol TikTok); laptop menghadap penonton seperti #9.
+- **Formula validasi terbukti (user 17 Nov)**: #9 dan #10 banyak disukai; terapkan ke banyak kasus lain (`brand/formula.md`, ide cadangan di sana). **Berikutnya**: video #12 (mulai dari ide; isi kredit ScrapeMedsos untuk riset bahasa).
+- Catatan teknis: set kamar/pantri bisa dipakai ulang (`studio/projects/*/scenes/shots/01_*.js`); wall layer harus dibuat lebih tinggi dari lantai (celah parallax = garis hitam); jangan pakai `rm` dengan wildcard (diblokir).
+
+## Posisi sebelumnya (16 Nov 2026)
 - **Gaya rumah `lembut`** (terang pastel, tanpa neon, tokoh 3D tanpa garis tepi bercahaya lewat `outline3D: false` di `studio/engine/three-kit.js`) jadi default proyek baru (`produksi.sh init`). Diuji lewat still video #8 (salinan tanpa style per shot); user ACC. Video #1–#9 tidak berubah. Belum: warna set masih tertulis langsung di kode set (sofa, lantai, pintu), bentuk benda belum diperhalus, caption belum diubah.
 - **Skill `sutradara`** + `tools/cek-sutradara.py` + `tools/cek-visual.py` sudah di main (PR #20).
 - **Engine tetap GrowKaz** (user 14 Nov): uji Remotion + three.js untuk RAKA ditolak; jangan pindah engine.
