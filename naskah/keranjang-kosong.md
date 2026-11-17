@@ -1,4 +1,4 @@
-# #11 Keranjang Kosong (draf 1, ±170 kata ≈ 66 dtk, formula validasi + kerangka v2)
+# #11 Keranjang Kosong (draf 1, ±182 kata ≈ 70 dtk, formula validasi + kerangka v2)
 
 Topik: *choice overload* (terlalu banyak pilihan). Dewi mau beli satu earphone, buka marketplace, terbenam di dua ribu produk dan 23 tab, keranjang tetap kosong. Tokoh: Dewi, di kamar, laptop dan HP.
 Item maskot `#d64a33`: **ikon keranjang belanja merah-oranye** (penghitung item: 0 dari awal sampai akhir; terisi 1 saat checkout).
@@ -43,4 +43,4 @@ Gaya `lembut` untuk semua adegan; malam menyerah (3) memakai mood `night` pastel
 - Scheibehenne, Greifeneder & Todd (2010), J Consum Res 37(3):409–425 ([EconPapers](https://econpapers.repec.org/RePEc:oup:jconrs:v:37:y:2010:i:3:p:409-425)).
 - Chernev, Böckenholt & Goodman (2015), J Consum Psychol 25:333–358 ([Kellogg](https://www.kellogg.northwestern.edu/faculty/research/detail/2015/when-product-assortment-leads-to-choice-overload-a-conceptual)).
 
-Caption debat (draf, 111 karakter): "Dua ribu pilihan, nol yang dibeli. Kamu nggak bisa milih atau pilihannya yang kebanyakan? #belanjaonline #psikologi #fyp"
+Caption debat (draf, 120 karakter): "Dua ribu pilihan, nol yang dibeli. Kamu nggak bisa milih atau pilihannya yang kebanyakan? #belanjaonline #psikologi #fyp"
