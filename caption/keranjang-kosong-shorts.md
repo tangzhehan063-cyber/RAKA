@@ -1,4 +1,4 @@
-# Caption #11 Keranjang Kosong (draf; riset bahasa ScrapeMedsos BELUM dilakukan, kredit 0)
+# Caption #11 Keranjang Kosong (final; riset bahasa ScrapeMedsos BELUM dilakukan, kredit 0)
 
 ## TikTok / Reels (≤150 karakter, 116)
 Dua ribu skincare, nol yang dibeli. Kamu nggak bisa milih atau pilihannya yang kebanyakan? #skincare #psikologi #fyp
