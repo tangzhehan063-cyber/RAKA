@@ -41,7 +41,7 @@ export function layar(g, draw, o = {}) {
   rr(g, 60, 190, 960, 1060, 44); g.fillStyle = '#2b2f3a'; g.fill();
   g.save(); rr(g, 90, 222, 900, 996, 18); g.clip(); g.fillStyle = '#f6f2ea'; g.fillRect(90, 222, 900, 996); draw(g); g.restore();
   g.beginPath(); g.moveTo(20, 1262); g.lineTo(1060, 1262); g.lineTo(1000, 1296); g.lineTo(80, 1296); g.closePath(); g.fillStyle = '#c9c2b4'; g.fill();
-  if (o.cart != null) cart(g, 880, 150, 0.8, o.cart);
+  if (o.cart != null) cart(g, 860, 190, 0.6, o.cart);
 }
 export const clockStr = (h) => `${String(h).padStart(2, '0')}:00`;
 
@@ -90,7 +90,7 @@ export function kamar(g, t, cam, o = {}) {
 export const hud = (g, str, a = 1) => UI.badge(g, { str, x: E.W - V(90, 110), y: V(110, 300), a, color: '#8a4f0c' });
 
 // ---- shot kamar ---------------------------------------------------------------------------------------------
-const kc = (o = {}) => (g, top, tx) => { cart(g, tx + 120, top - 110, 0.62, o.n ?? 0); };
+const kc = (o = {}) => (g, top, tx) => { cart(g, tx - 70, top - 260, 0.62, o.n ?? 0); };   // di atas laptop: aman dari kolom tombol TikTok
 // s01 0–2.4: Dewi mau beli satu pelembap
 registerShot('s01', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur);
@@ -121,7 +121,7 @@ registerShot('s14', { draw(g, t, info) {
 registerShot('s17', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur), tp = rel('sampai', info, 0.8), td = rel('dipakai', info, 2.6);
   kamar(g, t, CAMD(lerp(1.9, 2.2, k), 520, 1130, 540, 1100), { mood: 'golden', hour: 11, dewi: { pose: posesAt(t, [[0, TYPE], [td - 0.3, { ...POSES.sit, head: [14, -178], sh: [6, -146], eF: [40, -160], hF: [34, -200], eB: [28, -110], hB: [60, -114] }]], 0.4), expr: t > td ? 'joy' : 'smile' },
-    items: (g, top, tx) => { cart(g, tx + 150, top - 110, 0.55, 1);
+    items: (g, top, tx) => { cart(g, tx - 70, top - 260, 0.62, 1);
       const a = ease.outBack(prog(t, tp - 0.3, tp + 0.2)); if (a > 0) { g.save(); g.translate(tx + 100, top); g.scale(a, a); rr(g, -50, -64, 100, 64, 6); g.fillStyle = '#c79a66'; g.fill(); rr(g, -50, -64, 100, 14, 4); g.fillStyle = '#dcb584'; g.fill(); seg(g, [[0, -64], [0, 0]], 8, '#efe3c4'); g.restore(); }
       if (t > tp + 0.7) produk(g, tx + 20, top - 4, 0.62 * ease.outBack(prog(t, tp + 0.7, tp + 1.0)), 0); } });
   FX.dust(g, t, { count: 12, color: '#ffe9b0', a: 0.18 });

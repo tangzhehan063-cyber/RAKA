@@ -75,7 +75,7 @@ registerShot('s15', { draw(g, t, info) {
 // s16 63.2–67.0: bandingkan tiga produk, checkout 15 menit
 registerShot('s16', { draw(g, t, info) {
   const t3 = rel('tiga', info, 0.5), tc = rel('checkout', info, 2.3), n = t > tc + 0.5 ? 1 : 0;
-  layar(g, (g) => { g.fillStyle = '#fffdf8'; g.fillRect(90, 222, 900, 996); text(g, 'BANDINGKAN', 540, 300, { size: 54, color: SUB, font: FONTS.ui, weight: 900, spacing: 6 });
+  layar(g, (g) => { g.fillStyle = '#fffdf8'; g.fillRect(90, 222, 900, 996);
     [0, 1, 2].forEach((i) => { const a = pop(t, t3 + i * 0.25, 0.3); if (a <= 0) return; const sel = i === 1 && t > tc - 0.2; g.save(); g.translate(240 + i * 300, 700); g.scale(a * (sel ? 1.08 : 1), a * (sel ? 1.08 : 1)); kartu(g, 0, 0, 260, 380, [3, 6, 9][i] + 40, { line: sel ? '#2f8a57' : undefined, lw: sel ? 10 : 3 }); g.restore(); });
     const c = pop(t, tc, 0.4); if (c > 0) { g.save(); g.translate(540, 1080); g.scale(c, c); rr(g, -300, -70, 600, 140, 36); g.fillStyle = ACC; g.fill(); text(g, 'CHECKOUT', 0, 4, { size: 64, color: '#fff', font: FONTS.ui, weight: 900, spacing: 4 }); g.restore(); }
   }, { cart: n });
