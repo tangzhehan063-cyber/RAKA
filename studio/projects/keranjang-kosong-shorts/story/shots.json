@@ -1,0 +1,542 @@
+{
+ "title": "Keranjang Kosong",
+ "duration": 76.28,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.4,
+   "line": "Dewi cuma mau beli satu pelembap.",
+   "scene": "Malam, Dewi di meja dengan laptop, ikon keranjang merah-oranye kosong, badge KERANJANG 0",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.4,
+   "end": 5.85,
+   "line": "Budgetnya jelas, di bawah 150000.",
+   "scene": "Layar marketplace, chip HARGA ≤ Rp150.000",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.8,
+     "name": "ding",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 5.85,
+   "end": 8.5,
+   "line": "Jam 8 malam dia buka marketplace.",
+   "scene": "Layar: ketik pelembap wajah, badge 20:00",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.2,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.5,
+     "name": "tick",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.5,
+   "end": 11.2,
+   "line": "Hasilnya 2000 lebih produk.",
+   "scene": "Dinding produk kembar menggulung, penghitung 2.000+ HASIL",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.3,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 11.2,
+   "end": 15.5,
+   "line": "Dia buka tab satu, tab dua, tab 23.",
+   "scene": "Deret tab bertambah sampai 23",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 15.5,
+   "end": 20.7,
+   "line": "Ulasan yang satu bilang bikin glowing, yang lain bilang bikin jerawatan.",
+   "scene": "Dua ulasan berlawanan: bintang 5 glowing vs bintang 1 jerawatan",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "ding",
+     "gain": -14.0
+    },
+    {
+     "at": 4.0,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 20.7,
+   "end": 23.9,
+   "line": "Jam 11, keranjangnya masih kosong.",
+   "scene": "Jam 23:00, Dewi lemas, keranjang 0",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "clock",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28.0
+   }
+  },
+  {
+   "id": "s08",
+   "start": 23.9,
+   "end": 29.4,
+   "line": "Dia nutup laptop sambil mikir: kenapa milih satu skincare aja susah banget?",
+   "scene": "BIG FACE Dewi bingung, tanda tanya melayang",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 29.4,
+   "end": 39.7,
+   "line": "Tahun 2000, peneliti Iyengar dan Lepper bikin meja cicip selai di supermarket. Satu hari ada 24 rasa, hari lain cuma enam.",
+   "scene": "3D meja cicip selai: 24 toples lalu tinggal 6",
+   "set": "selai3d",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 6.9,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 39.7,
+   "end": 45.4,
+   "line": "Meja yang banyak rasanya lebih ramai, tapi yang beli di sana cuma sekitar tiga persen.",
+   "scene": "KARTU: tiang 3% untuk meja 24 rasa",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 4.4,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 5.0,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 45.4,
+   "end": 48.9,
+   "line": "Di meja enam rasa, sekitar 30 persen.",
+   "scene": "KARTU: tiang 30% emas menjulang untuk meja 6 rasa",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 2.0,
+     "name": "impact",
+     "gain": -6.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 48.9,
+   "end": 55.95,
+   "line": "Penelitian lain memang hasilnya campur, tapi efeknya paling sering muncul kalau pilihannya banyak dan kita belum tahu maunya apa.",
+   "scene": "KARTU: studi lain HASILNYA CAMPUR + dua syarat",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 5.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 6.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 55.95,
+   "end": 57.55,
+   "line": "(hening)",
+   "scene": "HENING teks diketik: pilihannya kebanyakan",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 57.55,
+   "end": 60.0,
+   "line": "Susah milih di depan 2000 pilihan itu wajar.",
+   "scene": "Pagi emas, Dewi lega, badge WAJAR",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.4,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s15",
+   "start": 60.0,
+   "end": 63.2,
+   "line": "Besoknya Dewi tulis tiga syarat, buka dua toko.",
+   "scene": "Kertas 3 syarat dicentang, 2 TOKO",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 1.2,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 63.2,
+   "end": 67.0,
+   "line": "Bandingin tiga produk, dan checkout dalam 15 menit.",
+   "scene": "3 kartu dibandingkan, CHECKOUT, keranjang jadi 1",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 67.0,
+   "end": 70.7,
+   "line": "Dua hari kemudian pelembapnya sampai dan langsung dipakai.",
+   "scene": "Paket sampai, pelembap dipakai",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s18",
+   "start": 70.7,
+   "end": 73.2,
+   "line": "Di kamar sebelah, temannya buka marketplace.",
+   "scene": "LOOP: bingkai sama s01",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s19",
+   "start": 73.2,
+   "end": 76.28,
+   "line": "Mau beli pelembap. Hasilnya 2000 lebih produk.",
+   "scene": "Layar marketplace, penghitung 2.000+ HASIL lagi",
+   "set": "layar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 23.9,
+   "mood": "hopeful",
+   "intensity": 0.3
+  },
+  {
+   "start": 23.9,
+   "end": 29.4,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 29.4,
+   "end": 55.95,
+   "mood": "mystery",
+   "intensity": 0.3
+  },
+  {
+   "start": 57.55,
+   "end": 76.28,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}
