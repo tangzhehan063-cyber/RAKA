@@ -1,0 +1,25 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Satu Kritik Terngiang
+@music 0-10.5 hopeful 0.3; 10.5-22.8 tension 0.35; 22.8-38.9 mystery 0.35; 40.9-60.88 hopeful 0.45
+s01	0.0	2.3	rapat	cut	-	murmur -26	Bayu baru selesai presentasi. | ESTABLISHING wide ruang rapat sore, jendela besar, Bayu kecil di depan layar, peserta siluet, latar depan buram, push pelan
+s02	2.3	4.15	rapat	cut	0.3 pop -14	murmur -26	10 orang memberi komentar. | Medium: 10 gelembung komentar muncul dari peserta, badge KOMENTAR 10
+s03	4.15	7.3	rapat	cut	0.5 blip -16; 1.2 blip -16; 2.0 blip -16	murmur -26	Sembilan bilang bagus, rapi, jelas. | Sembilan gelembung biru-hijau kecil, label BAGUS RAPI JELAS
+s04	7.3	10.5	rapat	flash	0.6 riser -14; 1.6 impact -8	-	Satu bilang: slide empat kurang meyakinkan. | INSERT layar slide 4 + satu gelembung merah-oranye besar, callout KURANG MEYAKINKAN
+s05	10.5	14.4	kamar	dip	0.2 clock -16	roomtone -26	Malam itu Bayu rebahan, dan yang terulang cuma satu kalimat. | Kamar malam, Bayu di tepi kasur, gelembung merah membesar, kasur buram di depan
+s06	14.4	16.7	kamar	cut	0.2 heartbeat -16	roomtone -26	Slide empat kurang meyakinkan. | OVER-THE-SHOULDER: bahu buram Bayu, kalimat kritik berulang di layar HP
+s07	16.7	18.3	kamar	cut	0.3 shimmer -16	-	Sembilan pujian tadi? | Sembilan gelembung biru memudar sementara satu merah tetap
+s08	18.3	19.7	kamar	cut	-	-	Sudah lupa isinya. | Gelembung pujian terurai jadi debu
+s09	19.7	22.8	kamar	dip	1.4 heartbeat -16	-	Dia mikir: kenapa aku segampang ini goyah? | BIG FACE Bayu, latar kamar buram gelap, tanda tanya
+s10	22.8	29.1	papan	swipe	0.04 swish -12; 1.2 blip -16; 3.8 pop -12	-	Tahun 2001, psikolog Roy Baumeister dan timnya meninjau banyak penelitian tentang ini. | BLUEPRINT: 2001 Baumeister dkk, tinjauan banyak penelitian
+s11	29.1	31.3	papan	cut	0.4 pop -12; 0.9 pop -12; 1.4 pop -12	-	Hasilnya konsisten di banyak bidang. | Callout bidang: HUBUNGAN, BELAJAR, EMOSI, UMPAN BALIK
+s12	31.3	35.2	papan	swipe	0.04 swish -12; 1.0 riser -14; 2.4 impact -8	-	Kritik dan emosi buruk berdampak lebih besar daripada yang baik. | 3D timbangan: 9 bola vs 1 balok merah-oranye menurunkan sisi
+s13	35.2	38.9	papan	cut	0.5 pop -12; 2.0 hit -8	-	Kesan buruk terbentuk lebih cepat dan lebih sulit dihapus. | Blueprint: kurva cepat terbentuk, noda tak terhapus penghapus
+s14	38.9	40.9	papan	flash	0.1 freeze -10	-	(hening) | FREEZE-FRAME partikel menggantung, tint dingin, teks diketik: otak memang begitu
+s15	40.9	42.0	pagi	flash	0.2 shimmer -16	roomtone -26	Bayu nggak lebay. | Pagi emas, Bayu menarik napas lega, medium
+s16	42.0	44.3	jalan	cut	0.3 footstep -14	city -26	Otaknya memang menimbang yang buruk lebih berat. | Bayu berjalan ke kantor (kamera mengikuti, parallax), gelembung merah mengecil
+s17	44.3	47.0	meja	cut	0.8 scribble -14	roomtone -26	Besoknya dia tulis semua komentar di satu kertas, | INSERT tangan menulis 10 komentar di kertas
+s18	47.0	50.3	meja	cut	0.6 pop -12; 1.6 pop -12	-	kritik dan pujian sama-sama jadi data. | Kertas: 9 centang hijau + 1 merah setara; compareBars sama tinggi
+s19	50.3	52.3	meja	cut	0.8 pop -12	roomtone -26	Slide empat dia rapikan, | Medium meja: slide 4 dirapikan
+s20	52.3	54.5	meja	dip	0.4 shimmer -16	-	sembilan pujian itu dia baca ulang. | INSERT: sembilan pujian bercahaya dibaca ulang, hangat
+s21	54.5	57.5	rapat	dip	-	murmur -26	Di kantor sebelah, temannya baru selesai presentasi. | LOOP: establishing wide ruang rapat sama s01, tokoh kuning
+s22	57.5	60.88	rapat	cut	0.4 pop -14; 1.2 blip -16	murmur -26	10 komentar masuk. Sembilan bilang bagus. | 10 gelembung muncul: 9 biru, 1 merah kecil

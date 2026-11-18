@@ -1,0 +1,649 @@
+{
+"words": [
+{
+"word": "Bayu",
+"start": 0.258,
+"end": 0.516
+},
+{
+"word": "baru",
+"start": 0.516,
+"end": 0.773
+},
+{
+"word": "selesai",
+"start": 0.773,
+"end": 1.225
+},
+{
+"word": "presentasi.",
+"start": 1.225,
+"end": 1.869
+},
+{
+"word": "10",
+"start": 2.38,
+"end": 2.775
+},
+{
+"word": "orang",
+"start": 2.775,
+"end": 3.057
+},
+{
+"word": "memberi",
+"start": 3.057,
+"end": 3.453
+},
+{
+"word": "komentar.",
+"start": 3.453,
+"end": 3.904
+},
+{
+"word": "Sembilan",
+"start": 4.255,
+"end": 4.983
+},
+{
+"word": "bilang",
+"start": 4.983,
+"end": 5.53
+},
+{
+"word": "bagus,",
+"start": 5.53,
+"end": 5.985
+},
+{
+"word": "rapi,",
+"start": 5.985,
+"end": 6.349
+},
+{
+"word": "jelas.",
+"start": 6.53,
+"end": 7.053
+},
+{
+"word": "Satu",
+"start": 7.422,
+"end": 7.71
+},
+{
+"word": "bilang:",
+"start": 7.71,
+"end": 8.143
+},
+{
+"word": "slide",
+"start": 8.332,
+"end": 8.671
+},
+{
+"word": "empat",
+"start": 8.671,
+"end": 9.011
+},
+{
+"word": "kurang",
+"start": 9.011,
+"end": 9.418
+},
+{
+"word": "meyakinkan.",
+"start": 9.418,
+"end": 10.098
+},
+{
+"word": "Malam",
+"start": 10.95,
+"end": 11.231
+},
+{
+"word": "itu",
+"start": 11.231,
+"end": 11.399
+},
+{
+"word": "Bayu",
+"start": 11.399,
+"end": 11.624
+},
+{
+"word": "rebahan,",
+"start": 11.624,
+"end": 12.017
+},
+{
+"word": "dan",
+"start": 12.356,
+"end": 12.545
+},
+{
+"word": "yang",
+"start": 12.545,
+"end": 12.796
+},
+{
+"word": "terulang",
+"start": 12.796,
+"end": 13.298
+},
+{
+"word": "cuma",
+"start": 13.298,
+"end": 13.549
+},
+{
+"word": "satu",
+"start": 13.549,
+"end": 13.8
+},
+{
+"word": "kalimat.",
+"start": 13.8,
+"end": 14.239
+},
+{
+"word": "Slide",
+"start": 14.668,
+"end": 15.019
+},
+{
+"word": "empat",
+"start": 15.019,
+"end": 15.37
+},
+{
+"word": "kurang",
+"start": 15.37,
+"end": 15.792
+},
+{
+"word": "meyakinkan.",
+"start": 15.792,
+"end": 16.494
+},
+{
+"word": "Sembilan",
+"start": 16.961,
+"end": 17.42
+},
+{
+"word": "pujian",
+"start": 17.42,
+"end": 17.763
+},
+{
+"word": "tadi?",
+"start": 17.763,
+"end": 17.992
+},
+{
+"word": "Sudah",
+"start": 18.34,
+"end": 18.701
+},
+{
+"word": "lupa",
+"start": 18.701,
+"end": 18.99
+},
+{
+"word": "isinya.",
+"start": 18.99,
+"end": 19.424
+},
+{
+"word": "Dia",
+"start": 19.762,
+"end": 19.963
+},
+{
+"word": "mikir:",
+"start": 19.963,
+"end": 20.299
+},
+{
+"word": "kenapa",
+"start": 20.58,
+"end": 20.979
+},
+{
+"word": "aku",
+"start": 20.979,
+"end": 21.178
+},
+{
+"word": "segampang",
+"start": 21.178,
+"end": 21.776
+},
+{
+"word": "ini",
+"start": 21.776,
+"end": 21.975
+},
+{
+"word": "goyah?",
+"start": 21.975,
+"end": 22.308
+},
+{
+"word": "Tahun",
+"start": 23.373,
+"end": 23.706
+},
+{
+"word": "2001,",
+"start": 23.706,
+"end": 24.44
+},
+{
+"word": "psikolog",
+"start": 24.44,
+"end": 24.974
+},
+{
+"word": "Roy",
+"start": 24.974,
+"end": 25.174
+},
+{
+"word": "Baumeister",
+"start": 25.174,
+"end": 25.841
+},
+{
+"word": "dan",
+"start": 25.841,
+"end": 26.041
+},
+{
+"word": "timnya",
+"start": 26.041,
+"end": 26.441
+},
+{
+"word": "meninjau",
+"start": 26.441,
+"end": 26.975
+},
+{
+"word": "banyak",
+"start": 26.975,
+"end": 27.375
+},
+{
+"word": "penelitian",
+"start": 27.375,
+"end": 28.042
+},
+{
+"word": "tentang",
+"start": 28.042,
+"end": 28.509
+},
+{
+"word": "ini.",
+"start": 28.509,
+"end": 28.709
+},
+{
+"word": "Hasilnya",
+"start": 29.061,
+"end": 29.587
+},
+{
+"word": "konsisten",
+"start": 29.587,
+"end": 30.179
+},
+{
+"word": "di",
+"start": 30.179,
+"end": 30.311
+},
+{
+"word": "banyak",
+"start": 30.311,
+"end": 30.705
+},
+{
+"word": "bidang.",
+"start": 30.705,
+"end": 31.1
+},
+{
+"word": "Kritik",
+"start": 31.447,
+"end": 31.845
+},
+{
+"word": "dan",
+"start": 31.845,
+"end": 32.044
+},
+{
+"word": "emosi",
+"start": 32.044,
+"end": 32.375
+},
+{
+"word": "buruk",
+"start": 32.375,
+"end": 32.706
+},
+{
+"word": "berdampak",
+"start": 32.706,
+"end": 33.303
+},
+{
+"word": "lebih",
+"start": 33.303,
+"end": 33.634
+},
+{
+"word": "besar",
+"start": 33.634,
+"end": 33.965
+},
+{
+"word": "daripada",
+"start": 33.965,
+"end": 34.496
+},
+{
+"word": "yang",
+"start": 34.496,
+"end": 34.761
+},
+{
+"word": "baik.",
+"start": 34.761,
+"end": 35.026
+},
+{
+"word": "Kesan",
+"start": 35.292,
+"end": 35.622
+},
+{
+"word": "buruk",
+"start": 35.622,
+"end": 35.953
+},
+{
+"word": "terbentuk",
+"start": 35.953,
+"end": 36.548
+},
+{
+"word": "lebih",
+"start": 36.548,
+"end": 36.879
+},
+{
+"word": "cepat",
+"start": 36.879,
+"end": 37.441
+},
+{
+"word": "dan",
+"start": 37.441,
+"end": 37.639
+},
+{
+"word": "lebih",
+"start": 37.639,
+"end": 37.97
+},
+{
+"word": "sulit",
+"start": 37.97,
+"end": 38.301
+},
+{
+"word": "dihapus.",
+"start": 38.301,
+"end": 38.764
+},
+{
+"word": "Bayu",
+"start": 40.815000000000005,
+"end": 40.995000000000005
+},
+{
+"word": "nggak",
+"start": 40.995000000000005,
+"end": 41.219
+},
+{
+"word": "lebay.",
+"start": 41.219,
+"end": 41.443000000000005
+},
+{
+"word": "Otaknya",
+"start": 41.691,
+"end": 42.076
+},
+{
+"word": "memang",
+"start": 42.076,
+"end": 42.406000000000006
+},
+{
+"word": "menimbang",
+"start": 42.406000000000006,
+"end": 42.901
+},
+{
+"word": "yang",
+"start": 42.901,
+"end": 43.122
+},
+{
+"word": "buruk",
+"start": 43.122,
+"end": 43.397000000000006
+},
+{
+"word": "lebih",
+"start": 43.397000000000006,
+"end": 43.672000000000004
+},
+{
+"word": "berat.",
+"start": 43.672000000000004,
+"end": 43.947
+},
+{
+"word": "Besoknya",
+"start": 44.306000000000004,
+"end": 44.936
+},
+{
+"word": "dia",
+"start": 44.936,
+"end": 45.172000000000004
+},
+{
+"word": "tulis",
+"start": 45.172000000000004,
+"end": 45.566
+},
+{
+"word": "semua",
+"start": 45.566,
+"end": 45.96
+},
+{
+"word": "komentar",
+"start": 45.96,
+"end": 46.59
+},
+{
+"word": "di",
+"start": 46.59,
+"end": 46.747
+},
+{
+"word": "satu",
+"start": 46.747,
+"end": 47.062000000000005
+},
+{
+"word": "kertas,",
+"start": 47.062000000000005,
+"end": 47.534000000000006
+},
+{
+"word": "kritik",
+"start": 47.534000000000006,
+"end": 48.007000000000005
+},
+{
+"word": "dan",
+"start": 48.007000000000005,
+"end": 48.243
+},
+{
+"word": "pujian",
+"start": 48.243,
+"end": 48.715
+},
+{
+"word": "sama-sama",
+"start": 48.715,
+"end": 49.345000000000006
+},
+{
+"word": "jadi",
+"start": 49.345000000000006,
+"end": 49.660000000000004
+},
+{
+"word": "data.",
+"start": 49.660000000000004,
+"end": 49.975
+},
+{
+"word": "Slide",
+"start": 50.330000000000005,
+"end": 50.696000000000005
+},
+{
+"word": "empat",
+"start": 50.696000000000005,
+"end": 51.062000000000005
+},
+{
+"word": "dia",
+"start": 51.062000000000005,
+"end": 51.282000000000004
+},
+{
+"word": "rapikan,",
+"start": 51.282000000000004,
+"end": 51.794000000000004
+},
+{
+"word": "sembilan",
+"start": 52.005,
+"end": 52.597
+},
+{
+"word": "pujian",
+"start": 52.597,
+"end": 53.040000000000006
+},
+{
+"word": "itu",
+"start": 53.040000000000006,
+"end": 53.262
+},
+{
+"word": "dia",
+"start": 53.262,
+"end": 53.484
+},
+{
+"word": "baca",
+"start": 53.484,
+"end": 53.78
+},
+{
+"word": "ulang.",
+"start": 53.78,
+"end": 54.150000000000006
+},
+{
+"word": "Di",
+"start": 54.801,
+"end": 54.92
+},
+{
+"word": "kantor",
+"start": 54.92,
+"end": 55.276
+},
+{
+"word": "sebelah,",
+"start": 55.276,
+"end": 55.692
+},
+{
+"word": "temannya",
+"start": 55.692,
+"end": 56.167
+},
+{
+"word": "baru",
+"start": 56.167,
+"end": 56.405
+},
+{
+"word": "selesai",
+"start": 56.405,
+"end": 56.82
+},
+{
+"word": "presentasi.",
+"start": 56.82,
+"end": 57.414
+},
+{
+"word": "10",
+"start": 57.748000000000005,
+"end": 58.157000000000004
+},
+{
+"word": "komentar",
+"start": 58.157000000000004,
+"end": 58.624
+},
+{
+"word": "masuk.",
+"start": 58.624,
+"end": 58.915000000000006
+},
+{
+"word": "Sembilan",
+"start": 59.254000000000005,
+"end": 59.854000000000006
+},
+{
+"word": "bilang",
+"start": 59.854000000000006,
+"end": 60.303000000000004
+},
+{
+"word": "bagus.",
+"start": 60.303000000000004,
+"end": 60.678000000000004
+}
+]
+}
