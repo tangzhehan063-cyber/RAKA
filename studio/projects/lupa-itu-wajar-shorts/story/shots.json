@@ -1,0 +1,543 @@
+{
+ "title": "Lupa Itu Wajar",
+ "duration": 69.63,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.3,
+   "line": "Nadia belajar sampai jam 2 pagi.",
+   "scene": "Malam, kamar, tiga buku, stabilo merah-oranye, jam 02:00",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "clock",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.3,
+   "end": 3.9,
+   "line": "Tiga bab sekaligus.",
+   "scene": "Tiga buku ditandai stabilo satu per satu, badge 3 BAB",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 0.7,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 1.0,
+     "name": "scribble",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 3.9,
+   "end": 7.0,
+   "line": "Besoknya kuis, dan dia bisa jawab semuanya.",
+   "scene": "Pagi emas, kuis lancar, KUIS ✓",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.2,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 7.0,
+   "end": 9.5,
+   "line": "Seminggu kemudian ujian tengah semester.",
+   "scene": "Kalender 7 hari dicoret, UJIAN",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.2,
+     "name": "tick",
+     "gain": -16.0
+    },
+    {
+     "at": 1.5,
+     "name": "tick",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 9.5,
+   "end": 11.5,
+   "line": "Soalnya dari bab yang sama.",
+   "scene": "Kertas soal: BAB 1, BAB 2, BAB 3",
+   "set": "kertas",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 0.7,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.1,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 11.5,
+   "end": 14.4,
+   "line": "Nadia menatap kertasnya. Kosong.",
+   "scene": "Kertas kosong, pensil menggantung, KOSONG",
+   "set": "kelas",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.1,
+     "name": "impact",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 14.4,
+   "end": 17.4,
+   "line": "Padahal dia ingat banget pernah belajar.",
+   "scene": "Wajah besar bingung, halaman buku memudar",
+   "set": "kertas",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 17.4,
+   "end": 22.6,
+   "line": "Dia pulang sambil mikir: otakku bocor, ya? Atau aku emang nggak pintar.",
+   "scene": "Wajah besar sedih, tetes bocor, OTAKKU BOCOR? NGGAK PINTAR?",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 2.3,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 22.6,
+   "end": 30.5,
+   "line": "Tahun 1880-an, Hermann Ebbinghaus menghafal daftar suku kata tanpa arti, lalu mengujinya lagi berkali-kali.",
+   "scene": "KARTU: 1880-an Ebbinghaus, suku kata tanpa arti",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 4.7,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 30.5,
+   "end": 36.6,
+   "line": "Lebih dari 130 tahun kemudian, peneliti Jaap Murre dan Joeri Dros mengulang percobaan itu.",
+   "scene": "KARTU: 2015 Murre & Dros mengulang",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.7,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 4.7,
+     "name": "impact",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 36.6,
+   "end": 39.5,
+   "line": "Satu orang menghabiskan 70 jam.",
+   "scene": "KARTU: 1 orang, 70 JAM",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.8,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 39.5,
+   "end": 45.0,
+   "line": "Hasilnya mirip: ingatan turun paling tajam di jam-jam pertama, lalu melandai.",
+   "scene": "KARTU: kurva lupa menetes, turun tajam lalu melandai",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 4.1,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 45.0,
+   "end": 51.15,
+   "line": "Tinjauan dari 317 eksperimen menemukan, belajar dengan jeda lebih awet daripada belajar sekaligus.",
+   "scene": "3D: kartu catatan kiri memudar, kanan tetap segar",
+   "set": "kartu3d",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.6,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 5.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 51.15,
+   "end": 52.5,
+   "line": "(hening)",
+   "scene": "HENING teks diketik: lupa itu wajar.",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 52.5,
+   "end": 56.0,
+   "line": "Nadia nggak bodoh. Otak memang membuang yang nggak diulang.",
+   "scene": "Pagi emas, Nadia lega, badge WAJAR",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 56.0,
+   "end": 60.5,
+   "line": "Minggu berikutnya dia bagi bahan jadi tiga sesi pendek, di hari yang berbeda.",
+   "scene": "Kalender, stabilo menandai SESI 1-3 di hari berbeda",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 2.3,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "scribble",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 60.5,
+   "end": 64.2,
+   "line": "Ujian berikutnya, dia ingat hampir semuanya.",
+   "scene": "Lembar ujian terisi lancar, centang, LANCAR",
+   "set": "kelas",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s18",
+   "start": 64.2,
+   "end": 67.0,
+   "line": "Di kamar sebelah, temannya baru mulai belajar.",
+   "scene": "LOOP: kamar sama s01, teman kuning",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s19",
+   "start": 67.0,
+   "end": 69.63,
+   "line": "Jam 2 pagi. Tiga bab sekaligus.",
+   "scene": "Teman belajar jam 02:00, tiga bab",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "clock",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 7.0,
+   "mood": "mystery",
+   "intensity": 0.3
+  },
+  {
+   "start": 7.0,
+   "end": 22.6,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 22.6,
+   "end": 51.2,
+   "mood": "mystery",
+   "intensity": 0.3
+  },
+  {
+   "start": 52.5,
+   "end": 69.63,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}

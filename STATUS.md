@@ -1,8 +1,11 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## Posisi terakhir (17 Nov 2026)
+## Posisi terakhir (18 Nov 2026)
+- **Video #12 "Lupa Itu Wajar" SELESAI (18 Nov)**: kurva lupa (replikasi Murre & Dros 2015 atas Ebbinghaus; Cepeda dkk. 2006: belajar berjeda lebih awet), 69,6 dtk, −14,4 LUFS, 19 shot + 1 shot 3D kartu catatan, gaya ARCTIC (dipilih user lewat `produksi.sh palet`). Adegan dibuat gaya GrowKaz: tokoh berjalan (walkPose), kamera mengikuti, parallax street (`sets/street.js`), ruang ujian, kamar masuk-berjalan. VO Gemini (Charon, dibuat Claude). Drive folder `12 - Lupa Itu Wajar` (id 16B4ShZNB8M5UGM3n61AhMadYa3FqexxC): cover, caption, naskah, VO. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Bug: konversi angka "1880-an" jadi "1808 puluhan" di timeline (perbaiki words.json sebelum `timeline`).
+
+## Posisi sebelumnya (17 Nov 2026)
 - **Video #11 "Keranjang Kosong" SELESAI (17 Nov)**: choice overload (Iyengar & Lepper 2000; hasil studi lain campur, VO menyebutnya), kasus belanja skincare/pelembap, 76,3 dtk, −14,3 LUFS, 19 shot + 1 shot 3D meja selai, gaya lembut. VO Gemini (Charon, dibuat Claude atas pilihan user). Drive folder `11 - Keranjang Kosong` (id 1kR1Ykf0GBnXvmgmeLmM-PEpCcEc0kz0D): cover, caption, naskah, VO. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Keranjang = HUD pojok kanan atas (aman dari tombol TikTok); laptop menghadap penonton seperti #9.
-- **Formula validasi terbukti (user 17 Nov)**: #9 dan #10 banyak disukai; terapkan ke banyak kasus lain (`brand/formula.md`, ide cadangan di sana). **Berikutnya**: video #12 (mulai dari ide; isi kredit ScrapeMedsos untuk riset bahasa).
+- **Formula validasi terbukti (user 17 Nov)**: #9 dan #10 banyak disukai; terapkan ke banyak kasus lain (`brand/formula.md`, ide cadangan di sana). **Berikutnya**: video #13 (mulai dari ide; isi kredit ScrapeMedsos untuk riset bahasa). Gaya dasar #13 BUKAN arctic; adegan gaya GrowKaz (tokoh bergerak, parallax) jadi standar baru (user 18 Nov).
 - **Warna = ikut TEMA video (user 17 Nov)**, bukan wajib per adegan. Per adegan hanya untuk pergeseran emosi besar (maks 2–3 palet per video, aturan `cek-sutradara`).
 - **Gaya visual (user 17 Nov)**: gaya dasar BERGANTI tiap video (bukan lembut terus); lihat aturan di `brand/palet-emosi.md`. #12 jangan lembut. Set di kode (`01_*.js`) memakai warna pastel tetap, jadi untuk gaya lain gunakan token mood/style, bukan warna tertulis.
 - Catatan teknis: set kamar/pantri bisa dipakai ulang (`studio/projects/*/scenes/shots/01_*.js`); wall layer harus dibuat lebih tinggi dari lantai (celah parallax = garis hitam); jangan pakai `rm` dengan wildcard (diblokir).

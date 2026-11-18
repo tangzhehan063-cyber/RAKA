@@ -43,3 +43,9 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 - **Ukuran benda tidak proporsional** (#10): kotak bekal terlalu besar dibanding tokoh; benda kecil diskalakan ±0,45 dari tokoh dan digambar mirip aslinya (bukan bulatan/kotak).
 - **Bentuk "origami" 3D** (#10): kertas kusut dari ikosahedron terlihat berfaset; pakai bola resolusi tinggi dengan normal halus, atau hapus bila tidak perlu.
 - **`cek-sutradara` tidak mendeteksi**: kamera bergerak (selalu 0%), palet monoton antar video, objek terlalu kecil. Mata manusia tetap perlu cek `safe.png`.
+
+## #12 (18 Nov): bug yang lolos
+- **Angka terbaca salah di timeline**: "seribu delapan ratus delapan puluhan" menjadi "1808 puluhan" di caption layar. Cek kalimat hasil `produksi.sh timeline` untuk angka besar/tahun, lalu perbaiki `words.json` (gabung token jadi "1880-an") dan jalankan ulang timeline.
+- **Kartu/lembar tak terlihat di gaya gelap** (arctic/lavender): jangan pakai `ui.card` untuk lembar; pakai `alpha(ui.blueprint, .16)` + garis `ui.blueprint`.
+- **Adegan datar/duduk diam**: standar GrowKaz = tokoh berjalan (walkPose), kamera mengikuti, parallax berlapis (`sets/street.js`); hindari rentetan kartu dan tokoh duduk (permintaan user 18 Nov).
+- **Dua figur bertumpuk di ruang ujian**: atur posisi siswa latar agar tidak sejajar dengan tokoh utama; kaki tokoh jangan melewati pita caption.
