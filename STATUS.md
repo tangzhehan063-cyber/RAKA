@@ -1,7 +1,7 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
 ## Posisi terakhir (18 Nov 2026)
-- **Video #12 "Lupa Itu Wajar" (18 Nov)**: topik dipilih user (kurva lupa Ebbinghaus + efek jeda; Murre & Dros 2015, Cepeda dkk. 2006). Naskah draf 1 di `naskah/lupa-itu-wajar.md`, **menunggu ACC user**. Gaya warna dipilih user di langkah 5b (rekomendasi `arctic`, alternatif `paper`; BUKAN lembut). ScrapeMedsos masih tersambung ulang (cek kredit sebelum caption). Berikutnya setelah ACC: caption + komentar pertama, tanya mesin VO, pilihan warna (`produksi.sh palet`), lalu adegan.
+- **Video #12 "Lupa Itu Wajar" (18 Nov)**: topik dipilih user (kurva lupa Ebbinghaus + efek jeda; Murre & Dros 2015, Cepeda dkk. 2006). Naskah di-ACC user 18 Nov: `naskah/lupa-itu-wajar.md`; caption draf ada; mesin VO = Gemini TTS (menunggu user: dibuat Claude atau diambil user). Gaya warna dipilih user di langkah 5b (rekomendasi `arctic`, alternatif `paper`; BUKAN lembut). ScrapeMedsos masih tersambung ulang (cek kredit sebelum caption). Berikutnya setelah ACC: caption + komentar pertama, tanya mesin VO, pilihan warna (`produksi.sh palet`), lalu adegan.
 
 ## Posisi sebelumnya (17 Nov 2026)
 - **Video #11 "Keranjang Kosong" SELESAI (17 Nov)**: choice overload (Iyengar & Lepper 2000; hasil studi lain campur, VO menyebutnya), kasus belanja skincare/pelembap, 76,3 dtk, −14,3 LUFS, 19 shot + 1 shot 3D meja selai, gaya lembut. VO Gemini (Charon, dibuat Claude atas pilihan user). Drive folder `11 - Keranjang Kosong` (id 1kR1Ykf0GBnXvmgmeLmM-PEpCcEc0kz0D): cover, caption, naskah, VO. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Keranjang = HUD pojok kanan atas (aman dari tombol TikTok); laptop menghadap penonton seperti #9.
