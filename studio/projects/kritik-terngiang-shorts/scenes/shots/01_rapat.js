@@ -30,7 +30,7 @@ registerShot('s04', { draw(g, t, info) {
     peserta(g, t, G, CX, M, 3, 1.35); mejaRapat(g, G, CX, M, t);
     const pu = ['BAGUS', 'RAPI', 'JELAS', 'KEREN', 'OKE', 'MANTAP', 'PAS', 'SIP', 'JOSS'];
     pu.forEach((s, i) => { const a = ease.outBack(prog(t, 0.2 + i * 0.12, 0.5 + i * 0.12)); if (a <= 0) return; const x = CX + 50 + (i % 3) * 125 + (Math.floor(i / 3) % 2) * 30, y = G - 420 - Math.floor(i / 3) * 78 + Math.sin(t * 1.5 + i) * 6; g.save(); g.translate(x, y); g.scale(a, a); UI.bubble(g, 0, 0, { w: 112, h: 50, color: PUJI, str: s, dots: false }); g.restore(); });
-    const ak = ease.outBack(prog(t, 1.5, 1.9)); if (ak > 0) { g.save(); g.translate(CX + 200, G - 700 + Math.sin(t * 2) * 8); g.scale(ak * 1.0, ak * 1.0); glow(g, 0, 0, 260, KRITIK, 0.35); UI.bubble(g, 0, 0, { w: 300, h: 140, color: KRITIK, str: 'KURANG MEYAKINKAN', dots: false }); g.restore(); }
+    const ak = ease.outBack(prog(t, 1.5, 1.9)); if (ak > 0) { g.save(); g.translate(CX + 200, G - 700 + Math.sin(t * 2) * 8); g.scale(ak * 1.0, ak * 1.0); glow(g, 0, 0, 260, KRITIK, 0.35); rr(g, -150, -66, 300, 132, 62); g.fillStyle = KRITIK; g.fill(); g.beginPath(); g.moveTo(-60, 62); g.lineTo(-96, 112); g.lineTo(-10, 64); g.closePath(); g.fill(); text(g, 'KURANG', 0, -22, { size: 46, color: '#fff', font: FONTS.ui, weight: 900, spacing: 2 }); text(g, 'MEYAKINKAN', 0, 26, { size: 40, color: '#fff', font: FONTS.ui, weight: 900, spacing: 1 }); g.restore(); }
   });
   kursiDepan(g, cam, M, G); FX.dust(g, t, { count: 24, color: '#ffe9c0', a: 0.28 });
 } });

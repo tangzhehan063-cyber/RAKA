@@ -49,3 +49,7 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 - **Kartu/lembar tak terlihat di gaya gelap** (arctic/lavender): jangan pakai `ui.card` untuk lembar; pakai `alpha(ui.blueprint, .16)` + garis `ui.blueprint`.
 - **Adegan datar/duduk diam**: standar GrowKaz = tokoh berjalan (walkPose), kamera mengikuti, parallax berlapis (`sets/street.js`); hindari rentetan kartu dan tokoh duduk (permintaan user 18 Nov).
 - **Dua figur bertumpuk di ruang ujian**: atur posisi siswa latar agar tidak sejajar dengan tokoh utama; kaki tokoh jangan melewati pita caption.
+
+## #13 (18 Nov): bug yang lolos
+- **Laptop di meja menutupi kepala peserta**: benda di meja yang digambar setelah figur (depth 1) menutupi kepala/dagu. Taruh benda meja serendah/sekecil mungkin (tinggi ≤ 24–30 px di atas permukaan meja) atau gambar sebelum figur; cek wajah semua figur di still penuh.
+- **Teks meluber dari gelembung/kartu**: `UI.bubble` memakai satu baris; untuk label panjang gambar gelembung sendiri dengan dua baris atau perlebar.

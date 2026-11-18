@@ -46,7 +46,7 @@ export function rapat(g, t, cam, o = {}) {
 export function mejaRapat(g, G, CX, M, t = 0) {
   rr(g, CX - 40, G - 170, 600, 24, 10); g.fillStyle = shade(M.floor, 0.14); g.fill(); g.fillStyle = 'rgba(255,220,170,.35)'; g.fillRect(CX - 34, G - 170, 588, 3);
   seg(g, [[CX - 10, G - 146], [CX - 10, G]], 12, shade(M.floor, -0.3)); seg(g, [[CX + 530, G - 146], [CX + 530, G]], 12, shade(M.floor, -0.3));
-  [100, 260, 420].forEach((x, i) => { FX.screen(g, { x: CX + x - 40, y: G - 250, w: 90, h: 58, frame: '#0c0c12', bg: shade(M.dark, -0.3), glowC: M.practical, a: 0.3 }); });
+  [100, 260, 420].forEach((x, i) => { FX.screen(g, { x: CX + x - 30, y: G - 196, w: 60, h: 24, frame: '#0c0c12', bg: shade(M.dark, -0.3), glowC: M.practical, a: 0.3 }); });   // laptop rendah: tidak menutupi kepala peserta
 }
 export function kursiDepan(g, cam, M, G) {
   blurLayer(g, 11, (g) => { [[120, 1.05], [E.W - 100, 1.2]].forEach(([x, s]) => { g.save(); g.translate(x, G + 80); g.scale(s, s); rr(g, -90, -430, 180, 330, 36); g.fillStyle = shade(M.dark, -0.5); g.fill(); rr(g, -110, -120, 220, 40, 14); g.fill(); g.restore(); }); }, cam, 1.7);
