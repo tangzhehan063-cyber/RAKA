@@ -1,4 +1,4 @@
-# Caption #12 Lupa Itu Wajar (draf; riset bahasa ScrapeMedsos BELUM dilakukan, kredit 0)
+# Caption #12 Lupa Itu Wajar (final; riset bahasa ScrapeMedsos BELUM dilakukan, kredit 0)
 
 ## TikTok / Reels (≤150 karakter, 117)
 Belajar semalam suntuk, seminggu kemudian lupa. Otakmu bocor atau cara belajarmu yang salah? #belajar #mahasiswa #fyp
