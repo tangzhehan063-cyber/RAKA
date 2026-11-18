@@ -71,7 +71,7 @@
    "end": 7.0,
    "line": "Besoknya kuis, dan dia bisa jawab semuanya.",
    "scene": "Pagi emas, kuis lancar, KUIS ✓",
-   "set": "kamar",
+   "set": "jalan",
    "bars": null,
    "in": {
     "type": "dip",
@@ -101,7 +101,7 @@
    "end": 9.5,
    "line": "Seminggu kemudian ujian tengah semester.",
    "scene": "Kalender 7 hari dicoret, UJIAN",
-   "set": "kertas",
+   "set": "jalan",
    "bars": null,
    "in": {
     "type": "dip",
@@ -162,7 +162,7 @@
    "end": 14.4,
    "line": "Nadia menatap kertasnya. Kosong.",
    "scene": "Kertas kosong, pensil menggantung, KOSONG",
-   "set": "kertas",
+   "set": "kelas",
    "bars": null,
    "in": {
     "type": "cut"
@@ -203,7 +203,7 @@
    "end": 22.6,
    "line": "Dia pulang sambil mikir: otakku bocor, ya? Atau aku emang nggak pintar.",
    "scene": "Wajah besar sedih, tetes bocor, OTAKKU BOCOR? NGGAK PINTAR?",
-   "set": "kertas",
+   "set": "jalan",
    "bars": null,
    "in": {
     "type": "dip",
@@ -399,7 +399,7 @@
    "end": 56.0,
    "line": "Nadia nggak bodoh. Otak memang membuang yang nggak diulang.",
    "scene": "Pagi emas, Nadia lega, badge WAJAR",
-   "set": "kamar",
+   "set": "jalan",
    "bars": null,
    "in": {
     "type": "dip",
@@ -424,7 +424,7 @@
    "end": 60.5,
    "line": "Minggu berikutnya dia bagi bahan jadi tiga sesi pendek, di hari yang berbeda.",
    "scene": "Kalender, stabilo menandai SESI 1-3 di hari berbeda",
-   "set": "kertas",
+   "set": "jalan",
    "bars": null,
    "in": {
     "type": "cut"
@@ -454,7 +454,7 @@
    "end": 64.2,
    "line": "Ujian berikutnya, dia ingat hampir semuanya.",
    "scene": "Lembar ujian terisi lancar, centang, LANCAR",
-   "set": "kertas",
+   "set": "kelas",
    "bars": null,
    "in": {
     "type": "dip",

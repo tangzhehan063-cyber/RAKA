@@ -1,6 +1,6 @@
 // 01_kamar.js — "Lupa Itu Wajar": kamar belajar Nadia (meja, kursi, tumpukan buku, stabilo, lampu, jam dinding). Warna dari TOKEN gaya (mood/S()).
 import { E, V, S, registerShot, layer, blurLayer, veil, mood, backdrop, ease, prog, clamp, lerp, wordTime, alpha, shade, glow, rr, seg, circle, linGrad, text, FONTS } from '/engine/core.js';
-import { drawFigure, POSES, breathe, bigFace, posesAt } from '/engine/rig2d.js';
+import { drawFigure, POSES, breathe, bigFace, posesAt, walkPose, blendPose } from '/engine/rig2d.js';
 import * as FX from '/engine/fx2d.js';
 import * as UI from '/engine/ui2d.js';
 import { NADIA, TEMAN3, STABILO } from '../cast.js';
@@ -14,6 +14,11 @@ const WRITE = { ...POSES.sit, head: [18, -172], sh: [8, -142], eF: [40, -118], h
 export const SLUMP = { ...POSES.sit, head: [22, -160], sh: [14, -130], eF: [30, -100], hF: [60, -96], eB: [24, -100], hB: [54, -100] };
 export const hud = (g, str, a = 1) => UI.badge(g, { str, x: E.W - V(90, 110), y: V(110, 300), a });
 
+// masuk ke kamar dengan siklus jalan lalu duduk: kembalikan {dx, pose}
+export function masuk(t, dur = 1.1, fromDx = -330, sit = READ) {
+  const k = ease.out(clamp(t / dur)), dx = fromDx * (1 - k), w = walkPose(t * Math.PI * 2 * 1.5, { stride: 22 });
+  return { dx, pose: t < dur - 0.35 ? w : blendPose(w, sit, prog(t, dur - 0.35, dur + 0.15)) };
+}
 // ---- benda --------------------------------------------------------------------------------------------------
 const BUKU = ['#5a7fa8', '#7a9a62', '#b0806a'];
 export function buku(g, x, y, w, h, i, label, o = {}) {   // buku tertutup tampak depan (punggung + sampul), x tengah, y dasar
@@ -21,7 +26,7 @@ export function buku(g, x, y, w, h, i, label, o = {}) {   // buku tertutup tampa
   rr(g, x - w / 2 + 5, y - h + 5, 8, h - 10, 3); g.fillStyle = 'rgba(0,0,0,.18)'; g.fill();
   rr(g, x - w / 2 + 20, y - h * 0.7, w - 40, h * 0.34, 4); g.fillStyle = 'rgba(255,253,248,.9)'; g.fill();
   text(g, label, x + 4, y - h * 0.53, { size: Math.max(14, h * 0.2), color: '#2b2f3a', font: FONTS.ui, weight: 900 });
-  if (o.hi) seg(g, [[x - w / 2 + 18, y - h * 0.22], [x + w / 2 - 14, y - h * 0.22]], 7, alpha(STABILO, 0.85));   // garis stabilo
+  if (o.hi) { const k = o.hi === true ? 1 : o.hi; if (k > 0) seg(g, [[x - w / 2 + 18, y - h * 0.22], [x - w / 2 + 18 + (w - 32) * k, y - h * 0.22]], 7, alpha(STABILO, 0.85)); }   // garis stabilo
 }
 export function stabilo(g, x, y, s = 1, rot = 0) {   // stabilo merah-oranye (maskot)
   g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
@@ -60,7 +65,7 @@ export function kamar(g, t, cam, o = {}) {
     seg(g, [[tx - tw / 2 + 26, top + 14], [tx - tw / 2 + 26, G]], 12, lc); seg(g, [[tx + tw / 2 - 26, top + 14], [tx + tw / 2 - 26, G]], 12, lc);
     const bx = CX - 210, ch = shade(M.dark, 0.35);
     seg(g, [[bx - 40, G - 86], [bx + 34, G - 86]], 12, ch); seg(g, [[bx - 36, G - 86], [bx - 42, G - 200]], 10, ch); seg(g, [[bx - 30, G - 80], [bx - 34, G]], 7, ch); seg(g, [[bx + 28, G - 80], [bx + 32, G]], 7, ch);
-    if (o.nadia !== false) { const r = o.nadia || {}; drawFigure(g, { x: bx, y: G, s: 1.25, facing: 1, outfit: o.outfit || NADIA, pose: r.pose || breathe(READ, t, 0.5, 3), expr: r.expr || 'neutral', look: r.look || [0.9, 0.5], blink: (t % 3.4) > 3.27, rim: { color: M.key, dir: [1, -0.2], w: 3 } }); }
+    if (o.nadia !== false) { const r = o.nadia || {}; drawFigure(g, { x: bx + (r.dx || 0), y: G, s: 1.25, facing: 1, outfit: o.outfit || NADIA, pose: r.pose || breathe(READ, t, 0.5, 3), expr: r.expr || 'neutral', look: r.look || [0.9, 0.5], blink: (t % 3.4) > 3.27, rim: { color: M.key, dir: [1, -0.2], w: 3 } }); }
     if (o.teman) { const d = o.teman; drawFigure(g, { x: d.x, y: G, s: 1.25, facing: -1, outfit: TEMAN3, pose: d.pose || breathe(POSES.stand, t, 0.5, 7), expr: d.expr || 'smile', look: [-0.9, 0], blink: (t % 3.9) > 3.8, rim: { color: M.key, dir: [-1, -0.2], w: 3 } }); }
     if (o.items) o.items(g, top, tx, M);
   });
@@ -71,28 +76,27 @@ const meja3 = (o = {}) => (g, top, tx, M) => {   // tiga buku bertumpuk berjajar
   stabilo(g, tx + 160, top - 12, 0.9, -0.1); if (o.lamp !== false) lampu(g, tx + 200, top, M, o.lampOn ?? 1);
 };
 
-// s01 0–2.3: belajar sampai jam 2 pagi
+// s01 0–2.3: Nadia berjalan masuk, duduk, belajar; jam dinding berputar 22:00 -> 02:00
 registerShot('s01', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.5, 1.7, k)), { mood: 'night', hour: 2, items: meja3({ n: 3 }), nadia: { pose: posesAt(t, [[0, READ], [1.0, WRITE]], 0.4), expr: 'determined' } });
-  FX.dust(g, t, { count: 10, color: '#fff2d0', a: 0.1 }); hud(g, '02:00', ease.out(prog(t, 0.3, 0.7)));
+  const k = ease.inOut(t / info.dur), m = masuk(t, 1.0, -340, READ), hr = lerp(22, 26, ease.inOut(prog(t, 0.6, info.dur)));
+  kamar(g, t, CAMD(lerp(1.4, 1.75, k), 520 + 30 * k), { mood: 'night', hour: hr, items: (g, top, tx, M) => { meja3({ n: 3 })(g, top, tx, M);
+      for (let i = 0; i < 5; i++) { const u = (t * 0.9 + i * 0.37) % 1; if (t > 1.0) { g.save(); g.globalAlpha *= (1 - u) * 0.8; g.translate(tx - 120 + i * 60, top - 70 - u * 130); g.rotate(u * 3 + i); rr(g, -14, -10, 28, 20, 3); g.fillStyle = '#fffdf8'; g.fill(); g.restore(); } } },
+    nadia: { dx: m.dx, pose: t < 1.1 ? m.pose : posesAt(t, [[1.1, READ], [1.7, WRITE]], 0.4), expr: t < 1 ? 'neutral' : 'determined' } });
+  FX.dust(g, t, { count: 12, color: '#fff2d0', a: 0.1 }); hud(g, `${String(Math.floor(hr) % 24).padStart(2, '0')}:00`, ease.out(prog(t, 0.3, 0.7)));
 } });
-// s02 2.3–3.9: tiga bab sekaligus (buku ditandai stabilo)
+// s02 2.3–3.9: tiga bab sekaligus: stabilo menandai buku satu per satu
 registerShot('s02', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.9, 2.1, k), 540, 1130, 540, 1060), { mood: 'night', hour: 2, items: (g, top, tx, M) => { [0, 1, 2].forEach((i) => { const a = ease.outBack(prog(t, 0.1 + i * 0.3, 0.4 + i * 0.3)); if (a > 0) { g.save(); g.translate(tx - 70 + i * 74, top); g.scale(1, a); buku(g, 0, 0, 64, 92, i, `BAB ${i + 1}`, { hi: true }); g.restore(); } }); stabilo(g, tx + 160, top - 12, 0.9, -0.1); lampu(g, tx + 200, top, M, 1); }, nadia: { pose: WRITE, expr: 'determined' } });
+  kamar(g, t, CAMD(lerp(1.9, 2.15, k), 540, 1130, 540, 1060), { mood: 'night', hour: 2, items: (g, top, tx, M) => { [0, 1, 2].forEach((i) => { const a = ease.outBack(prog(t, 0.0 + i * 0.1, 0.25 + i * 0.1)); g.save(); g.translate(tx - 70 + i * 74, top); g.scale(1, a || 0.01); buku(g, 0, 0, 64, 92, i, `BAB ${i + 1}`, { hi: ease.out(prog(t, 0.1 + i * 0.35, 0.45 + i * 0.35)) }); g.restore(); });
+      const sx = tx - 70 + Math.min(2, Math.floor(t / 0.35)) * 74 + 10, sy = top - 22; stabilo(g, sx + 40, sy - 6 + Math.sin(t * 18) * 3, 0.9, -0.5); lampu(g, tx + 200, top, M, 1); },
+    nadia: { pose: { ...WRITE, hF: [74 + Math.sin(t * 9) * 8, -108 + Math.cos(t * 9) * 4] }, expr: 'determined' } });
   hud(g, '3 BAB', ease.out(prog(t, 0.6, 1.0)));
-} });
-// s03 3.9–7.0: pagi, kuis lancar
-registerShot('s03', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.7, 1.9, k)), { mood: 'golden', hour: 8, items: (g, top, tx, M) => { const a = ease.outBack(prog(t, 0.4, 0.8)); g.save(); g.translate(tx - 20, top - 4); g.scale(a || 0.01, a || 0.01); rr(g, -70, -14, 140, 14, 3); g.fillStyle = '#fffdf8'; g.fill(); text(g, 'KUIS', 0, -30, { size: 26, color: STABILO, font: FONTS.ui, weight: 900 }); g.restore(); stabilo(g, tx + 130, top - 12, 0.9, 0.1); }, nadia: { pose: WRITE, expr: 'happy' } });
-  FX.dust(g, t, { count: 12, color: '#ffe9b0', a: 0.18 }); hud(g, 'KUIS ✓', ease.out(prog(t, 1.4, 1.8)));
 } });
 // s18 64.2–67.0 & s19 67.0–69.63: kamar sebelah (loop)
 registerShot('s18', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.5, 1.7, k)), { outfit: TEMAN3, mood: 'night', hour: 2, items: meja3({ n: 3 }), nadia: { pose: posesAt(t, [[0, READ], [1.0, WRITE]], 0.4), expr: 'determined' } });
+  const k = ease.inOut(t / info.dur), m = masuk(t, 1.2, -340, READ), hr = lerp(1.5, 2, ease.inOut(prog(t, 0.6, info.dur)));
+  kamar(g, t, CAMD(lerp(1.4, 1.75, k), 520 + 30 * k), { outfit: TEMAN3, mood: 'night', hour: 2, items: meja3({ n: 3 }),
+    nadia: { dx: m.dx, pose: t < 1.3 ? m.pose : posesAt(t, [[1.3, READ], [2.0, WRITE]], 0.4), expr: t < 1.2 ? 'neutral' : 'determined' } });
   FX.dust(g, t, { count: 10, color: '#fff2d0', a: 0.1 });
 } });
 registerShot('s19', { draw(g, t, info) {
@@ -101,9 +105,3 @@ registerShot('s19', { draw(g, t, info) {
   hud(g, '02:00', ease.out(prog(t, tj, tj + 0.4)));
 } });
 
-// s15 52.5–56.0: Nadia nggak bodoh (pagi, lega)
-registerShot('s15', { draw(g, t, info) {
-  const k = ease.inOut(t / info.dur);
-  kamar(g, t, CAMD(lerp(1.7, 1.9, k)), { mood: 'golden', hour: 9, items: meja3({ n: 3, lampOn: 0 }), nadia: { pose: posesAt(t, [[0, SLUMP], [0.8, TYPE]], 0.5), expr: 'smile' } });
-  FX.dust(g, t, { count: 14, color: '#ffe9b0', a: 0.18 }); hud(g, 'WAJAR', ease.out(prog(t, 0.5, 0.9)));
-} });
