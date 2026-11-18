@@ -1,6 +1,9 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## Posisi terakhir (18 Nov 2026)
+## Posisi terakhir (18 Nov 2026, #13)
+- **Video #13 "Satu Kritik Terngiang" (18 Nov)**: topik dipilih user (bias negatif; Baumeister dkk. 2001, Rozin & Royzman 2001). Naskah draf 1 di `naskah/kritik-terngiang.md`, **menunggu ACC user**. Warna: campur menurut tema (rekomendasi `indigo`), dipilih user lewat `produksi.sh palet`. Dibuat dengan panduan GrowKaz (`brand/gaya-growkaz.md`): 15–25 shot/menit, freeze-frame hening, latar depan buram, helper UI bawaan. Angka rasio 5:1 Gottman TIDAK dipakai (sekunder). Setelah ACC: caption + komentar pertama, tanya mesin VO, adegan, palet, sheet.
+
+## Posisi sebelumnya (18 Nov 2026)
 - **Panduan GrowKaz (18 Nov)**: plugin ternyata berisi panduan resmi (style bible dst.) yang belum terpasang. Disalin ke `brand/growkaz/`, ringkasan RAKA + skor video #9–#12 + checklist di `brand/gaya-growkaz.md`, skill `growkaz-style`. **Keputusan user (18 Nov): CAMPUR**: warna fleksibel menurut tema/masalah, identitas channel = style kit; video dibuat dengan panduan GrowKaz + skill yang sudah dibangun (lihat `brand/gaya-growkaz.md` §8). Temuan: selalu 19 shot, tak pernah flash/whip/zoom/bars/freeze/OTS, helper UI bawaan tak terpakai, latar depan buram minim.
 - **Video #12 "Lupa Itu Wajar" SELESAI (18 Nov)**: kurva lupa (replikasi Murre & Dros 2015 atas Ebbinghaus; Cepeda dkk. 2006: belajar berjeda lebih awet), 69,6 dtk, −14,4 LUFS, 19 shot + 1 shot 3D kartu catatan, gaya ARCTIC (dipilih user lewat `produksi.sh palet`). Adegan dibuat gaya GrowKaz: tokoh berjalan (walkPose), kamera mengikuti, parallax street (`sets/street.js`), ruang ujian, kamar masuk-berjalan. VO Gemini (Charon, dibuat Claude). Drive folder `12 - Lupa Itu Wajar` (id 16B4ShZNB8M5UGM3n61AhMadYa3FqexxC): cover, caption, naskah, VO. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Bug: konversi angka "1880-an" jadi "1808 puluhan" di timeline (perbaiki words.json sebelum `timeline`).
 
