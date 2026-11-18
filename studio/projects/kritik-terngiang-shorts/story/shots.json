@@ -275,7 +275,7 @@
    "end": 35.2,
    "line": "Kritik dan emosi buruk berdampak lebih besar daripada yang baik.",
    "scene": "3D timbangan: 9 bola vs 1 balok merah-oranye menurunkan sisi",
-   "set": "timbangan3d",
+   "set": "papan",
    "bars": null,
    "in": {
     "type": "swipe",

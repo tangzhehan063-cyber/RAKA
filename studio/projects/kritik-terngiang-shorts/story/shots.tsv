@@ -12,7 +12,7 @@ s08	18.3	19.7	kamar	cut	-	-	Sudah lupa isinya. | Gelembung pujian terurai jadi d
 s09	19.7	22.8	kamar	dip	1.4 heartbeat -16	-	Dia mikir: kenapa aku segampang ini goyah? | BIG FACE Bayu, latar kamar buram gelap, tanda tanya
 s10	22.8	29.1	papan	swipe	0.04 swish -12; 1.2 blip -16; 3.8 pop -12	-	Tahun 2001, psikolog Roy Baumeister dan timnya meninjau banyak penelitian tentang ini. | BLUEPRINT: 2001 Baumeister dkk, tinjauan banyak penelitian
 s11	29.1	31.3	papan	cut	0.4 pop -12; 0.9 pop -12; 1.4 pop -12	-	Hasilnya konsisten di banyak bidang. | Callout bidang: HUBUNGAN, BELAJAR, EMOSI, UMPAN BALIK
-s12	31.3	35.2	timbangan3d	swipe	0.04 swish -12; 1.0 riser -14; 2.4 impact -8	-	Kritik dan emosi buruk berdampak lebih besar daripada yang baik. | 3D timbangan: 9 bola vs 1 balok merah-oranye menurunkan sisi
+s12	31.3	35.2	papan	swipe	0.04 swish -12; 1.0 riser -14; 2.4 impact -8	-	Kritik dan emosi buruk berdampak lebih besar daripada yang baik. | 3D timbangan: 9 bola vs 1 balok merah-oranye menurunkan sisi
 s13	35.2	38.9	papan	cut	0.5 pop -12; 2.0 hit -8	-	Kesan buruk terbentuk lebih cepat dan lebih sulit dihapus. | Blueprint: kurva cepat terbentuk, noda tak terhapus penghapus
 s14	38.9	40.9	papan	flash	0.1 freeze -10	-	(hening) | FREEZE-FRAME partikel menggantung, tint dingin, teks diketik: otak memang begitu
 s15	40.9	42.0	pagi	flash	0.2 shimmer -16	roomtone -26	Bayu nggak lebay. | Pagi emas, Bayu menarik napas lega, medium

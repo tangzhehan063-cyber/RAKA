@@ -41,3 +41,16 @@ registerShot('s09', { draw(g, t, info) {
   for (let i = 0; i < 3; i++) { const a = ease.outBack(prog(t, 0.8 + i * 0.3, 1.1 + i * 0.3)); if (a > 0) { g.save(); g.translate(cx + 340 - i * 120, cy - 360 - (i % 2) * 70); g.scale(a, a); text(g, '?', 0, 0, { size: 130 - i * 16, color: KRITIK, font: FONTS.ui, weight: 900 }); g.restore(); } }
   FX.dust(g, t, { count: 18, color: mood('night').rim, a: 0.2 });
 } });
+
+// s06 14.4–16.7: INSERT ekstrem: tangan raksasa memegang HP, notifikasi kritik merah-oranye; latar kamar buram (gaya GrowKaz)
+registerShot('s06', { draw(g, t, info) {
+  const ui = S().ui, M = mood('night');
+  blurLayer(g, 14, (g) => kamar(g, t, { z: 1.7, x: -200, y: 40 }, { mood: 'night' }), null, 1); veil(g, '#000', 0.4);
+  const k = ease.inOut(prog(t, 0, 0.7)), hx = E.W * 0.52, hy = E.H * 0.52 + (1 - k) * 160, s = 1.35;
+  seg(g, [[hx - 60 * s, hy + 150 * s], [-300, hy + 480 * s]], 110 * s, '#0b0f1a'); seg(g, [[hx - 200 * s, hy + 230 * s], [-300, hy + 480 * s]], 150 * s, BAYU.color);   // lengan + lengan baju
+  rr(g, hx - 130 * s, hy - 250 * s, 260 * s, 480 * s, 34 * s); g.fillStyle = '#0a0d16'; g.fill(); rr(g, hx - 116 * s, hy - 236 * s, 232 * s, 452 * s, 26 * s); g.fillStyle = shade(M.sky[1] || '#1b2340', 0.1); g.fill();
+  glow(g, hx, hy, 460, M.rim, 0.25);
+  const pop = ease.outBack(prog(t, 0.5, 0.9)); if (pop > 0) { g.save(); g.translate(hx, hy - 40); g.scale(pop, pop); rr(g, -100 * s, -56 * s, 200 * s, 112 * s, 24 * s); g.fillStyle = KRITIK; g.fill(); glow(g, 0, 0, 220, KRITIK, 0.5); text(g, 'KURANG', 0, -16 * s, { size: 34 * s, color: '#fff', font: FONTS.ui, weight: 900, spacing: 2 }); text(g, 'MEYAKINKAN', 0, 22 * s, { size: 27 * s, color: '#fff', font: FONTS.ui, weight: 900, spacing: 1 }); g.restore(); }
+  for (let i = 0; i < 4; i++) seg(g, [[hx + 130 * s, hy + (150 - i * 38) * s], [hx + 188 * s - i * 8 * s, hy + (112 - i * 40) * s]], 34 * s, '#0b0f1a');   // jari menjepit HP
+  FX.rings(g, hx, hy - 40, t, { count: 3, r0: 200, r1: 520, speed: 0.35, color: M.rim, a: 0.3 }); FX.dust(g, t, { count: 20, color: M.rim, a: 0.25 });
+} });
