@@ -1,4 +1,4 @@
-# Caption #13 Satu Kritik Terngiang (draf; riset bahasa ScrapeMedsos BELUM dilakukan, kredit 0)
+# Caption #13 Satu Kritik Terngiang (final; riset bahasa ScrapeMedsos BELUM dilakukan, kredit 0)
 
 ## TikTok / Reels (≤150 karakter, 115)
 Sembilan pujian lupa, satu kritik terulang semalaman. Kamu lebay atau otakmu memang begitu? #psikologi #mental #fyp
