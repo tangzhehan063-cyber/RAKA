@@ -82,5 +82,8 @@ Temuan jujur:
 ## 7. API yang belum terpakai (gunakan!)
 `UI.titleCard`, `bigLine`, `badge`, `readout`, `callout`, `dimension`, `dataCard`, `compareBars`, `meter`, `bubble`, `endScreen`; `FX.lensStreak`, `FX.drops` (tetesan beku), `FX.lightning`, `FX.rings`, `FX.speedLines`, `FX.crowd`; `drawFigure` opsi `trail` (bayangan kecepatan), `talk` (kalimat berkutip), `prop`, `dim`; `blendPose`, `headPos`; `T.orbit/dolly`, `T.crowd3D`, `T.building`.
 
-## 8. Keputusan yang perlu dari user
-Style bible meminta dunia **low-key sinematik** (gelap-tengah, rim light), sedangkan keputusan 14 Nov memilih `lembut` (terang, tanpa rim). Opsi: (A) lembut hanya untuk tema ringan, tema lain pakai gaya low-key berpalet (arctic, indigo, clay, sakura, emerald); (B) semua video low-key seperti GrowKaz asli, lembut dihentikan; (C) tetap campur seperti sekarang. Rekomendasi: **A**. Catat keputusan di `STATUS.md`.
+## 8. Keputusan user (18 Nov 2026): CAMPUR
+- **Warna fleksibel mengikuti tema dan masalah video** (mata menangkap warna; `lembut`, `arctic`, `indigo`, `clay`, `sakura`, `paper`, `emerald`, dll semua sah, dipilih dari tabel `brand/palet-emosi.md` dan disetujui user lewat `produksi.sh palet`).
+- **Identitas channel = style kit**, bukan satu palet: mesin GrowKaz (tokoh stickman, rig, FX, 3D), maskot `#d64a33`, kosakata shot, caption di zona aman, kerangka naskah, formula validasi, dan tulisan/grafik bergaya sama.
+- **Cara membuat video**: ikuti panduan GrowKaz (`brand/growkaz/`, §1–§6 di atas, skill `growkaz-style`) **ditambah** skill dan aturan yang sudah kita bangun (`sutradara`, `humanizer`, `brand/cek-bug.md`, `brand/formula.md`, `brand/palet-emosi.md`, `brand/kerangka-cerita.md`, `tools/produksi.sh`, WORKFLOW 0–7).
+- Syarat tetap berlaku pada gaya apa pun: rim light bila gaya mendukung, warna dari token (bukan tertulis), struktur nilai gelap-terang yang terbaca, latar depan buram, atmosfer, kamera bergerak, tokoh di zona aman.
