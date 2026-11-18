@@ -61,6 +61,7 @@ Baca file ini, `brand/dna-video.md` (ciri khas wajib setiap video) dan `brand/br
 ## Catatan teknis
 - **Awal sesi:** `git fetch origin` lalu merge cabang `claude/*` yang belum masuk ke cabang kerja (tiap sesi punya cabang sendiri; tanpa ini sesi baru tidak melihat video/arsip dari sesi lain).
 - **Setelah video selesai (wajib, bagian dari langkah 6):** tambah baris di `arsip/README.md`, buat pratinjau 540p di `arsip/halaman/` (mp4 + cover jpg), tambah kartu di `arsip/halaman/index.html`, lalu republish artifact arsip (slug `40b5677b-fc79-4023-83fe-457a59db2581`) dengan `publish_files`.
+- **Gaya GrowKaz (wajib dibaca sebelum menulis adegan):** `brand/gaya-growkaz.md` + skill `growkaz-style` (ringkasan, skor video kita, resep per babak, checklist), referensi resmi di `brand/growkaz/` (style bible, API, tempo, suara, QC).
 - **Remotion (`remotion-3d/`, sisipan 3D/efek): pakai skill `remotion-fitur`** (`.claude/skills/remotion-fitur/SKILL.md`). Paket transitions, motion-blur, effects sudah terpasang. Engine stickman utama tetap `studio/`.
 - Folder repo tidak menyimpan `node_modules`; jalankan `./setup.sh` di container baru.
 
