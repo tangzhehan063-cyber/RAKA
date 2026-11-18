@@ -32,6 +32,7 @@ Tujuan: satu video ≈ 1 chat, ±8 langkah, tanpa membaca file besar. **Satu cha
 - `tools/produksi.sh timeline <slug> "<words_download_url>"` → mencetak kalimat + waktu (dasar shot list).
 
 ## 5. Adegan (+ 1–2 eksperimen)
+- **Baca dulu `brand/gaya-growkaz.md` (skill `growkaz-style`)**: 15–25 shot/menit, kosakata shot bervariasi (bigFace, insert, over-the-shoulder, freeze-frame, 3D), rim light, latar depan buram, atmosfer, helper UI bawaan (`dataCard`, `compareBars`, `callout`), transisi bermakna. Checklist §6 dijalankan sebelum contact sheet.
 - Pilih 1–2 eksperimen moodboard/storyboard baru (lihat `brand/eksperimen.md`: jangan ulang yang ditolak, pertahankan yang disukai). Sebutkan ke user saat kirim sheet: "eksperimen kali ini: …".
 - Tulis `studio/projects/<slug>-shorts/story/shots.tsv` (contoh: `jam-tiga-pagi-shorts/story/shots.tsv`) → `tools/produksi.sh shots <slug>`.
 - Kode: `scenes/shots/01_*.js` (lokasi), `02_papan.js` (blueprint/fakta), `03_*3d.js` (1 shot 3D). Salin pola dari `studio/projects/jam-tiga-pagi-shorts/scenes/shots/` **tanpa membacanya bila contekan cukup**.
