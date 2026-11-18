@@ -27,7 +27,7 @@ export function rapat(g, t, cam, o = {}) {
     const sx = CX - 520, sy = G - V(760, 900), sw = 400, sh = 290;
     FX.screen(g, { x: sx, y: sy, w: sw, h: sh, frame: shade(dark, -0.2), bg: shade(M.wall, 0.55), glowC: M.practical, a: 0.2 }, (g) => {
       text(g, o.slide || 'SLIDE 4', sx + sw / 2, sy + 70, { size: 46, color: shade(dark, -0.1), font: FONTS.ui, weight: 900, spacing: 2 });
-      [0.5, 0.8, 0.35, 0.65].forEach((v, i) => { rr(g, sx + 44 + i * 82, sy + sh - 30 - v * 160, 56, v * 160, 6); g.fillStyle = i === 2 ? M.practical : shade(M.wall, -0.1); g.fill(); });
+      (o.bars || [0.5, 0.8, 0.35, 0.65]).forEach((v, i) => { rr(g, sx + 44 + i * 82, sy + sh - 30 - v * 160, 56, v * 160, 6); g.fillStyle = i === 2 ? M.practical : shade(M.wall, -0.1); g.fill(); });
     });
     glow(g, sx + sw / 2, sy + sh / 2, 380, M.practical, 0.14 * (o.screenGlow ?? 1));
     // plafon berlampu + tanaman

@@ -9,7 +9,7 @@ export function kamar(g, t, cam, o = {}) {
   const M = mood(o.mood || 'night'), G = GYk(), CX = E.W / 2, wall = shade(M.wall, -0.2);
   layer(g, cam, 0.45, (g) => {
     g.fillStyle = linGrad(g, 0, -E.H, 0, G, [shade(wall, -0.4), wall]); g.fillRect(-E.W, -E.H, E.W * 3, G + E.H * 2);
-    FX.windowFrame(g, { x: CX - 360, y: G - 1000, w: 420, h: 520, cols: 2, rows: 2, frame: shade(wall, -0.5), bar: 12 }, (g, x, y, w, h) => { backdrop(g, M.sky, [x, y, w, h]); FX.moon(g, x + w * 0.7, y + h * 0.26, 34); FX.skyline(g, { x, y: y + h, w, maxH: h * 0.42, color: alpha(shade(M.sky[0], -0.5), 0.9), windowColor: alpha(M.practical, 0.5), lit: 0.12, seed: 21 }); });
+    FX.windowFrame(g, { x: CX - 360, y: G - 1000, w: 420, h: 520, cols: 2, rows: 2, frame: shade(wall, -0.5), bar: 12 }, (g, x, y, w, h) => { backdrop(g, M.sky, [x, y, w, h]); if ((o.mood || 'night') === 'night') FX.moon(g, x + w * 0.7, y + h * 0.26, 34); else FX.sun(g, x + w * 0.5, y + h * 0.8, 46, '#fff3dc', M.key, 4); FX.skyline(g, { x, y: y + h, w, maxH: h * 0.42, color: alpha(shade(M.sky[0], -0.5), 0.9), windowColor: alpha(M.practical, 0.5), lit: 0.12, seed: 21 }); });
     glow(g, CX - 150, G - 740, 520, M.rim, 0.14); FX.godRays(g, CX - 150, G - 740, { count: 8, angle: Math.PI * 0.5, spread: 0.9, len: 1300, a: 0.05, t });
   });
   layer(g, cam, 0.85, (g) => {
