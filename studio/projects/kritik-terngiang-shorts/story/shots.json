@@ -1,0 +1,568 @@
+{
+ "title": "Satu Kritik Terngiang",
+ "duration": 60.88,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.3,
+   "line": "Bayu baru selesai presentasi.",
+   "scene": "ESTABLISHING wide ruang rapat sore, jendela besar, Bayu kecil di depan layar, peserta siluet, latar depan buram, push pelan",
+   "set": "rapat",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.3,
+   "end": 4.15,
+   "line": "10 orang memberi komentar.",
+   "scene": "Medium: 10 gelembung komentar muncul dari peserta, badge KOMENTAR 10",
+   "set": "rapat",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 4.15,
+   "end": 7.3,
+   "line": "Sembilan bilang bagus, rapi, jelas.",
+   "scene": "Sembilan gelembung biru-hijau kecil, label BAGUS RAPI JELAS",
+   "set": "rapat",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 2.0,
+     "name": "blip",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s04",
+   "start": 7.3,
+   "end": 10.5,
+   "line": "Satu bilang: slide empat kurang meyakinkan.",
+   "scene": "INSERT layar slide 4 + satu gelembung merah-oranye besar, callout KURANG MEYAKINKAN",
+   "set": "rapat",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 1.6,
+     "name": "impact",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 10.5,
+   "end": 14.4,
+   "line": "Malam itu Bayu rebahan, dan yang terulang cuma satu kalimat.",
+   "scene": "Kamar malam, Bayu di tepi kasur, gelembung merah membesar, kasur buram di depan",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "clock",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s06",
+   "start": 14.4,
+   "end": 16.7,
+   "line": "Slide empat kurang meyakinkan.",
+   "scene": "OVER-THE-SHOULDER: bahu buram Bayu, kalimat kritik berulang di layar HP",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s07",
+   "start": 16.7,
+   "end": 18.3,
+   "line": "Sembilan pujian tadi?",
+   "scene": "Sembilan gelembung biru memudar sementara satu merah tetap",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 18.3,
+   "end": 19.7,
+   "line": "Sudah lupa isinya.",
+   "scene": "Gelembung pujian terurai jadi debu",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 19.7,
+   "end": 22.8,
+   "line": "Dia mikir: kenapa aku segampang ini goyah?",
+   "scene": "BIG FACE Bayu, latar kamar buram gelap, tanda tanya",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.4,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 22.8,
+   "end": 29.1,
+   "line": "Tahun 2001, psikolog Roy Baumeister dan timnya meninjau banyak penelitian tentang ini.",
+   "scene": "BLUEPRINT: 2001 Baumeister dkk, tinjauan banyak penelitian",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 3.8,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 29.1,
+   "end": 31.3,
+   "line": "Hasilnya konsisten di banyak bidang.",
+   "scene": "Callout bidang: HUBUNGAN, BELAJAR, EMOSI, UMPAN BALIK",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 31.3,
+   "end": 35.2,
+   "line": "Kritik dan emosi buruk berdampak lebih besar daripada yang baik.",
+   "scene": "3D timbangan: 9 bola vs 1 balok merah-oranye menurunkan sisi",
+   "set": "timbangan3d",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 2.4,
+     "name": "impact",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 35.2,
+   "end": 38.9,
+   "line": "Kesan buruk terbentuk lebih cepat dan lebih sulit dihapus.",
+   "scene": "Blueprint: kurva cepat terbentuk, noda tak terhapus penghapus",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 38.9,
+   "end": 40.9,
+   "line": "(hening)",
+   "scene": "FREEZE-FRAME partikel menggantung, tint dingin, teks diketik: otak memang begitu",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "freeze",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 40.9,
+   "end": 42.0,
+   "line": "Bayu nggak lebay.",
+   "scene": "Pagi emas, Bayu menarik napas lega, medium",
+   "set": "pagi",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 42.0,
+   "end": 44.3,
+   "line": "Otaknya memang menimbang yang buruk lebih berat.",
+   "scene": "Bayu berjalan ke kantor (kamera mengikuti, parallax), gelembung merah mengecil",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "city",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s17",
+   "start": 44.3,
+   "end": 47.0,
+   "line": "Besoknya dia tulis semua komentar di satu kertas,",
+   "scene": "INSERT tangan menulis 10 komentar di kertas",
+   "set": "meja",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "scribble",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s18",
+   "start": 47.0,
+   "end": 50.3,
+   "line": "kritik dan pujian sama-sama jadi data.",
+   "scene": "Kertas: 9 centang hijau + 1 merah setara; compareBars sama tinggi",
+   "set": "meja",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s19",
+   "start": 50.3,
+   "end": 52.3,
+   "line": "Slide empat dia rapikan,",
+   "scene": "Medium meja: slide 4 dirapikan",
+   "set": "meja",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s20",
+   "start": 52.3,
+   "end": 54.5,
+   "line": "sembilan pujian itu dia baca ulang.",
+   "scene": "INSERT: sembilan pujian bercahaya dibaca ulang, hangat",
+   "set": "meja",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s21",
+   "start": 54.5,
+   "end": 57.5,
+   "line": "Di kantor sebelah, temannya baru selesai presentasi.",
+   "scene": "LOOP: establishing wide ruang rapat sama s01, tokoh kuning",
+   "set": "rapat",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s22",
+   "start": 57.5,
+   "end": 60.88,
+   "line": "10 komentar masuk. Sembilan bilang bagus.",
+   "scene": "10 gelembung muncul: 9 biru, 1 merah kecil",
+   "set": "rapat",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 10.5,
+   "mood": "hopeful",
+   "intensity": 0.3
+  },
+  {
+   "start": 10.5,
+   "end": 22.8,
+   "mood": "tension",
+   "intensity": 0.35
+  },
+  {
+   "start": 22.8,
+   "end": 38.9,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 40.9,
+   "end": 60.88,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}
