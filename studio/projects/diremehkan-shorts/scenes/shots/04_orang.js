@@ -12,10 +12,10 @@ registerShot('s18', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur), cam = { z: lerp(1.15, 1.3, k), x: V(-60, -60), y: 20 };
   const { GY, M } = kamar(g, t, cam, { mood: 'night', clock: '23:20', lamp: 1 });
   layer(g, cam, 1, (g) => {
-    drawFigure(g, { x: E.W / 2 - 200, y: GY + 8, s: 1.45, facing: 1, outfit: RIZAL, pose: breathe(POSES.think, t, 0.5, 3), expr: 'thinking', look: [0.6, -0.3], blink: (t % 3.4) > 3.26, rim: { color: M.rim, dir: [0.8, -0.4], w: 4 } });
+    drawFigure(g, { x: E.W / 2 - 200, y: GY + 8, s: 1.75, facing: 1, outfit: RIZAL, pose: breathe(POSES.think, t, 0.5, 3), expr: 'thinking', look: [0.6, -0.3], blink: (t % 3.4) > 3.26, rim: { color: M.rim, dir: [0.8, -0.4], w: 4 } });
     const a = pop(t, 1.2, 0.4), b = pop(t, 2.8, 0.4);
-    if (a > 0) { g.save(); g.translate(E.W / 2 + 120, GY - 760); g.scale(a, a); bub(g, 0, 0, 300, 110, '#3a6ea5', 'AHLI?', 1); g.restore(); }
-    if (b > 0) { g.save(); g.translate(E.W / 2 + 230, GY - 560); g.scale(b, b); bub(g, 0, 0, 380, 110, HINA, 'ASAL BICARA?', 1); g.restore(); }
+    if (a > 0) { g.save(); g.translate(E.W / 2 + 160, GY - 620); g.scale(a, a); bub(g, 0, 0, 300, 110, '#3a6ea5', 'AHLI?', 1); g.restore(); }
+    if (b > 0) { g.save(); g.translate(E.W / 2 + 230, GY - 470); g.scale(b, b); bub(g, 0, 0, 380, 110, HINA, 'ASAL BICARA?', 1); g.restore(); }
   });
   FX.dust(g, t, { count: 22, color: M.rim, a: 0.2 });
 } });

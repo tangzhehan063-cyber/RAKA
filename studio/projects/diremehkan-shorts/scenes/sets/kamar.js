@@ -75,7 +75,7 @@ export function kamar(g, t, cam, o = {}) {
       if (o.rain) FX.rain(g, o.frozen ? 0.41 : t, { area: [x - 40, y - 40, w + 80, h + 80], count: 140, a: 0.45, color: M.rim, speed: 1800 });
     });
     glow(g, wx + ww / 2, wy + wh / 2, ww * 0.9, night ? M.rim : M.key, night ? 0.08 : 0.2);
-    digiClock(g, CX - V(560, 400), GY - V(560, 780), o.clock || '03:00', { w: V(200, 230), h: V(86, 100), glow: night ? 1 : 0.3, color: night ? '#ff5a46' : '#ffb07a' });
+    digiClock(g, CX - V(560, 330), GY - V(560, 780), o.clock || '03:00', { w: V(200, 230), h: V(86, 100), glow: night ? 1 : 0.3, color: night ? '#ff5a46' : '#ffb07a' });
     (o.notes || []).forEach((n, i) => note(g, dx - V(90, 80) + (i % 3) * V(110, 105), GY - V(470, 720) - Math.floor(i / 3) * V(140, 140), V(0.75, 0.8), { rot: [-0.08, 0.06, -0.03, 0.09, -0.06, 0.04][i % 6], crossed: n.crossed || 0 }));
   });
   layer(g, cam, 0.85, (g) => {

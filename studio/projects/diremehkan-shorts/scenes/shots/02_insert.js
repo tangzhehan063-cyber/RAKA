@@ -35,8 +35,8 @@ registerShot('s08', { draw(g, t, info) {
   const k = ease.inOut(t / info.dur), cam = { z: lerp(1.2, 1.4, k), x: V(-60, -60), y: 20 };
   const { GY, M } = kamar(g, t, cam, { mood: 'night', clock: '23:00', lamp: 1 });
   layer(g, cam, 1, (g) => {
-    drawFigure(g, { x: E.W / 2 - 60, y: GY + 8, s: 1.5, facing: 1, outfit: RIZAL, pose: breathe(POSES.think, t, 0.5, 3), expr: 'thinking', look: [0.5, -0.6], blink: (t % 3.4) > 3.26, rim: { color: M.rim, dir: [0.8, -0.4], w: 4 } });
-    const a = pop(t, rel('bensin', info, 2.2) - 1.0, 0.4), r = 130; if (a > 0) { g.save(); g.translate(E.W / 2 + 120, GY - 700 + Math.sin(t * 1.8) * 8); g.scale(a, a); bub(g, 0, 0, 360, 170, HINA, 'HINAAN =\nBAHAN BAKAR?', 1); g.restore(); }
+    drawFigure(g, { x: E.W / 2 - 60, y: GY + 8, s: 1.75, facing: 1, outfit: RIZAL, pose: breathe(POSES.think, t, 0.5, 3), expr: 'thinking', look: [0.5, -0.6], blink: (t % 3.4) > 3.26, rim: { color: M.rim, dir: [0.8, -0.4], w: 4 } });
+    const a = pop(t, rel('bensin', info, 2.2) - 1.0, 0.4), r = 130; if (a > 0) { g.save(); g.translate(E.W / 2 + 120, GY - 600 + Math.sin(t * 1.8) * 8); g.scale(a, a); bub(g, 0, 0, 440, 170, HINA, 'HINAAN =\nBAHAN BAKAR?', 1); g.restore(); }
   });
   FX.dust(g, t, { count: 22, color: M.rim, a: 0.2 });
 } });
