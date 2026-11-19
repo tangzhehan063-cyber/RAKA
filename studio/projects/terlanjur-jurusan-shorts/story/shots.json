@@ -1,0 +1,1037 @@
+{
+ "title": "Terlanjur",
+ "duration": 157.77,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.4,
+   "line": "Jam 2 pagi, Dimas masih di depan laporan praktikum.",
+   "scene": "BIG FACE Dimas diterangi layar laptop",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.4,
+   "end": 4.6,
+   "line": "(lanjut)",
+   "scene": "WIDE kamar kos 02.00, Dimas di meja",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "clock",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 4.6,
+   "end": 7.2,
+   "line": "Semester lima, Teknik Sipil.",
+   "scene": "PAPAN SEMESTER 5 / TEKNIK SIPIL",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 7.2,
+   "end": 11.8,
+   "line": "Paragraf yang sama udah dibaca empat kali.",
+   "scene": "INSERT layar laptop, paragraf sama, tally 4x",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "tick",
+     "gain": -18.0
+    },
+    {
+     "at": 3.2,
+     "name": "tick",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s05",
+   "start": 11.8,
+   "end": 15.8,
+   "line": "Di tab sebelah, formulir pindah jurusan udah kebuka.",
+   "scene": "INSERT tab FORMULIR PINDAH JURUSAN",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s06",
+   "start": 15.8,
+   "end": 18.0,
+   "line": "Kursornya di tombol kirim.",
+   "scene": "INSERT tombol KIRIM, kursor mendekat",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 18.0,
+   "end": 19.7,
+   "line": "Lama.",
+   "scene": "BIG FACE Dimas ragu",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s08",
+   "start": 19.7,
+   "end": 21.46,
+   "line": "Terus tabnya ditutup.",
+   "scene": "INSERT tab ditutup (X)",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 21.46,
+   "end": 23.3,
+   "line": "Soalnya hitungannya begini.",
+   "scene": "KARTU BAB 1 YANG SUDAH DIBAYAR",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 23.3,
+   "end": 25.84,
+   "line": "Empat semester UKT udah lunas.",
+   "scene": "PAPAN 4 kuitansi UKT, stempel LUNAS",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 25.84,
+   "end": 28.8,
+   "line": "Diktat setebal bata udah dibeli semua.",
+   "scene": "3D tumpukan diktat, kamera orbit",
+   "set": "3d",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -18.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 28.8,
+   "end": 32.66,
+   "line": "Ibunya udah cerita ke satu RT.",
+   "scene": "INSERT HP grup RT, chat bangga",
+   "set": "hp",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.6,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 32.66,
+   "end": 35.68,
+   "line": "Kalau pindah, semua itu hangus.",
+   "scene": "PAPAN tiga hal dicoret HANGUS",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 35.68,
+   "end": 38.82,
+   "line": "Tinggal tiga semester lagi, nanggung.",
+   "scene": "WIDE Dimas menunduk, badge 3 SEMESTER",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "tick",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s15",
+   "start": 38.82,
+   "end": 42.6,
+   "line": "Tiap alasan nambah satu buku di tumpukan.",
+   "scene": "WIDE tumpukan diktat tumbuh",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s16",
+   "start": 42.6,
+   "end": 46.46,
+   "line": "Makin tinggi dari yang Dimas sadari.",
+   "scene": "TILT UP tembok diktat tinggi, Dimas kecil",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 46.46,
+   "end": 47.7,
+   "line": "(kartu bab)",
+   "scene": "KARTU BAB 2 KATA ORANG",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s18",
+   "start": 47.7,
+   "end": 49.33,
+   "line": "Besoknya di kantin, temannya ketawa.",
+   "scene": "WIDE kantin, teman ketawa",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "city",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s19",
+   "start": 49.33,
+   "end": 53.0,
+   "line": "Pindah? Dua tahun kemarin ngapain aja?",
+   "scene": "OTS Dimas, gelembung teman",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s20",
+   "start": 53.0,
+   "end": 57.6,
+   "line": "Dosen pembimbingnya bilang hal yang mirip.",
+   "scene": "RUANG DOSEN, dosen bicara sopan",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s21",
+   "start": 57.6,
+   "end": 60.2,
+   "line": "Malamnya bapaknya cuma nanya.",
+   "scene": "WIDE meja makan, bapak",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "clock",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s22",
+   "start": 60.2,
+   "end": 62.5,
+   "line": "Jadi selama ini nggak serius?",
+   "scene": "BIG FACE bapak + gelembung",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s23",
+   "start": 62.5,
+   "end": 64.3,
+   "line": "Dimas nggak bisa jawab.",
+   "scene": "FREEZE-FRAME wajah Dimas",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "freeze",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s24",
+   "start": 64.3,
+   "end": 69.2,
+   "line": "Semua orang ngitung dari yang udah lewat.",
+   "scene": "PAPAN semua panah menunjuk ke belakang",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s25",
+   "start": 69.2,
+   "end": 72.0,
+   "line": "Tahun 1985, dua peneliti.",
+   "scene": "PAPAN 1985 ARKES & BLUMER",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s26",
+   "start": 72.0,
+   "end": 75.5,
+   "line": "jual tiket musim pertunjukan di teater kampus Ohio.",
+   "scene": "WIDE teater kampus, loket tiket",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "whoosh",
+     "gain": -18.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s27",
+   "start": 75.5,
+   "end": 79.25,
+   "line": "(lanjut) tiket musim",
+   "scene": "PAPAN tiket $15 / $13 / $8",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s28",
+   "start": 79.25,
+   "end": 83.81,
+   "line": "Harganya diacak. Ada yang bayar penuh.",
+   "scene": "PAPAN tiga tiket diacak",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s29",
+   "start": 83.81,
+   "end": 87.4,
+   "line": "Yang bayar penuh lebih rajin datang.",
+   "scene": "PAPAN bar PENUH vs DISKON",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s30",
+   "start": 87.4,
+   "end": 90.1,
+   "line": "Pertunjukannya sama, kursinya sama.",
+   "scene": "PAPAN dua kursi identik",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s31",
+   "start": 90.1,
+   "end": 95.22,
+   "line": "Bedanya cuma uang yang udah keluar.",
+   "scene": "PAPAN uang keluar -> keputusan",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.0,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s32",
+   "start": 95.22,
+   "end": 103.04,
+   "line": "Sekitar 30 persen mahasiswa ganti jurusan.",
+   "scene": "PAPAN 100 siluet, 30 menyala",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 3.0,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s33",
+   "start": 103.04,
+   "end": 106.72,
+   "line": "Jadi Dimas bukan satu-satunya.",
+   "scene": "WIDE Dimas, siluet lain muncul",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s34",
+   "start": 106.72,
+   "end": 114.41,
+   "line": "Yang udah dibayar nggak bisa balik.",
+   "scene": "HENING teks diketik",
+   "set": "hening",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s35",
+   "start": 114.41,
+   "end": 115.9,
+   "line": "Malam itu Dimas bikin dua kolom.",
+   "scene": "KARTU BAB 3 YANG BELUM DIBAYAR",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s36",
+   "start": 115.9,
+   "end": 119.74,
+   "line": "Kiri, yang udah keluar.",
+   "scene": "INSERT kertas dua kolom, tangan menggaris",
+   "set": "kertas",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "scribble",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s37",
+   "start": 119.74,
+   "end": 124.2,
+   "line": "Kanan, yang masih bakal keluar.",
+   "scene": "INSERT kolom kanan terisi",
+   "set": "kertas",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s38",
+   "start": 124.2,
+   "end": 128.82,
+   "line": "Tahun-tahun kerja di bidang yang dia nggak suka.",
+   "scene": "BIG FACE Dimas menatap tabel",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s39",
+   "start": 128.82,
+   "end": 132.2,
+   "line": "Besoknya dia duduk dua jam di kelas jurusan lain.",
+   "scene": "WIDE kelas desain, Dimas di belakang",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s40",
+   "start": 132.2,
+   "end": 135.97,
+   "line": "cuma jadi pendengar, dan nyatet tanpa disuruh.",
+   "scene": "INSERT tangan menulis catatan, badge 2 JAM",
+   "set": "kertas",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "scribble",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s41",
+   "start": 135.97,
+   "end": 138.5,
+   "line": "Minggu depannya dia bawa tabelnya ke dosen.",
+   "scene": "RUANG DOSEN, tabel diserahkan",
+   "set": "ruang",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s42",
+   "start": 138.5,
+   "end": 141.21,
+   "line": "dan kirim formulir itu.",
+   "scene": "INSERT tombol KIRIM diklik, TERKIRIM",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s43",
+   "start": 141.21,
+   "end": 144.81,
+   "line": "Sebagian mata kuliah diakui, sebagian nggak.",
+   "scene": "PAPAN daftar mata kuliah centang/silang",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s44",
+   "start": 144.81,
+   "end": 151.29,
+   "line": "Itu bayaran yang dia pilih sendiri.",
+   "scene": "WIDE Dimas menarik satu buku, cahaya masuk",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 3.0,
+     "name": "shimmer",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s45",
+   "start": 151.29,
+   "end": 154.82,
+   "line": "Jam 2 pagi, Dimas masih di depan tugasnya.",
+   "scene": "WIDE kamar sama, lampu hidup, sketsa",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s46",
+   "start": 154.82,
+   "end": 157.77,
+   "line": "Kali ini nggak ada tab yang perlu ditutup.",
+   "scene": "INSERT layar laptop menghadap penonton (loop)",
+   "set": "laptop",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 21.46,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 21.46,
+   "end": 69.2,
+   "mood": "tension",
+   "intensity": 0.35
+  },
+  {
+   "start": 69.2,
+   "end": 114.41,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 114.41,
+   "end": 157.77,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}
