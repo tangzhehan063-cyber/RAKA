@@ -1,0 +1,49 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Terlanjur
+@music 0-21.46 mystery 0.35; 21.46-69.2 tension 0.35; 69.2-114.41 sad 0.3; 114.41-157.77 hopeful 0.45
+s01	0.0	2.4	kamar	cut	0.3 swish -20	roomtone -24	Jam 2 pagi, Dimas masih di depan laporan praktikum. | BIG FACE Dimas diterangi layar laptop
+s02	2.4	4.6	kamar	cut	0.3 clock -18	roomtone -24	(lanjut) | WIDE kamar kos 02.00, Dimas di meja
+s03	4.6	7.2	papan	dip	0.4 pop -14	-	Semester lima, Teknik Sipil. | PAPAN SEMESTER 5 / TEKNIK SIPIL
+s04	7.2	11.8	laptop	cut	0.5 tick -18; 3.2 tick -18	roomtone -26	Paragraf yang sama udah dibaca empat kali. | INSERT layar laptop, paragraf sama, tally 4x
+s05	11.8	15.8	laptop	cut	0.6 pop -14	roomtone -26	Di tab sebelah, formulir pindah jurusan udah kebuka. | INSERT tab FORMULIR PINDAH JURUSAN
+s06	15.8	18.0	laptop	zoom	0.4 heartbeat -16	-	Kursornya di tombol kirim. | INSERT tombol KIRIM, kursor mendekat
+s07	18.0	19.7	kamar	cut	0.1 heartbeat -16	roomtone -26	Lama. | BIG FACE Dimas ragu
+s08	19.7	21.46	laptop	cut	0.4 blip -14	-	Terus tabnya ditutup. | INSERT tab ditutup (X)
+s09	21.46	23.3	papan	swipe	0.1 swish -16	-	Soalnya hitungannya begini. | KARTU BAB 1 YANG SUDAH DIBAYAR
+s10	23.3	25.84	papan	cut	1.2 impact -10	-	Empat semester UKT udah lunas. | PAPAN 4 kuitansi UKT, stempel LUNAS
+s11	25.84	28.8	3d	dip	0.2 whoosh -18	-	Diktat setebal bata udah dibeli semua. | 3D tumpukan diktat, kamera orbit
+s12	28.8	32.66	hp	cut	0.8 pop -14; 2.6 pop -14	-	Ibunya udah cerita ke satu RT. | INSERT HP grup RT, chat bangga
+s13	32.66	35.68	papan	cut	1.2 impact -10	-	Kalau pindah, semua itu hangus. | PAPAN tiga hal dicoret HANGUS
+s14	35.68	38.82	kamar	cut	1.6 tick -18	roomtone -26	Tinggal tiga semester lagi, nanggung. | WIDE Dimas menunduk, badge 3 SEMESTER
+s15	38.82	42.6	kamar	cut	0.5 pop -14; 1.8 pop -14; 3.0 pop -14	roomtone -26	Tiap alasan nambah satu buku di tumpukan. | WIDE tumpukan diktat tumbuh
+s16	42.6	46.46	kamar	zoom	0.2 riser -14	-	Makin tinggi dari yang Dimas sadari. | TILT UP tembok diktat tinggi, Dimas kecil
+s17	46.46	47.7	papan	swipe	0.1 swish -16	-	(kartu bab) | KARTU BAB 2 KATA ORANG
+s18	47.7	49.33	ruang	cut	0.3 pop -14	city -26	Besoknya di kantin, temannya ketawa. | WIDE kantin, teman ketawa
+s19	49.33	53.0	ruang	cut	0.4 pop -14	-	Pindah? Dua tahun kemarin ngapain aja? | OTS Dimas, gelembung teman
+s20	53.0	57.6	ruang	cut	0.6 pop -14	-	Dosen pembimbingnya bilang hal yang mirip. | RUANG DOSEN, dosen bicara sopan
+s21	57.6	60.2	ruang	dip	0.2 clock -18	roomtone -26	Malamnya bapaknya cuma nanya. | WIDE meja makan, bapak
+s22	60.2	62.5	ruang	cut	0.2 pop -14	-	Jadi selama ini nggak serius? | BIG FACE bapak + gelembung
+s23	62.5	64.3	kamar	cut	0.2 freeze -14	-	Dimas nggak bisa jawab. | FREEZE-FRAME wajah Dimas
+s24	64.3	69.2	papan	cut	1.0 pop -14	-	Semua orang ngitung dari yang udah lewat. | PAPAN semua panah menunjuk ke belakang
+s25	69.2	72.0	papan	dip	0.2 riser -14	-	Tahun 1985, dua peneliti. | PAPAN 1985 ARKES & BLUMER
+s26	72.0	75.5	ruang	cut	0.4 whoosh -18	-	jual tiket musim pertunjukan di teater kampus Ohio. | WIDE teater kampus, loket tiket
+s27	75.5	79.25	papan	cut	1.2 ding -14	-	(lanjut) tiket musim | PAPAN tiket $15 / $13 / $8
+s28	79.25	83.81	papan	cut	1.0 shimmer -14	-	Harganya diacak. Ada yang bayar penuh. | PAPAN tiga tiket diacak
+s29	83.81	87.4	papan	cut	1.2 impact -10	-	Yang bayar penuh lebih rajin datang. | PAPAN bar PENUH vs DISKON
+s30	87.4	90.1	papan	cut	0.4 pop -14	-	Pertunjukannya sama, kursinya sama. | PAPAN dua kursi identik
+s31	90.1	95.22	papan	cut	2.0 impact -10	-	Bedanya cuma uang yang udah keluar. | PAPAN uang keluar -> keputusan
+s32	95.22	103.04	papan	swipe	3.0 ding -14	-	Sekitar 30 persen mahasiswa ganti jurusan. | PAPAN 100 siluet, 30 menyala
+s33	103.04	106.72	kamar	cut	1.0 shimmer -14	-	Jadi Dimas bukan satu-satunya. | WIDE Dimas, siluet lain muncul
+s34	106.72	114.41	hening	dip	-	-	Yang udah dibayar nggak bisa balik. | HENING teks diketik
+s35	114.41	115.9	papan	swipe	0.1 swish -16	-	Malam itu Dimas bikin dua kolom. | KARTU BAB 3 YANG BELUM DIBAYAR
+s36	115.9	119.74	kertas	cut	0.4 scribble -14	roomtone -26	Kiri, yang udah keluar. | INSERT kertas dua kolom, tangan menggaris
+s37	119.74	124.2	kertas	cut	1.4 pop -14; 3.0 pop -14	-	Kanan, yang masih bakal keluar. | INSERT kolom kanan terisi
+s38	124.2	128.82	kamar	zoom	0.3 riser -14	-	Tahun-tahun kerja di bidang yang dia nggak suka. | BIG FACE Dimas menatap tabel
+s39	128.82	132.2	ruang	swipe	0.2 swish -16	roomtone -26	Besoknya dia duduk dua jam di kelas jurusan lain. | WIDE kelas desain, Dimas di belakang
+s40	132.2	135.97	kertas	cut	0.4 scribble -14	-	cuma jadi pendengar, dan nyatet tanpa disuruh. | INSERT tangan menulis catatan, badge 2 JAM
+s41	135.97	138.5	ruang	cut	0.3 pop -14	-	Minggu depannya dia bawa tabelnya ke dosen. | RUANG DOSEN, tabel diserahkan
+s42	138.5	141.21	laptop	cut	1.2 ding -14	-	dan kirim formulir itu. | INSERT tombol KIRIM diklik, TERKIRIM
+s43	141.21	144.81	papan	cut	0.5 pop -14; 1.8 blip -14	-	Sebagian mata kuliah diakui, sebagian nggak. | PAPAN daftar mata kuliah centang/silang
+s44	144.81	151.29	kamar	cut	3.0 shimmer -12	-	Itu bayaran yang dia pilih sendiri. | WIDE Dimas menarik satu buku, cahaya masuk
+s45	151.29	154.82	kamar	dip	0.3 shimmer -16	roomtone -26	Jam 2 pagi, Dimas masih di depan tugasnya. | WIDE kamar sama, lampu hidup, sketsa
+s46	154.82	157.77	laptop	cut	-	roomtone -26	Kali ini nggak ada tab yang perlu ditutup. | INSERT layar laptop menghadap penonton (loop)
