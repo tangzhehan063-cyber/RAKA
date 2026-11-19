@@ -6,7 +6,7 @@ import * as UI from '/engine/ui2d.js';
 import { HINA } from '../cast.js';
 import { rel, pop, hening } from '../_util.js';
 const GOOD = '#4fb3a5';
-const head = (g, t, big, small, tk = 0.1) => { const ui = S().ui, bp = UI.bpStroke(); text(g, big, E.W / 2, 420, { size: 150, color: ui.gold, font: FONTS.ui, weight: 900, spacing: 6, alpha: ease.out(prog(t, 0.1, 0.5)), glow: 24, glowColor: alpha(ui.gold, 0.4) }); if (small) text(g, small, E.W / 2, 560, { size: 54, color: ui.cream, font: FONTS.ui, weight: 900, spacing: 3, alpha: ease.out(prog(t, tk, tk + 0.4)) }); };
+const head = (g, t, big, small, tk = 0.1) => { const ui = S().ui, bp = UI.bpStroke(); text(g, big, E.W / 2, 420, { size: big.length > 8 ? 118 : 150, color: ui.gold, font: FONTS.ui, weight: 900, spacing: 6, alpha: ease.out(prog(t, 0.1, 0.5)), glow: 24, glowColor: alpha(ui.gold, 0.4) }); if (small) text(g, small, E.W / 2, 560, { size: 54, color: ui.cream, font: FONTS.ui, weight: 900, spacing: 3, alpha: ease.out(prog(t, tk, tk + 0.4)) }); };
 const bar = (g, t, x, y, w, v, col, label, at) => { const ui = S().ui, k = ease.out(prog(t, at, at + 0.9)); text(g, label, x, y - 60, { size: 36, color: ui.cream, font: FONTS.ui, weight: 900, align: 'left', spacing: 2 }); rr(g, x, y - 36, w, 56, 12); g.strokeStyle = alpha(UI.bpStroke(), 0.8); g.lineWidth = 4; g.stroke(); rr(g, x + 6, y - 30, Math.max(0, (w - 12) * v * k), 44, 8); g.fillStyle = col; g.fill(); };
 
 // s10 24.5–29.2: Nurmohamed 2020
