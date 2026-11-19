@@ -1,0 +1,574 @@
+{
+ "title": "Bahan Bakar",
+ "duration": 74.242,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.5,
+   "line": "Rizal membuka tangkapan layar itu lagi.",
+   "scene": "BIG FACE wajah diterangi layar HP, latar kamar buram",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -20.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.5,
+   "end": 4.2,
+   "line": "Pukul 11 malam.",
+   "scene": "WIDE kamar kerja, Rizal di meja, jam 23.00",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "clock",
+     "gain": -18.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  },
+  {
+   "id": "s03",
+   "start": 4.2,
+   "end": 8.5,
+   "line": "Kalimat temannya masih sama: Kamu nggak bakal sanggup.",
+   "scene": "INSERT HP raksasa, gelembung chat merah-oranye",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.2,
+     "name": "impact",
+     "gain": -9.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.5,
+   "end": 10.0,
+   "line": "Ia baca ulang tiap malam.",
+   "scene": "Tujuh kartu malam, tangkapan layar sama",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 10.0,
+   "end": 12.5,
+   "line": "Dadanya panas, tangannya mengepal.",
+   "scene": "INSERT kepalan tangan, cincin panas merah-oranye",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "heartbeat",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 12.5,
+   "end": 15.0,
+   "line": "Lalu ia tutup laptop dan tidur.",
+   "scene": "Wide, lampu meja padam, wajah sayu",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.3,
+     "name": "tick",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s07",
+   "start": 15.0,
+   "end": 18.4,
+   "line": "Besoknya, kerjaannya masih nol.",
+   "scene": "Pagi, meja sama, readout PESANAN 0",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.7,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s08",
+   "start": 18.4,
+   "end": 22.0,
+   "line": "Banyak orang percaya hinaan otomatis jadi bahan bakar.",
+   "scene": "Rizal berpikir, gelembung HINAAN = BAHAN BAKAR?",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 22.0,
+   "end": 24.5,
+   "line": "Marah itu terasa seperti tenaga.",
+   "scene": "Meteran MARAH naik, TENAGA?",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "riser",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 24.5,
+   "end": 29.2,
+   "line": "Peneliti Samir Nurmohamed menguji ini pada tahun 2020.",
+   "scene": "Papan 2020 + nama + UNDERDOG EFFECT",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "blip",
+     "gain": -16.0
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 29.2,
+   "end": 32.0,
+   "line": "Orang yang diremehkan memang bisa tampil lebih baik.",
+   "scene": "Dua bar: diharapkan tinggi vs diremehkan naik",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 32.0,
+   "end": 36.2,
+   "line": "Penyebabnya satu: keinginan membuktikan orang itu salah.",
+   "scene": "Alur: diremehkan → membuktikan salah → performa naik",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "impact",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 36.2,
+   "end": 41.7,
+   "line": "Tapi ada syaratnya. Efek itu hanya jalan kalau kamu menilai si peremeh tidak kredibel.",
+   "scene": "Pita PEREMEH TIDAK KREDIBEL, bar efek jalan",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 1.9,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.6,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 41.7,
+   "end": 46.6,
+   "line": "Kalau yang meremehkan adalah orang yang kamu anggap paham, performamu malah turun.",
+   "scene": "Pita ORANG YANG PAHAM, bar performa turun, TURUN",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.5,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 46.6,
+   "end": 50.2,
+   "line": "Dan studi lain menyebut dorongan ini pedang bermata dua.",
+   "scene": "Pedang bermata dua blueprint",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.04,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.3,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 50.2,
+   "end": 53.7,
+   "line": "Bahan bakarnya cepat habis kalau tujuannya cuma membuat orang lain terdiam.",
+   "scene": "Tangki bahan bakar habis, CUMA BIKIN ORANG DIAM?",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 53.7,
+   "end": 55.74,
+   "line": "",
+   "scene": "FREEZE-FRAME hening, teks diketik: tujuannya apa?",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "freeze",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s18",
+   "start": 55.74,
+   "end": 61.5,
+   "line": "Rizal bertanya satu hal: temannya ahli di bidang ini, atau cuma asal bicara?",
+   "scene": "Rizal berpikir, dua gelembung AHLI? / ASAL BICARA?",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.8,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s19",
+   "start": 61.5,
+   "end": 62.8,
+   "line": "Asal bicara.",
+   "scene": "Stempel ASAL BICARA",
+   "set": "papan",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s20",
+   "start": 62.8,
+   "end": 69.3,
+   "line": "Ia hapus tangkapan layar itu dan tulis satu target kecil: 10 pesanan pertama, sebelum Jumat.",
+   "scene": "HP raksasa: chat terhapus, lalu Rizal berjalan dengan kartu TARGET",
+   "set": "jalan",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "scribble",
+     "gain": -14.0
+    },
+    {
+     "at": 3.2,
+     "name": "footstep",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "city",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s21",
+   "start": 69.3,
+   "end": 72.3,
+   "line": "Malam ini ia tidak membuka chat lama.",
+   "scene": "Kamar malam, HP telungkup, Rizal bertekad",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -16.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26.0
+   }
+  },
+  {
+   "id": "s22",
+   "start": 72.3,
+   "end": 74.242,
+   "line": "Ia membuka kerjaannya.",
+   "scene": "LOOP laptop menghadap penonton: PESANAN #1",
+   "set": "kamar",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24.0
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 18.4,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 18.4,
+   "end": 53.7,
+   "mood": "tension",
+   "intensity": 0.35
+  },
+  {
+   "start": 55.74,
+   "end": 74.24,
+   "mood": "hopeful",
+   "intensity": 0.45
+  }
+ ],
+ "sfx": []
+}

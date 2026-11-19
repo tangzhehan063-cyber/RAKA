@@ -1,0 +1,25 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Bahan Bakar
+@music 0-18.4 mystery 0.35; 18.4-53.7 tension 0.35; 55.74-74.24 hopeful 0.45
+s01	0.0	2.5	kamar	cut	0.3 swish -20	roomtone -24	Rizal membuka tangkapan layar itu lagi. | BIG FACE wajah diterangi layar HP, latar kamar buram
+s02	2.5	4.2	kamar	cut	0.4 clock -18	roomtone -24	Pukul 11 malam. | WIDE kamar kerja, Rizal di meja, jam 23.00
+s03	4.2	8.5	kamar	dip	0.5 pop -14; 2.2 impact -9	-	Kalimat temannya masih sama: Kamu nggak bakal sanggup. | INSERT HP raksasa, gelembung chat merah-oranye
+s04	8.5	10.0	papan	cut	0.3 pop -14; 0.9 pop -14	-	Ia baca ulang tiap malam. | Tujuh kartu malam, tangkapan layar sama
+s05	10.0	12.5	kamar	cut	0.2 heartbeat -16	-	Dadanya panas, tangannya mengepal. | INSERT kepalan tangan, cincin panas merah-oranye
+s06	12.5	15.0	kamar	dip	1.3 tick -16	roomtone -26	Lalu ia tutup laptop dan tidur. | Wide, lampu meja padam, wajah sayu
+s07	15.0	18.4	kamar	dip	0.7 shimmer -16	roomtone -26	Besoknya, kerjaannya masih nol. | Pagi, meja sama, readout PESANAN 0
+s08	18.4	22.0	kamar	cut	1.8 pop -14	-	Banyak orang percaya hinaan otomatis jadi bahan bakar. | Rizal berpikir, gelembung HINAAN = BAHAN BAKAR?
+s09	22.0	24.5	papan	swipe	0.04 swish -12; 1.0 riser -14	-	Marah itu terasa seperti tenaga. | Meteran MARAH naik, TENAGA?
+s10	24.5	29.2	papan	cut	0.5 blip -16; 2.4 pop -12	-	Peneliti Samir Nurmohamed menguji ini pada tahun 2020. | Papan 2020 + nama + UNDERDOG EFFECT
+s11	29.2	32.0	papan	cut	0.5 pop -12; 1.0 pop -12	-	Orang yang diremehkan memang bisa tampil lebih baik. | Dua bar: diharapkan tinggi vs diremehkan naik
+s12	32.0	36.2	papan	swipe	0.04 swish -12; 2.0 impact -8	-	Penyebabnya satu: keinginan membuktikan orang itu salah. | Alur: diremehkan → membuktikan salah → performa naik
+s13	36.2	41.7	papan	cut	0.6 riser -14; 1.9 pop -12; 3.6 ding -14	-	Tapi ada syaratnya. Efek itu hanya jalan kalau kamu menilai si peremeh tidak kredibel. | Pita PEREMEH TIDAK KREDIBEL, bar efek jalan
+s14	41.7	46.6	papan	cut	0.5 pop -12; 3.5 hit -8	-	Kalau yang meremehkan adalah orang yang kamu anggap paham, performamu malah turun. | Pita ORANG YANG PAHAM, bar performa turun, TURUN
+s15	46.6	50.2	papan	swipe	0.04 swish -12; 1.3 pop -12	-	Dan studi lain menyebut dorongan ini pedang bermata dua. | Pedang bermata dua blueprint
+s16	50.2	53.7	papan	cut	0.3 riser -14; 2.0 pop -12	-	Bahan bakarnya cepat habis kalau tujuannya cuma membuat orang lain terdiam. | Tangki bahan bakar habis, CUMA BIKIN ORANG DIAM?
+s17	53.7	55.74	papan	flash	0.1 freeze -10	-	 | FREEZE-FRAME hening, teks diketik: tujuannya apa?
+s18	55.74	61.5	kamar	dip	1.2 pop -14; 2.8 pop -14	roomtone -26	Rizal bertanya satu hal: temannya ahli di bidang ini, atau cuma asal bicara? | Rizal berpikir, dua gelembung AHLI? / ASAL BICARA?
+s19	61.5	62.8	papan	cut	0.3 impact -8	-	Asal bicara. | Stempel ASAL BICARA
+s20	62.8	69.3	jalan	flash	1.0 scribble -14; 3.2 footstep -14	city -26	Ia hapus tangkapan layar itu dan tulis satu target kecil: 10 pesanan pertama, sebelum Jumat. | HP raksasa: chat terhapus, lalu Rizal berjalan dengan kartu TARGET
+s21	69.3	72.3	kamar	dip	0.6 shimmer -16	roomtone -26	Malam ini ia tidak membuka chat lama. | Kamar malam, HP telungkup, Rizal bertekad
+s22	72.3	74.242	kamar	cut	0.3 pop -14	roomtone -24	Ia membuka kerjaannya. | LOOP laptop menghadap penonton: PESANAN #1
