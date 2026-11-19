@@ -1,5 +1,11 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## Catatan penutup sesi (18 Nov 2026)
+- Semua pekerjaan #10–#13 sudah di `main` (PR #25–#30). Sesi baru: mulai dari `main`, baca file ini, lalu minta topik #14 ke user.
+- #14: gaya dasar BUKAN lavender; user memilih palet lewat `produksi.sh palet`; tanya mesin VO (Gemini/ElevenLabs) dulu; pakai `brand/gaya-growkaz.md` §6 dan §9. Opsi: satu shot 3D (belum pernah dipakai di #13).
+- Terbuka: kredit ScrapeMedsos 0 (riset bahasa caption belum dilakukan #10–#13); `cek-sutradara` belum memeriksa aturan GrowKaz.
+- Channel-Penjelasan: user ingin kit + panduan gaya ala GrowKaz (rencana ada di STATUS repo itu).
+
 ## Posisi terakhir (18 Nov 2026, #13 selesai)
 - **Video #13 "Satu Kritik Terngiang" SELESAI (18 Nov)**: bias negatif (Baumeister dkk. 2001; Rozin & Royzman 2001), 60,9 dtk, −14,5 LUFS, 22 shot, palet LAVENDER (dipilih user), gaya GrowKaz penuh (satu ruang rapat kaya detail `sets/rapat.js` dipakai berulang, insert tangan raksasa, gelembung komentar, blueprint bar, freeze-frame hening, jalan parallax). VO ElevenLabs (eleven_v4, voice Ghaisan vLsH4ENK3zGpAuW1lSh4, 1 take 947 kredit, flow h1sICrpYHnqDKsTq4oIj; hening 1,2 dtk disisipkan di audio @39,2 dtk). Drive folder `13 - Satu Kritik Terngiang` (id 1wumvsmNZc-X_KpssANxLZ6hMQgQjZE2x). Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0). Rasio Gottman 5:1 sengaja tidak dipakai (sekunder). Shot 3D belum dipakai di #13 (hanya 2D).
 
