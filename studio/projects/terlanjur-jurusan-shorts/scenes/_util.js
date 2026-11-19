@@ -37,3 +37,28 @@ export function tembok(g, x, GY, n, o = {}) {
   }
   return Math.ceil(n / per) * h;
 }
+
+// tumpukan buku (menara): buku berbaring bertumpuk, tebal/lebar beda, sedikit miring; punggung buku menghadap kamera.
+const fr = (i, k) => { const v = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return v - Math.floor(v); };
+export function tumpukanGeom(n, x, GY) {
+  const out = []; let y = GY + 8;
+  for (let i = 0; i < n; i++) { const w = 200 + fr(i, 1) * 100, h = 34 + fr(i, 2) * 20; y -= h; out.push({ i, w, h, cx: x + (fr(i, 3) - 0.5) * 40, cy: y + h / 2, rot: (fr(i, 4) - 0.5) * 0.05 }); }
+  return out;
+}
+export function tumpukan(g, x, GY, n, o = {}) {
+  const geo = tumpukanGeom(n, x, GY); const hole = o.hole;
+  g.save(); g.globalAlpha *= 0.35; g.fillStyle = '#000'; g.beginPath(); g.ellipse(x, GY + 14, 190, 16, 0, 0, Math.PI * 2); g.fill(); g.restore();
+  geo.forEach((b) => {
+    if (hole === b.i) return;
+    const k = (b.i === n - 1 && o.pop != null) ? o.pop : 1; if (k <= 0) return; const col = BK[(b.i * 5 + 1) % BK.length];
+    g.save(); g.translate(b.cx, b.cy - (1 - k) * 60); g.rotate(b.rot); g.scale(k, k);
+    rr(g, -b.w / 2, -b.h / 2, b.w, b.h, 5); g.fillStyle = shade(col, -0.1); g.fill();
+    rr(g, b.w / 2 - 22, -b.h / 2 + 4, 20, b.h - 8, 3); g.fillStyle = '#f1e8d2'; g.fill();                       // sisi halaman
+    for (let j = 0; j < 3; j++) seg(g, [[b.w / 2 - 20, -b.h / 2 + 8 + j * ((b.h - 16) / 2)], [b.w / 2 - 4, -b.h / 2 + 8 + j * ((b.h - 16) / 2)]], 1.5, 'rgba(0,0,0,.18)');
+    seg(g, [[-b.w / 2 + 14, -b.h / 2 + 7], [-b.w / 2 + 14, b.h / 2 - 7]], 3, 'rgba(255,220,140,.55)');             // pita emas punggung
+    rr(g, -b.w / 2 + 34, -b.h / 2 + 9, b.w * 0.42, b.h - 18, 3); g.fillStyle = 'rgba(255,240,200,.82)'; g.fill();   // label judul
+    seg(g, [[-b.w / 2 + 44, 0], [-b.w / 2 + 34 + b.w * 0.42 - 12, 0]], 3, 'rgba(60,40,30,.55)');
+    rr(g, -b.w / 2 + 3, -b.h / 2 + 3, b.w - 30, 4, 2); g.fillStyle = 'rgba(255,255,255,.2)'; g.fill(); g.restore();
+  });
+  return geo.length ? GY + 8 - geo[geo.length - 1].cy + geo[geo.length - 1].h / 2 : 0;
+}
