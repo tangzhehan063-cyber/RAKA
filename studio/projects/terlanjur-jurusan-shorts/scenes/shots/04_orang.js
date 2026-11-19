@@ -41,7 +41,7 @@ registerShot('s22', { draw(g, t, info) {
   const cx = E.W / 2, cy = E.H * 0.5, r = 270, z = 1 + 0.07 * ease.inOut(t / info.dur);
   g.save(); g.translate(cx, cy + 200); g.scale(z, z); g.translate(-cx, -cy - 200);
   bigFace(g, cx, cy, r, { outfit: BAPAK, expr: 'confused', blink: (t % 3.3) > 3.18, look: [0, 0.4], rimColor: M.rim, rimSide: -1, tilt: 0.03 }); g.restore();
-  const a = pop(t, 0.2, 0.35); if (a > 0) { g.save(); g.translate(E.W / 2, 1010); g.scale(a, a); bub(g, 0, 0, 800, 200, '#7a8a4f', 'Jadi selama ini\nnggak serius?', 1, 54); g.restore(); }
+  const a = pop(t, 0.2, 0.35); if (a > 0) { g.save(); g.translate(E.W / 2, 440); g.scale(a, a); bub(g, 0, 0, 800, 200, '#7a8a4f', 'Jadi selama ini\nnggak serius?', 1, 54); g.restore(); }
 } });
 // s26 72.0–75.5: teater kampus, loket tiket
 registerShot('s26', { draw(g, t, info) {

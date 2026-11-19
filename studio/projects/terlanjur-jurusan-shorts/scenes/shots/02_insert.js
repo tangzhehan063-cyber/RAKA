@@ -30,8 +30,8 @@ registerShot('s04', { draw(g, t, info) {
     tabBar(g, x, y, w, ['Laporan Praktikum.docx'], 0);
     for (let i = 0; i < 9; i++) { const hl = i >= 3 && i <= 5, ln = 760 - (i % 3) * 90; if (hl) { g.fillStyle = alpha('#ffd45a', 0.55 + 0.2 * Math.sin(t * 4)); g.fillRect(x + 60, y + 118 + i * 44 - 14, ln + 8, 30); } rr(g, x + 64, y + 118 + i * 44 - 8, ln, 16, 8); g.fillStyle = '#9aa3ad'; g.fill(); }
     const n = Math.min(4, 1 + Math.floor(prog(t, 0.2, 3.3) * 4));
-    for (let i = 0; i < n; i++) { const a = pop(t, 0.2 + i * 0.85, 0.2); g.save(); g.globalAlpha *= a; seg(g, [[x + w - 260 + i * 48, y + h - 140], [x + w - 260 + i * 48, y + h - 60]], 10, HINA); g.restore(); }
-    text(g, 'DIBACA ULANG', x + w - 170, y + h - 170, { size: 24, color: HINA, font: FONTS.ui, weight: 900, spacing: 2 });
+    for (let i = 0; i < n; i++) { const a = pop(t, 0.2 + i * 0.85, 0.2); g.save(); g.globalAlpha *= a; seg(g, [[x + w - 430 + i * 48, y + h - 140], [x + w - 430 + i * 48, y + h - 60]], 10, HINA); g.restore(); }
+    text(g, 'DIBACA ULANG', x + w - 340, y + h - 170, { size: 24, color: HINA, font: FONTS.ui, weight: 900, spacing: 2 });
   });
   FX.dust(g, t, { count: 20, color: SCR, a: 0.22 });
 } });

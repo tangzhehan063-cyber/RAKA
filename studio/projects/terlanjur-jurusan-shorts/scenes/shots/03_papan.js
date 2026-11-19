@@ -58,7 +58,7 @@ registerShot('s28', { draw(g, t, info) {
 } });
 // s29 83.81–87.4: bar tiket terpakai
 registerShot('s29', { draw(g, t, info) {
-  UI.blueprint(g); head(g, t, 'YANG BAYAR PENUH', 'LEBIH RAJIN DATANG', 330); const ui = S().ui;
+  UI.blueprint(g); head(g, t, 'PENUH', 'bayar penuh = lebih rajin datang', 330); const ui = S().ui;
   [['PENUH', 1.0, gold()], ['DISKON $2', 0.7, alpha(ui.cream, 0.6)], ['DISKON $7', 0.62, alpha(ui.cream, 0.6)]].forEach(([s, v, c], i) => { const k = ease.out(prog(t, 0.4 + i * 0.35, 1.4 + i * 0.35)), x = 220 + i * 290, h = 560 * v * k; rr(g, x, 1150 - h, 220, h, 14); g.fillStyle = c; g.fill(); text(g, s, x + 110, 1205, { size: 30, color: ui.cream, font: FONTS.ui, weight: 900 }); });
   text(g, 'TIKET TERPAKAI (PARUH PERTAMA)', E.W / 2, 560, { size: 30, color: alpha(UI.bpStroke(), 0.95), font: FONTS.ui, weight: 800, alpha: ease.out(prog(t, 0.2, 0.6)) });
 } });
@@ -88,8 +88,8 @@ registerShot('s34', { draw(g, t, info) {
   g.fillStyle = '#05070b'; g.fillRect(-E.W, -E.H, E.W * 3, E.H * 3); const ui = S().ui;
   const L1 = 'Yang udah dibayar nggak bisa balik.', L2 = 'Yang belum dibayar masih bisa dipilih.', t2 = rel('Yang', info, 2.1);
   const n1 = Math.floor(clamp((t - 0.2) / 1.6) * L1.length), n2 = Math.floor(clamp((t - 2.2) / 1.8) * L2.length), cur = (t * 2 % 1) < 0.6 ? '|' : '';
-  text(g, L1.slice(0, n1) + (n2 === 0 ? cur : ''), E.W / 2, E.H * 0.38, { size: 58, color: ui.cream, font: FONTS.ui, weight: 900, glow: 14, glowColor: alpha(ui.cream, 0.3) });
-  text(g, L2.slice(0, n2) + (n2 > 0 ? cur : ''), E.W / 2, E.H * 0.38 + 120, { size: 58, color: ui.gold, font: FONTS.ui, weight: 900, glow: 18, glowColor: alpha(ui.gold, 0.45) }); void t2;
+  text(g, L1.slice(0, n1) + (n2 === 0 ? cur : ''), E.W / 2, E.H * 0.38, { size: 46, color: '#f4ecd8', font: FONTS.ui, weight: 900, glow: 14, glowColor: 'rgba(244,236,216,.3)' });
+  text(g, L2.slice(0, n2) + (n2 > 0 ? cur : ''), E.W / 2, E.H * 0.38 + 120, { size: 46, color: '#ffd45a', font: FONTS.ui, weight: 900, glow: 18, glowColor: 'rgba(255,212,90,.45)' }); void t2;
 } });
 // s43 141.21–144.81: mata kuliah diakui / tidak
 registerShot('s43', { draw(g, t, info) {
