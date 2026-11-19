@@ -7,6 +7,7 @@ Tujuan: menemukan formula yang terbukti dengan data, bukan feeling. Isi tiap kal
 |---|---|---|
 | #1–#4 | ±55 dtk | baseline |
 | #5 Nunggu 1 Januari | target ±65 dtk | +1 babak "sisi gelap" (fakta kedua berantai) |
+| #15 Terlanjur (19 Nov) | 157,8 dtk | EKSPERIMEN VERSI PANJANG atas permintaan user (3 bab bernomor, 46 shot, 1 studi utama + 1 pendukung). Ukur retensi dibanding #9–#14 sebelum menjadikan baku. |
 Naik +10 dtk per video **selama retensi tidak turun**; kalau % selesai turun jelas, kembali ke durasi sebelumnya dan perbaiki tempo dulu.
 
 ## Hipotesis yang sedang diuji

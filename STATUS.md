@@ -1,5 +1,10 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## Catatan penutup sesi (19 Nov 2026, #15 selesai)
+- **Video #15 "Terlanjur" SELESAI (19 Nov)**: VERSI PANJANG 157,8 dtk (2:38, permintaan user: seperti video Grok ±5 mnt, target 2-3 mnt), 9:16, 46 shot, −14,3 LUFS, palet PAPER (dipilih user dari clay/paper/arctic). Sunk cost pada jurusan kuliah: Arkes & Blumer 1985 (tiket teater Ohio) + NCES Data Point 2018-434 (±30% ganti jurusan dalam 3 tahun, data AS). Format baru: 3 kartu bab bernomor (YANG SUDAH DIBAYAR / KATA ORANG / YANG BELUM DIBAYAR). VO Gemini Charon dibuat Claude via API (model `gemini-3.1-flash-tts-preview`, karena `2.5-flash-tts` kena kuota 429; dua potongan teks disambung + hening 2,5 dtk @ ±111 dtk). Drive `15 - Terlanjur` (id 1bCkgO9rFQioYgtmYBXRWN3oGhMb1jcdP): cover, caption, naskah, VO mp3. Arsip + artifact diperbarui. Caption tanpa riset bahasa (ScrapeMedsos kredit 0).
+- Pelajaran: (1) "tembok" diktat bata terbaca sebagai tembok; user minta tumpukan buku sungguhan, jadi `_util.js` punya `tumpukan()` (punggung buku, label, sisi halaman). (2) Render 158 dtk ×46 shot di 4 core = ±19 mnt (WORKERS=3). (3) `ui.cream/gold` gelap di palet paper: untuk teks di latar hitam pakai warna tetap. (4) `produksi.sh init` masih menimpa style ke emerald; atur `config.json` manual (fadeIn 0, fadeOut 0.3, style). (5) Teks angka di TTS: "tahun seribu sembilan ratus..." terbaca benar. (6) `Arkes & Blumer`: angka diskon ($13/$8) hanya implikasi dari diskon $2/$7; bar grafik tanpa angka.
+- **Berikutnya**: video #16 (gaya dasar BUKAN paper; isi kredit ScrapeMedsos; format panjang 2-3 mnt boleh diulang bila user minta).
+
 ## Catatan penutup sesi (18 Nov 2026)
 - Semua pekerjaan #10–#13 sudah di `main` (PR #25–#30). Sesi baru: mulai dari `main`, baca file ini, lalu minta topik #14 ke user.
 - #14: gaya dasar BUKAN lavender; user memilih palet lewat `produksi.sh palet`; tanya mesin VO (Gemini/ElevenLabs) dulu; pakai `brand/gaya-growkaz.md` §6 dan §9. Opsi: satu shot 3D (belum pernah dipakai di #13).
