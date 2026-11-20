@@ -1,0 +1,43 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Kalau Maka
+@music 0-12 mystery 0.3; 12-44 tension 0.35; 44-91.5 wonder 0.4; 91.5-95 calm 0.05; 95-129.8 hopeful 0.5
+s01	0.0	2.9	kamar	cut	0.2 phonebuzz -12; 1.4 phonebuzz -12	rain -24	Alarm bunyi jam lima lewat sepuluh. | WIDE kamar 05.10, Bayu meringkuk, ponsel alarm menyala
+s02	2.9	5.6	insert	flash	0.0 freeze -8	-	Jempol Bayu udah di atas tombol tunda. | FREEZE jempol raksasa di atas tombol TUNDA, partikel menggantung
+s03	5.6	9.6	kamar	cut	0.5 heartbeat -22	roomtone -26	Semalam dia janji: besok pagi lari. | BIG FACE Bayu baru melek, ingat janji
+s04	9.6	12.0	insert	cut	1.6 ding -12; 0.2 tick -18; 0.5 tick -18; 0.8 tick -18	-	Ini janji hari Senin yang kesembilan. | INSERT sembilan lingkaran Senin, yang kesembilan menyala
+s05	12.0	14.6	kamar	dip	0.3 stinger -12	-	(title card) | TITLE CARD KALAU-MAKA di atas kamar buram
+s06	14.6	17.4	kamar	cut	0.2 pop -16	roomtone -26	Tiap Minggu malam dia nulis di buku. | MEDIUM Bayu menulis di meja, lampu hangat, hujan
+s07	17.4	20.6	insert	cut	0.3 pop -16	roomtone -26	Senin mulai lari, lima kilo. | INSERT tangan raksasa menulis SENIN MULAI LARI / 5 KM
+s08	20.6	22.6	insert	cut	0.2 blip -18	roomtone -26	Hurufnya ditebalin dua kali. | INSERT huruf ditebalkan dua kali
+s09	22.6	24.6	insert	cut	0.3 swish -16	roomtone -26	Sepatu dikeluarin dari rak. | INSERT tangan raksasa menarik sepatu dari rak
+s10	24.6	27.0	insert	cut	1.0 shimmer -14	roomtone -26	difoto, dimasukin lagi. | INSERT viewfinder foto, flash, sepatu masuk rak lagi
+s11	27.0	29.6	kamar	cut	1.0 blip -12	roomtone -26	Senin pagi, tombol tunda. | MEDIUM Senin pagi, Bayu menekan tunda
+s12	29.6	31.7	insert	cut	0.3 tick -16; 0.8 tick -16	-	Senin depannya sama. | INSERT baris TUNDA berulang, SAMA LAGI
+s13	31.7	35.3	kantor	whip	0.1 whoosh -12	roomtone -26	Di kantor, temannya bilang, "Kamu mah kurang disiplin." | OTS kantor, bahu teman buram di depan, gelembung KURANG DISIPLIN
+s14	35.3	37.2	kantor	cut	-	roomtone -26	Bayu ngangguk. | MEDIUM Bayu mengangguk
+s15	37.2	40.7	kamar	cut	0.3 heartbeat -20	-	Di kepalanya ada suara yang sama, dan lebih kejam. | BIG FACE Bayu, siluet suara di kepala, gelembung berulang
+s16	40.7	44.2	jurang	cut	0.4 riser -16	wind -26	Mungkin dia emang tipe orang yang cuma bisa niat. | WIDE jurang NIAT / AKSI, Bayu di tepi
+s17	44.2	48.4	papan	dip	0.4 pop -14; 3.1 blip -16; 3.9 blip -16	-	Tahun 1997, psikolog Peter Gollwitzer dan Veronika Brandstätter... | BLUEPRINT 1997, dua psikolog
+s18	48.4	52.0	papan	cut	1.5 pop -14	-	...ngasih mahasiswa tugas yang nyebelin | BLUEPRINT barisan mahasiswa
+s19	52.0	57.5	papan	cut	0.3 pop -14; 4.0 ding -12	-	nulis laporan soal malam Natal, paling lambat dua hari sesudahnya. | BLUEPRINT kartu laporan malam Natal + dimensi 2 HARI
+s20	57.5	59.7	papan	cut	0.9 pop -14	-	Semua punya niat yang sama. | BLUEPRINT sepuluh orang, gelembung NIAT sama
+s21	59.7	65.4	papan	cut	3.0 pop -14	-	Separuhnya disuruh nambah satu kalimat: kapan dan di mana. | BLUEPRINT dua kelompok, kartu KAPAN? DI MANA?
+s22	65.4	68.9	papan	cut	1.5 counter -16	-	Yang cuma niat, 32 persen ngumpulin. | BLUEPRINT bar 32%
+s23	68.9	72.2	papan	cut	1.5 counter -14; 2.4 impact -12	-	Yang punya kalimat itu, 71 persen. | BLUEPRINT bar 71% menyala
+s24	72.2	77.4	jembatan	zoom	0.1 riser -16; 1.9 pop -12; 3.4 pop -12	-	Bentuknya selalu sama: kalau ini terjadi, maka aku lakukan itu. | 3D jembatan papan KALAU -> MAKA, Bayu menyeberang
+s25	77.4	83.8	papan	cut	1.0 counter -16	-	Tahun 2006, 94 penelitian digabung, dan efeknya kelihatan lumayan. | DATA CARD 94 penelitian
+s26	83.8	89.3	papan	cut	0.6 blip -14	-	Tinjauan terbaru ngitung ulang dan nemu efek yang lebih kecil. | COMPARE BARS dugaan awal vs hitung ulang
+s27	89.3	91.6	papan	cut	1.5 ding -12	-	Efeknya ada, ukurannya sedang. | EFEK: KECIL / SEDANG / BESAR
+s28	91.6	95.0	hening	dip	-	-	(hening) | FREEZE teks diketik: Niat bilang mau. Rencana bilang kapan.
+s29	95.0	98.3	kamar	cut	0.2 pop -16	roomtone -26	Malam itu Bayu cuma nulis satu kalimat di kertas tempel | MEDIUM Bayu menulis kertas tempel
+s30	98.3	102.8	insert	cut	0.3 pop -14	roomtone -26	kalau alarm bunyi, kakiku turun ke lantai. | INSERT kertas tempel raksasa, kalimat ditulis
+s31	102.8	104.3	insert	cut	0.4 scribble -14	-	Nggak ada lima kilo. | INSERT 5 KM dicoret
+s32	104.3	106.8	kamar	cut	1.0 footstep -16	roomtone -26	Sepatunya ditaruh di sebelah kasur. | MEDIUM sepatu ditaruh di samping kasur
+s33	106.8	109.4	insert	flash	0.0 freeze -8	-	Paginya jempolnya sempat melayang di atas tombol tunda | FREEZE jempol melayang lagi (hangat)
+s34	109.4	112.5	insert	cut	0.9 impact -10	-	terus kakinya turun duluan. | MACRO kaki turun ke lantai
+s35	112.5	115.8	jalan	whip	0.0 whoosh -12; 0.3 footstep -14; 1.0 footstep -14; 1.7 footstep -14	city -26	Dia lari tiga ratus meter, jalan, lari lagi | MEDIUM lari/jalan di gang pagi emas, kamera mengikuti
+s36	115.8	118.4	jalan	cut	0.3 shimmer -14	wind -26	sampai ujung gang. | WIDE ujung gang, matahari terbit, Bayu kecil
+s37	118.4	121.0	insert	cut	0.5 pop -14	-	Dua minggu kemudian kertas itu udah lecek | INSERT kertas tempel lecek, 2 MINGGU
+s38	121.0	124.0	insert	cut	-	roomtone -26	dan sepatunya nggak pernah balik ke rak. | INSERT rak kosong, sepatu di samping kasur
+s39	124.0	126.7	akhir	cut	0.3 shimmer -14	-	Momen apa yang selalu bikin rencanamu kalah? | END SCREEN pertanyaan + gelembung komentar
+s40	126.7	129.8	akhir	cut	0.9 pop -14	-	Tulis kalimat kalau-maka kamu di komentar. | END SCREEN gelembung komentar diketik
