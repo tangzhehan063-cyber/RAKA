@@ -10,7 +10,7 @@ registerShot('c01', { draw(g, t) {
   const { GY, M, L } = jurang(g, 9, cam, { mood: 'night', planks: 6 });
   drawFigureHere(g, GY, L, M);
   FX.dust(g, 3, { count: 40, color: M.rim, a: 0.35 });
-  const cy = E.H * 0.3, grd = g.createLinearGradient(0, cy - 380, 0, cy + 380); grd.addColorStop(0, 'rgba(0,0,0,0)'); grd.addColorStop(0.5, 'rgba(4,12,28,.8)'); grd.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = grd; g.fillRect(0, cy - 380, E.W, 760);
+  const cy = E.H * 0.235, grd = g.createLinearGradient(0, cy - 380, 0, cy + 380); grd.addColorStop(0, 'rgba(0,0,0,0)'); grd.addColorStop(0.5, 'rgba(4,12,28,.8)'); grd.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = grd; g.fillRect(0, cy - 380, E.W, 760);
   text(g, 'KALAU – MAKA', E.W / 2, cy - 150, { size: 96, color: ui.cream, font: FONTS.ui, weight: 900, spacing: 6 });
   text(g, '71%', E.W / 2, cy + 40, { size: 270, color: ui.gold, font: FONTS.ui, weight: 900, spacing: 3, glow: 28, glowColor: alpha(ui.gold, 0.5) });
   text(g, 'vs 32% NIAT SAJA', E.W / 2, cy + 200, { size: 58, color: ui.cream, font: FONTS.ui, weight: 900, spacing: 4 });
