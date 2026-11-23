@@ -32,6 +32,11 @@ Bacaan (n=7, indikatif, bukan bukti):
 - **Komentar hampir nol (0-2) di semua video.** Caption "pilih pihak" belum memancing diskusi.
 - Data kurang: belum ada rata-rata tonton, % selesai, grafik retensi. Minta user kirim retensi #12 vs #16 untuk mengunci hipotesis.
 
+## Eksperimen formula baru (23 Nov 2026)
+| Video | Durasi | Perubahan | Hasil |
+|---|---|---|---|
+| #17 Lima Menit | 47 dtk | vonis di awal, 12 shot, style komik terang, topik keluhan sehari-hari (HP malam), ending melingkar tanpa nasihat besar | belum ada data; ukur terhadap #12 (3.934 views) dan #10 (1.805) |
+
 ## Formula topik "validasi" (catatan user 16 Nov 2026)
 - Video skripsi (#9) banyak impresi: penonton suka topik yang **mewajarkan kesulitan mereka** ("bukan cuma kamu, otaknya/sistemnya memang begitu"). Cari topik sejenis: keluhan relate + efek ilmiah bernama + studi.
 - Pengaman: ending tetap 1 langkah kecil nyata (kerangka v2), supaya validasi tidak jadi pembenaran kosong.

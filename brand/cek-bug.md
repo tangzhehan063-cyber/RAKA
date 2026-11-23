@@ -53,3 +53,10 @@ Dicatat dari bug nyata di dua channel (RAKA & Channel-Penjelasan). Cek setiap po
 ## #13 (18 Nov): bug yang lolos
 - **Laptop di meja menutupi kepala peserta**: benda di meja yang digambar setelah figur (depth 1) menutupi kepala/dagu. Taruh benda meja serendah/sekecil mungkin (tinggi ≤ 24–30 px di atas permukaan meja) atau gambar sebelum figur; cek wajah semua figur di still penuh.
 - **Teks meluber dari gelembung/kartu**: `UI.bubble` memakai satu baris; untuk label panjang gambar gelembung sendiri dengan dua baris atau perlebar.
+
+## Bug baru (23 Nov, #17 Lima Menit)
+- **Timestamp VO bergeser ±1-2 dtk:** teks untuk `align_teks.py` masih berisi tag `[calm, slow]`/`[warm, building]`, dihitung sebagai kata yang diucapkan. Selalu hapus tag (`sed -E 's/\[[^]]*\] ?//g'`) sebelum align.
+- **`produksi.sh sheet` gagal di safezone.py (`y1 must be >= y0`):** glob `s*_*.png` ikut menangkap `sheet_01.png`. Pakai `produksi.sh stills <slug> <detik,...>` untuk overlay zona aman.
+- **Tokoh duduk terlihat berdiri di belakang kasur, HP melayang:** gambar kasur setinggi pinggul (72*s dari lantai), kaki menapak lantai, HP di posisi tangan (`hF` * s).
+- **Teks sticker keluar layar/kurang terbaca:** kata panjang (PROCRASTINATION, PUTUSKAN) pada ukuran 190-200 melewati 1080 px; label berisi fill gelap + teks INK tak terbaca di palet Malam, pakai fill kuning tetap.
+
