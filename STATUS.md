@@ -5,7 +5,7 @@
 - **Keputusan user:** (1) Formula baru = **vonis di awal + pendek 25-40 dtk, satu ide, tanpa ending beres**. (2) Animasi = **komik terang, gerak lebih liar** (style `komik` di `studio/engine/styles.js`; uji di `studio/projects/uji-komik`: vonis raksasa + burst, tokoh jatuh squash/stretch + speed lines + impact frame, panel terbagi). (3) Data tambahan: user hanya punya tabel views/likes/komen (tanpa retensi).
 - **Pelajaran dari data:** topik menang = keluhan SEHARI-HARI konkret dan universal + lucu (belajar semalam lalu lupa; satu gorengan jadi sekotak). Topik abstrak/motivasi (hinaan, disiplin, kritik) kalah. Pilih topik #17 dengan filter itu.
 - **Aturan lama yang dilonggarkan untuk eksperimen ini:** durasi, struktur Pukulan ke-99, ending harus beres, gelap sinematik. Aturan tetap: fakta riset bersumber, Bahasa Indonesia, VO pilihan user, caption+cover, humanizer.
-- **Berikutnya:** #17 "Lima Menit" (bedtime procrastination, Kroese 2014): naskah draf 2 di-ACC 23 Nov, caption TikTok saja di `caption/lima-menit.md`. Tinggal: tanya mesin VO, adegan style `komik`, render, QC, cover, arsip+PR.
+- **Berikutnya:** #17 "Lima Menit": VO Gemini Charon SUDAH dibuat Claude (47,2 dtk, 23 Nov; WAV di `studio/projects/lima-menit-shorts/input/voiceover.wav`, tidak di git), timeline selesai, config style komik. Tinggal: tulis shots.tsv + adegan komik, pilihan palet ke user, sheet, render, QC, cover, arsip+PR. Awal VO: kalimat 1 terdeteksi start 1,64 dtk padahal suara mulai ±0,3 dtk (align_teks), cek ulang di sheet.
 
 ## Posisi terakhir (20 Nov 2026, #16 selesai)
 - **Video #16 "Kalau–Maka" SELESAI (20 Nov)**: implementation intentions (Gollwitzer & Brandstätter 1997: 71% vs 32%, angka via tinjauan Parks-Stamm dkk., belum dicek di teks asli; Gollwitzer & Sheeran 2006; tinjauan 2024 efek lebih kecil, disebut jujur di VO). VERSI PANJANG 129,8 dtk (2:10), 9:16, 40 shot, −14,6 LUFS, palet ARCTIC (dipilih user dari clay/arctic/lembut). Alur GrowKaz asli: cold-open freeze, title card, eskalasi, twist riset blueprint, shot 3D jembatan, hening teks diketik, aksi (lari parallax), end screen. Tokoh Bayu; momen khas jurang NIAT/AKSI + jembatan papan. VO Gemini Charon (Claude via API atas permintaan user; hening 2,5 dtk @91,4-95,0). Drive `16 - Kalau Maka` (id 1SmfWyJRpBecpWPG6sHYW_QlWZxFDjLfc): cover, caption, naskah, VO mp3. Arsip + artifact diperbarui. Caption tanpa riset bahasa (kredit ScrapeMedsos 0).
@@ -82,6 +82,7 @@
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
 ## Preferensi user
+- **Gemini TTS = Claude buat sendiri (user 23 Nov):** begitu user memilih Gemini TTS, langsung generate via API (`tools/gemini_tts.py`), jangan menunggu WAV dari user. Tercatat di CLAUDE.md langkah 2.
 - **Humanizer SEBELUM dikirim (tegas, user 23 Nov):** naskah, teks panjang, caption, dan teks apa pun yang dipakai di video HARUS dilewatkan skill `anthropic-skills:humanizer` lebih dulu, lalu yang dikirim ke user hanya versi setelahnya. Jangan kirim draf mentah.
 - **Laporan akhir video (13 Nov): di chat hanya MP4 + link Drive; cover, caption, naskah, suara (mp3) diunggah ke Drive `NN - Judul`** (seperti Channel-Penjelasan). #8: https://drive.google.com/drive/folders/1AAUO9vTfCugFJkTIjTJlrEBYE-1zb3Lc
 - **Tanpa bisikan di VO** (12 Nov). Puncak emosi = hening ±1 dtk + teks diketik di layar. Struktur naskah: `brand/kerangka-cerita.md`.
