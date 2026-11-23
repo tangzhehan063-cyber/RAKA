@@ -1,0 +1,48 @@
+{
+ "title": "uji komik",
+ "duration": 9.0,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.0,
+   "line": "x",
+   "scene": "uji",
+   "set": "uji",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 3.0,
+   "end": 6.0,
+   "line": "x",
+   "scene": "uji",
+   "set": "uji",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.0,
+   "end": 9.0,
+   "line": "x",
+   "scene": "uji",
+   "set": "uji",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ]
+}

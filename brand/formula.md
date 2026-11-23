@@ -14,13 +14,23 @@ Naik +10 dtk per video **selama retensi tidak turun**; kalau % selesai turun jel
 - H1: dua fakta berantai (fakta → "tapi ada sisi gelapnya") menahan penonton lebih lama daripada satu fakta. (uji di #5)
 - H2: topik yang terikat waktu (akhir tahun) dapat dorongan FYP lebih besar. (uji di #5)
 
-## Data analitik (diisi dari screenshot user)
-| Video | Views | Rata2 tonton | % selesai | Drop terbesar di | Pelajaran |
-|---|---|---|---|---|---|
-| #1 | | | | | |
-| #2 | | | | | |
-| #3 | | | | | |
-| #4 | | | | | |
+## Data analitik (screenshot user, 23 Nov 2026, TikTok, 7 video terakhir)
+| Video | Tayang | Durasi | Views | Likes | Komen | Like/view |
+|---|---|---|---|---|---|---|
+| #10 Bolos Sekali ("Satu gorengan, ujungnya sekotak") | 16 Nov | 1:02 | 1.805 | 54 | 1 | 3,0% |
+| #11 Keranjang Kosong ("Dua ribu skincare, nol yang dibeli") | 17 Nov | 1:16 | 347 | 15 | 0 | 4,3% |
+| **#12 Lupa Itu Wajar ("Belajar semalam suntuk, seminggu kemudian lupa")** | 18 Nov | 1:09 | **3.934** | **200** | 2 | 5,1% |
+| #13 Satu Kritik Terngiang | 18 Nov | 1:00 | 649 | 19 | 0 | 2,9% |
+| #14 Bahan Bakar ("Dibilang nggak bakal sanggup") | 19 Nov | 1:14 | 177 | 6 | 0 | 3,4% |
+| #15 Terlanjur (jurusan) | 19 Nov | 2:37 | 443 | 20 | 2 | 4,5% |
+| #16 Kalau-Maka ("Niat lari 9 Senin") | 20 Nov | 2:09 | 187 | 11 | 0 | 5,9% |
+
+Bacaan (n=7, indikatif, bukan bukti):
+- Dua video menang: #12 dan #10. Keduanya **keluhan sehari-hari yang sangat konkret dan universal** (belajar semalam lalu lupa; satu gorengan lalu sekotak), 62-69 dtk. Hook-nya adegan yang semua orang pernah alami, ada unsur lucu.
+- Tiga video terlemah (#14, #16, #13) bertopik **abstrak/motivasi** (hinaan, disiplin, kritik). Dua video panjang (#15, #16) tidak menang; durasi bukan penyebab utama, tapi tidak menolong.
+- Like/view tidak beda jauh antar video (3-6%). Artinya yang membedakan adalah **berapa banyak orang yang diberi video oleh FYP** (retensi awal + topik), bukan kualitas isi bagi yang menonton.
+- **Komentar hampir nol (0-2) di semua video.** Caption "pilih pihak" belum memancing diskusi.
+- Data kurang: belum ada rata-rata tonton, % selesai, grafik retensi. Minta user kirim retensi #12 vs #16 untuk mengunci hipotesis.
 
 ## Formula topik "validasi" (catatan user 16 Nov 2026)
 - Video skripsi (#9) banyak impresi: penonton suka topik yang **mewajarkan kesulitan mereka** ("bukan cuma kamu, otaknya/sistemnya memang begitu"). Cari topik sejenis: keluhan relate + efek ilmiah bernama + studi.
