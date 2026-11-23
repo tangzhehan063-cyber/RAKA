@@ -82,6 +82,7 @@
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
 ## Preferensi user
+- **Humanizer SEBELUM dikirim (tegas, user 23 Nov):** naskah, teks panjang, caption, dan teks apa pun yang dipakai di video HARUS dilewatkan skill `anthropic-skills:humanizer` lebih dulu, lalu yang dikirim ke user hanya versi setelahnya. Jangan kirim draf mentah.
 - **Laporan akhir video (13 Nov): di chat hanya MP4 + link Drive; cover, caption, naskah, suara (mp3) diunggah ke Drive `NN - Judul`** (seperti Channel-Penjelasan). #8: https://drive.google.com/drive/folders/1AAUO9vTfCugFJkTIjTJlrEBYE-1zb3Lc
 - **Tanpa bisikan di VO** (12 Nov). Puncak emosi = hening ±1 dtk + teks diketik di layar. Struktur naskah: `brand/kerangka-cerita.md`.
 - **Satu chat = satu repo.** Repo lain → chat baru.
