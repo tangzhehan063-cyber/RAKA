@@ -3,127 +3,127 @@
  "words": [
   {
    "word": "Cuma",
-   "start": 1.64,
-   "end": 1.849
+   "start": 0.279,
+   "end": 0.489
   },
   {
    "word": "lima",
-   "start": 1.849,
-   "end": 2.058
+   "start": 0.489,
+   "end": 0.698
   },
   {
    "word": "menit",
-   "start": 2.058,
-   "end": 2.32
+   "start": 0.698,
+   "end": 0.96
   },
   {
    "word": "itu",
-   "start": 2.32,
-   "end": 2.476
+   "start": 0.96,
+   "end": 1.554
   },
   {
    "word": "kebohongan",
-   "start": 2.476,
-   "end": 2.999
+   "start": 1.554,
+   "end": 2.078
   },
   {
    "word": "yang",
-   "start": 2.999,
-   "end": 3.208
+   "start": 2.078,
+   "end": 2.287
   },
   {
    "word": "paling",
-   "start": 3.208,
-   "end": 3.522
+   "start": 2.287,
+   "end": 2.601
   },
   {
    "word": "sering",
-   "start": 3.522,
-   "end": 3.835
+   "start": 2.601,
+   "end": 2.916
   },
   {
    "word": "kamu",
-   "start": 3.835,
-   "end": 4.044
+   "start": 2.916,
+   "end": 3.125
   },
   {
    "word": "ucapkan",
-   "start": 4.044,
-   "end": 4.41
+   "start": 3.125,
+   "end": 3.492
   },
   {
    "word": "ke",
-   "start": 4.41,
-   "end": 4.515
+   "start": 3.492,
+   "end": 3.597
   },
   {
    "word": "diri",
-   "start": 4.515,
-   "end": 4.724
+   "start": 3.597,
+   "end": 3.806
   },
   {
    "word": "sendiri",
-   "start": 4.724,
-   "end": 5.561
+   "start": 3.806,
+   "end": 4.173
   },
   {
    "word": "sebelum",
-   "start": 5.561,
-   "end": 5.926
+   "start": 4.173,
+   "end": 4.539
   },
   {
    "word": "tidur.",
-   "start": 5.926,
-   "end": 6.188
+   "start": 4.539,
+   "end": 4.801
   },
   {
    "word": "Jam",
-   "start": 6.403,
-   "end": 6.543
+   "start": 5.272,
+   "end": 5.455
   },
   {
    "word": "11",
-   "start": 6.543,
-   "end": 6.872
+   "start": 5.455,
+   "end": 5.883
   },
   {
    "word": "malam,",
-   "start": 6.872,
-   "end": 7.106
+   "start": 5.883,
+   "end": 6.188
   },
   {
    "word": "kamu",
-   "start": 7.106,
-   "end": 7.293
+   "start": 6.403,
+   "end": 6.681
   },
   {
    "word": "buka",
-   "start": 7.293,
-   "end": 7.481
+   "start": 6.681,
+   "end": 6.959
   },
   {
    "word": "HP",
-   "start": 7.481,
-   "end": 7.575
+   "start": 6.959,
+   "end": 7.098
   },
   {
    "word": "buat",
-   "start": 7.575,
-   "end": 7.762
+   "start": 7.098,
+   "end": 7.377
   },
   {
    "word": "cek",
-   "start": 7.762,
-   "end": 7.903
+   "start": 7.377,
+   "end": 7.585
   },
   {
    "word": "satu",
-   "start": 7.903,
-   "end": 8.09
+   "start": 7.585,
+   "end": 7.863
   },
   {
    "word": "notifikasi.",
-   "start": 8.09,
+   "start": 7.863,
    "end": 8.559
   },
   {
@@ -424,61 +424,61 @@
   {
    "word": "jadi",
    "start": 34.203,
-   "end": 34.449
+   "end": 34.474
   },
   {
    "word": "disiplin",
-   "start": 34.449,
-   "end": 34.941
+   "start": 34.474,
+   "end": 35.017
   },
   {
    "word": "jam",
-   "start": 34.941,
-   "end": 35.126
+   "start": 35.017,
+   "end": 35.221
   },
   {
    "word": "11",
-   "start": 35.126,
-   "end": 35.557
+   "start": 35.221,
+   "end": 35.696
   },
   {
    "word": "malam",
-   "start": 35.557,
-   "end": 35.865
+   "start": 35.696,
+   "end": 36.035
   },
   {
    "word": "gampang",
-   "start": 35.865,
-   "end": 36.296
+   "start": 36.035,
+   "end": 36.51
   },
   {
    "word": "kalah.",
-   "start": 36.296,
-   "end": 36.603
+   "start": 36.51,
+   "end": 36.849
   },
   {
    "word": "Putuskan",
-   "start": 38.079,
-   "end": 38.425
+   "start": 37.732,
+   "end": 38.16
   },
   {
    "word": "sebelum",
-   "start": 38.425,
-   "end": 38.728
+   "start": 38.16,
+   "end": 38.535
   },
   {
    "word": "kamu",
-   "start": 38.728,
-   "end": 38.901
+   "start": 38.535,
+   "end": 38.748
   },
   {
    "word": "kehabisan",
-   "start": 38.901,
-   "end": 39.291
+   "start": 38.748,
+   "end": 39.23
   },
   {
    "word": "tenaga.",
-   "start": 39.291,
+   "start": 39.23,
    "end": 39.551
   },
   {
@@ -509,56 +509,56 @@
   {
    "word": "dan",
    "start": 41.574,
-   "end": 41.738
+   "end": 41.763
   },
   {
    "word": "jauhkan",
-   "start": 41.738,
-   "end": 42.118
+   "start": 41.763,
+   "end": 42.202
   },
   {
    "word": "HP",
-   "start": 42.118,
-   "end": 42.227
+   "start": 42.202,
+   "end": 42.327
   },
   {
    "word": "sebelum",
-   "start": 42.227,
-   "end": 42.608
+   "start": 42.327,
+   "end": 42.767
   },
   {
    "word": "rebahan.",
-   "start": 42.608,
-   "end": 42.989
+   "start": 42.767,
+   "end": 43.206
   },
   {
    "word": "Malam",
-   "start": 44.053,
-   "end": 44.277
+   "start": 43.874,
+   "end": 44.129
   },
   {
    "word": "ini",
-   "start": 44.277,
-   "end": 44.412
+   "start": 44.129,
+   "end": 44.282
   },
   {
    "word": "kamu",
-   "start": 44.412,
-   "end": 44.591
+   "start": 44.282,
+   "end": 44.486
   },
   {
    "word": "mungkin",
-   "start": 44.591,
-   "end": 44.904
+   "start": 44.486,
+   "end": 44.843
   },
   {
    "word": "bilang",
-   "start": 44.904,
-   "end": 45.173
+   "start": 44.843,
+   "end": 45.149
   },
   {
    "word": "lagi:",
-   "start": 45.173,
+   "start": 45.149,
    "end": 45.352
   },
   {

@@ -1,0 +1,345 @@
+{
+ "title": "Lima Menit",
+ "duration": 47.25,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 1.45,
+   "line": "Cuma lima menit itu",
+   "scene": "SLAM CUMA LIMA MENIT burst kuning",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.22,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 0.43,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 0.64,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 1.45,
+   "end": 5.2,
+   "line": "kebohongan yang paling sering kamu ucapkan",
+   "scene": "tokoh duduk di kasur pegang HP, stempel BOHONG",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.12,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 5.2,
+   "end": 8.9,
+   "line": "Jam 11 malam, kamu buka HP",
+   "scene": "HP raksasa 23:00 + notif 1",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "phonebuzz",
+     "gain": -14.0
+    },
+    {
+     "at": 2.65,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.9,
+   "end": 12.0,
+   "line": "Tahu-tahu jam 1",
+   "scene": "jam berputar 23:00 ke 01:07",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "counter",
+     "gain": -14.0
+    },
+    {
+     "at": 1.9,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 12.0,
+   "end": 15.4,
+   "line": "masih nonton nasi goreng",
+   "scene": "HP raksasa wajan lempar nasi, alarm besok pagi",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.7,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 15.4,
+   "end": 20.0,
+   "line": "bedtime procrastination",
+   "scene": "SLAM BEDTIME PROCRASTINATION + definisi",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.65,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 2.8,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 20.0,
+   "end": 25.6,
+   "line": "Kroese 2014 177 orang",
+   "scene": "grid 177 ikon orang, kartu sumber",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 0.6,
+     "name": "counter",
+     "gain": -16.0
+    },
+    {
+     "at": 3.4,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 25.6,
+   "end": 30.9,
+   "line": "sulit atur diri, tunda tidur, kurang tidur",
+   "scene": "tiga panel rantai + stiker KORELASI",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.9,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 4.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 30.9,
+   "end": 37.6,
+   "line": "tenaga kemauan menipis jam 11",
+   "scene": "baterai menyusut, tokoh lemas, stiker DUGAAN",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 5.2,
+     "name": "heartbeat",
+     "gain": -18.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 37.6,
+   "end": 40.0,
+   "line": "Putuskan sebelum kamu kehabisan tenaga",
+   "scene": "SLAM PUTUSKAN DARI SORE",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 40.0,
+   "end": 43.7,
+   "line": "Taruh charger di luar kamar",
+   "scene": "pintu kamar, HP dicas di lorong",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 43.7,
+   "end": 47.25,
+   "line": "Malam ini kamu mungkin bilang lagi cuma lima menit",
+   "scene": "HP malam, bubble diketik, fade kuning ke s01",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.1,
+     "name": "phonebuzz",
+     "gain": -16.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 30.0,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 30.0,
+   "end": 37.6,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 37.6,
+   "end": 47.25,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}
