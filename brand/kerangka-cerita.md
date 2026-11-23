@@ -1,4 +1,4 @@
-# Kerangka "Pukulan ke-99" (struktur wajib naskah, 12 Nov)
+# Kerangka "Pukulan ke-99" (OPSI naskah sejak 23 Nov; dulu wajib 12 Nov. Default baru: `brand/naskah-engine.md`)
 
 Inti: cerita yang menyamar jadi nasihat. Penonton datang untuk cerita, pulang dengan validasi.
 

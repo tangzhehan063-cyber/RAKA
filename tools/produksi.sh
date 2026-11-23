@@ -27,7 +27,11 @@ init)
   cd "$ST" && python3 tools/new_project.py --name "${slug}-shorts" --voice "$src" --aspect 9:16 --resolution 1080p --fps 24 --title "$slug" --captions
   cp library/cast.js "$P/scenes/" && cp library/sets/*.js "$P/scenes/sets/"
   python3 - "$P/config.json" <<'EOF'
-import json,sys; p=sys.argv[1]; c=json.load(open(p)); c.update(fadeIn=0, fadeOut=0.3, style='lembut')   # gaya rumah RAKA sejak 14 Nov (terang, tanpa neon/outline); json.dump(c,open(p,'w'),indent=1)
+import json,sys
+p=sys.argv[1]; c=json.load(open(p))
+# gaya awal 'lembut' (default); ganti sesuai pilihan user lewat produksi.sh palet
+c.update(fadeIn=0, fadeOut=0.3, style=c.get('style_pilihan','lembut'))
+json.dump(c,open(p,'w'),indent=1)
 EOF
   echo "init ok: $P" ;;
 timeline)
@@ -51,7 +55,7 @@ palet)
 sheet)
   python3 "$ROOT/tools/cek-sutradara.py" "$slug" || echo "!! cek-sutradara: ada GAGAL, perbaiki dulu"
   cd "$ST" && node render.mjs --project "$P" --sheet --scale 0.5 --workers "$WORKERS" 2>&1 | grep -iE "error|wrote" | tail -3
-  python3 "$ROOT/tools/safezone.py" "$PA/build/sheets/safe.png" $(ls "$PA"/build/sheets/s*_*.png | sort -V) ;;   # sheet + zona aman TikTok
+  python3 "$ROOT/tools/safezone.py" "$PA/build/sheets/safe.png" $(ls "$PA"/build/sheets/s[0-9][0-9]_*.png | sort -V) ;;   # sheet + zona aman TikTok
 stills)
   cd "$ST" && node render.mjs --project "$P" --stills "$3" --scale 0.5 2>&1 | grep -iE "error|wrote" | tail -3
   python3 "$ROOT/tools/safezone.py" "$PA/build/stills/safe.png" $(ls "$PA"/build/stills/*s_*.png | sort -V) ;;
@@ -63,6 +67,7 @@ qc)
   f=$(ls "$PA"/out/*.mp4 | head -1)
   ffprobe -v error -show_entries stream=codec_type,width,height:format=duration -of compact "$f" | tr '\n' ' '; echo
   ffmpeg -hide_banner -i "$f" -af ebur128 -f null - 2>&1 | grep -A1 "Integrated loudness" | tail -1
+  python3 "$ROOT/tools/qc-teknis.py" "$f" --out-dir "$PA/out" || echo "!! qc-teknis: ada GAGAL (lihat di atas)"
   ffmpeg -v error -y -i "$f" -vf "fps=1/3.5,scale=216:-1,tile=8x2" -frames:v 1 "$PA/build/qc.png"; echo "$PA/build/qc.png" ;;
 cover)
   C="projects/${slug}-cover"; cd "$ST"

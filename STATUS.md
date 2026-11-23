@@ -1,5 +1,11 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## REENGINEERING SISTEM (23 Nov 2026, belum di-commit; menunggu izin user)
+- Strategi v2 (`brand/strategi-channel.md`), sistem ide + skor + gate riset, riset Tier 1, script engine (hook A–E, 3 pendekatan), retention engine, storyboard fungsional, audio, QC teknis+konten, analitik (`analitik/video.csv` berisi data #10–#16), 7 skill baru, `WORKFLOW.md` 18 langkah + 5 gerbang, `CLAUDE.md` diringkas (isi lama di `brand/aturan-operasional.md` dan `brand/produksi-teknis.md`).
+- Tools baru: `skor-ide.py`, `cek-naskah.py`, `qc-teknis.py`, `analitik.py`. Perbaikan `produksi.sh`: `init` tidak lagi menelan `json.dump`, glob sheet `s[0-9][0-9]_*.png`, `qc` memanggil `qc-teknis.py`.
+- Dry run: `naskah/dry-run-buka-hp.md` + `riset/dry-run-buka-hp.md` (riset belum final: paper asli belum dibuka).
+- Video berikutnya: #18 lewat WORKFLOW baru mulai STEP 1; #17 menunggu data 24–48 jam (isi `analitik/video.csv`).
+
 ## RESET FORMULA (23 Nov 2026) — berlaku mulai #17
 - **Pemicu:** views turun. Data user (tabel di `brand/formula.md`): hanya #12 (3.934) dan #10 (1.805) yang tembus; #11/#13/#14/#15/#16 = 177-649. Komentar 0-2 di semua video. Durasi 2:09 dan 2:37 tidak menolong.
 - **Keputusan user:** (1) Formula baru = **vonis di awal + pendek 25-40 dtk, satu ide, tanpa ending beres**. (2) Animasi = **komik terang, gerak lebih liar** (style `komik` di `studio/engine/styles.js`; uji di `studio/projects/uji-komik`: vonis raksasa + burst, tokoh jatuh squash/stretch + speed lines + impact frame, panel terbagi). (3) Data tambahan: user hanya punya tabel views/likes/komen (tanpa retensi).
