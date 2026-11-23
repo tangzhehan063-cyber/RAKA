@@ -61,15 +61,21 @@ registerShot('s01', { draw(g, t) {
   g.restore();
 } });
 
-// s02 3.0–6.4: tokoh di kasur + stempel BOHONG
+// s02 1.45–5.2: tokoh DUDUK di tepi kasur (pinggul tepat di atas kasur, kaki di lantai), HP di depan wajah, stempel BOHONG
+const HOLD = { ...POSES.sit, head: [12, -182], sh: [5, -146], eF: [36, -128], hF: [62, -154], eB: [30, -122], hB: [58, -148] };
 registerShot('s02', { draw(g, t, info) {
-  const c = P(); bg(g, c.b, '#fff', 0.22); const gy = E.H * 0.6, at = rel('kebohongan', info, 0.1);
-  rr(g, 90, gy - 40, E.W - 180, 90, 20); g.fillStyle = shade(c.c, 0.1); g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke();
-  rr(g, 90, gy + 50, E.W - 180, 150, 20); g.fillStyle = c.c; g.fill(); g.stroke();
-  rr(g, 100, gy - 210, 230, 190, 40); g.fillStyle = c.paper; g.fill(); g.stroke();   // bantal
-  drawFigure(g, { x: 560, y: gy - 30, s: 2.5, facing: -1, outfit: HERO, pose: breathe(POSES.sit, t, 0.8, 1), expr: 'smirk', look: [-0.6, 0.3], rim: null, shadow: false });
-  rr(g, 350, gy - 330, 110, 190, 24); g.fillStyle = '#ffe94a'; g.fill(); g.lineWidth = 7; g.strokeStyle = INK; g.stroke();  // HP menyala di tangan
-  FX.rings(g, 405, gy - 235, t * 0.4, { count: 3, r0: 70, r1: 220, color: '#fff', a: 0.5, w: 6 });
+  const c = P(); bg(g, c.b, '#fff', 0.22); const gy = 1250, S2 = 3.0, fx = 440, at = rel('kebohongan', info, 0.1), hipY = gy - 72 * S2;
+  g.fillStyle = shade(c.paper, -0.1); g.fillRect(0, gy, E.W, E.H - gy); g.fillStyle = INK; g.fillRect(0, gy, E.W, 10);       // lantai
+  rr(g, 20 + 12, hipY + 14, fx - 20 + 70, 150, 26); g.fillStyle = INK; g.fill();                                              // kasur (bayangan, kasur, kaki)
+  rr(g, 20, hipY, fx - 20 + 70, 150, 26); g.fillStyle = c.c; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke();
+  rr(g, 20, hipY - 22, fx - 20 + 70, 40, 18); g.fillStyle = shade(c.c, 0.25); g.fill(); g.stroke();
+  g.fillStyle = INK; g.fillRect(50, hipY + 148, 26, gy - hipY - 148); g.fillRect(fx + 70 - 40, hipY + 148, 26, gy - hipY - 148);
+  rr(g, 50, hipY - 120, 260, 130, 44); g.fillStyle = c.paper; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke();        // bantal
+  const bob = Math.sin(t * 2.2) * 4;
+  drawFigure(g, { x: fx, y: gy + bob * 0, s: S2, facing: 1, outfit: HERO, pose: HOLD, expr: 'smirk', look: [0.7, 0.2], rim: null, shadow: false });
+  const hx = fx + 62 * S2, hy = gy - 154 * S2 + bob;                                                                         // HP di tangan depan
+  FX.rings(g, hx + 30, hy, t * 0.5, { count: 3, r0: 80, r1: 260, color: '#fff', a: 0.55, w: 6 });
+  g.save(); g.translate(hx + 40, hy); g.rotate(-0.12); rr(g, -75 + 8, -125 + 10, 150, 250, 26); g.fillStyle = INK; g.fill(); rr(g, -75, -125, 150, 250, 26); g.fillStyle = '#ffe94a'; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke(); g.restore();
   const [sx, sy] = shk(t, at, 0.25, 26); g.save(); g.translate(sx, sy);
   const k = slamK(t, at); if (k > 0) { burst(g, E.W / 2, E.H * 0.17, 200 * clamp(k, 0, 1), 330 * clamp(k, 0, 1), 12, c.a, 0.2); sticker(g, 'BOHONG!', E.W / 2, E.H * 0.17, 190, c.hot, -0.1, k); }
   g.restore(); if (t > at && t < at + 0.08) { g.fillStyle = '#fff'; g.fillRect(0, 0, E.W, E.H); }
