@@ -1,0 +1,23 @@
+{
+ "title": "Cover Lima Menit",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "komik",
+ "voiceover": null,
+ "script": null,
+ "duration": 2.0,
+ "captions": false,
+ "bars": null,
+ "fadeIn": 0,
+ "fadeOut": 0,
+ "music": {
+  "enabled": true,
+  "gainDb": -17
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -6
+ },
+ "loudness": -14
+}
