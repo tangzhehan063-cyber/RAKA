@@ -17,6 +17,12 @@ export const BASE_MOODS = {
 
 const UI = { card: 'rgba(18,28,48,.94)', cardLine: 'rgba(150,180,230,.25)', text: '#9fb6d8', sub: '#6f84a6', accent: '#ff6f61', gold: '#ffd47e', cream: '#fff1dc', blueprint: '#8fb8e8', bpBg: '#0b1324', good: '#5fd39a' };
 
+const STYLES_KOMIK_BASE = () => ({
+    ink: '#14121a', inkFar: '#5a5668', feature: '#ffffff', rimWidth: 0,
+    ui: { ...UI, card: 'rgba(255,255,255,.97)', cardLine: 'rgba(20,18,26,.9)', text: '#14121a', sub: '#5a5668', accent: '#d64a33', gold: '#ffd400', cream: '#fffbe8', blueprint: '#1d4ed8', bpBg: '#fffbe8', good: '#12a150' },
+    grade: { contrast: 1.12, sat: 1.18, lift: [0.02, 0.02, 0.02], gamma: [1, 1, 1], gain: [1.02, 1.02, 1.0], vignette: 0, grain: 0, bloom: 0 },
+    moods: {},
+  });
 export const STYLES = {
   emerald: {
     name: 'GrowKaz Emerald', desc: 'GrowKaz signature look: deep forest-green shadows, warm gold key light, electric lime rim light, rich bloom.',
@@ -50,6 +56,15 @@ export const STYLES = {
     grade: { contrast: 1.0, sat: 1.0, lift: [0, 0, 0], gamma: [1, 1, 1], gain: [1, 1, 1], vignette: 0.15, grain: 0.015, bloom: 0.2 },
     moods: {},
   },
+  komik: {
+    name: 'Komik Terang', desc: 'Eksperimen 23 Nov: komik terang berkontras tinggi untuk feed. Warna datar tebal, garis tebal, tanpa vignette/bloom/grain, tokoh hitam di atas warna cerah.',
+    ink: '#14121a', inkFar: '#5a5668', feature: '#ffffff', rimWidth: 0,
+    ui: { ...UI, card: 'rgba(255,255,255,.97)', cardLine: 'rgba(20,18,26,.9)', text: '#14121a', sub: '#5a5668', accent: '#d64a33', gold: '#ffd400', cream: '#fffbe8', blueprint: '#1d4ed8', bpBg: '#fffbe8', good: '#12a150' },
+    grade: { contrast: 1.12, sat: 1.18, lift: [0.02, 0.02, 0.02], gamma: [1, 1, 1], gain: [1.02, 1.02, 1.0], vignette: 0, grain: 0.0, bloom: 0 },
+    moods: {},
+  },
+  komikMalam: { ...STYLES_KOMIK_BASE(), name: 'Komik Malam', desc: 'Komik kontras tinggi di latar indigo malam, aksen magenta dan lime.' },
+  komikMint: { ...STYLES_KOMIK_BASE(), name: 'Komik Mint', desc: 'Komik pastel segar: mint, peach, pink, aksen oranye.' },
   paper: {
     name: 'Paper Daylight', desc: 'High-key editorial: warm cream paper world, navy ink lines, no neon, almost no bloom. The orange mascot pops against the pale background.',
     ink: '#1b2238', inkFar: '#8a8fa6', feature: '#ffffff', rimWidth: 0,

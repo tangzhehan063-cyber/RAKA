@@ -1,0 +1,15 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Lima Menit
+@music 0-30 tension 0.3; 30-37.6 calm 0.25; 37.6-47.25 hopeful 0.4
+s01	0.0	1.45	komik	cut	0.22 hit -10; 0.43 hit -10; 0.64 hit -8	-	Cuma lima menit itu | SLAM CUMA LIMA MENIT burst kuning
+s02	1.45	5.2	komik	cut	0.12 impact -10	-	kebohongan yang paling sering kamu ucapkan | tokoh duduk di kasur pegang HP, stempel BOHONG
+s03	5.2	8.9	komik	whip	0.2 phonebuzz -14; 2.65 pop -12	-	Jam 11 malam, kamu buka HP | HP raksasa 23:00 + notif 1
+s04	8.9	12.0	komik	cut	0.2 counter -14; 1.9 hit -10	-	Tahu-tahu jam 1 | jam berputar 23:00 ke 01:07
+s05	12.0	15.4	komik	cut	0.7 pop -14; 2.4 pop -12	-	masih nonton nasi goreng | HP raksasa wajan lempar nasi, alarm besok pagi
+s06	15.4	20.0	komik	cut	1.2 hit -10; 1.65 hit -10; 2.8 pop -14	-	bedtime procrastination | SLAM BEDTIME PROCRASTINATION + definisi
+s07	20.0	25.6	komik	swipe	0.1 swish -14; 0.6 counter -16; 3.4 hit -10	-	Kroese 2014 177 orang | grid 177 ikon orang, kartu sumber
+s08	25.6	30.9	komik	cut	0.2 pop -14; 1.9 pop -14; 4.0 pop -14	-	sulit atur diri, tunda tidur, kurang tidur | tiga panel rantai + stiker KORELASI
+s09	30.9	37.6	komik	cut	0.1 pop -14; 5.2 heartbeat -18	-	tenaga kemauan menipis jam 11 | baterai menyusut, tokoh lemas, stiker DUGAAN
+s10	37.6	40.0	komik	flash	0.2 hit -10; 1.0 shimmer -14	-	Putuskan sebelum kamu kehabisan tenaga | SLAM PUTUSKAN DARI SORE
+s11	40.0	43.7	komik	cut	0.4 pop -14; 1.0 blip -14; 2.0 pop -14	-	Taruh charger di luar kamar | pintu kamar, HP dicas di lorong
+s12	43.7	47.25	komik	cut	2.1 phonebuzz -16	-	Malam ini kamu mungkin bilang lagi cuma lima menit | HP malam, bubble diketik, fade kuning ke s01
