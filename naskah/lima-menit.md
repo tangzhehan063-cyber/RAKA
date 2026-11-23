@@ -2,14 +2,14 @@
 
 Format: vonis di detik 0, satu ide, studi disebut singkat, ending melingkar (menyambung ke kalimat pertama). Style `komik`.
 
-## Naskah (±100 kata, ±35-40 dtk) — sudah dilewatkan skill humanizer (23 Nov)
-1. Lima menit itu bohong. Kamu tahu, waktu bilang.
-2. Jam sebelas, HP di tangan, niatnya cek satu notifikasi. Jam satu lewat, kamu masih nonton orang bikin nasi goreng.
-3. Peneliti Belanda menamai ini bedtime procrastination: tidur lebih malam dari rencana, padahal nggak ada yang nyuruh begadang.
-4. Kroese dan timnya, tahun dua ribu empat belas, menyurvei seratus tujuh puluh tujuh orang. Yang susah mengatur diri lebih sering menunda tidur. Dan makin sering menunda, makin sering dia ngaku kurang tidur.
-5. Dugaannya, tenaga kemauan sudah habis di ujung hari. Jam sebelas malam, yang memutuskan adalah kamu yang paling capek.
-6. Jadi putusin dari sore: colok charger di luar kamar sebelum kamu capek.
-7. Besok malam kamu bakal bilang lagi: cuma lima menit.
+## Naskah draf 2 (revisi user 23 Nov, sudah dilewatkan humanizer; ±38 dtk)
+1. "Cuma lima menit" itu kebohongan yang paling sering kamu ucapkan ke diri sendiri sebelum tidur.
+2. Jam sebelas malam, kamu buka HP buat cek satu notifikasi. Tahu-tahu jam satu, dan kamu masih nonton orang asing masak nasi goreng, padahal besok harus bangun pagi.
+3. Psikolog menyebutnya bedtime procrastination: menunda tidur padahal kamu tahu harus tidur.
+4. Kroese dan timnya, tahun dua ribu empat belas, menyurvei seratus tujuh puluh tujuh orang. Yang lebih sulit mengatur diri lebih sering menunda tidur, dan lebih sering mengaku kurang tidur.
+5. Dugaannya, tenaga kemauan sudah menipis di ujung hari, jadi disiplin jam sebelas malam gampang kalah.
+6. Putuskan sebelum kamu kehabisan tenaga. Taruh charger di luar kamar, dan jauhkan HP sebelum rebahan.
+7. Malam ini kamu mungkin bilang lagi: cuma lima menit.
 
 ## Peta visual (komik terang)
 1. Vonis raksasa "LIMA MENIT = BOHONG" + burst, shake.
