@@ -1,0 +1,16 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Deadline Buntu
+@music 0-26 tension 0.3; 26-37 calm 0.25; 37-42 hopeful 0.4
+s01	0.0	3.2	komik	cut	0.22 tick -12; 1.9 hit -10	-	Jam 10 malam. Deadline besok. | jam 22:00 raksasa slam, laptop dokumen kosong kursor berkedip, stempel DEADLINE BESOK
+s02	3.2	6.2	komik	cut	0.12 impact -10; 1.2 pop -12	-	Dan kamu merasa lagi di puncak kreativitas | bigFace yakin, bohlam meledak, burst, MODE JENIUS
+s03	6.2	8.7	komik	whip	0.2 swish -14	-	Ide mengalir, jari ngebut | laptop teks memenuhi layar, ide beterbangan, speed lines
+s04	8.7	11.5	komik	cut	0.3 shimmer -14	-	rasanya ini kamu versi terbaik | tokoh cheer, sparkle, label VERSI TERBAIK
+s05	11.5	13.4	komik	swipe	0.1 swish -14; 0.9 pop -14	-	Peneliti pernah membaca catatan harian | tumpukan buku harian, label CATATAN HARIAN
+s06	13.4	15.8	komik	cut	0.1 counter -16; 1.2 hit -10	-	177 karyawan | grid 177 ikon orang, sticker 177 KARYAWAN, kartu AMABILE DKK 2002
+s07	15.8	20.4	komik	cut	0.3 pop -14; 3.0 hit -10	-	Di hari tekanan waktunya tinggi, pikiran kreatif malah lebih jarang muncul | meteran TEKANAN naik, 6 bohlam padam satu per satu, stiker LEBIH JARANG
+s08	20.4	26.0	komik	cut	0.2 riser -14; 2.6 hit -10	-	Anehnya, ada indikasi mereka sendiri justru merasa lebih kreatif | bar RASA KREATIF naik vs HASIL turun, stempel ADA INDIKASI
+s09	26.0	28.0	komik	flash	0.1 hit -10	-	Tekanan juga tidak selalu merusak | stiker TIDAK SELALU, kata MERUSAK dicoret
+s10	28.0	32.4	komik	cut	0.2 pop -14; 2.4 shimmer -14	-	Fokus penuh pada satu hal yang kamu anggap penting, hasilnya bisa baik | target konsentris, notifikasi memantul, label FOKUS PENUH
+s11	32.4	37.0	komik	swipe	0.1 swish -14; 2.2 pop -14	-	Tapi ini studi lapangan. Polanya terlihat, sebabnya belum pasti | dua panel POLA centang vs SEBAB tanda tanya, stiker KORELASI
+s12	37.0	40.5	komik	cut	0.3 pop -14; 2.6 blip -14	-	Jadi malam ini, kalau semuanya terasa jenius, simpan dulu | dokumen JENIUS? disimpan ke map, jam 22:00 menuju 08:00
+s13	40.5	42.0	komik	cut	0.3 shimmer -14	-	Baca lagi besok pagi | jam 08:00 matahari, mata baca dokumen, label BESOK PAGI

@@ -1,6 +1,12 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
-## REENGINEERING SISTEM (23 Nov 2026, belum di-commit; menunggu izin user)
+## #18 "Deadline Buntu" SELESAI (23 Nov, workflow v2 pertama; belum di-commit)
+- Alur: ide (kredit scrape 0, pain = hipotesis) → G1 topik deadline → riset (`riset/deadline-buntu.md`, paper asli TIDAK bisa dibuka: apa.org diblokir; semua angka via sekunder, VO tanpa persen, "ada indikasi") → G2 angle "terasa kreatif vs hasil" → naskah + hook C (lint 0 GAGAL, humanizer) G3 → VO Gemini (Charon, 41,9 dtk) G4 → palet komikMint (user) → sheet G5 → render 42,0 dtk, 13 shot, -14,9 LUFS, true peak -1,2 (qc-teknis 0 GAGAL). Satu bug visual (panel s11 terpotong) diperbaiki sebelum render ulang.
+- Drive `18 - Deadline Buntu` (id 1eap-bwl4SZgN7MpdkEjMSEcED16i6Dkb): cover, caption (146 karakter + komentar pertama), naskah, VO mp3. Artifact arsip BELUM diperbarui. Caption tanpa riset bahasa (kredit 0).
+- Eksperimen E2 berjalan (hook kejadian vs vonis #17). Minta data #17 dan #18 setelah 24-48 jam dan isi `analitik/video.csv`; jalankan `performance-analyst`.
+- Pelajaran: (1) `align_teks.py` lewat file .txt di scratchpad (jangan di `naskah/`). (2) komik tidak punya gerak kamera (cek-sutradara SARAN 0% kamera, sama dengan #17). (3) Lebar panel jangan melewati x>880 di y 860-1560. (4) render penuh 42 dtk ±1 mnt di komik.
+
+## REENGINEERING SISTEM (23 Nov 2026, sudah di-commit & di-push ke claude/trusting-heisenberg-tf11zf)
 - Strategi v2 (`brand/strategi-channel.md`), sistem ide + skor + gate riset, riset Tier 1, script engine (hook A–E, 3 pendekatan), retention engine, storyboard fungsional, audio, QC teknis+konten, analitik (`analitik/video.csv` berisi data #10–#16), 7 skill baru, `WORKFLOW.md` 18 langkah + 5 gerbang, `CLAUDE.md` diringkas (isi lama di `brand/aturan-operasional.md` dan `brand/produksi-teknis.md`).
 - Tools baru: `skor-ide.py`, `cek-naskah.py`, `qc-teknis.py`, `analitik.py`. Perbaikan `produksi.sh`: `init` tidak lagi menelan `json.dump`, glob sheet `s[0-9][0-9]_*.png`, `qc` memanggil `qc-teknis.py`.
 - Dry run: `naskah/dry-run-buka-hp.md` + `riset/dry-run-buka-hp.md` (riset belum final: paper asli belum dibuka).

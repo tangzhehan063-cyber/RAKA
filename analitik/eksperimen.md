@@ -19,5 +19,5 @@ VARIABLE: hook. CONTROL: "Disiplin adalah kunci kesuksesan." TEST: "Alarm sudah 
 | ID | Video | Hipotesis (ringkas) | Variabel | Status |
 |---|---|---|---|---|
 | E1 | #17 Lima Menit | Vonis di awal + pendek (47 dtk) + komik terang + keluhan konkret menembus >1.500 views | paket formula (SATU PAKET, bukan satu variabel; kelemahan diakui) | menunggu data 24–48 jam |
-| E2 | #18 (usulan) | Hook konkret (kejadian) vs vonis (#17) | hook_tipe C vs A, topik jenis sama (keluhan konkret) | belum dimulai |
+| E2 | #18 Deadline Buntu | Hook konkret (kejadian) vs vonis (#17) | hook_tipe C vs A, topik jenis sama (keluhan konkret). Pengganggu yang TIDAK terkontrol: palet (mint vs kuning), durasi 42 vs 47 dtk, pilar 5 vs 1 | video selesai; menunggu data tayang |
 | E3 | (usulan) | Penjelasan jujur "belum pasti" vs penjelasan pasti | cara menyampaikan bukti | belum dimulai |
