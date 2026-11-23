@@ -2,13 +2,13 @@
 
 Format: vonis di detik 0, satu ide, studi disebut singkat, ending melingkar (menyambung ke kalimat pertama). Style `komik`.
 
-## Naskah (±100 kata, ±35-40 dtk)
+## Naskah (±100 kata, ±35-40 dtk) — sudah dilewatkan skill humanizer (23 Nov)
 1. Lima menit itu bohong. Kamu tahu, waktu bilang.
-2. Jam sebelas, HP di tangan. Niatnya cek satu notifikasi. Jam satu lewat, kamu masih nonton.
-3. Peneliti Belanda punya nama buat ini: bedtime procrastination. Tidur lebih malam dari rencana, padahal nggak ada yang nyuruh begadang.
-4. Kroese dan timnya, tahun dua ribu empat belas, survei seratus tujuh puluh tujuh orang. Makin susah orang mengatur dirinya, makin sering dia menunda tidur, dan makin sering dia ngaku kurang tidur.
-5. Dugaannya, tenaga kemauan sudah habis di ujung hari. Jam sebelas malam, keputusan diambil sama kamu yang paling capek.
-6. Jadi putusin dari sore. Colok charger di luar kamar, sebelum kamu capek.
+2. Jam sebelas, HP di tangan, niatnya cek satu notifikasi. Jam satu lewat, kamu masih nonton orang bikin nasi goreng.
+3. Peneliti Belanda menamai ini bedtime procrastination: tidur lebih malam dari rencana, padahal nggak ada yang nyuruh begadang.
+4. Kroese dan timnya, tahun dua ribu empat belas, menyurvei seratus tujuh puluh tujuh orang. Yang susah mengatur diri lebih sering menunda tidur. Dan makin sering menunda, makin sering dia ngaku kurang tidur.
+5. Dugaannya, tenaga kemauan sudah habis di ujung hari. Jam sebelas malam, yang memutuskan adalah kamu yang paling capek.
+6. Jadi putusin dari sore: colok charger di luar kamar sebelum kamu capek.
 7. Besok malam kamu bakal bilang lagi: cuma lima menit.
 
 ## Peta visual (komik terang)
