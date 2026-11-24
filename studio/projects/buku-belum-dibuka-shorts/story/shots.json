@@ -1,0 +1,527 @@
+{
+ "title": "Buku Belum Dibuka",
+ "duration": 64.18,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.4,
+   "line": "Buku tentang cara jadi disiplin",
+   "scene": "SLAM BUKU DISIPLIN buku raksasa burst",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 0.8,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.4,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 2.4,
+   "end": 4.7,
+   "line": "yang belum kamu buka itu sudah bikin kamu merasa disiplin",
+   "scene": "buku tertutup bersegel, stempel MERASA DISIPLIN",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -10.0
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 4.7,
+   "end": 8.9,
+   "line": "Kamu beli waktu gajian",
+   "scene": "kasir, uang GAJIAN, tokoh dada tegak",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.0,
+     "name": "ding",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.9,
+   "end": 11.35,
+   "line": "Bukunya kamu taruh di rak",
+   "scene": "rak, buku sampul menghadap keluar",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 11.35,
+   "end": 12.87,
+   "line": "Terus kamu rebahan",
+   "scene": "tokoh rebahan di lantai, z",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 12.87,
+   "end": 15.6,
+   "line": "Tiga bulan kemudian ada tiga buku",
+   "scene": "kalender 3 BULAN, tiga buku menumpuk",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -14.0
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 15.6,
+   "end": 18.5,
+   "line": "satu kursus daring, satu planner tanggal tiga",
+   "scene": "laptop kursus 0%, planner terisi 1-3",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 18.5,
+   "end": 21.8,
+   "line": "Peter Gollwitzer meneliti tahun 2009",
+   "scene": "kartu GOLLWITZER 2009",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 21.8,
+   "end": 27.97,
+   "line": "mengejar identitas rajin, niat diketahui orang, bertindak lebih sedikit",
+   "scene": "tokoh dengan label ORANG RAJIN diawasi mata, melambat",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 4.3,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 27.97,
+   "end": 34.59,
+   "line": "rahasia 2,7 hari, diketahui 1,9 hari",
+   "scene": "bar RAHASIA 2,7 vs DIKETAHUI 1,9",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.2,
+     "name": "counter",
+     "gain": -14.0
+    },
+    {
+     "at": 4.2,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 34.59,
+   "end": 37.17,
+   "line": "Otak sudah mencentang sebagian tujuannya",
+   "scene": "kotak centang setengah",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "tick",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 37.17,
+   "end": 41.36,
+   "line": "Studinya kecil dan bukan soal buku, polanya mirip rak kamu",
+   "scene": "stiker STUDI KECIL, BUKAN SOAL BUKU, rak",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.8,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 41.36,
+   "end": 45.23,
+   "line": "Kappes dan Oettingen 2011",
+   "scene": "kartu KAPPES & OETTINGEN 2011",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 1.0,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 45.23,
+   "end": 48.9,
+   "line": "membayangkan masa depan indah, tekanan darah lebih rendah",
+   "scene": "tokoh melamun awan, meter tekanan turun",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "heartbeat",
+     "gain": -18.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 48.9,
+   "end": 52.48,
+   "line": "tanda tenaganya turun dibanding yang memikirkan hambatan",
+   "scene": "meter naik tokoh siaga, TENAGA TURUN",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 52.48,
+   "end": 56.34,
+   "line": "sebelum beli buku berikutnya, buka satu yang ada",
+   "scene": "SLAM BUKA SATU buku terbuka",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 0.9,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.8,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 56.34,
+   "end": 60.86,
+   "line": "baca satu halaman dulu sebelum foto atau cerita",
+   "scene": "halaman 1, kamera dicoret",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s18",
+   "start": 60.86,
+   "end": 64.18,
+   "line": "Besok gajian lagi. Toko buku masih buka",
+   "scene": "toko buku BUKA, fade kuning ke s01 (loop)",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -14.0
+    },
+    {
+     "at": 1.5,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 34.6,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 34.6,
+   "end": 52.5,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 52.5,
+   "end": 64.18,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}
