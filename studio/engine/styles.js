@@ -65,6 +65,7 @@ export const STYLES = {
   },
   komikMalam: { ...STYLES_KOMIK_BASE(), name: 'Komik Malam', desc: 'Komik kontras tinggi di latar indigo malam, aksen magenta dan lime.' },
   komikMint: { ...STYLES_KOMIK_BASE(), name: 'Komik Mint', desc: 'Komik pastel segar: mint, peach, pink, aksen oranye.' },
+  komikJingga: { ...STYLES_KOMIK_BASE(), name: 'Komik Jingga', desc: 'Komik hangat: koral, teal, kuning mentega, aksen merah.' },
   paper: {
     name: 'Paper Daylight', desc: 'High-key editorial: warm cream paper world, navy ink lines, no neon, almost no bloom. The orange mascot pops against the pale background.',
     ink: '#1b2238', inkFar: '#8a8fa6', feature: '#ffffff', rimWidth: 0,
