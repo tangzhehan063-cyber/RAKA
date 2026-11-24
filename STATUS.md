@@ -1,5 +1,12 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## Video #18 "Buku Belum Dibuka" SELESAI (24 Nov 2026)
+- Permintaan user: lebih panjang dari #17, 60-70 dtk. Hasil 64,18 dtk, 18 shot, style `komikMalam` (dipilih user dari komikMint/komikMalam/komikJingga; `komikJingga` style baru di `studio/engine/styles.js`), -14,2 LUFS, MP4 12 MB. Vonis di awal ("Buku tentang cara jadi disiplin yang belum kamu buka itu sudah bikin kamu merasa disiplin"), ending melingkar.
+- Fakta: Gollwitzer, Sheeran, Michalski & Seifert 2009 (niat diketahui orang: 2,7 vs 1,9 hari bertindak, studi lapangan kecil, bukan soal buku, dipakai sebagai analogi; angka dari ringkasan PubMed, belum dicek di PDF) + Kappes & Oettingen 2011 (fantasi positif menurunkan energi/tekanan darah). Saran "baca satu halaman dulu" = inferensi.
+- VO Gemini Charon dibuat Claude (76,7 dtk pada tempo biasa, 64,2 dtk dengan arahan tempo cepat). Drive `18 - Buku Belum Dibuka` (id 1Wp5GS9ePs0V3jq2uX4ZWlU9v6qpzpGy3): cover, caption, naskah, VO mp3. Arsip + artifact diperbarui. Caption TikTok 140 karakter, tanpa riset bahasa (ScrapeMedsos kredit 0).
+- UKUR: bandingkan #18 (64 dtk, topik buku) dengan #17 (47 dtk) dan #12 (3.934 views). Dua variabel berubah sekaligus (durasi + topik), jadi bacaan hasil indikatif.
+- Pelajaran: (1) `produksi.sh final` lewat `nohup ... &` berhenti sebelum mix; jalankan `python3 studio/audio/mix.py --project ...` manual lalu `produksi.sh qc` (atau pakai run_in_background). (2) Render 64 dtk x 18 shot komik hanya ±1,5 mnt. (3) Jangan taruh teks di y≈1180-1400 (pita caption). (4) `produksi.sh palet` dengan 2 waktu default memilih adegan yang sama-sama berlatar warna `d`; beri waktu manual agar warna latar berbeda. (5) File teks TTS disimpan `.md` (bukan `.txt`) agar push tidak memicu workflow suara default.
+
 ## RESET FORMULA (23 Nov 2026) — berlaku mulai #17
 - **Pemicu:** views turun. Data user (tabel di `brand/formula.md`): hanya #12 (3.934) dan #10 (1.805) yang tembus; #11/#13/#14/#15/#16 = 177-649. Komentar 0-2 di semua video. Durasi 2:09 dan 2:37 tidak menolong.
 - **Keputusan user:** (1) Formula baru = **vonis di awal + pendek 25-40 dtk, satu ide, tanpa ending beres**. (2) Animasi = **komik terang, gerak lebih liar** (style `komik` di `studio/engine/styles.js`; uji di `studio/projects/uji-komik`: vonis raksasa + burst, tokoh jatuh squash/stretch + speed lines + impact frame, panel terbagi). (3) Data tambahan: user hanya punya tabel views/likes/komen (tanpa retensi).
