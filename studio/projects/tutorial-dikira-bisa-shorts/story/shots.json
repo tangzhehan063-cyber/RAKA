@@ -1,0 +1,465 @@
+{
+ "title": "Tutorial Dikira Sudah Bisa",
+ "duration": 57.5,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.5,
+   "line": "Nonton tutorial 20 kali nggak bikin kamu lebih jago",
+   "scene": "VONIS 20X burst",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.2,
+     "name": "impact",
+     "gain": -10.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 3.5,
+   "end": 6.5,
+   "line": "Cuma bikin kamu merasa lebih jago",
+   "scene": "tokoh bangga, MERASA JAGO",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.5,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.5,
+   "end": 8.5,
+   "line": "Rafi nonton orang main skateboard",
+   "scene": "sofa, HP, pemain skate",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.5,
+   "end": 13.25,
+   "line": "Ollie. Kelihatannya gampang. Lutut ditekuk, papan naik sendiri",
+   "scene": "HP besar, ollie",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 13.25,
+   "end": 18.3,
+   "line": "Dia putar ulang. Sekali. Lima kali. Dua puluh kali",
+   "scene": "penghitung 1X 5X 20X",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.5,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.9,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 18.3,
+   "end": 20.5,
+   "line": "Sekarang dia hafal semuanya",
+   "scene": "tokoh yakin, tiga centang",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 20.5,
+   "end": 22.3,
+   "line": "Terus dia naik ke papannya",
+   "scene": "Rafi naik papan, tahan",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 22.3,
+   "end": 25.8,
+   "line": "Papannya lari. Lantainya keras",
+   "scene": "papan lari, jatuh (A/B)",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.76,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 25.8,
+   "end": 30.6,
+   "line": "Tahun 2018, dua peneliti, Kardas dan O'Brien, menguji ini",
+   "scene": "kartu peneliti",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 30.6,
+   "end": 34.8,
+   "line": "Enam eksperimen, 2225 orang",
+   "scene": "6 dan 2.225 orang",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.7,
+     "name": "counter",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 34.8,
+   "end": 39.75,
+   "line": "Satu kelompok nonton video lempar dart sekali. Satu lagi nonton 20 kali",
+   "scene": "dua papan dart",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 1.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.8,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 39.75,
+   "end": 42.3,
+   "line": "Yang 20 kali merasa jauh lebih bisa",
+   "scene": "batang MERASA BISA",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 42.3,
+   "end": 44.9,
+   "line": "Lemparannya? Sama saja",
+   "scene": "dua papan sama (A/B)",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.3,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 44.9,
+   "end": 49.15,
+   "line": "Soalnya mata hafal langkahnya. Badan belum tahu rasanya",
+   "scene": "mata raksasa lalu tokoh kaku",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 49.15,
+   "end": 53.4,
+   "line": "Di satu percobaan, yang sempat pegang alatnya dulu jadi nggak terlalu pede",
+   "scene": "pegang alat, meter pede turun",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 53.4,
+   "end": 57.5,
+   "line": "Jadi sebelum nonton yang kedua puluh kali, naik dulu ke papannya",
+   "scene": "HP diletakkan, naik papan",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.9,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 25.8,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 25.8,
+   "end": 48.8,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 48.8,
+   "end": 57.5,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}

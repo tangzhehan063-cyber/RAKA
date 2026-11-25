@@ -1,0 +1,580 @@
+{
+ "source": "script:script.json",
+ "words": [
+  {
+   "word": "Nonton",
+   "start": 0.29,
+   "end": 0.668
+  },
+  {
+   "word": "tutorial",
+   "start": 0.668,
+   "end": 1.171
+  },
+  {
+   "word": "20",
+   "start": 1.171,
+   "end": 1.675
+  },
+  {
+   "word": "kali",
+   "start": 1.675,
+   "end": 1.927
+  },
+  {
+   "word": "nggak",
+   "start": 1.927,
+   "end": 2.241
+  },
+  {
+   "word": "bikin",
+   "start": 2.241,
+   "end": 2.556
+  },
+  {
+   "word": "kamu",
+   "start": 2.556,
+   "end": 2.808
+  },
+  {
+   "word": "lebih",
+   "start": 2.808,
+   "end": 3.123
+  },
+  {
+   "word": "jago.",
+   "start": 3.123,
+   "end": 3.374
+  },
+  {
+   "word": "Cuma",
+   "start": 3.594,
+   "end": 3.875
+  },
+  {
+   "word": "bikin",
+   "start": 3.875,
+   "end": 4.227
+  },
+  {
+   "word": "kamu",
+   "start": 4.227,
+   "end": 4.508
+  },
+  {
+   "word": "merasa",
+   "start": 4.508,
+   "end": 4.93
+  },
+  {
+   "word": "lebih",
+   "start": 4.93,
+   "end": 5.282
+  },
+  {
+   "word": "jago.",
+   "start": 5.282,
+   "end": 5.563
+  },
+  {
+   "word": "Rafi",
+   "start": 6.69,
+   "end": 6.886
+  },
+  {
+   "word": "nonton",
+   "start": 6.886,
+   "end": 7.181
+  },
+  {
+   "word": "orang",
+   "start": 7.181,
+   "end": 7.427
+  },
+  {
+   "word": "main",
+   "start": 7.427,
+   "end": 7.624
+  },
+  {
+   "word": "skateboard.",
+   "start": 7.624,
+   "end": 8.115
+  },
+  {
+   "word": "Ollie.",
+   "start": 8.598,
+   "end": 8.928
+  },
+  {
+   "word": "Kelihatannya",
+   "start": 9.396,
+   "end": 9.987
+  },
+  {
+   "word": "gampang.",
+   "start": 9.987,
+   "end": 10.331
+  },
+  {
+   "word": "Lutut",
+   "start": 10.795,
+   "end": 11.111
+  },
+  {
+   "word": "ditekuk,",
+   "start": 11.111,
+   "end": 11.552
+  },
+  {
+   "word": "papan",
+   "start": 11.552,
+   "end": 11.868
+  },
+  {
+   "word": "naik",
+   "start": 11.868,
+   "end": 12.12
+  },
+  {
+   "word": "sendiri.",
+   "start": 12.12,
+   "end": 12.562
+  },
+  {
+   "word": "Dia",
+   "start": 13.439,
+   "end": 13.609
+  },
+  {
+   "word": "putar",
+   "start": 13.609,
+   "end": 13.893
+  },
+  {
+   "word": "ulang.",
+   "start": 13.893,
+   "end": 14.177
+  },
+  {
+   "word": "Sekali.",
+   "start": 14.713,
+   "end": 15.223
+  },
+  {
+   "word": "Lima",
+   "start": 15.905,
+   "end": 16.233
+  },
+  {
+   "word": "kali.",
+   "start": 16.233,
+   "end": 16.562
+  },
+  {
+   "word": "20",
+   "start": 17.13,
+   "end": 17.599
+  },
+  {
+   "word": "kali.",
+   "start": 17.599,
+   "end": 17.834
+  },
+  {
+   "word": "Sekarang",
+   "start": 18.434,
+   "end": 18.875
+  },
+  {
+   "word": "dia",
+   "start": 18.875,
+   "end": 19.04
+  },
+  {
+   "word": "hafal",
+   "start": 19.04,
+   "end": 19.316
+  },
+  {
+   "word": "semuanya.",
+   "start": 19.316,
+   "end": 19.757
+  },
+  {
+   "word": "Terus",
+   "start": 20.703,
+   "end": 20.951
+  },
+  {
+   "word": "dia",
+   "start": 20.951,
+   "end": 21.1
+  },
+  {
+   "word": "naik",
+   "start": 21.1,
+   "end": 21.299
+  },
+  {
+   "word": "ke",
+   "start": 21.299,
+   "end": 21.399
+  },
+  {
+   "word": "papannya.",
+   "start": 21.399,
+   "end": 21.796
+  },
+  {
+   "word": "Papannya",
+   "start": 22.481,
+   "end": 22.945
+  },
+  {
+   "word": "lari.",
+   "start": 22.945,
+   "end": 23.177
+  },
+  {
+   "word": "Lantainya",
+   "start": 24.064,
+   "end": 24.578
+  },
+  {
+   "word": "keras.",
+   "start": 24.578,
+   "end": 24.864
+  },
+  {
+   "word": "Tahun",
+   "start": 25.854,
+   "end": 26.146
+  },
+  {
+   "word": "2018,",
+   "start": 26.146,
+   "end": 27.253
+  },
+  {
+   "word": "dua",
+   "start": 27.253,
+   "end": 27.428
+  },
+  {
+   "word": "peneliti,",
+   "start": 27.428,
+   "end": 27.895
+  },
+  {
+   "word": "Kardas",
+   "start": 28.078,
+   "end": 28.531
+  },
+  {
+   "word": "dan",
+   "start": 28.531,
+   "end": 28.758
+  },
+  {
+   "word": "O'Brien,",
+   "start": 28.758,
+   "end": 29.211
+  },
+  {
+   "word": "menguji",
+   "start": 29.439,
+   "end": 29.846
+  },
+  {
+   "word": "ini.",
+   "start": 29.846,
+   "end": 30.02
+  },
+  {
+   "word": "Enam",
+   "start": 30.759,
+   "end": 30.999
+  },
+  {
+   "word": "eksperimen,",
+   "start": 30.999,
+   "end": 31.6
+  },
+  {
+   "word": "2225",
+   "start": 31.941,
+   "end": 33.511
+  },
+  {
+   "word": "orang.",
+   "start": 33.511,
+   "end": 33.802
+  },
+  {
+   "word": "Satu",
+   "start": 34.92,
+   "end": 35.129
+  },
+  {
+   "word": "kelompok",
+   "start": 35.129,
+   "end": 35.547
+  },
+  {
+   "word": "nonton",
+   "start": 35.547,
+   "end": 35.861
+  },
+  {
+   "word": "video",
+   "start": 35.861,
+   "end": 36.122
+  },
+  {
+   "word": "lempar",
+   "start": 36.122,
+   "end": 36.436
+  },
+  {
+   "word": "dart",
+   "start": 36.436,
+   "end": 36.645
+  },
+  {
+   "word": "sekali.",
+   "start": 36.645,
+   "end": 36.958
+  },
+  {
+   "word": "Satu",
+   "start": 37.583,
+   "end": 37.802
+  },
+  {
+   "word": "lagi",
+   "start": 37.802,
+   "end": 38.02
+  },
+  {
+   "word": "nonton",
+   "start": 38.02,
+   "end": 38.348
+  },
+  {
+   "word": "20",
+   "start": 38.348,
+   "end": 38.786
+  },
+  {
+   "word": "kali.",
+   "start": 38.786,
+   "end": 39.005
+  },
+  {
+   "word": "Yang",
+   "start": 39.913,
+   "end": 40.139
+  },
+  {
+   "word": "20",
+   "start": 40.139,
+   "end": 40.592
+  },
+  {
+   "word": "kali",
+   "start": 40.592,
+   "end": 40.818
+  },
+  {
+   "word": "merasa",
+   "start": 40.818,
+   "end": 41.158
+  },
+  {
+   "word": "jauh",
+   "start": 41.158,
+   "end": 41.384
+  },
+  {
+   "word": "lebih",
+   "start": 41.384,
+   "end": 41.667
+  },
+  {
+   "word": "bisa.",
+   "start": 41.667,
+   "end": 41.894
+  },
+  {
+   "word": "Lemparannya?",
+   "start": 42.52,
+   "end": 43.097
+  },
+  {
+   "word": "Sama",
+   "start": 43.574,
+   "end": 43.861
+  },
+  {
+   "word": "saja.",
+   "start": 43.861,
+   "end": 44.148
+  },
+  {
+   "word": "Soalnya",
+   "start": 45.084,
+   "end": 45.459
+  },
+  {
+   "word": "mata",
+   "start": 45.459,
+   "end": 45.673
+  },
+  {
+   "word": "hafal",
+   "start": 45.673,
+   "end": 45.941
+  },
+  {
+   "word": "langkahnya.",
+   "start": 45.941,
+   "end": 46.477
+  },
+  {
+   "word": "Badan",
+   "start": 47.153,
+   "end": 47.432
+  },
+  {
+   "word": "belum",
+   "start": 47.432,
+   "end": 47.712
+  },
+  {
+   "word": "tahu",
+   "start": 47.712,
+   "end": 47.935
+  },
+  {
+   "word": "rasanya.",
+   "start": 47.935,
+   "end": 48.327
+  },
+  {
+   "word": "Di",
+   "start": 49.307,
+   "end": 49.426
+  },
+  {
+   "word": "satu",
+   "start": 49.426,
+   "end": 49.664
+  },
+  {
+   "word": "percobaan,",
+   "start": 49.664,
+   "end": 50.2
+  },
+  {
+   "word": "yang",
+   "start": 50.383,
+   "end": 50.578
+  },
+  {
+   "word": "sempat",
+   "start": 50.578,
+   "end": 50.869
+  },
+  {
+   "word": "pegang",
+   "start": 50.869,
+   "end": 51.16
+  },
+  {
+   "word": "alatnya",
+   "start": 51.16,
+   "end": 51.5
+  },
+  {
+   "word": "dulu",
+   "start": 51.5,
+   "end": 51.694
+  },
+  {
+   "word": "jadi",
+   "start": 51.694,
+   "end": 51.888
+  },
+  {
+   "word": "nggak",
+   "start": 51.888,
+   "end": 52.131
+  },
+  {
+   "word": "terlalu",
+   "start": 52.131,
+   "end": 52.47
+  },
+  {
+   "word": "pede.",
+   "start": 52.47,
+   "end": 52.664
+  },
+  {
+   "word": "Jadi",
+   "start": 53.607,
+   "end": 53.827
+  },
+  {
+   "word": "sebelum",
+   "start": 53.827,
+   "end": 54.212
+  },
+  {
+   "word": "nonton",
+   "start": 54.212,
+   "end": 54.543
+  },
+  {
+   "word": "yang",
+   "start": 54.543,
+   "end": 54.763
+  },
+  {
+   "word": "kedua",
+   "start": 54.763,
+   "end": 55.038
+  },
+  {
+   "word": "puluh",
+   "start": 55.038,
+   "end": 55.313
+  },
+  {
+   "word": "kali,",
+   "start": 55.313,
+   "end": 55.533
+  },
+  {
+   "word": "naik",
+   "start": 55.981,
+   "end": 56.2
+  },
+  {
+   "word": "dulu",
+   "start": 56.2,
+   "end": 56.419
+  },
+  {
+   "word": "ke",
+   "start": 56.419,
+   "end": 56.528
+  },
+  {
+   "word": "papannya.",
+   "start": 56.528,
+   "end": 56.966
+  }
+ ]
+}

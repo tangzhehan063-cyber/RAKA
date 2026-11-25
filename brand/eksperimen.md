@@ -43,3 +43,6 @@ Claude boleh terus meng-improve visual & cara bercerita (izin user 9 Nov 2026). 
 - Satu warna aksen per video selain merah-oranye maskot (palet emosi: biru = sedih, emas = harapan).
 - Hook visual tanpa kata 1 detik pertama (aksi tokoh dulu, baru VO).
 - Akhir loop dengan kamera yang sama persis di frame pertama & terakhir.
+
+## #19 Tutorial Dikira Sudah Bisa (25 Nov): uji Motion Intelligence (draf, nonaktif)
+- Eksperimen A/B pada 2 shot (jatuh, reveal "sama saja") lewat `config.motionVariant`. B (dipandu skill: sebab-akibat, tahan benturan, diam sesudah) vs A (gaya biasa: stiker, guncang, impact frame). **Pilihan user: A di kedua shot.** Status: B belum DISUKAI; jangan dijadikan baku. Teknik eksperimental (hit-stop, reveal tenang) belum terbukti. Detail dan catatan cacat ada di `STATUS.md` #19.

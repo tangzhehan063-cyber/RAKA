@@ -1,5 +1,14 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## Video #19 "Tutorial Dikira Sudah Bisa" SELESAI (25 Nov 2026), UJI Motion Intelligence
+- Hasil: 57,5 dtk, 16 shot, style `komikJingga` (dipilih user dari komikJingga/komikMint/komik), -13,5 LUFS, MP4 9 MB. VO Gemini Charon dibuat Claude (57,5 dtk, tag `[calm, slow]` + gaya tempo cepat). Naskah di-ACC, caption TikTok 147 karakter + komentar pertama, tanpa riset bahasa (kredit ScrapeMedsos 0). Drive `19 - Tutorial Dikira Sudah Bisa` (id 1s5gcRat-LosESxQmWO-RyjLMxAHkrVRW): cover, caption, naskah, VO mp3. Arsip artifact BELUM diperbarui.
+- Fakta: Kardas & O'Brien 2018, Psychological Science 29(4) (6 eksperimen, 2.225 orang; dart 20x vs 1x: merasa lebih bisa, lemparan sama). Dari abstrak/siaran pers, PDF penuh tidak dibuka; sumber pendukung independen belum dicari; skateboard = analogi.
+- **Uji Motion Intelligence (draf v0.3-uji, nonaktif, `.claude/skills/motion-intelligence/`)**: shot 8 (jatuh) dan 13 ("sama saja") dibuat dua varian lewat `config.motionVariant`: A = gaya biasa #17/#18, B = dipandu skill (sebab-akibat, tahan benturan 3 frame, diam setelah benturan, reveal tanpa overshoot). **User memilih A di kedua shot** dari still (bukan video). Alasan tidak diketahui. Catatan: B punya cacat waktu (benturan jatuh setelah kata "keras", lebih lambat dari rencana); n=1; keduanya dibuat satu pihak. Belum ada bukti skill menaikkan kualitas.
+- Belum diputuskan user: kamera diam vs "kamera tidak pernah diam" (DNA §4 juga ikut), status angka komik [E], integrasi skill (mode A/B/C). Cabang `claude/trusting-heisenberg-tf11zf` (reengineering + "#18 Deadline Buntu", nomor #18 ganda) belum di-merge.
+- Pelajaran: (1) `produksi.sh init` butuh path audio absolut. (2) Tanpa `node_modules` (container baru) jalankan `tools/produksi.sh setup`. (3) `cek-sutradara` melaporkan kamera 0% untuk komik; itu keterbatasan alat. (4) Hitung waktu benturan dari timestamp kata, bukan perkiraan (`keras` bukan di awal kalimat).
+- UKUR #19 setelah 24-48 jam; bandingkan dengan #17/#18.
+
+
 ## Video #18 "Buku Belum Dibuka" SELESAI (24 Nov 2026)
 - Permintaan user: lebih panjang dari #17, 60-70 dtk. Hasil 64,18 dtk, 18 shot, style `komikMalam` (dipilih user dari komikMint/komikMalam/komikJingga; `komikJingga` style baru di `studio/engine/styles.js`), -14,2 LUFS, MP4 12 MB. Vonis di awal ("Buku tentang cara jadi disiplin yang belum kamu buka itu sudah bikin kamu merasa disiplin"), ending melingkar.
 - Fakta: Gollwitzer, Sheeran, Michalski & Seifert 2009 (niat diketahui orang: 2,7 vs 1,9 hari bertindak, studi lapangan kecil, bukan soal buku, dipakai sebagai analogi; angka dari ringkasan PubMed, belum dicek di PDF) + Kappes & Oettingen 2011 (fantasi positif menurunkan energi/tekanan darah). Saran "baca satu halaman dulu" = inferensi.

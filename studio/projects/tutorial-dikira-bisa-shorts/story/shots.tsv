@@ -1,0 +1,19 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Tutorial Dikira Sudah Bisa
+@music 0-25.8 tension 0.3; 25.8-48.8 calm 0.25; 48.8-57.5 hopeful 0.4
+s01	0.0	3.5	komik	cut	0.2 hit -10; 1.2 impact -10; 2.0 pop -12	-	Nonton tutorial 20 kali nggak bikin kamu lebih jago | VONIS 20X burst
+s02	3.5	6.5	komik	cut	0.2 pop -12; 1.5 hit -10	-	Cuma bikin kamu merasa lebih jago | tokoh bangga, MERASA JAGO
+s03	6.5	8.5	komik	swipe	0.1 swish -14; 1.0 pop -12	-	Rafi nonton orang main skateboard | sofa, HP, pemain skate
+s04	8.5	13.25	komik	cut	0.3 pop -14; 1.8 pop -12; 2.6 blip -14	-	Ollie. Kelihatannya gampang. Lutut ditekuk, papan naik sendiri | HP besar, ollie
+s05	13.25	18.3	komik	cut	0.3 pop -12; 1.5 pop -12; 2.7 pop -12; 3.9 impact -10	-	Dia putar ulang. Sekali. Lima kali. Dua puluh kali | penghitung 1X 5X 20X
+s06	18.3	20.5	komik	cut	0.2 pop -14; 0.9 pop -14; 1.4 pop -14	-	Sekarang dia hafal semuanya | tokoh yakin, tiga centang
+s07	20.5	22.3	komik	cut	0.2 pop -14	-	Terus dia naik ke papannya | Rafi naik papan, tahan
+s08	22.3	25.8	komik	cut	0.2 swish -12; 1.76 hit -8	-	Papannya lari. Lantainya keras | papan lari, jatuh (A/B)
+s09	25.8	30.6	komik	flash	0.2 hit -10; 1.0 pop -12; 2.4 pop -12	-	Tahun 2018, dua peneliti, Kardas dan O'Brien, menguji ini | kartu peneliti
+s10	30.6	34.8	komik	cut	0.1 pop -12; 0.8 pop -12; 1.7 counter -14	-	Enam eksperimen, 2225 orang | 6 dan 2.225 orang
+s11	34.8	39.75	komik	swipe	0.1 swish -14; 1.7 pop -12; 2.8 pop -12	-	Satu kelompok nonton video lempar dart sekali. Satu lagi nonton 20 kali | dua papan dart
+s12	39.75	42.3	komik	cut	0.3 pop -12; 1.0 blip -14	-	Yang 20 kali merasa jauh lebih bisa | batang MERASA BISA
+s13	42.3	44.9	komik	cut	0.3 pop -14; 1.3 hit -8	-	Lemparannya? Sama saja | dua papan sama (A/B)
+s14	44.9	49.15	komik	cut	0.2 pop -14; 2.2 pop -12	-	Soalnya mata hafal langkahnya. Badan belum tahu rasanya | mata raksasa lalu tokoh kaku
+s15	49.15	53.4	komik	cut	0.3 pop -14; 3.0 blip -14	-	Di satu percobaan, yang sempat pegang alatnya dulu jadi nggak terlalu pede | pegang alat, meter pede turun
+s16	53.4	57.5	komik	cut	0.3 pop -14; 1.9 hit -10	-	Jadi sebelum nonton yang kedua puluh kali, naik dulu ke papannya | HP diletakkan, naik papan
