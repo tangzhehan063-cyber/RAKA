@@ -11,10 +11,7 @@ registerShot('c01', { draw(g) {
   const cx = E.W / 2, cy = 830, pts = []; for (let i = 0; i < 28; i++) { const a = 0.1 + i * Math.PI / 14, r = i % 2 ? 400 : 590; pts.push([cx + Math.cos(a) * r, cy + Math.sin(a) * r]); }
   poly(g, pts, '#ff3d9a'); g.lineWidth = 12; g.strokeStyle = INK; g.lineJoin = 'round'; g.stroke();
   sticker(g, 'LAPORAN', cx, 500, 150, '#fffbe8', -0.05);
-  sticker(g, '5 NAMA', cx, 790, 300, '#ffd400', 0.03);
+  sticker(g, '5 NAMA', cx, 790, 215, '#ffd400', 0.03);
   g.save(); g.translate(cx, 1090); g.rotate(-0.05); rr(g, -420 + 10, -90 + 12, 840, 180, 36); g.fillStyle = INK; g.fill(); rr(g, -420, -90, 840, 180, 36); g.fillStyle = '#fff3d6'; g.fill(); g.lineWidth = 10; g.strokeStyle = INK; g.stroke();
   g.font = `900 78px "${FONTS.ui}"`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#ff3d9a'; g.fillText('YANG KERJA: 1', 0, 6); g.restore();
-  g.save(); g.translate(cx + 20, 1300); g.rotate(-0.18);
-  rr(g, -170 + 8, -22 + 9, 340, 44, 22); g.fillStyle = INK; g.fill(); rr(g, -170, -22, 340, 44, 22); g.fillStyle = '#1d4ed8'; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke();
-  for (const wx of [-100, 100]) { circle(g, wx, 38, 26, INK); circle(g, wx, 38, 10, '#fff'); } g.restore();
 } });
