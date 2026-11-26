@@ -98,7 +98,7 @@ const clockFace = (g, x, y, r, mins, c) => { circle(g, x + 8, y + 10, r, INK); c
   const a = (mins % 60) / 60 * 6.283 - 1.5708, b = ((mins / 60) % 12) / 12 * 6.283 - 1.5708; seg(g, [[x, y], [x + Math.cos(a) * r * 0.8, y + Math.sin(a) * r * 0.8]], 8, INK); seg(g, [[x, y], [x + Math.cos(b) * r * 0.5, y + Math.sin(b) * r * 0.5]], 12, INK); circle(g, x, y, 10, c.hot); };
 const chair = (g, x, y, col) => { rr(g, x - 60, y - 200, 120, 130, 20); g.fillStyle = col; g.fill(); g.lineWidth = 7; g.strokeStyle = INK; g.stroke(); rr(g, x - 70, y - 80, 140, 24, 12); g.fillStyle = col; g.fill(); g.stroke(); seg(g, [[x - 40, y - 56], [x - 40, y]], 10, INK); seg(g, [[x + 40, y - 56], [x + 40, y]], 10, INK); };
 const NAMES = ['DIMAS', 'ANDI', 'BUDI', 'CITRA', 'DEWI'];
-const TCOL = (c) => [c.hot, c.blue, c.d, c.c, c.a];
+const TCOL = (c) => [c.hot, c.blue, c.d, c.c, c.paper];
 
 // s01 0.0-5.0: vonis
 registerShot('s01', { draw(g, t, info) {
@@ -108,8 +108,14 @@ registerShot('s01', { draw(g, t, info) {
   sticker(g, 'LAIN', E.W / 2, E.H * 0.24, 130, '#fffbe8', 0.02, pop(t, 0.35, 0.25));
   sticker(g, 'LEBIH', E.W / 2, E.H * 0.38, 190, '#fffbe8', 0.03, slamK(t, tl));
   sticker(g, 'LAMA', E.W / 2, E.H * 0.50, 300, c.hot, -0.03, slamK(t, rel('lama', info, 2.7)));
-  const ts = rel('sendiri', info, 3.9); label(g, 'DARIPADA SENDIRI', E.W / 2, E.H * 0.60, 84, c.paper, INK, -0.02, pop(t, ts - 0.05, 0.25));
   g.restore(); } });
+
+// s01b 2.95-5.0: daripada ngerjain sendiri
+registerShot('s01b', { draw(g, t, info) {
+  const c = P(); bg(g, c.b, c.paper, 0.3); floorBg(g, c.b, GY, c); const ts = rel('sendiri', info, 1.2);
+  drawFigure(g, { x: 320, y: GY, s: 2.7, facing: 1, outfit: HERO, pose: breathe(POSES.relaxed, t, 0.5, 3), expr: 'smirk', rim: null, shadow: false });
+  label(g, 'DARIPADA', 640, 330, 80, c.paper, INK, -0.02, pop(t, rel('daripada', info, 0.1) - 0.05, 0.25));
+  sticker(g, 'SENDIRI', 640, 560, 150, '#fffbe8', 0.03, slamK(t, ts)); } });
 
 // s02 5.0-6.57: ada penelitiannya
 registerShot('s02', { draw(g, t, info) {
@@ -122,7 +128,7 @@ registerShot('s02', { draw(g, t, info) {
 // s03 6.57-9.73: lima orang, deadline
 registerShot('s03', { draw(g, t, info) {
   const c = P(); bg(g, c.paper, c.b, 0.25); floorBg(g, c.paper, GY, c); const cols = TCOL(c);
-  NAMES.forEach((n, i) => { const x = 130 + i * 205, a = 0.15 + i * 0.12; if (t < a) return;
+  NAMES.forEach((n, i) => { const x = 110 + i * 175, a = 0.15 + i * 0.12; if (t < a) return;
     drawFigure(g, { x, y: GY, s: 1.25, facing: 1, outfit: i === 0 ? HERO : MATE(cols[i], c.paper), pose: breathe(i === 0 ? POSES.talk : POSES.relaxed, t, 0.4, i + 2), expr: i === 0 ? 'smile' : 'neutral', rim: null, shadow: false });
     label(g, n, x, GY + 70, 34, c.paper, INK, 0, pop(t, a + 0.1, 0.2)); });
   sticker(g, '5', 300, 330, 300, c.hot, -0.04, slamK(t, rel('lima', info, 1.0))); label(g, 'ORANG SEKELOMPOK', 640, 330, 62, c.d, INK, 0.02, pop(t, rel('lima', info, 1.0) + 0.1, 0.22));
@@ -147,15 +153,15 @@ registerShot('s05', { draw(g, t, info) {
   label(g, '+1 JAM', 540, 600, 66, c.d, INK, -0.02, pop(t, t1, 0.22));
   bubble(g, 440, 720, 330, 100, 'oke bro', c.paper, INK, pop(t, rel('oke', info, 1.0), 0.25), 44, 'ANDI');
   label(g, '+2 JAM', 540, 880, 66, c.hot, '#fffbe8', 0.02, pop(t, t2 - 0.1, 0.22));
-  bubble(g, 460, 1040, 460, 100, 'aku bagian apa?', c.paper, INK, pop(t, rel('bagian', info, 2.7) - 0.15, 0.25), 44, 'BUDI');
+  bubble(g, 500, 1040, 460, 100, 'aku bagian apa?', c.paper, INK, pop(t, rel('bagian', info, 2.7) - 0.15, 0.25), 44, 'BUDI');
   clockFace(g, 880, 280, 86, 60 + (t / 4) * 60, c); } });
 
 // s06 17.1-20.8: lagi di jalan, stiker
 registerShot('s06', { draw(g, t, info) {
   const c = P(); bg(g, c.night, c.blue, 0.18); hpBody(g, 540, 760, 640, 1000, c.paper);
-  bubble(g, 440, 460, 440, 100, 'lagi di jalan', c.paper, INK, pop(t, rel('jalan', info, 1.0) - 0.3, 0.25), 44, 'CITRA');
+  bubble(g, 510, 460, 440, 100, 'lagi di jalan', c.paper, INK, pop(t, rel('jalan', info, 1.0) - 0.3, 0.25), 44, 'CITRA');
   const ts = rel('stiker', info, 2.0);
-  if (t > ts - 0.5) { const k = pop(t, ts - 0.5, 0.3); g.save(); g.translate(430, 820); g.scale(k, k); rr(g, -150 + 8, -140 + 10, 300, 280, 40); g.fillStyle = INK; g.fill(); rr(g, -150, -140, 300, 280, 40); g.fillStyle = c.paper; g.fill(); g.lineWidth = 6; g.strokeStyle = INK; g.stroke();
+  if (t > ts - 0.5) { const k = pop(t, ts - 0.5, 0.3); g.save(); g.translate(480, 820); g.scale(k, k); rr(g, -150 + 8, -140 + 10, 300, 280, 40); g.fillStyle = INK; g.fill(); rr(g, -150, -140, 300, 280, 40); g.fillStyle = c.paper; g.fill(); g.lineWidth = 6; g.strokeStyle = INK; g.stroke();
     poly(g, [[-80, -60], [-70, -120], [-30, -80]], c.c); poly(g, [[80, -60], [70, -120], [30, -80]], c.c); circle(g, 0, 0, 90, c.c); g.lineWidth = 7; g.strokeStyle = INK; g.beginPath(); g.arc(0, 0, 90, 0, 6.3); g.stroke(); circle(g, -30, -10, 10, INK); circle(g, 30, -10, 10, INK); seg(g, [[-16, 30], [0, 42], [16, 30]], 7, INK); g.restore();
     label(g, 'DEWI: STIKER DOANG', 540, 1080, 52, c.d, INK, 0.02, pop(t, ts, 0.22)); } } });
 
@@ -168,14 +174,14 @@ registerShot('s07', { draw(g, t, info) {
   const tl = rel('laptop', info, 2.0); const shake2 = t > tl ? Math.sin(t * 40) * 3 : 0;
   drawFigure(g, { x: 300 + 0, y: GY - 12, s: 2.5, facing: 1, outfit: HERO, pose: breathe(POSES.sit, t, 0.5, 4), expr: t < tl ? 'sleepy' : 'determined', look: [0.9, 0], rim: null, shadow: false });
   const min = 23 * 60 + Math.floor(t * 8); label(g, hhmm(min), 540, 280, 140, c.hot, '#fffbe8', -0.02, pop(t, 0.1, 0.25)); label(g, 'JAM 11 MALAM', 540, 440, 58, c.paper, INK, 0.02, pop(t, rel('11', info, 0.4), 0.22));
-  label(g, 'NGETIK SENDIRI', 640, 1260 - 50, 60, c.d, INK, 0.02, pop(t, rel('sendiri', info, 4.2) - 0.1, 0.25)); void shake2; } });
+  label(g, 'NGETIK SENDIRI', 640, 1190, 60, c.d, INK, 0.02, pop(t, rel('sendiri', info, 4.2) - 0.1, 0.25)); void shake2; } });
 
 // s08 25.9-28.4: jam 2 pagi kelar, kirim
 registerShot('s08', { draw(g, t, info) {
   const c = P(); bg(g, c.a, c.hot, 0.2); floorBg(g, c.a, GY, c);
   const tk = rel('kelar', info, 0.9), tg = rel('grup', info, 1.8);
   drawFigure(g, { x: 340, y: GY, s: 2.6, facing: 1, outfit: HERO, pose: breathe(t < tk ? POSES.sad : POSES.cheer, t, 0.5, 5), expr: t < tk ? 'sleepy' : 'happy', rim: null, shadow: false });
-  label(g, '02:00', 540, 280, 140, c.hot, '#fffbe8', -0.02, pop(t, 0.05, 0.25)); sticker(g, 'KELAR', 700, 560, 190, '#fffbe8', 0.04, slamK(t, tk));
+  label(g, '02:00', 540, 280, 140, c.hot, '#fffbe8', -0.02, pop(t, 0.05, 0.25)); sticker(g, 'KELAR', 740, 500, 170, '#fffbe8', 0.04, slamK(t, tk));
   const k = ease.out(prog(t, tg - 0.1, tg + 0.6)); if (k > 0) { g.save(); g.translate(540 + 300 * k, 900 - 420 * k); g.rotate(-0.4 * k); rr(g, -50, -64, 100, 128, 14); g.fillStyle = c.paper; g.fill(); g.lineWidth = 7; g.strokeStyle = INK; g.stroke(); seg(g, [[-26, -20], [26, -20]], 8, INK); seg(g, [[-26, 6], [26, 6]], 8, INK); g.restore(); } } });
 
 // s09 28.4-30.9: semua langsung balas
@@ -183,17 +189,17 @@ registerShot('s09', { draw(g, t, info) {
   const c = P(); bg(g, c.c, c.paper, 0.3); hpBody(g, 540, 760, 640, 1000, c.paper);
   const tm = rel('mantap', info, 0.6) - 0.3; const rs = ['mantap, Dim', 'mantap bro', 'thx Dim', 'mantul'];
   bubble(g, 660, 450, 400, 90, 'laporan.docx', c.blue, '#fffbe8', 1, 40);
-  rs.forEach((r, i) => bubble(g, 430, 600 + i * 150, 420, 100, r, c.paper, INK, pop(t, tm + i * 0.12, 0.2), 44, NAMES[i + 1]));
+  rs.forEach((r, i) => bubble(g, 490, 600 + i * 150, 420, 100, r, c.paper, INK, pop(t, tm + i * 0.12, 0.2), 44, NAMES[i + 1]));
   sticker(g, 'LANGSUNG', 540, 1190, 80, c.hot, -0.03, pop(t, tm + 0.5, 0.25)); } });
 
 // s10 30.9-37.5: 1979, Latane, teriak sendirian lalu ramai
 registerShot('s10', { draw(g, t, info) {
-  const c = P(); bg(g, c.d, c.paper, 0.3); floorBg(g, c.d, GY, c); const tr = rel('ramai', info, 5.0);
+  const c = P(); bg(g, c.d, c.paper, 0.3); floorBg(g, c.d, GY, c); const tr = rel('ramai-ramai', info, 5.64);
   sticker(g, '1979', 540, 190, 210, c.hot, -0.03, slamK(t, rel('1979', info, 0.1))); label(g, 'LATANÉ & TIM', 540, 380, 70, c.paper, INK, 0.02, pop(t, rel('latané', info, 0.7), 0.22));
   label(g, 'TERIAK SEKENCANG MUNGKIN', 540, 500, 56, c.c, INK, -0.01, pop(t, rel('berteriak', info, 2.4) - 0.1, 0.22));
   const n = t < tr ? 1 : 6;
-  for (let i = 0; i < n; i++) { const x = n === 1 ? 540 : 170 + i * 150, a = n === 1 ? 0 : (t - tr) * 6 - i * 0.6;
-    if (n > 1 && a < 0) continue; drawFigure(g, { x, y: GY, s: n === 1 ? 2.2 : 1.1, facing: 1, outfit: i === 0 ? HERO : MATE(TCOL(c)[i % 5], c.paper), pose: breathe(POSES.talk, t, 0.7, i), expr: 'surprised', rim: null, shadow: false });
+  for (let i = 0; i < n; i++) { const x = n === 1 ? 540 : 170 + i * 150, a = n === 1 ? 0 : (t - tr) * 9 - i * 0.5;
+    if (n > 1 && a < 0) continue; drawFigure(g, { x, y: GY, s: n === 1 ? 3.0 : 1.1, facing: 1, outfit: i === 0 ? HERO : MATE(TCOL(c)[i % 5], c.paper), pose: breathe(POSES.talk, t, 0.7, i), expr: 'surprised', rim: null, shadow: false });
     if (n === 1) lines(g, t, 560, 1000, 8, alpha(INK, 0.7), 9); }
   } });
 
@@ -203,8 +209,8 @@ registerShot('s11', { draw(g, t, info) {
   const t1 = rel('satu', info, 3.0), t6 = 0.2;
   const bar = (cx, h, col, k, dash = false) => { const hh = h * k; if (hh <= 0) return; if (dash) { g.save(); g.setLineDash([22, 16]); g.lineWidth = 9; g.strokeStyle = INK; rr(g, cx - 80, 1150 - hh, 160, hh, 20); g.stroke(); g.restore(); return; }
     rr(g, cx - 80 + 8, 1150 - hh + 10, 160, hh, 20); g.fillStyle = INK; g.fill(); rr(g, cx - 80, 1150 - hh, 160, hh, 20); g.fillStyle = col; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke(); };
-  bar(220, 200, c.blue, ease.out(prog(t, t1, t1 + 0.4))); bar(540, 600, c.paper, ease.out(prog(t, rel('tiga', info, 2.4), rel('tiga', info, 2.4) + 0.4)), true); bar(860, 470, c.hot, ease.out(prog(t, t6, t6 + 0.6)));
-  sticker(g, '6 ORANG', 860, 1225, 70, '#fffbe8', 0, pop(t, 0.2, 0.2)); sticker(g, '3X', 540, 1225, 70, '#fffbe8', 0, pop(t, rel('tiga', info, 2.4), 0.2)); sticker(g, '1 ORANG', 220, 1225, 70, '#fffbe8', 0, pop(t, t1, 0.2));
+  bar(200, 200, c.blue, ease.out(prog(t, t1, t1 + 0.4))); bar(480, 600, c.paper, ease.out(prog(t, rel('tiga', info, 2.4), rel('tiga', info, 2.4) + 0.4)), true); bar(760, 470, c.hot, ease.out(prog(t, t6, t6 + 0.6)));
+  sticker(g, '6 ORANG', 760, 1225, 70, '#fffbe8', 0, pop(t, 0.2, 0.2)); sticker(g, '3X', 480, 1225, 70, '#fffbe8', 0, pop(t, rel('tiga', info, 2.4), 0.2)); sticker(g, '1 ORANG', 200, 1225, 70, '#fffbe8', 0, pop(t, t1, 0.2));
   sticker(g, 'KURANG DARI', 540, 250, 100, '#fffbe8', -0.03, pop(t, rel('kurang', info, 1.8) - 0.1, 0.25)); sticker(g, '3X!', 540, 400, 200, c.hot, 0.03, slamK(t, rel('tiga', info, 2.4)));
   } });
 
@@ -213,7 +219,7 @@ registerShot('s12', { draw(g, t, info) {
   const c = P(); bg(g, c.c, c.paper, 0.3); const t0 = rel('makin', info, 0.1);
   label(g, 'TIAP ORANG', 540, 250, 90, c.paper, INK, -0.02, pop(t, 0.05, 0.25)); const tg = rel('ngirit', info, 1.7); label(g, 'NGIRIT TENAGA', 540, 410, 90, c.hot, '#fffbe8', 0.02, pop(t, tg - 0.1, 0.25));
   const hs = [440, 390, 340, 295, 255, 220];
-  hs.forEach((h, i) => { const x = 130 + i * 164, a = ease.out(prog(t, t0 + i * 0.1, t0 + i * 0.1 + 0.4)), cur = lerp(440, h, ease.out(prog(t, tg - 0.2, tg + 0.8)));
+  hs.forEach((h, i) => { const x = 120 + i * 135, a = ease.out(prog(t, t0 + i * 0.1, t0 + i * 0.1 + 0.4)), cur = lerp(440, h, ease.out(prog(t, tg - 0.2, tg + 0.8)));
     rr(g, x - 50 + 7, 1100 - 440 + 9, 100, 440, 18); g.fillStyle = INK; g.fill(); rr(g, x - 50, 1100 - 440, 100, 440, 18); g.fillStyle = c.paper; g.fill(); g.lineWidth = 7; g.strokeStyle = INK; g.stroke();
     const hh = (i === 0 ? 440 : cur) * a; rr(g, x - 40, 1100 - hh + 10, 80, Math.max(hh - 20, 0), 12); g.fillStyle = c.d; g.fill();
     circle(g, x, 1190, 38, INK); circle(g, x, 1190, 31, c.paper); circle(g, x - 11, 1186, 5, INK); circle(g, x + 11, 1186, 5, INK); });
@@ -227,7 +233,7 @@ registerShot('s13', { draw(g, t, info) {
   const t0 = rel('10', info, 0.6) - 0.1; const shown = Math.min(10, Math.floor((t - t0) * 4.5) + 1);
   pairs.forEach(([a, b], i) => { if (i >= shown || t < t0) return; seg(g, [pts[a], pts[b]], 14, INK); seg(g, [pts[a], pts[b]], 6, i % 3 === 1 && t > rel('macet', info, 3.4) ? c.hot : '#fffbe8'); });
   pts.forEach(([x, y], i) => { circle(g, x + 7, y + 9, 56, INK); circle(g, x, y, 56, i === 0 ? c.hot : cols[i]); g.lineWidth = 8; g.strokeStyle = INK; g.beginPath(); g.arc(x, y, 56, 0, 6.3); g.stroke(); circle(g, x - 17, y - 6, 8, INK); circle(g, x + 17, y - 6, 8, INK); });
-  sticker(g, String(Math.max(0, Math.min(10, shown))), 540, 1090, 220, '#fffbe8', 0, 1); label(g, 'JALUR OBROLAN', 540, 260, 80, c.paper, INK, -0.02, pop(t, 0.1, 0.25));
+  sticker(g, String(Math.max(0, Math.min(10, shown))), 540, 1050, 200, '#fffbe8', 0, 1); label(g, 'JALUR OBROLAN', 540, 260, 80, c.paper, INK, -0.02, pop(t, 0.1, 0.25));
   const tm = rel('macet', info, 3.4); if (t > tm) { label(g, 'MACET', 540, 1250 - 40, 80, c.hot, '#fffbe8', 0.03, pop(t, tm, 0.22)); } } });
 
 // s14 48.8-52.5: Steiner, process loss
@@ -240,9 +246,9 @@ registerShot('s14', { draw(g, t, info) {
 // s15 52.5-56.7: nggak lebay, sendiri lebih cepat
 registerShot('s15', { draw(g, t, info) {
   const c = P(); bg(g, c.c, c.paper, 0.3); floorBg(g, c.c, GY, c); const tl = rel('lebay', info, 1.0), tc = rel('cepat', info, 3.4);
-  drawFigure(g, { x: 340, y: GY, s: 2.7, facing: 1, outfit: HERO, pose: breathe(t < tl ? POSES.shrug : POSES.relaxed, t, 0.5, 6), expr: t < tl ? 'confused' : 'smirk', rim: null, shadow: false });
+  drawFigure(g, { x: 230, y: GY, s: 2.7, facing: 1, outfit: HERO, pose: breathe(t < tl ? POSES.shrug : POSES.relaxed, t, 0.5, 6), expr: t < tl ? 'confused' : 'smirk', rim: null, shadow: false });
   label(g, 'KAMU NGGAK LEBAY', 640, 330, 70, c.paper, INK, -0.02, pop(t, 0.05, 0.25));
-  sticker(g, 'SENDIRI', 700, 620, 130, '#fffbe8', 0.03, pop(t, rel('sendiri', info, 1.9) - 0.1, 0.25)); sticker(g, 'LEBIH CEPAT', 700, 790, 100, c.hot, -0.03, slamK(t, tc)); check(g, 900, 790, 40, c.d, pop(t, tc + 0.2, 0.2)); } });
+  sticker(g, 'SENDIRI', 640, 620, 120, '#fffbe8', 0.03, pop(t, rel('sendiri', info, 1.9) - 0.1, 0.25)); sticker(g, 'LEBIH CEPAT', 600, 790, 84, c.hot, -0.03, slamK(t, tc)); check(g, 840, 790, 36, c.d, pop(t, tc + 0.2, 0.2)); } });
 
 // s16 56.7-60.2: sampul laporan, nama lima (loop)
 registerShot('s16', { draw(g, t, info) {
