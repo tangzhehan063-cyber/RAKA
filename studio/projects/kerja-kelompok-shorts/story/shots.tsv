@@ -1,0 +1,20 @@
+# id	start	end	set	transisi	sfx	amb	line | scene
+@title Kerja Kelompok
+@music 0-30.9 tension 0.3; 30.9-52.5 calm 0.25; 52.5-60.24 hopeful 0.35
+s01	0.0	2.95	komik	cut	0.2 hit -10; 1.8 impact -10; 2.1 impact -10	-	Ngajak anak sekelompok kerja itu lebih lama | VONIS NGAJAK ORANG LAIN LEBIH LAMA
+s01b	2.95	5.0	komik	cut	0.1 pop -12; 1.2 pop -12	-	daripada ngerjain sendiri | Dimas santai, SENDIRI
+s02	5.0	6.57	komik	cut	0.1 pop -12	-	Ada penelitiannya | kertas penelitian
+s03	6.57	9.73	komik	swipe	0.1 swish -14; 0.9 pop -12; 2.0 hit -10	-	Dimas satu kelompok lima orang. Deadline besok pagi | lima tokoh, DEADLINE
+s04	9.73	12.98	komik	cut	0.3 pop -12; 0.9 blip -14; 2.2 pop -12	-	Dia chat grup, bagi tugas yuk. Centang dua | HP, chat terkirim
+s05	12.98	17.1	komik	cut	0.3 pop -12; 1.2 pop -12; 2.9 pop -12	-	Sejam kemudian, oke bro. Dua jam kemudian, aku bagian apa | chat balasan malas
+s06	17.1	20.8	komik	cut	0.3 pop -12; 1.8 pop -12; 2.6 blip -14	-	Satu orang bilang lagi di jalan. Satu lagi cuma ngirim stiker | stiker kucing
+s07	20.8	25.9	komik	cut	0.2 pop -14; 2.0 pop -12; 3.5 blip -14	-	Jam 11 malam, Dimas capek nunggu. Dia buka laptop dan ngetik semuanya sendiri | malam, empat kursi kosong
+s08	25.9	28.4	komik	cut	0.3 pop -12; 0.9 hit -10; 1.8 swish -12	-	Jam 2 pagi, kelar. Dia kirim ke grup | 02:00 KELAR
+s09	28.4	30.9	komik	swipe	0.1 swish -14; 0.4 pop -12; 0.55 pop -12; 0.7 pop -12; 0.85 pop -12	-	Semua langsung balas: mantap, Dim | balasan serentak
+s10	30.9	37.5	komik	flash	0.2 hit -10; 0.8 pop -12; 2.0 pop -12; 5.0 impact -10	-	Tahun 1979, Latané dan timnya minta orang berteriak sekencang mungkin, sendirian lalu ramai-ramai | teriak 1 vs 6
+s11	37.5	41.5	komik	cut	0.3 pop -12; 2.4 pop -12; 2.8 hit -10	-	Enam orang berteriak bareng, suaranya kurang dari tiga kali suara satu orang | bar 1 vs 3X vs 6
+s12	41.5	44.4	komik	cut	0.2 pop -12; 1.7 pop -12; 2.0 blip -14	-	Makin banyak orang, tiap orang makin ngirit tenaga | baterai menurun
+s13	44.4	48.8	komik	cut	0.3 pop -12; 0.6 counter -14; 3.4 hit -8	-	Lima orang juga punya 10 jalur obrolan yang harus nyambung, dan tiap jalur bisa macet | pentagon 10 garis
+s14	48.8	52.5	komik	cut	0.3 pop -12; 1.0 pop -12; 1.9 impact -10	-	Psikolog Ivan Steiner menyebut hilangnya hasil ini process loss | PROCESS LOSS
+s15	52.5	56.7	komik	cut	0.3 pop -14; 1.9 pop -12; 3.4 hit -8	-	Jadi kamu nggak lebay. Ngerjain sendiri memang lebih cepat | Dimas lega, SENDIRI LEBIH CEPAT
+s16	56.7	60.24	komik	cut	0.3 pop -14; 1.4 pop -12; 2.4 hit -10	-	Besoknya, di sampul laporan, namanya tetap lima | sampul 5 nama
