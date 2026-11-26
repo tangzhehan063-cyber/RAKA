@@ -1,0 +1,520 @@
+{
+ "title": "Kerja Kelompok",
+ "duration": 60.24,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 5.0,
+   "line": "Ngajak anak sekelompok kerja itu lebih lama daripada ngerjain sendiri",
+   "scene": "VONIS NGAJAK ORANG LAIN LEBIH LAMA",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.8,
+     "name": "impact",
+     "gain": -10.0
+    },
+    {
+     "at": 2.7,
+     "name": "impact",
+     "gain": -10.0
+    },
+    {
+     "at": 3.9,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 5.0,
+   "end": 6.57,
+   "line": "Ada penelitiannya",
+   "scene": "kertas penelitian",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.57,
+   "end": 9.73,
+   "line": "Dimas satu kelompok lima orang. Deadline besok pagi",
+   "scene": "lima tokoh, DEADLINE",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 9.73,
+   "end": 12.98,
+   "line": "Dia chat grup, bagi tugas yuk. Centang dua",
+   "scene": "HP, chat terkirim",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.9,
+     "name": "blip",
+     "gain": -14.0
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 12.98,
+   "end": 17.1,
+   "line": "Sejam kemudian, oke bro. Dua jam kemudian, aku bagian apa",
+   "scene": "chat balasan malas",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.9,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 17.1,
+   "end": 20.8,
+   "line": "Satu orang bilang lagi di jalan. Satu lagi cuma ngirim stiker",
+   "scene": "stiker kucing",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 20.8,
+   "end": 25.9,
+   "line": "Jam 11 malam, Dimas capek nunggu. Dia buka laptop dan ngetik semuanya sendiri",
+   "scene": "malam, empat kursi kosong",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.5,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 25.9,
+   "end": 28.4,
+   "line": "Jam 2 pagi, kelar. Dia kirim ke grup",
+   "scene": "02:00 KELAR",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.9,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 1.8,
+     "name": "swish",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 28.4,
+   "end": 30.9,
+   "line": "Semua langsung balas: mantap, Dim",
+   "scene": "balasan serentak",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.55,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.85,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 30.9,
+   "end": 37.5,
+   "line": "Tahun 1979, Latané dan timnya minta orang berteriak sekencang mungkin, sendirian lalu ramai-ramai",
+   "scene": "teriak 1 vs 6",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -10.0
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 5.0,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 37.5,
+   "end": 41.5,
+   "line": "Enam orang berteriak bareng, suaranya kurang dari tiga kali suara satu orang",
+   "scene": "bar 1 vs 3X vs 6",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.8,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 41.5,
+   "end": 44.4,
+   "line": "Makin banyak orang, tiap orang makin ngirit tenaga",
+   "scene": "baterai menurun",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.0,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 44.4,
+   "end": 48.8,
+   "line": "Lima orang juga punya 10 jalur obrolan yang harus nyambung, dan tiap jalur bisa macet",
+   "scene": "pentagon 10 garis",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.6,
+     "name": "counter",
+     "gain": -14.0
+    },
+    {
+     "at": 3.4,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 48.8,
+   "end": 52.5,
+   "line": "Psikolog Ivan Steiner menyebut hilangnya hasil ini process loss",
+   "scene": "PROCESS LOSS",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 1.9,
+     "name": "impact",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 52.5,
+   "end": 56.7,
+   "line": "Jadi kamu nggak lebay. Ngerjain sendiri memang lebih cepat",
+   "scene": "Dimas lega, SENDIRI LEBIH CEPAT",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.9,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 3.4,
+     "name": "hit",
+     "gain": -8.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 56.7,
+   "end": 60.24,
+   "line": "Besoknya, di sampul laporan, namanya tetap lima",
+   "scene": "sampul 5 nama",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.4,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 30.9,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 30.9,
+   "end": 52.5,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 52.5,
+   "end": 60.24,
+   "mood": "hopeful",
+   "intensity": 0.35
+  }
+ ],
+ "sfx": []
+}
