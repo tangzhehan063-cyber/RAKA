@@ -37,6 +37,7 @@ Bacaan (n=7, indikatif, bukan bukti):
 |---|---|---|---|
 | #17 Lima Menit | 47 dtk | vonis di awal, 12 shot, style komik terang, topik keluhan sehari-hari (HP malam), ending melingkar tanpa nasihat besar | belum ada data; ukur terhadap #12 (3.934 views) dan #10 (1.805) |
 | #18 Buku Belum Dibuka | 64 dtk | durasi 60-70 dtk (permintaan user), 18 shot, style komik malam, topik beli buku produktivitas tapi tak dibuka (Gollwitzer 2009) | belum ada data; ukur terhadap #17 (47 dtk) dan #12 (3.934 views) |
+| #20 Kerja Kelompok | 60 dtk | topik keluhan sehari-hari (kerja kelompok, premis dari user), vonis di awal, alur cerita Dimas (chat grup, jam 2 pagi), 17 shot, komik malam | belum ada data; ukur terhadap #17-#19 dan #12 (3.934 views) |
 
 ## Formula topik "validasi" (catatan user 16 Nov 2026)
 - Video skripsi (#9) banyak impresi: penonton suka topik yang **mewajarkan kesulitan mereka** ("bukan cuma kamu, otaknya/sistemnya memang begitu"). Cari topik sejenis: keluhan relate + efek ilmiah bernama + studi.
