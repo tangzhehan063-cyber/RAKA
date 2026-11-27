@@ -1,0 +1,439 @@
+{
+ "title": "Kursi Prioritas",
+ "duration": 70.062,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.6,
+   "line": "vonis",
+   "scene": "vonis",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 1.7,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 2.6,
+   "end": 6.0,
+   "line": "salah tebak",
+   "scene": "salah tebak",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.0,
+   "end": 8.5,
+   "line": "KRL penuh",
+   "scene": "KRL penuh",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.5,
+   "end": 13.0,
+   "line": "Bu Wati berdiri",
+   "scene": "Bu Wati berdiri",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 13.0,
+   "end": 15.8,
+   "line": "cowok headphone",
+   "scene": "cowok headphone",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 15.8,
+   "end": 18.5,
+   "line": "tidur atau pura-pura",
+   "scene": "tidur atau pura-pura",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 18.5,
+   "end": 20.4,
+   "line": "kaki gemetar",
+   "scene": "kaki gemetar",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "heartbeat",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 20.4,
+   "end": 23.0,
+   "line": "napas, buka mulut",
+   "scene": "napas, buka mulut",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 23.0,
+   "end": 26.2,
+   "line": "Mas... TERPUTUS (hening)",
+   "scene": "Mas... TERPUTUS (hening)",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "freeze",
+     "gain": -12.0
+    },
+    {
+     "at": 0.7,
+     "name": "stinger",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 26.2,
+   "end": 31.0,
+   "line": "takut minta, ditolak",
+   "scene": "takut minta, ditolak",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 31.0,
+   "end": 35.6,
+   "line": "2008 Flynn Lake",
+   "scene": "2008 Flynn Lake",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 35.6,
+   "end": 39.5,
+   "line": "tebak lalu minta",
+   "scene": "tebak lalu minta",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 39.5,
+   "end": 46.9,
+   "line": "bar tebakan vs kenyataan 50%",
+   "scene": "bar tebakan vs kenyataan 50%",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 5.2,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 46.9,
+   "end": 51.5,
+   "line": "nggak enak menolak",
+   "scene": "nggak enak menolak",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 51.5,
+   "end": 57.2,
+   "line": "bukan soal kursi",
+   "scene": "bukan soal kursi",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 57.2,
+   "end": 61.3,
+   "line": "LANJUT: boleh saya duduk, berdiri",
+   "scene": "LANJUT: boleh saya duduk, berdiri",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -12.0
+    },
+    {
+     "at": 2.8,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 61.3,
+   "end": 64.0,
+   "line": "maaf nggak lihat",
+   "scene": "maaf nggak lihat",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s18",
+   "start": 64.0,
+   "end": 65.6,
+   "line": "memang nggak lihat",
+   "scene": "memang nggak lihat",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s19",
+   "start": 65.6,
+   "end": 70.062,
+   "line": "peka atau minta",
+   "scene": "peka atau minta",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 2.5,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 23.4,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 26.4,
+   "end": 57.0,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 57.0,
+   "end": 70.062,
+   "mood": "hopeful",
+   "intensity": 0.3
+  }
+ ],
+ "sfx": []
+}
