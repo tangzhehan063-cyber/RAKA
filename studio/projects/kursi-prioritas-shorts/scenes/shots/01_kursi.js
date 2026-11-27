@@ -244,9 +244,9 @@ registerShot('s12', { draw(g, t, info) {
 registerShot('s13', { draw(g, t, info) {
   const c = P(); bg(g, c.a, c.hot, 0.25); const tr = rel('meremehkan', info, 0.3), tp = rel('persen', info, 3.2), base = 1060;
   const bar = (x, h, col, ttl, k) => { const hh = h * k; rr(g, x - 150 + 10, base - hh + 12, 300, hh, 20); g.fillStyle = INK; g.fill(); rr(g, x - 150, base - hh, 300, hh, 20); g.fillStyle = col; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke(); label(g, ttl, x, base + 80, 52, c.paper, INK, 0, k > 0.1 ? 1 : 0); };
-  bar(260, 340, c.blue, 'TEBAKAN', ease.out(prog(t, 0.1, 0.7))); bar(620, 680, c.d, 'KENYATAAN', ease.out(prog(t, tr + 0.1, tr + 0.8)));
-  if (t > tr) label(g, 'MEREMEHKAN', 540, 300, 76, c.hot, '#fffbe8', -0.03, pop(t, tr, 0.25));
-  if (t > tp - 0.3) { sticker(g, 'SAMPAI 50%', 540, 520, 130, '#fffbe8', 0.03, slamK(t, tp - 0.3)); seg(g, [[260, base - 340], [620, base - 340]], 6, INK); } } });
+  bar(260, 250, c.blue, 'TEBAKAN', ease.out(prog(t, 0.1, 0.7))); bar(620, 500, c.d, 'KENYATAAN', ease.out(prog(t, tr + 0.1, tr + 0.8)));
+  if (t > tr) label(g, 'MEREMEHKAN', 540, 230, 76, c.hot, '#fffbe8', -0.03, pop(t, tr, 0.25));
+  if (t > tp - 0.3) { sticker(g, 'SAMPAI 50%', 540, 400, 130, '#fffbe8', 0.03, slamK(t, tp - 0.3)); seg(g, [[260, base - 250], [620, base - 250]], 6, INK); } } });
 
 // s14 46.9-51.5: menolak bikin nggak enak
 registerShot('s14', { draw(g, t, info) {
@@ -268,7 +268,7 @@ registerShot('s16', { draw(g, t, info) {
   const cp = posesAt(t, [[0, 'sit'], [tu, 'sit'], [tu + 0.4, 'stand']], 0.12); const cs = t < tu + 0.2; const cy = cs ? GY - 6 : GY;
   fig(g, { x: 440, y: cy, s: 2.2, outfit: COWOK(c), pose: cp, expr: t < tu ? 'sleepy' : 'surprised' }); { const [hx, hy] = headAt(cp, 440, cy, 2.2); phones(g, hx, hy, 2.2, c.hot, t > tu + 0.1); }
   fig(g, { x: 190, y: GY, s: 2.3, outfit: WATI(), pose: breathe(POSES.talk, t, 0.5, 2), expr: 'smile' }); belly(g, 190, GY, 2.3);
-  bubble(g, 330, 600, 560, 120, 'Mas, boleh saya duduk?', c.paper, INK, pop(t, rel('boleh', info, 0.7) - 0.4, 0.25), 40);
+  bubble(g, 330, 470, 560, 120, 'Mas, boleh saya duduk?', c.paper, INK, pop(t, rel('boleh', info, 0.7) - 0.4, 0.25), 40);
   if (t < 0.7) { g.fillStyle = alpha(INK, 0.6 * (1 - t / 0.7)); g.fillRect(0, 0, E.W, E.H); sticker(g, 'LANJUT', 540, 800, 220, '#fffbe8', -0.05, slamK(t, 0.02) * (1 - prog(t, 0.45, 0.7))); } } });
 
 // s17 61.3-64.0: maaf Bu, saya nggak lihat
@@ -276,8 +276,8 @@ registerShot('s17', { draw(g, t, info) {
   const c = P(); gerbong(g, c, 2 + t * 0.3, { sway: 0.5 }); const cp = POSES.shrug;
   fig(g, { x: 650, y: GY, s: 2.3, outfit: COWOK(c), pose: breathe(cp, t, 0.4, 2), expr: 'worried' }); { const [hx, hy] = headAt(cp, 650, GY, 2.3); phones(g, hx, hy, 2.3, c.hot, true); }
   fig(g, { x: 250, y: GY - 6, s: 2.2, outfit: WATI(), pose: POSES.sit, expr: 'smile' });
-  bubble(g, 640, 560, 440, 110, 'Aduh, maaf Bu.', c.paper, INK, pop(t, rel('aduh', info, 0.1) - 0.05, 0.25), 48);
-  bubble(g, 640, 700, 520, 110, 'Saya nggak lihat.', c.c, INK, pop(t, rel('saya', info, 1.0) - 0.05, 0.25), 48); } });
+  bubble(g, 640, 400, 440, 110, 'Aduh, maaf Bu.', c.paper, INK, pop(t, rel('aduh', info, 0.1) - 0.05, 0.25), 48);
+  bubble(g, 640, 520, 520, 110, 'Saya nggak lihat.', c.c, INK, pop(t, rel('saya', info, 1.0) - 0.05, 0.25), 48); } });
 
 // s18 64.0-65.6: dia memang nggak lihat
 registerShot('s18', { draw(g, t, info) {
@@ -290,6 +290,6 @@ registerShot('s19', { draw(g, t, info) {
   const c = P(); bg(g, c.a, c.hot, 0.25); const tp = rel('peka', info, 1.4), tm = rel('minta', info, 3.4);
   fig(g, { x: 270, y: GY, s: 2.0, outfit: COWOK(c), pose: breathe(POSES.shrug, t, 0.4, 2), expr: 'smile' });
   fig(g, { x: 810, y: GY, s: 2.0, facing: -1, outfit: WATI(), pose: breathe(POSES.talk, t, 0.4, 3), expr: 'smile' }); belly(g, 810, GY, 2.0, -1);
-  sticker(g, 'PEKA?', 300, 430, 130, c.blue, -0.05, slamK(t, tp)); sticker(g, 'MINTA?', 770, 430, 130, c.hot, 0.05, slamK(t, tm));
-  burst(g, 540, 640, 70, 120, 10, c.c, t * 0.4); sticker(g, 'VS', 540, 640, 90, '#fffbe8', 0, pop(t, tp + 0.2, 0.2));
+  sticker(g, 'PEKA?', 300, 380, 130, c.blue, -0.05, slamK(t, tp)); sticker(g, 'MINTA?', 770, 520, 130, c.hot, 0.05, slamK(t, tm));
+  burst(g, 540, 700, 70, 120, 10, c.c, t * 0.4); sticker(g, 'VS', 540, 700, 90, '#fffbe8', 0, pop(t, tp + 0.2, 0.2));
   label(g, 'KAMU TIM APA?', 540, 1210, 72, c.paper, INK, -0.02, pop(t, tm + 0.3, 0.25)); } });
