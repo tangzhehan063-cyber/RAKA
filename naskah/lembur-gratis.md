@@ -1,4 +1,4 @@
-# #22 Lembur Gratis (draf 1, ±75 dtk, format "Potong di Puncak", opening BARU, perpindahan webtoon + balik halaman)
+# #22 Lembur Gratis (draf 2 ending tegas, ±75 dtk, format "Potong di Puncak", opening BARU, perpindahan webtoon + balik halaman)
 
 Permintaan user (27 Nov): topik "dipaksa lembur padahal nggak dibayar" (debat keseharian). Aturan baru: opening tidak lagi vonis raksasa+burst; perpindahan adegan gaya webtoon dengan balik halaman di titik TERPUTUS; cover sampul komik/adegan stickman warna komik.
 Tokoh: Raka (hoodie merah-oranye #d64a33, maskot) dan atasan (hanya lewat chat, tidak digambar).
@@ -7,7 +7,7 @@ Gaya warna: dipilih user lewat `produksi.sh palet` setelah ACC (bukan komikMint,
 ## Riset (dengan kejujuran)
 - **Studi utama: Pega dkk. 2021 (WHO/ILO)**, *Environment International*, estimasi bersama beban penyakit akibat jam kerja panjang. Kerja ≥55 jam/minggu dibanding 35-40 jam: risiko stroke +35% dan kematian penyakit jantung iskemik +17%; ±745.000 kematian pada 2016 (stroke 398.000 + jantung 347.000). Sumber konfirmasi: siaran pers WHO 17 Mei 2021 (who.int). Artikel asli tidak dibuka.
 - **Aturan: PP 35/2021** (turunan UU Cipta Kerja): lembur maksimal 4 jam/hari dan 18 jam/minggu, dengan persetujuan pekerja yang bersangkutan, upah lembur wajib dibayar; Pasal 27 memberi pengecualian hak upah lembur untuk golongan jabatan tertentu yang diatur di perjanjian kerja/peraturan perusahaan/PKB. Sumber: ringkasan hukumonline.com dan wageindicator.org (teks asli di peraturan.go.id tidak dibuka).
-- **Batas yang harus jujur:** (1) Studi WHO/ILO adalah korelasi dari jam kerja yang panjang (≥55 jam/minggu), BUKAN akibat satu malam lembur; VO menyebutnya. (2) Ini informasi umum, bukan nasihat hukum; VO menyuruh cek perjanjian kerja sendiri. (3) Angka 17% di VO disebut "penyakit jantung" (dalam studi: penyakit jantung iskemik). (4) Raka dan atasan fiktif; akhir cerita sengaja menggantung (debat terbuka). (5) Ada pengecualian upah lembur untuk jabatan tertentu; jangan menyimpulkan semua lembur pasti berbayar.
+- **Batas yang harus jujur:** (1) Studi WHO/ILO adalah korelasi dari jam kerja yang panjang (≥55 jam/minggu), BUKAN akibat satu malam lembur; VO menyebutnya. (2) Ini informasi umum, bukan nasihat hukum; VO menyuruh cek perjanjian kerja sendiri. (3) Angka 17% di VO disebut "penyakit jantung" (dalam studi: penyakit jantung iskemik). (4) Raka dan atasan fiktif; ending REVISI (user 27 Nov: ending lebih tegas): atasan membalas singkat, Raka pulang jam 18:05, empat laptop rekan masih menyala; debat dipindah ke pertanyaan 'kamu pulang atau stay?' (akhir cerita fiktif, bukan temuan). (5) Ada pengecualian upah lembur untuk jabatan tertentu; jangan menyimpulkan semua lembur pasti berbayar.
 
 ## Opening baru (menggantikan vonis raksasa)
 Layar HP gelap, jam di pojok 17:58, gelembung chat atasan masuk satu per satu ("Raka", "malam ini stay dulu ya, demi tim", "uang lembur nggak ada, tapi dicatat kok") sinkron dengan kalimat VO. Tanpa burst, tanpa stiker raksasa.
@@ -29,7 +29,8 @@ Layar HP gelap, jam di pojok 17:58, gelembung chat atasan masuk satu per satu ("
 | 10 | Persetujuan pekerja, upah wajib dibayar, pengecualian jabatan tertentu | tiga kartu bertahap, "CEK PERJANJIAN KERJAMU" | cut |
 | 11 | Balik ke kantor. Raka menghapus S | LANJUT, Raka menghapus, mengetik pelan | pageturn |
 | 12 | Pak, boleh saya lihat ketentuan lemburnya dulu? | gelembung chat Raka | webtoon |
-| 13 | Tiga titik... hilang | tiga titik berdenyut lalu hilang, kantor sunyi | cut |
-| 14 | Menurut kamu... | dua gelembung: KURANG LOYAL? vs KETERLALUAN? | webtoon |
+| 13 | Balasan atasan: oke, besok kita bahas | gelembung balasan pendek masuk, Raka mengangguk | cut |
+| 14 | Jam 18:05, Raka pulang; empat laptop masih menyala | Raka keluar pintu, di belakang empat meja berlampu laptop | webtoon |
+| 15 | Kalau kamu jadi Raka, pulang atau stay? | dua pilihan besar: PULANG? vs STAY? (debat terbuka) | cut |
 
 ## Cover (gaya baru): sampul komik spotlight, Raka bertas menatap HP, teks "LEMBUR GRATIS?" di pita tengah, masthead RAKA + badge #22.

@@ -10,6 +10,6 @@ Di Indonesia, PP tiga puluh lima tahun dua ribu dua puluh satu membatasi lembur 
 
 Balik ke kantor. Raka menghapus huruf S. Dia mengetik pelan: Pak, boleh saya lihat ketentuan lemburnya dulu? Kalau ada, malam ini saya stay.
 
-Tiga titik muncul di layar cukup lama, lalu hilang.
+Balasan atasan pendek: oke, besok kita bahas. Jam enam lewat lima, Raka pulang. Di belakangnya, empat laptop masih menyala.
 
-Menurut kamu, Raka kurang loyal, atau atasannya yang keterlaluan?
+Kalau kamu jadi Raka, kamu pulang atau tetap stay?
