@@ -1,4 +1,4 @@
-# #21 Kursi Prioritas (draf 1, ±75 dtk, format baru "Potong di Puncak")
+# #21 Kursi Prioritas (FINAL = naskah tulisan user 27 Nov, ada di `naskah/kursi-prioritas-tts.md`; bagian "Teks TTS" di bawah adalah DRAF 1 Claude yang tidak dipakai; riset dan storyboard tetap berlaku) ±75 dtk, format "Potong di Puncak"
 
 Permintaan user (27 Nov): topik keseharian yang memancing debat; cara bawa fakta berubah: masalah muncul, cerita TERPUTUS di tengah, masuk penjelasan, lalu cerita selesai, supaya penonton penasaran sampai akhir. Topik dipilih user: kursi prioritas / minta kursi. Durasi dipilih user: ±75 dtk.
 Tokoh: Bu Wati (hamil tujuh bulan, item merah-oranye #d64a33 = tas/syal) dan cowok berheadphone. Momen khas/cover: kaki Bu Wati gemetar di depan kursi, cowok headphone mata merem.
