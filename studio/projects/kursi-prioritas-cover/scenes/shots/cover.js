@@ -30,7 +30,7 @@ registerShot('c01', { draw(g) {
   // tokoh: Bu Wati (reach) dan cowok headphone (duduk, mata merem)
   const wx = 300, sp = POSES.sit, cx = 840;
   drawFigure(g, { x: wx, y: GYc, s: 3.0, facing: 1, outfit: { top: 'dress', color: '#d64a33', head: 'bun' }, pose: POSES.reach, expr: 'worried', rim: null, shadow: false });
-  const bx = wx + 26 * 3.0, by = GYc - 118 * 3.0; circle(g, bx + 3, by + 4, 30 * 3.0, INK); circle(g, bx, by, 30 * 3.0, '#e8553a'); g.lineWidth = 7; g.strokeStyle = INK; g.beginPath(); g.arc(bx, by, 30 * 3.0, 0, 6.3); g.stroke();
+  const bx = wx + 22 * 3.0, by = GYc - 112 * 3.0, br = 27 * 3.0; circle(g, bx, by, br, '#d64a33'); g.lineWidth = 9; g.lineCap = 'round'; g.strokeStyle = shade('#d64a33', -0.38); g.beginPath(); g.arc(bx, by, br, -1.05, 1.15); g.stroke();   // perut menyatu dengan gaun: warna sama, kontur hanya di sisi depan
   drawFigure(g, { x: cx, y: GYc - 56, s: 2.7, facing: 1, outfit: { top: 'tshirt', color: C.blue, head: 'none' }, pose: sp, expr: 'sleepy', rim: null, shadow: false });
   { const hx = cx + sp.head[0] * 2.7, hy = GYc - 56 + sp.head[1] * 2.7, s = 2.7; g.lineCap = 'round'; g.lineWidth = 9 * s; g.strokeStyle = INK; g.beginPath(); g.arc(hx, hy, 31 * s, Math.PI * 1.02, Math.PI * 1.98); g.stroke(); g.lineWidth = 5 * s; g.strokeStyle = C.hot; g.stroke();
     for (const dx of [-31, 31]) { rr(g, hx + dx * s - 8 * s, hy - 12 * s, 16 * s, 26 * s, 6 * s); g.fillStyle = INK; g.fill(); rr(g, hx + dx * s - 5.5 * s, hy - 9.5 * s, 11 * s, 21 * s, 4 * s); g.fillStyle = C.hot; g.fill(); } }
