@@ -1,0 +1,52 @@
+{
+ "title": "uji",
+ "duration": 8.0,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "end": 3.0,
+   "line": "",
+   "scene": "halaman 3 panel",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "captions": false
+  },
+  {
+   "id": "s02",
+   "start": 3.0,
+   "end": 5.6,
+   "line": "",
+   "scene": "panel penuh Mas...",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "webtoon",
+    "dur": 0.7
+   },
+   "sfx": [],
+   "captions": false
+  },
+  {
+   "id": "s03",
+   "start": 5.6,
+   "end": 8.0,
+   "line": "",
+   "scene": "jawaban setelah balik halaman",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "pageturn",
+    "dur": 0.8
+   },
+   "sfx": [],
+   "captions": false
+  }
+ ],
+ "music": [],
+ "sfx": []
+}

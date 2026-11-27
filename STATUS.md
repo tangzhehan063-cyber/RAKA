@@ -1,5 +1,10 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## ATURAN BARU dari user (27 Nov 2026, berlaku mulai #22)
+- **Opening video harus BERGANTI tiap video.** Opening #17-#21 sama semua: vonis raksasa (teks sticker besar + burst/awan) dengan warna berbeda. Mulai #22 jangan pakai pola itu; pilih bentuk pembuka lain (mis. adegan tokoh langsung beraksi, close-up, potongan percakapan, objek bergerak) dan jangan ulang bentuk pembuka video sebelumnya.
+- **Cover kembali ke gaya animasi lama (khusus cover):** adegan stickman dari video (tokoh + latar) + teks cover 2-4 kata di pita tengah, seperti template `studio/projects/hari-ke-10-cover/`, tetapi dengan WARNA KOMIK video itu. Bukan lagi bubble/burst teks besar saja. Isi cover #17-#21 sama semua (hanya teks + awan beda warna).
+- Rencana kit komik bersama (`studio/library/komik-kit.js`) dan lembar tokoh tetap DITUNDA oleh user ("nanti dulu").
+
 ## Video #21 "Kursi Prioritas" SELESAI (27 Nov 2026), FORMAT BARU "Potong di Puncak", 70 dtk
 - Permintaan user: topik keseharian yang memancing debat; fakta dibawa dengan cerita yang TERPUTUS di tengah (masalah muncul, potong, penjelasan, lalu cerita selesai) supaya penonton menunggu sampai akhir. User memilih topik kursi prioritas, durasi ±75 dtk, dan MENULIS ULANG naskah sendiri (dipakai apa adanya; hanya format TTS diubah).
 - Struktur: hook vonis, Bu Wati hamil berdiri depan kursi, cowok headphone mata merem, "Mas..." lalu layar membeku + stempel TERPUTUS + hening 2,5 dtk (musik berhenti), riset Flynn & Lake, "LANJUT", cowok berdiri ("saya nggak lihat"), ending pertanyaan debat tanpa vonis (PEKA? vs MINTA?).
@@ -117,6 +122,7 @@
 - Channel pengetahuan ada di repo `Channel-Penjelasan`.
 
 ## Preferensi user
+- **Opening video berganti tiap video + cover bergaya adegan stickman berwarna komik (user 27 Nov):** lihat bagian ATURAN BARU di atas.
 - **Gemini TTS = Claude buat sendiri (user 23 Nov):** begitu user memilih Gemini TTS, langsung generate via API (`tools/gemini_tts.py`), jangan menunggu WAV dari user. Tercatat di CLAUDE.md langkah 2.
 - **Humanizer SEBELUM dikirim (tegas, user 23 Nov):** naskah, teks panjang, caption, dan teks apa pun yang dipakai di video HARUS dilewatkan skill `anthropic-skills:humanizer` lebih dulu, lalu yang dikirim ke user hanya versi setelahnya. Jangan kirim draf mentah.
 - **Laporan akhir video (13 Nov): di chat hanya MP4 + link Drive; cover, caption, naskah, suara (mp3) diunggah ke Drive `NN - Judul`** (seperti Channel-Penjelasan). #8: https://drive.google.com/drive/folders/1AAUO9vTfCugFJkTIjTJlrEBYE-1zb3Lc
