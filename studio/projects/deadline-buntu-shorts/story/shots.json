@@ -1,0 +1,336 @@
+{
+ "title": "Deadline Buntu",
+ "duration": 42.0,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.2,
+   "line": "Jam 10 malam. Deadline besok.",
+   "scene": "jam 22:00 raksasa slam, laptop dokumen kosong kursor berkedip, stempel DEADLINE BESOK",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.22,
+     "name": "tick",
+     "gain": -12.0
+    },
+    {
+     "at": 1.9,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 3.2,
+   "end": 6.2,
+   "line": "Dan kamu merasa lagi di puncak kreativitas",
+   "scene": "bigFace yakin, bohlam meledak, burst, MODE JENIUS",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.12,
+     "name": "impact",
+     "gain": -10.0
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.2,
+   "end": 8.7,
+   "line": "Ide mengalir, jari ngebut",
+   "scene": "laptop teks memenuhi layar, ide beterbangan, speed lines",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.7,
+   "end": 11.5,
+   "line": "rasanya ini kamu versi terbaik",
+   "scene": "tokoh cheer, sparkle, label VERSI TERBAIK",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 11.5,
+   "end": 13.4,
+   "line": "Peneliti pernah membaca catatan harian",
+   "scene": "tumpukan buku harian, label CATATAN HARIAN",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 13.4,
+   "end": 15.8,
+   "line": "177 karyawan",
+   "scene": "grid 177 ikon orang, sticker 177 KARYAWAN, kartu AMABILE DKK 2002",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "counter",
+     "gain": -16.0
+    },
+    {
+     "at": 1.2,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 15.8,
+   "end": 20.4,
+   "line": "Di hari tekanan waktunya tinggi, pikiran kreatif malah lebih jarang muncul",
+   "scene": "meteran TEKANAN naik, 6 bohlam padam satu per satu, stiker LEBIH JARANG",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 3.0,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 20.4,
+   "end": 26.0,
+   "line": "Anehnya, ada indikasi mereka sendiri justru merasa lebih kreatif",
+   "scene": "bar RASA KREATIF naik vs HASIL turun, stempel ADA INDIKASI",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14.0
+    },
+    {
+     "at": 2.6,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 26.0,
+   "end": 28.0,
+   "line": "Tekanan juga tidak selalu merusak",
+   "scene": "stiker TIDAK SELALU, kata MERUSAK dicoret",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "hit",
+     "gain": -10.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 28.0,
+   "end": 32.4,
+   "line": "Fokus penuh pada satu hal yang kamu anggap penting, hasilnya bisa baik",
+   "scene": "target konsentris, notifikasi memantul, label FOKUS PENUH",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.4,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 32.4,
+   "end": 37.0,
+   "line": "Tapi ini studi lapangan. Polanya terlihat, sebabnya belum pasti",
+   "scene": "dua panel POLA centang vs SEBAB tanda tanya, stiker KORELASI",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.32
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14.0
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 37.0,
+   "end": 40.5,
+   "line": "Jadi malam ini, kalau semuanya terasa jenius, simpan dulu",
+   "scene": "dokumen JENIUS? disimpan ke map, jam 22:00 menuju 08:00",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14.0
+    },
+    {
+     "at": 2.6,
+     "name": "blip",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 40.5,
+   "end": 42.0,
+   "line": "Baca lagi besok pagi",
+   "scene": "jam 08:00 matahari, mata baca dokumen, label BESOK PAGI",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -14.0
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 26.0,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 26.0,
+   "end": 37.0,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 37.0,
+   "end": 42.0,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}

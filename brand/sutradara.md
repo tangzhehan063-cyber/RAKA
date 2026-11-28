@@ -1,6 +1,6 @@
 # Sutradara retensi RAKA (diadaptasi dari repo Motion-videos, 9 Nov 2026)
 > **Cara pakai + alat cek otomatis: skill `.claude/skills/sutradara/SKILL.md`** (14 Nov 2026). File ini = angka dan aturan detail yang dirujuk skill.
-Permintaan user: Motion-videos jadi "sutradara" supaya retensi naik; naskah dan karakter tetap gaya lama. **DNA di `brand/dna-video.md` tetap menang kalau bertabrakan.** File ini dipakai di langkah 2 (naskah) dan 5 (adegan) `WORKFLOW.md`, dan terus diperbaiki per video.
+Permintaan user: Motion-videos jadi "sutradara" supaya retensi naik; naskah dan karakter tetap gaya lama. **DNA di `brand/dna-video.md` tetap menang kalau bertabrakan.** File ini dipakai di STEP 6 (naskah), 10 (storyboard) dan 12 (adegan) `WORKFLOW.md` v2, dan terus diperbaiki per video.
 Sumber: `lab/prompts/01-template.md`, `03-banned.md`, `04-numbers.md`, `skills/lemomo-ai__lemo-opuscar/DIRECTOR.md`, `skills/LottieFiles__motion-design-skill/.../narrative-structure.md`. Itu aturan penyutradaraan; Motion-videos tidak punya naskah narasi.
 
 ## Naskah (kata tetap ScriptForge + DNA)
