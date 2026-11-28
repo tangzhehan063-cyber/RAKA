@@ -1,0 +1,72 @@
+# Aturan operasional (VO, ElevenLabs, caption, Drive, patch engine)
+
+> Dipindah dari CLAUDE.md lama (23 Nov 2026) supaya CLAUDE.md ringkas. Isi aturan user tetap berlaku. Bagian yang bertentangan dengan strategi v2 sudah ditandai **[DIGANTI v2]**: alur wajib 7 langkah digantikan `WORKFLOW.md`; 'loop wajib', 'ending harus beres', 'niche hanya self-improvement', 'kalimat tanda tangan' tidak lagi wajib (`KEPUTUSAN.md` 23 Nov).
+
+## Alur wajib setiap video [DIGANTI v2: lihat WORKFLOW.md; poin VO/timestamp/QC/caption/cover di bawah tetap berlaku]
+1. **Naskah:** ide lewat ScriptForge (`prompts/ScriptForge.pdf`: niche, 10 ide); **struktur naskah ikut framework v2** di `brand/dna-video.md` §2 + `brand/kerangka-cerita.md` (tokoh beraksi, ending = perubahan nyata). Riset: 1 studi utama + 1 pendukung. Jangan mengarang statistik; sebut sumber dan kata "median"/"perkiraan" bila perlu.
+2. **Voiceover (pilih mesin dulu):** **sebelum membuat VO final, SELALU tanya user: pakai Gemini TTS atau ElevenLabs?** (AskUserQuestion; jangan pilih sendiri, jangan panggil ElevenLabs sebelum dijawab). **Aturan baru (user 23 Nov, menggantikan "berhenti sampai pemilihan mesin"):** bila user memilih **Gemini TTS**, Claude LANGSUNG membuat suaranya sendiri lewat API (`python3 tools/gemini_tts.py`; suara bawaan Charon, model `gemini-3.1-flash-tts-preview` bila `2.5-flash-tts` kena kuota 429) dan lanjut produksi tanpa menunggu user mengirim WAV. User tetap boleh minta ganti suara/gaya baca atau kirim WAV sendiri. Bila memilih ElevenLabs, ikuti "Aturan hemat ElevenLabs".
+   - **Gemini TTS**: `naskah/<slug>.txt` → workflow GitHub Actions "Gemini TTS" atau `python3 tools/gemini_tts.py` (setup API sama dengan Channel-Penjelasan) → `audio/<slug>.wav`. Timestamp: `python3 tools/align_teks.py audio/<slug>.wav naskah/<slug>.txt <words.json>`, lalu `scribe_to_timeline.py`.
+   - **ElevenLabs**: lihat "Aturan hemat ElevenLabs" (1 take, hanya versi final). Timestamp lewat Scribe (langkah 3).
+   - Di teks TTS, tulis angka sebagai kata ("enam puluh enam"), pakai tag arahan `[calm, slow]`, `[warm, building]`. **Jangan pakai `[whispering]`/bisikan** (user tidak suka, 12 Nov); momen emosional diganti hening + teks di layar.
+   - Unduh audio dari `elevenlabsusercontent.com` (host ini harus diizinkan di network environment).
+3. **Timestamp:** VO ElevenLabs → Scribe; VO Gemini → `tools/align_teks.py` (lihat langkah 2). Scribe (`creative_add_flow_asset_node` lalu `creative_transcribe_audio`). Unduh `words.json`, lalu:
+   `python3 tools/scribe_to_timeline.py <words.json> studio/projects/<slug>/input/script.json`
+   `python3 tools/parse_script.py --project projects/<slug> --script projects/<slug>/input/script.json` (dijalankan dari `studio/`)
+   (Whisper/huggingface diblokir di cloud; jangan andalkan.)
+4. **Pilihan warna (WAJIB, aturan user 17 Nov):** sebelum contact sheet, tampilkan perbandingan gaya warna (`tools/produksi.sh palet <slug> "gayaA,gayaB,gayaC"`) dari rekomendasi tema di `brand/palet-emosi.md` + 1 rekomendasi; user memilih. Warna mengikuti tema video; gaya dasar berganti antar video (jangan sama dua video berturut-turut).
+5. **Render:** dari `studio/`, selalu dengan `CHROMIUM_PATH=/opt/pw-browsers/chromium`. Cek `--sheet --scale 0.5` dulu, baru render final, lalu `python3 audio/mix.py --project projects/<slug>`.
+6. **QC:** durasi, audio ada, −14 LUFS, contact sheet dicek dengan mata **terhadap `brand/cek-bug.md`** (daftar bug yang pernah terjadi; tambahkan bug baru di sana).
+7. **SELALU buat caption posting DAN cover setelah video selesai.** Caption ke `caption/<slug>.md` (format di bawah). Cover 1080×1920: salin `studio/projects/hari-ke-10-cover/` sebagai template (adegan dari video + teks cover 2–4 kata, angka emas besar, teks di pita tengah agar aman untuk crop 3:4), render dengan `--stills 0.5 --scale 1`, simpan ke `caption/<slug>-cover.png`. Jangan anggap video selesai sebelum caption dan cover dibuat.
+
+## Aturan hemat ElevenLabs (wajib, permintaan user 12 Nov)
+1. **Selalu 1 take**: `creative_generate_speech` dengan `generations_count: 1`, bukan 2 (bawaan konektor = 2, jadi wajib diisi).
+2. **Naskah final dulu**: ElevenLabs baru dipanggil setelah naskah dinyatakan final dan di-ACC user (tombol ACC di panel atau "ACC" di chat).
+3. **Revisi hanya kalimat yang berubah**: generate ulang kalimat itu saja (1 take), lalu sambung ke VO lama dengan ffmpeg (potong di jeda kalimat, crossfade ±30 ms), lalu ulang timestamp. Jangan generate ulang naskah penuh.
+4. **Draf & tes pakai Gemini TTS atau edge-tts** (`python3 tools/gemini_tts.py`, atau workflow GitHub Actions "Gemini TTS" di repo RAKA). ElevenLabs hanya untuk versi final.
+5. **Satu flow per video**: buat `creative_create_flow` sekali, catat `flow_id` di naskah/STATUS video itu, dan pakai lagi untuk semua generate & transkripsi video yang sama. Jangan buat flow baru untuk video yang sama.
+
+## Format caption (wajib, per video)
+- **Caption TikTok maksimal 150 karakter total (termasuk hashtag)**, to the point, dan **memancing debat** (pendapat tegas/kontroversial ringan + pertanyaan pilih pihak, mis. "salah kamu atau bosmu?"). Permintaan user 9 Nov.
+- **Hook baris pertama** (≤ 60 karakter, berhenti scroll; jangan "Halo guys").
+- 2–3 baris isi: satu fakta kunci + sumbernya.
+- Satu pertanyaan CTA untuk komentar.
+- Hashtag: 3–5 spesifik + 1–2 luas. Jangan lebih dari 6 (untuk TikTok cukup 3–4 agar muat 150 karakter).
+- Versi: **TikTok/Reels** (caption di atas), **YouTube Shorts** (judul ≤ 60 karakter dengan `#shorts`, deskripsi 2 baris + sumber), **teks pin komentar**.
+
+## Default produksi
+- Shorts/TikTok: 9:16, 1080p, 24 fps, caption on (di zona aman TikTok: tidak tertutup tombol kanan & deskripsi bawah, cek `safe.png`), **warna campur menurut tema (keputusan user 18 Nov)**: gaya dipilih dari `brand/palet-emosi.md` sesuai tema/masalah dan disetujui user (`produksi.sh palet`); `lembut` hanya salah satu pilihan, identitas channel = style kit GrowKaz (bukan satu palet); `fadeIn 0`, ending loop hanya bila cocok [v2: tidak wajib].
+- **Zona aman 9:16 (wajib):** caption & teks penting tidak boleh di bawah y>1480 (nama/deskripsi/nav), tidak di kanan x>880 pada y 860–1560 (tombol like/komen/share), tidak di atas y<150 (header). **Sumber angka tunggal: `tools/safezone.py`** (angka komposit dari panduan pihak ketiga, bukan spesifikasi resmi platform; ubah di skrip itu saja). **Posisi CC baku (ACC user 9 Nov, jangan diubah): sedikit di bawah tengah, pusat y=1344 (0,70 H), x=475, lebar maks 0,74 W, maks 3 kata** = default engine, jadi `captionStyle` tidak perlu diisi di config; badge pojok kanan atas di x≈930, y≈280.
+- Versi panjang: 16:9, 1080p, caption off.
+- Protagonis: stickman "kamu" dengan satu item merah-oranye `#d64a33` (maskot); nama boleh baru tiap video. Mulai proyek dengan menyalin `studio/library/` (cast + set kamar & jalan); buat set baru bila topik membutuhkan, gaya tetap sama.
+- Niche: [DIGANTI v2] pilar & batas topik di `brand/strategi-channel.md`; konfirmasi bila topik di luar batas.
+
+## Penyimpanan hasil video (aturan user 11 Nov, berlaku untuk video berikutnya)
+- **Hasil setiap video disimpan di Google Drive**: folder `RAKA` (id `1lErd-CVqlWZdbEVI5iPV3tQokyGWmWx9`) → subfolder `NN - <Judul>` berisi cover, voiceover, dan caption.
+  - Unggah dengan `create_file` + referensi `sha256:<hash>:<path>`. Salin file ke scratchpad sesi dulu.
+  - **Batas 10 MB per file**: MP4 final dikirim ke user (SendUserFile), lalu user mengunggahnya sendiri ke subfolder Drive.
+- **Laporan akhir video (aturan user 13 Nov, seperti Channel-Penjelasan): di chat HANYA kirim MP4 (SendUserFile) + link folder Drive.** Cover, caption (TikTok/Reels, YouTube Shorts, komentar pin), naskah/teks TTS, dan suara (mp3) diunggah ke subfolder Drive `NN - <Judul>`, bukan dikirim ke chat. Caption & komentar pertama tetap boleh ditempel di chat saat naskah di-ACC (sebelum video), tapi versi akhirnya ada di Drive. Suara WAV dikonversi ke mp3 (konektor Drive maks ±3 MB per panggilan).
+- **GitHub hanya menyimpan aset yang bisa dipakai berulang**: engine, `studio/library/`, kode adegan/proyek (`config.json`, `scenes/`, `story/`), tools, dokumen brand. MP4/MP3/PNG hasil dan `build/` tidak di-commit.
+- Pratinjau 540p untuk artifact arsip tetap boleh di `arsip/halaman/` (ukurannya kecil).
+
+## Catatan teknis
+- **Awal sesi:** `git fetch origin` lalu merge cabang `claude/*` yang belum masuk ke cabang kerja (tiap sesi punya cabang sendiri; tanpa ini sesi baru tidak melihat video/arsip dari sesi lain).
+- **Setelah video selesai (wajib, bagian dari langkah 6):** tambah baris di `arsip/README.md`, buat pratinjau 540p di `arsip/halaman/` (mp4 + cover jpg), tambah kartu di `arsip/halaman/index.html`, lalu republish artifact arsip (slug `40b5677b-fc79-4023-83fe-457a59db2581`) dengan `publish_files`.
+- **Gaya GrowKaz (wajib dibaca sebelum menulis adegan):** `brand/gaya-growkaz.md` + skill `growkaz-style` (ringkasan, skor video kita, resep per babak, checklist), referensi resmi di `brand/growkaz/` (style bible, API, tempo, suara, QC).
+- **Remotion (`remotion-3d/`, sisipan 3D/efek): pakai skill `remotion-fitur`** (`.claude/skills/remotion-fitur/SKILL.md`). Paket transitions, motion-blur, effects sudah terpasang. Engine stickman utama tetap `studio/`.
+- Folder repo tidak menyimpan `node_modules`; jalankan `./setup.sh` di container baru.
+
+## Patch yang sudah diterapkan ke engine (`studio/`), jangan ditimpa saat update plugin
+- `render.mjs`: mendukung `CHROMIUM_PATH` (Chromium bawaan container).
+- `engine/rig2d.js`: alis `worried` dan `angry` sebelumnya tertukar, sudah diperbaiki.
+- `engine/ui2d.js` captions: grup caption berhenti di tanda baca, jarak antar kata lebih lebar, pop sorotan diperkecil; posisi 9:16 di zona aman TikTok (y 0,70 H, pusat x 0,44 W, lebar maks 0,74 W, maks 3 kata); opsi `x`/`cx` dan `maxW` pecahan/piksel.
+- `engine/player.js`: transisi `swipe` (vertikal, seperti feed; `dir:-1` ke bawah).
+- `engine/player.js`: transisi komik `webtoon` (gulir vertikal dengan jarak antarpanel, `gap` px) dan `pageturn` (halaman terangkat dari bawah); prototipe 27 Nov di `studio/projects/uji-halaman/`, dipakai di video Lembur Gratis dan Disuruh Jadi Males.
+- `audio/sfx.py`: efek `pluck` (genjreng gitar Karplus-Strong, `detune` > 0 = fals); `audio/mix.py` meneruskan `detune` dari cue di shots.json.
+
+## Caption & komentar pertama (berlaku setelah user ACC naskah final)
+- **Humanizer wajib (perintah user 13 Nov, berlaku untuk semua teks publik):** naskah, caption, judul (termasuk alternatif), deskripsi, komentar pin, dan komentar pertama SELALU dilewatkan skill `anthropic-skills:humanizer` (hapus pola "bukan X tapi Y", penutup satu baris, triad paksa, tanda "—", dan sapaan khas AI) sebelum dikirim ke user atau diunggah ke Drive. Fakta, angka, dan sumber tidak boleh berubah; batas karakter caption tetap berlaku.
+- Begitu user menyatakan **ACC/final** untuk naskah, langsung kirim **caption posting + komentar pertama** (jangan tunggu video selesai; cover tetap dibuat setelah render).
+- **Wajib riset bahasa manusia dulu:** pakai ScrapeMedsos (TikTok `v1_tiktok_search_keyword` region ID, lalu komentar video teratas dengan `v1_tiktok_video_comments`, bila perlu YouTube) untuk topik yang sama. Catat kata, singkatan, dan gaya yang benar-benar dipakai orang (mis. "jeglek", "kopong", "rembes", "wkwk", "auto", "relate banget").
+- Tulis caption & komentar pertama meniru ritme itu: kalimat pendek, boleh tidak baku, emoji secukupnya (0–2), tanpa frasa khas AI ("Yuk simak!", "Tahukah kamu", "di era modern ini", "mari kita", "penting untuk diingat", tanda "—" berlebihan, daftar berpoin di caption).
+- Komentar pertama = pancingan diskusi dari sudut pandang kreator (pertanyaan spesifik atau "aku dulu juga…"), bukan ringkasan video.
+- Simpan contoh bahasa hasil scrape (maks. 10 kutipan pendek) di file caption sebagai bukti, jangan menyalin komentar orang utuh ke caption.

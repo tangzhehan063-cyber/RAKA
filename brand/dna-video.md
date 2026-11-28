@@ -1,16 +1,18 @@
 # DNA Video: ciri khas yang WAJIB sama di setiap video
 
-Channel ini **satu niche: self-improvement berbasis riset** (disiplin, kebiasaan, produktivitas, mindset, stoikisme, kebiasaan uang = ScriptForge 1.1–1.5).
+> **Diperbarui 23 Nov 2026 (strategi v2).** Channel = penjelas perilaku sehari-hari berbasis riset (6 pilar, `brand/strategi-channel.md`). Yang WAJIB hanya §1 Isi (butir 1 dan 4), §3 tokoh bila ada tokoh, caption/zona aman, suara §5. Struktur §2, hal wajib §4, dan kalimat tanda tangan §6 kini **pilihan**, bukan keharusan; naskah mengikuti `brand/naskah-engine.md`.
+
+Channel ini dulu satu niche self-improvement (ScriptForge 1.1–1.5); topik kini mengikuti pilar baru.
 Setiap video **berdiri sendiri**: topik, cerita, dan tokohnya baru. Jangan melanjutkan cerita video sebelumnya kecuali user memintanya.
 Yang sama hanyalah *cara bercerita, tampilan, dan suara* di bawah ini, supaya penonton langsung mengenali "ini video channel itu".
 
 ## 1. Isi (wajib)
 - **Satu fakta riset yang bisa dicek** per video, dengan sumber (peneliti/institusi + tahun) **+ 1 sumber pendukung** (framework v2). Tanpa fakta = bukan video channel ini.
-- Pola **"mitos vs kenyataan"**: buka keyakinan umum, lalu patahkan dengan data.
-- Akhir yang **memberi satu langkah kecil** yang bisa dilakukan besok, bukan sekadar "semangat!".
+- Pola "mitos vs kenyataan" boleh dipakai, tidak wajib.
+- Langkah kecil di akhir hanya bila relevan dan jujur terhadap bukti (bedakan "temuan studi" dari "saran praktis").
 - Jujur pada data: pakai "median", "perkiraan", "masih diperdebatkan" bila memang begitu. Jangan mengarang angka atau kutipan.
 
-## 2. Struktur Shorts (framework v2 + "Pukulan ke-99", ±60–75 dtk, 9:16)
+## 2. Struktur Shorts (OPSI lama: framework v2 + "Pukulan ke-99", ±60–75 dtk; default baru 25–45 dtk, hook di frame 0, lihat naskah-engine.md)
 | Detik | Bagian | Ciri |
 |---|---|---|
 | 0–8 | **Hook: adegan biasa yang "salah"** | Tokoh melakukan hal yang tampak sia-sia/gagal (pukulan ke-40 ke batu), kalimat pendek, ada angka atau hari |
@@ -21,7 +23,7 @@ Yang sama hanyalah *cara bercerita, tampilan, dan suara* di bawah ini, supaya pe
 | 57–70 | **Aksi & perubahan nyata** | Tokoh **bertindak**, hasilnya **terlihat** (batu pecah, kebiasaan jadi, angka berubah); pindah ke fajar/emas; + 1 langkah kecil untuk besok |
 | akhir | **Loop** | Kalimat terakhir menyambung ke kalimat pertama |
 
-Ending tidak boleh terbuka: tokoh RAKA selalu sampai pada perubahan. Tidak ada nasihat ("kamu harus…") sebelum twist. Satu metafora fisik per video = momen khas + cover.
+[Berlaku hanya bila memakai struktur lama; v2 tidak memaksa ending beres.] Ending tidak boleh terbuka: tokoh RAKA selalu sampai pada perubahan. Tidak ada nasihat ("kamu harus…") sebelum twist. Satu metafora fisik per video = momen khas + cover.
 
 Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup → 3–5 beat → Payoff → Outro) dengan elemen visual yang sama.
 
@@ -32,10 +34,10 @@ Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup →
 
 ## 4. Visual
 - Style **GrowKaz Emerald** untuk semua video (bayangan hijau tua, cahaya emas, rim hijau limau).
-- **Busur cahaya:** awal di malam/hujan/gelap (masalah) → akhir di fajar/emas (titik balik). Selalu.
+- **Busur cahaya (opsional):** awal di malam/hujan/gelap (masalah) → akhir di fajar/emas (titik balik). Selalu.
 - **Papan blueprint** untuk setiap angka dan sumber; angka kunci warna emas, mitos warna coral.
 - **Badge pojok kanan atas** untuk satuan waktu/angka cerita (HARI 9, JAM 2 PAGI, 5 MENIT, Rp 10.000, dst.).
-- Wajib per video: **1 freeze-frame** (partikel melayang, tint dingin), **1 shot 3D**, **1 close-up wajah raksasa**, gerak kamera di setiap shot.
+- Pilihan (bukan wajib, pakai bila fungsinya jelas): freeze-frame, shot 3D, close-up wajah raksasa, gerak kamera. Tidak ada gimmick wajib (`brand/storyboard-visual.md`).
 - **Swipe ala feed (DISUKAI user 9 Nov, baku sejak #4):** perpindahan adegan utama memakai transisi `swipe` vertikal (seperti scroll TikTok), SFX `swish` 1 frame setelah gambar. Papan fakta tampil sebagai **kartu feed** (blueprint di dalam kartu bersudut bulat, kartu berikut mengintip di bawah pita CC). Tiap video kembangkan swipe dengan 1 variasi baru (lihat `brand/eksperimen.md`), bukan sekadar mengulang.
 - Caption kata per kata, kata aktif disorot emas, angka ditulis sebagai angka.
 - Set yang sudah ada di `studio/library/` boleh dipakai ulang; buat set baru bila topiknya butuh (kantor, kamar kos, warung, gym, dll.) dengan gaya yang sama.
@@ -46,7 +48,7 @@ Versi panjang (16:9, 3–4 mnt) memakai struktur ScriptForge (Hook → Setup →
 - Musik: busur **mystery → sad → hopeful → triumph**; SFX: thunder/rain di awal, freeze, impact pada angka kunci, riser sebelum reveal, shimmer saat bangkit. Master −14 LUFS.
 
 ## 6. Kalimat tanda tangan
-Setiap video ditutup dengan satu kalimat pendek berpola **"X bukan soal A. Tapi B."**
+**Tidak wajib (v2).** Dulu setiap video ditutup dengan satu kalimat berpola **"X bukan soal A. Tapi B."**
 Contoh: "Disiplin bukan soal tidak pernah jatuh. Tapi seberapa cepat kamu kembali."
 
 ## 7. Judul, cover, caption
@@ -58,4 +60,4 @@ Contoh: "Disiplin bukan soal tidak pernah jatuh. Tapi seberapa cepat kamu kembal
 - Jangan melanjutkan cerita/tokoh video lalu kecuali diminta.
 - Jangan motivasi kosong tanpa data. Jangan "Halo guys". Jangan dinding teks di layar.
 - Jangan ganti voice, style, atau warna maskot tanpa persetujuan user.
-- **Struktur naskah wajib: `brand/kerangka-cerita.md` (Pukulan ke-99).**
+- Struktur naskah: `brand/naskah-engine.md` (kerangka longgar); `brand/kerangka-cerita.md` hanya salah satu opsi.

@@ -1,5 +1,9 @@
 # STATUS (baca ini dulu, lalu ikuti `WORKFLOW.md`)
 
+## Merge reengineering (28 Nov 2026, izin user)
+- Cabang `claude/trusting-heisenberg-tf11zf` (strategi v2, 7 skill, WORKFLOW 18 langkah + 5 gerbang, tools skor-ide/cek-naskah/qc-teknis/analitik) DIGABUNG. `CLAUDE.md` versi ringkas dari cabang itu dipakai; aturan lama ada di `brand/aturan-operasional.md`; aturan user sesudahnya (opening berganti, cover adegan, TANPA NOMOR EPISODE) ditambahkan di akhir `CLAUDE.md`.
+- **Aturan baru user 28 Nov: tanpa nomor episode** di video, cover, judul, caption (cover Disuruh Jadi Males masih memuat badge "#23"; mulai video berikutnya tanpa badge).
+
 ## Video #23 "Disuruh Jadi Males" (28 Nov 2026), opening insert tangan + sapu, 76 dtk
 - Premis dari user: udah niat beresin rumah, lalu disuruh orang tua, niatnya hilang. Naskah draf 1 di-ACC tanpa revisi. Format Potong di Puncak (TERPUTUS di "malah jadi males", LANJUT di "besok paginya").
 - Hasil: 75,97 dtk, 21 shot, -13,7 LUFS, MP4 11,7 MB (render 1 mnt 42 dtk), style `komikJingga` (dipilih user dari komik/komikJingga/komikMint). VO Gemini Charon (80,8 dtk, atempo 1,1 + hening 2,5 dtk disisipkan @20,8). Caption TikTok 140 karakter + komentar pertama, TANPA riset bahasa (ScrapeMedsos kredit 0, dicek 28 Nov). Drive `23 - Disuruh Jadi Males` (id 1NNaebmip8AX2lzwITunSoFQvZMSEMnhm): cover, caption, naskah, VO mp3.
@@ -16,6 +20,18 @@
 - Hipotesis uji: opening yang berganti + format Potong di Puncak + ending yang memaksa penonton memilih (pulang atau stay) menaikkan komentar. UKUR #22 setelah 24-48 jam terhadap #17-#21 dan #12 (3.934).
 - Pelajaran: (1) `tas` (ransel) harus menumpuk dengan badan (x-44*s), bukan terpisah. (2) Teks sticker di kartu: ukur lebar; "18" + "JAM / MINGGU" bertabrakan di ukuran 200+56, pisahkan x. (3) Dua sticker bersebelahan di bar riset ("+35%" dan "+17%") perlu ukuran 80. (4) Cek still di titik payoff, bukan hanya tengah shot (bar kedua dan ketiga baru muncul belakangan). (5) Gemini TTS tempo cepat tidak menjamin durasi; ukur dulu lalu `atempo` bila perlu. (6) Transisi `webtoon`/`pageturn` terbukti jalan di video jadi (frame diperiksa di 10,35 / 20,45-20,95 / 55,2).
 - Belum diputuskan (masih terbuka): kit komik bersama (`studio/library/komik-kit.js`) dan lembar tokoh tetap DITUNDA user; kamera diam vs "kamera tidak pernah diam"; integrasi Motion Intelligence. Cabang `perbaikan-workflow` dan `claude/trusting-heisenberg-tf11zf` belum di-merge.
+
+## "Deadline Buntu" SELESAI (23 Nov, workflow v2 pertama; di arsip tercatat 18b karena nomor 18 dipakai "Buku Belum Dibuka")
+- Alur: ide (kredit scrape 0, pain = hipotesis) → G1 topik deadline → riset (`riset/deadline-buntu.md`, paper asli TIDAK bisa dibuka: apa.org diblokir; semua angka via sekunder, VO tanpa persen, "ada indikasi") → G2 angle "terasa kreatif vs hasil" → naskah + hook C (lint 0 GAGAL, humanizer) G3 → VO Gemini (Charon, 41,9 dtk) G4 → palet komikMint (user) → sheet G5 → render 42,0 dtk, 13 shot, -14,9 LUFS, true peak -1,2 (qc-teknis 0 GAGAL). Satu bug visual (panel s11 terpotong) diperbaiki sebelum render ulang.
+- Drive `18 - Deadline Buntu` (id 1eap-bwl4SZgN7MpdkEjMSEcED16i6Dkb): cover, caption (146 karakter + komentar pertama), naskah, VO mp3. Artifact arsip BELUM diperbarui. Caption tanpa riset bahasa (kredit 0).
+- Eksperimen E2 berjalan (hook kejadian vs vonis #17). Minta data #17 dan #18 setelah 24-48 jam dan isi `analitik/video.csv`; jalankan `performance-analyst`.
+- Pelajaran: (1) `align_teks.py` lewat file .txt di scratchpad (jangan di `naskah/`). (2) komik tidak punya gerak kamera (cek-sutradara SARAN 0% kamera, sama dengan #17). (3) Lebar panel jangan melewati x>880 di y 860-1560. (4) render penuh 42 dtk ±1 mnt di komik.
+
+## REENGINEERING SISTEM (23 Nov 2026, di-merge ke cabang utama 28 Nov atas izin user)
+- Strategi v2 (`brand/strategi-channel.md`), sistem ide + skor + gate riset, riset Tier 1, script engine (hook A–E, 3 pendekatan), retention engine, storyboard fungsional, audio, QC teknis+konten, analitik (`analitik/video.csv` berisi data #10–#16), 7 skill baru, `WORKFLOW.md` 18 langkah + 5 gerbang, `CLAUDE.md` diringkas (isi lama di `brand/aturan-operasional.md` dan `brand/produksi-teknis.md`).
+- Tools baru: `skor-ide.py`, `cek-naskah.py`, `qc-teknis.py`, `analitik.py`. Perbaikan `produksi.sh`: `init` tidak lagi menelan `json.dump`, glob sheet `s[0-9][0-9]_*.png`, `qc` memanggil `qc-teknis.py`.
+- Dry run: `naskah/dry-run-buka-hp.md` + `riset/dry-run-buka-hp.md` (riset belum final: paper asli belum dibuka).
+- Video berikutnya: #18 lewat WORKFLOW baru mulai STEP 1; #17 menunggu data 24–48 jam (isi `analitik/video.csv`).
 
 ## ATURAN BARU dari user (27 Nov 2026, berlaku mulai #22)
 - **Opening video harus BERGANTI tiap video.** Opening #17-#21 sama semua: vonis raksasa (teks sticker besar + burst/awan) dengan warna berbeda. Mulai #22 jangan pakai pola itu; pilih bentuk pembuka lain (mis. adegan tokoh langsung beraksi, close-up, potongan percakapan, objek bergerak) dan jangan ulang bentuk pembuka video sebelumnya.

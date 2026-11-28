@@ -1,0 +1,10 @@
+video,slug,tayang,durasi_dtk,views,likes,komentar,shares,saves,follows,avg_watch_dtk,avg_pct_viewed,completion,rewatch,pilar,jenis_topik,hook_tipe,hook_teks,gaya,catatan
+#10,bolos-sekali,2026-11-16,62,1805,54,1,,,,,,,,1,keluhan_konkret,C,"Satu gorengan, ujungnya sekotak",lembut,"sumber: STATUS/formula.md; pilar retrospektif"
+#11,keranjang-kosong,2026-11-17,76,347,15,0,,,,,,,,4,keluhan_konkret,C,"Dua ribu skincare, nol yang dibeli",lembut,
+#12,lupa-itu-wajar,2026-11-18,69,3934,200,2,,,,,,,,3,keluhan_konkret,C,"Belajar semalam suntuk, seminggu kemudian lupa",arctic,terbaik sejauh ini
+#13,kritik-terngiang,2026-11-18,60,649,19,0,,,,,,,,3,abstrak,D,Satu Kritik Terngiang,lavender,
+#14,diremehkan,2026-11-19,74,177,6,0,,,,,,,,5,abstrak,A,"Dibilang nggak bakal sanggup",indigo,
+#15,terlanjur-jurusan,2026-11-19,157,443,20,2,,,,,,,,4,abstrak,C,Terlanjur (jurusan),paper,versi panjang
+#16,kalau-maka,2026-11-20,129,187,11,0,,,,,,,,1,abstrak,C,"Niat lari 9 Senin",arctic,versi panjang
+#17,lima-menit,2026-11-23,47,,,,,,,,,,,1,keluhan_konkret,A,"Cuma lima menit itu kebohongan",komik,"formula baru: vonis di awal; data menunggu 24-48 jam"
+#18,deadline-buntu,2026-11-23,42,,,,,,,,,,,5,keluhan_konkret,C,"Jam sepuluh malam. Deadline besok. Dan kamu merasa lagi di puncak kreativitas.",komikMint,"E2: hook kejadian vs vonis #17; gaya komik sama; belum tayang/data menunggu 24-48 jam"
