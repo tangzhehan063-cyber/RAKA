@@ -2,11 +2,11 @@
 
 ## Video #23 "Disuruh Jadi Males" (28 Nov 2026), opening insert tangan + sapu, 76 dtk
 - Premis dari user: udah niat beresin rumah, lalu disuruh orang tua, niatnya hilang. Naskah draf 1 di-ACC tanpa revisi. Format Potong di Puncak (TERPUTUS di "malah jadi males", LANJUT di "besok paginya").
-- Hasil: ±76 dtk, 21 shot, style `komikJingga` (dipilih user dari komik/komikJingga/komikMint). VO Gemini Charon (80,8 dtk, atempo 1,1 + hening 2,5 dtk disisipkan @20,8). Caption TikTok 140 karakter + komentar pertama, TANPA riset bahasa (ScrapeMedsos kredit 0, dicek 28 Nov). Drive `23 - Disuruh Jadi Males` (id 1NNaebmip8AX2lzwITunSoFQvZMSEMnhm): cover, caption, naskah, VO mp3.
+- Hasil: 75,97 dtk, 21 shot, -13,7 LUFS, MP4 11,7 MB (render 1 mnt 42 dtk), style `komikJingga` (dipilih user dari komik/komikJingga/komikMint). VO Gemini Charon (80,8 dtk, atempo 1,1 + hening 2,5 dtk disisipkan @20,8). Caption TikTok 140 karakter + komentar pertama, TANPA riset bahasa (ScrapeMedsos kredit 0, dicek 28 Nov). Drive `23 - Disuruh Jadi Males` (id 1NNaebmip8AX2lzwITunSoFQvZMSEMnhm): cover, caption, naskah, VO mp3.
 - Opening BARU (aturan user 27 Nov): insert close-up tangan meraih gagang sapu, tanpa teks besar; ending kembali ke frame yang sama (loop). Cover: adegan ruang tamu (Dio malas di samping sapu bersandar, teriakan DIOO! dari dapur) + judul "DISURUH, JADI MALES".
 - Fakta: Brehm 1966 (teori reaktansi) + Chartrand, Dalton & Fitzsimons 2007, JESP 43(5):719-726 (nama orang terdekat ditampilkan subliminal; "kerja keras" -> anagram lebih buruk dibanding "bersenang-senang"; detail dari ringkasan pers, PDF belum dibuka; tanpa angka di VO). Ending "jawab duluan, pilih urutan sendiri" = inferensi.
 - Pelajaran: (1) `produksi.sh sheet` dulu ikut memasukkan `sheet_01.png` ke safe.png (glob `s*_*`), sudah diperbaiki ke `s[0-9][0-9]_*`. (2) Tokoh di set ruang tamu perlu s 2.8 agar tidak kecil; lantai lebar perlu karpet. (3) Tokoh facing -1 memegang sapu: arahkan ujung sapu ke depan-bawah (hx+90) agar gagang tidak menembus wajah. (4) Cabang `claude/trusting-heisenberg-tf11zf` masih bentrok (STATUS/CLAUDE/arsip), merge dibatalkan lagi.
-- UKUR #23 setelah 24-48 jam terhadap #17-#22.
+- Arsip + artifact diperbarui (artifact belum punya kartu #19). UKUR #23 setelah 24-48 jam terhadap #17-#22.
 
 ## Video #22 "Lembur Gratis" SELESAI (27 Nov 2026), opening baru + transisi webtoon/pageturn, 79 dtk
 - Topik dari user: "dipaksa lembur padahal nggak dibayar" (dari 10 ide debat). Naskah revisi 1x atas permintaan user: ENDING LEBIH TEGAS (atasan membalas singkat, Raka pulang jam 18:05, empat laptop rekan masih menyala, pertanyaan penutup "kamu pulang atau tetap stay?").
