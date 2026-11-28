@@ -2,8 +2,7 @@
 
 ## Merge reengineering (28 Nov 2026, izin user)
 - Cabang `claude/trusting-heisenberg-tf11zf` (strategi v2, 7 skill, WORKFLOW 18 langkah + 5 gerbang, tools skor-ide/cek-naskah/qc-teknis/analitik) DIGABUNG. `CLAUDE.md` versi ringkas dari cabang itu dipakai; aturan lama ada di `brand/aturan-operasional.md`; aturan user sesudahnya (opening berganti, cover adegan, TANPA NOMOR EPISODE) ditambahkan di akhir `CLAUDE.md`.
-- **Aturan baru user 28 Nov: kembali ke animasi sinematik video lama** (acuan: Lupa Itu Wajar = style `arctic`, Terlanjur Jurusan = style `paper`; latar redup, cahaya jendela, god rays, kedalaman). Gaya komik (video 17-23) berhenti. Palet tetap dari `brand/palet-emosi.md`, dipilih user.
-- **Aturan baru user 28 Nov: tanpa nomor episode** di video, cover, judul, caption (cover Disuruh Jadi Males masih memuat badge "#23"; mulai video berikutnya tanpa badge).
+- **Aturan baru user 28 Nov: tanpa nomor episode** di video, cover, judul, caption (cover Disuruh Jadi Males sudah dirender ulang tanpa badge, margin dirapikan ke tengah).
 
 ## Video #23 "Disuruh Jadi Males" (28 Nov 2026), opening insert tangan + sapu, 76 dtk
 - Premis dari user: udah niat beresin rumah, lalu disuruh orang tua, niatnya hilang. Naskah draf 1 di-ACC tanpa revisi. Format Potong di Puncak (TERPUTUS di "malah jadi males", LANJUT di "besok paginya").
