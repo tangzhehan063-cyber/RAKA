@@ -105,6 +105,7 @@ const ruang = (g, c, t, o = {}) => {
   pintuDapur(g, c, t, o.glow || 0);
   g.fillStyle = shade(c.c, -0.08); g.fillRect(0, GY, E.W, E.H - GY); g.fillStyle = INK; g.fillRect(0, GY, E.W, 10);
   g.strokeStyle = alpha(INK, 0.25); g.lineWidth = 4; for (let x = -200; x < E.W + 200; x += 160) { g.beginPath(); g.moveTo(x, GY); g.lineTo(x + (x - 540) * 0.8, E.H); g.stroke(); }
+  g.save(); g.beginPath(); g.ellipse(520, GY + 170, 470, 95, 0, 0, 6.3); g.fillStyle = INK; g.fill(); g.beginPath(); g.ellipse(520, GY + 160, 460, 88, 0, 0, 6.3); g.fillStyle = c.b; g.fill(); g.lineWidth = 6; g.strokeStyle = alpha('#fff', 0.5); g.beginPath(); g.ellipse(520, GY + 160, 380, 62, 0, 0, 6.3); g.stroke(); g.restore();   // karpet
   if (o.sofa !== false) sofa(g, c, 870, GY); if (o.hp) hpTergeletak(g, 900, GY - 130, 0.8);
   if (o.beam !== false) dustBeam(g, c, t); };
 const doorShout = (g, c, t, at, str, size = 96) => { if (t < at) return; const k = slamK(t, at), [sx, sy] = shk(t, at, 0.35, 16); burst(g, 330 + sx, 380 + sy, 150 * k, 220 * k, 14, c.paper, 0.1); sticker(g, str, 330 + sx, 380 + sy, size, c.hot, -0.06, k); poly(g, [[200, 470], [150, 560], [260, 480]], c.paper); };
@@ -114,30 +115,30 @@ registerShot('s01', { draw(g, t, info) { const c = P(); g.fillStyle = wallC(c); 
   g.fillStyle = alpha(shade(c.a, 0.2), 0.6); for (let x = 0; x < E.W; x += 90) g.fillRect(x, 0, 36, E.H); dustBeam(g, c, t, 980, 0);
   const z = 1 + 0.06 * ease.out(prog(t, 0, 1.3)); g.save(); g.translate(540, 960); g.scale(z, z); g.translate(-540, -960);
   sapu(g, 760, 60, 330, 1700, 40);
-  const k = ease.out(prog(t, 0.05, 0.6)); fist(g, lerp(1000, 590, k), lerp(1650, 860, k), 1.25, -0.42, prog(t, 0.55, 0.8));
+  const k = ease.out(prog(t, 0.05, 0.6)); fist(g, lerp(1000, 590, k), lerp(1650, 860, k), 1.25, -0.42, prog(t, 0.35, 0.55));
   g.restore(); label(g, '07:00', 230, 260, 64, c.paper, INK, -0.04, pop(t, 0.15, 0.25)); } });
 
 // s02 1.3-2.9: Dio memegang sapu di ruang tamu
 registerShot('s02', { draw(g, t, info) { const c = P(); ruang(g, c, t);
-  const o = { x: 560, y: GY, s: 2.3, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.6, 2), expr: 'determined' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 170, GY, 1.6);
-  label(g, 'DIO', 560, 420, 56, c.d, INK, -0.03, pop(t, 0.1, 0.22)); } });
+  const o = { x: 560, y: GY, s: 2.8, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.6, 2), expr: 'determined' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 200, GY, 1.9);
+  label(g, 'DIO', 330, 420, 56, c.d, INK, -0.03, pop(t, 0.1, 0.22)); } });
 
 // s03 2.9-5.4: niat dari semalam (gelembung pikiran: bulan + daftar)
 registerShot('s03', { draw(g, t, info) { const c = P(); ruang(g, c, t, { beam: true });
-  const o = { x: 600, y: GY, s: 2.3, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.6, 2), expr: 'smile' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 170, GY, 1.6);
+  const o = { x: 600, y: GY, s: 2.8, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.6, 2), expr: 'smile' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 200, GY, 1.9);
   const k = pop(t, 0.1, 0.35); think(g, 470, 330, 640, 330, k);
   if (k > 0.5) { FX.moon(g, 270, 300, 44, '#ffe9a8'); g.font = `900 46px "${FONTS.ui}"`; g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = INK; g.fillText('BESOK:', 340, 260); g.fillText('BERESIN RUMAH', 340, 330); check(g, 320, 400, 26, c.d, pop(t, 0.9, 0.25)); g.font = `800 38px "${FONTS.ui}"`; g.fillText('sapu, pel, rapiin', 360, 400); }
   label(g, 'NIAT DARI SEMALAM', 540, 640, 50, c.c, INK, 0.02, pop(t, rel('semalam', info, 0.6) - 0.1, 0.22)); } });
 
 // s04 5.4-8.85: satu sapuan, lalu teriakan dari dapur
 registerShot('s04', { draw(g, t, info) { const c = P(); const td = rel('dioo', info, 2.4); const f = t > td ? Math.max(0, 1 - (t - td) * 3) : 1; ruang(g, c, t, { glow: t > td ? 1 : 0 });
-  const sw = Math.sin(Math.min(t, td) * 4.2) * 90; const o = { x: 600, y: GY, s: 2.3, outfit: DIO, pose: POSES.holdFront, expr: t > td ? 'shocked' : 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 170 + sw, GY, 1.6);
+  const sw = Math.sin(Math.min(t, td) * 4.2) * 90; const o = { x: 600, y: GY, s: 2.8, outfit: DIO, pose: POSES.holdFront, expr: t > td ? 'shocked' : 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 200 + sw, GY, 1.9);
   if (t < td) FX.dust(g, t, { color: shade(c.c, -0.3) });
   doorShout(g, c, t, td - 0.05, 'DIOO!', 110); } });
 
 // s05 8.85-10.9: "Itu rumah disapu! Main HP mulu!" Dio membeku
 registerShot('s05', { draw(g, t, info) { const c = P(); ruang(g, c, t, { glow: 1, hp: true }); const [sx, sy] = shk(t, 0.02, 0.3, 12);
-  const o = { x: 640, y: GY, s: 2.3, outfit: DIO, pose: POSES.holdFront, expr: 'shocked' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 150, GY, 1.6);
+  const o = { x: 640, y: GY, s: 2.8, outfit: DIO, pose: POSES.holdFront, expr: 'shocked' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 150, GY, 1.9);
   bub2(g, 420 + sx, 300 + sy, 600, ['ITU RUMAH DISAPU!'], 'l', c.paper, c.hot, pop(t, rel('itu', info, 0.1) - 0.1, 0.22), 56);
   bub2(g, 400, 500, 520, ['MAIN HP MULU!'], 'l', c.paper, c.hot, pop(t, rel('main', info, 1.3) - 0.1, 0.22), 56); } });
 
@@ -149,7 +150,7 @@ registerShot('s06', { draw(g, t, info) { const c = P(); bg(g, shade(c.blue, 0.25
 
 // s07 13.3-16.65: sapu disenderin ke tembok, bar NIAT turun
 registerShot('s07', { draw(g, t, info) { const c = P(); ruang(g, c, t, { beam: false }); const kd = ease.inOut(prog(t, 0.2, 1.8));
-  const o = { x: lerp(560, 600, kd), y: GY, s: 2.3, outfit: DIO, pose: posesAt(t, [[0, 'holdFront'], [1.6, 'sad']], 0.4), expr: kd > 0.6 ? 'sad' : 'neutral' };
+  const o = { x: lerp(560, 600, kd), y: GY, s: 2.8, outfit: DIO, pose: posesAt(t, [[0, 'holdFront'], [1.6, 'sad']], 0.4), expr: kd > 0.6 ? 'sad' : 'neutral' };
   const [hx, hy] = handW({ ...o, pose: POSES.holdFront }); const tx = lerp(hx + 160, 1000, kd), ty = lerp(GY, GY, kd); if (kd < 1) sapuPegang(g, lerp(hx, 980, kd), lerp(hy, 560, kd), tx, ty, 1.6); else sapu(g, 960, 520, 1010, GY - 40, 19);
   fig(g, o); g.fillStyle = alpha('#3b3550', 0.18 * kd); g.fillRect(0, 0, E.W, E.H);
   const v = 1 - ease.inOut(prog(t, rel('hilang', info, 2.3) - 0.3, rel('hilang', info, 2.3) + 0.6));
@@ -208,9 +209,9 @@ registerShot('s14', { draw(g, t, info) { const c = P(); bg(g, c.night, c.blue, 0
 // s15 44.6-50.3: nyuruh kerja keras vs nyuruh santai: hasilnya lebih jelek
 registerShot('s15', { draw(g, t, info) { const c = P(); bg(g, c.paper, c.a, 0.25); const base = 1080, tk = rel('kerja', info, 1.4), tj = rel('jelek', info, 2.9), ts = rel('santai', info, 4.8);
   label(g, 'HASIL TES', 540, 230, 64, c.d, INK, -0.03, pop(t, 0.1, 0.22));
-  const bar = (x, h, col, ttl, k, kb) => { if (k <= 0) return; label(g, ttl, x, 390, 40, col, '#fffbe8', 0, k); const hh = Math.max(10, h * kb); rr(g, x - 120 + 10, base - hh + 12, 240, hh, 20); g.fillStyle = INK; g.fill(); rr(g, x - 120, base - hh, 240, hh, 20); g.fillStyle = col; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke(); };
+  const bar = (x, h, col, ttl, k, kb) => { if (k <= 0) return; label(g, ttl, x, 420, 50, col, '#fffbe8', 0, k); const hh = Math.max(10, h * kb); rr(g, x - 120 + 10, base - hh + 12, 240, hh, 20); g.fillStyle = INK; g.fill(); rr(g, x - 120, base - hh, 240, hh, 20); g.fillStyle = col; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke(); };
   bar(290, 230, c.hot, '"KERJA KERAS!"', pop(t, tk - 0.2, 0.25), ease.out(prog(t, tj - 0.4, tj + 0.3)));
-  bar(720, 500, c.blue, '"SANTAI AJA"', pop(t, ts - 0.6, 0.25), ease.out(prog(t, ts - 0.2, ts + 0.5)));
+  bar(720, 500, c.blue, '"SANTAI AJA"', pop(t, tj + 0.4, 0.25), ease.out(prog(t, tj + 0.5, tj + 1.1)));
   g.fillStyle = INK; g.fillRect(100, base, 880, 10);
   if (t > tj) sticker(g, 'LEBIH JELEK', 300, base - 330, 62, c.paper, -0.04, slamK(t, tj)); } });
 
@@ -218,28 +219,28 @@ registerShot('s15', { draw(g, t, info) { const c = P(); bg(g, c.paper, c.a, 0.25
 registerShot('s16', { draw(g, t, info) { const c = P(); bg(g, shade(c.night, 0.1), null); g.fillStyle = shade(c.night, -0.2); g.fillRect(0, GY, E.W, E.H - GY);
   FX.lightCone(g, 200, 200, { angle: Math.PI * 0.3, spread: 0.6, len: 1400, color: c.c, a: 0.25 });
   g.save(); g.globalAlpha = 0.5; fig(g, { x: 760, y: GY, s: 2.6, facing: -1, outfit: { top: 'tshirt', color: '#000', head: 'none' }, pose: POSES.crossArms, expr: 'angry', ink: '#000' }); g.restore();
-  fig(g, { x: 380, y: GY, s: 2.3, facing: 1, outfit: DIO, pose: breathe(POSES.stand, t, 0.5, 2), expr: 'neutral' });
+  fig(g, { x: 380, y: GY, s: 2.8, facing: 1, outfit: DIO, pose: breathe(POSES.stand, t, 0.5, 2), expr: 'neutral' });
   label(g, 'NGGAK SADAR', 540, 300, 72, c.d, INK, -0.03, pop(t, rel('sadar', info, 0.9) - 0.1, 0.22)); } });
 
 // s17 52.2-55.35: LANJUT: besok paginya, jam 07:00 lagi
 registerShot('s17', { draw(g, t, info) { const c = P(); const ts = rel('suara', info, 1.5); ruang(g, c, t, { glow: t > ts ? 0.6 + 0.4 * Math.sin(t * 6) : 0 });
-  const o = { x: 600, y: GY, s: 2.3, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.6, 2), expr: t > ts ? 'thinking' : 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 170 + Math.sin(t * 4) * 60 * (t < ts ? 1 : 0), GY, 1.6);
+  const o = { x: 600, y: GY, s: 2.8, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.6, 2), expr: t > ts ? 'thinking' : 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 200 + Math.sin(t * 4) * 60 * (t < ts ? 1 : 0), GY, 1.9);
   sticker(g, 'LANJUT', 540, 240, 120, c.paper, -0.04, slamK(t, 0.05) * (1 - prog(t, 1.0, 1.3)));
   label(g, 'BESOKNYA', 540, 240, 64, c.d, INK, 0.03, pop(t, 1.3, 0.22));
   bub2(g, 380, 400, 280, ['Dio...'], 'l', c.paper, c.hot, pop(t, ts + 0.3, 0.22), 54); } });
 
 // s18 55.35-60.5: Dio jawab duluan
 registerShot('s18', { draw(g, t, info) { const c = P(); ruang(g, c, t, { glow: 0.5 }); const tj = rel('iya', info, 1.7);
-  const o = { x: 640, y: GY, s: 2.3, facing: -1, outfit: DIO, pose: t > tj ? breathe(POSES.talk, t, 0.5, 2) : POSES.holdFront, expr: t > tj ? 'smile' : 'neutral' }; fig(g, o);
-  const [hx, hy] = handW({ ...o, pose: POSES.holdFront }); sapuPegang(g, hx + 30, hy + 20, hx + 200, GY, 1.6);
+  const o = { x: 640, y: GY, s: 2.8, facing: -1, outfit: DIO, pose: t > tj ? breathe(POSES.talk, t, 0.5, 2) : POSES.holdFront, expr: t > tj ? 'smile' : 'neutral' }; fig(g, o);
+  const [hx, hy] = handW({ ...o, pose: POSES.holdFront }); sapuPegang(g, hx + 30, hy + 20, hx + 200, GY, 1.9);
   bub2(g, 380, 400, 280, ['Dio...'], 'l', c.paper, c.hot, 1 - prog(t, tj - 0.2, tj + 0.2), 54);
-  bub2(g, 600, 440, 560, ['Iya, Bu.', 'Aku mulai dari', 'kamar dulu, ya.'], 'r', c.d, INK, pop(t, tj - 0.1, 0.25), 48);
-  label(g, 'JAWAB DULUAN', 540, 200, 56, c.c, INK, -0.03, pop(t, rel('duluan', info, 0.9) - 0.1, 0.22)); } });
+  bub2(g, 560, 300, 560, ['Iya, Bu.', 'Aku mulai dari', 'kamar dulu, ya.'], 'r', c.d, INK, pop(t, tj - 0.1, 0.25), 48);
+  label(g, 'JAWAB DULUAN', 250, 800, 56, c.c, INK, -0.03, pop(t, rel('duluan', info, 0.9) - 0.1, 0.22)); } });
 
 // s19 60.5-64.95: dia sendiri yang milih urutannya; sapu tetap di tangan
 registerShot('s19', { draw(g, t, info) { const c = P(); bg(g, c.paper, c.b, 0.25); const tm = rel('milih', info, 0.8);
   label(g, 'DIA YANG MILIH', 540, 220, 64, c.d, INK, -0.03, pop(t, tm - 0.2, 0.22));
-  const rooms = [['KAMAR', 300, 470, 380, 280, c.b], ['RUANG TAMU', 700, 470, 380, 280, c.a], ['DAPUR', 500, 800, 720, 240, c.c]];
+  const rooms = [['KAMAR', 300, 440, 380, 260, c.b], ['RUANG TAMU', 700, 440, 380, 260, c.a], ['DAPUR', 500, 720, 720, 200, c.c]];
   rooms.forEach(([n, x, y, w, h, col], i) => { const k = pop(t, 0.1 + i * 0.12, 0.22); if (k <= 0) return; g.save(); g.translate(x, y); g.scale(k, k); rr(g, -w / 2 + 8, -h / 2 + 10, w, h, 20); g.fillStyle = INK; g.fill(); rr(g, -w / 2, -h / 2, w, h, 20); g.fillStyle = col; g.fill(); g.lineWidth = 8; g.strokeStyle = INK; g.stroke(); g.font = `900 46px "${FONTS.ui}"`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = INK; g.fillText(n, 0, 40); g.restore();
     const kn = pop(t, tm + 0.2 + i * 0.5, 0.25); if (kn > 0) { g.save(); g.translate(x, y - 50); g.scale(kn, kn); circle(g, 6, 8, 52, INK); circle(g, 0, 0, 52, c.hot); g.font = `900 64px "${FONTS.ui}"`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#fffbe8'; g.fillText(String(i + 1), 0, 4); g.restore(); } });
   const o = { x: 260, y: 1170, s: 1.4, outfit: DIO, pose: POSES.holdFront, expr: 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 100, 1170, 1); check(g, 500, 1060, 40, c.d, pop(t, rel('disenderin', info, 3.5) - 0.2, 0.25)); } });
@@ -247,8 +248,8 @@ registerShot('s19', { draw(g, t, info) { const c = P(); bg(g, c.paper, c.b, 0.25
 // s20 64.95-69.05: jam 09:00, rumah bersih, "Tumben."
 registerShot('s20', { draw(g, t, info) { const c = P(); ruang(g, c, t, { mins: 540, glow: 0.4 }); const tt = rel('tumben', info, 2.5);
   for (let i = 0; i < 7; i++) { const k = 0.5 + 0.5 * Math.sin(t * 4 + i * 1.7); FX.sparkle(g, 200 + (i * 173) % 800, 760 + (i * 97) % 380, 30 + 20 * k, '#ffffff', 0.9 * k); }
-  const o = { x: 640, y: GY, s: 2.3, facing: -1, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.5, 2), expr: t > tt ? 'smirk' : 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx - 30, GY, 1.6);
-  label(g, '09:00', 420, 450, 54, c.d, INK, 0.03, pop(t, rel('9', info, 0.2), 0.22)); label(g, 'BERSIH', 760, 760, 56, c.paper, INK, -0.04, pop(t, rel('bersih', info, 1.1) - 0.1, 0.22));
+  const o = { x: 640, y: GY, s: 2.8, facing: -1, outfit: DIO, pose: breathe(POSES.holdFront, t, 0.5, 2), expr: t > tt ? 'smirk' : 'happy' }; fig(g, o); const [hx, hy] = handW(o); sapuPegang(g, hx, hy, hx + 90, GY, 1.9);
+  label(g, '09:00', 420, 450, 54, c.d, INK, 0.03, pop(t, rel('9', info, 0.2), 0.22)); label(g, 'BERSIH', 330, 1000, 56, c.paper, INK, -0.04, pop(t, rel('bersih', info, 1.1) - 0.1, 0.22));
   bub2(g, 380, 560, 300, ['Tumben.'], 'l', c.paper, INK, pop(t, tt - 0.1, 0.22), 56); } });
 
 // s21 69.05-75.97: yang salah siapa? lalu kembali ke tangan di sapu (loop ke s01)
