@@ -1,0 +1,539 @@
+{
+ "title": "Disuruh Jadi Males",
+ "duration": 75.973,
+ "music": [
+  {
+   "start": 0,
+   "end": 20.45,
+   "mood": "tension",
+   "intensity": 0.3
+  },
+  {
+   "start": 23.65,
+   "end": 52.2,
+   "mood": "calm",
+   "intensity": 0.25
+  },
+  {
+   "start": 52.2,
+   "end": 75.973,
+   "mood": "hopeful",
+   "intensity": 0.3
+  }
+ ],
+ "sfx": [],
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "end": 1.3,
+   "line": "s01",
+   "scene": "s01",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 0.6,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 1.3,
+   "end": 2.9,
+   "line": "s02",
+   "scene": "s02",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 2.9,
+   "end": 5.4,
+   "line": "s03",
+   "scene": "s03",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 5.4,
+   "end": 8.85,
+   "line": "s04",
+   "scene": "s04",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 1.2,
+     "name": "swish",
+     "gain": -12.0
+    },
+    {
+     "at": 2.35,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 8.85,
+   "end": 10.95,
+   "line": "s05",
+   "scene": "s05",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 1.3,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 10.95,
+   "end": 13.3,
+   "line": "s06",
+   "scene": "s06",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 13.3,
+   "end": 16.65,
+   "line": "s07",
+   "scene": "s07",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "tick",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 16.65,
+   "end": 20.45,
+   "line": "s08",
+   "scene": "s08",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 3.3,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 20.45,
+   "end": 23.65,
+   "line": "s09",
+   "scene": "s09",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "freeze",
+     "gain": -12.0
+    },
+    {
+     "at": 0.25,
+     "name": "stinger",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 23.65,
+   "end": 28.95,
+   "line": "s10",
+   "scene": "s10",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "pageturn",
+    "dur": 0.8
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -12.0
+    },
+    {
+     "at": 3.9,
+     "name": "impact",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 28.95,
+   "end": 32.7,
+   "line": "s11",
+   "scene": "s11",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.3,
+     "name": "whoosh",
+     "gain": -12.0
+    },
+    {
+     "at": 2.6,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 32.7,
+   "end": 35.25,
+   "line": "s12",
+   "scene": "s12",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.3,
+     "name": "hit",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 35.25,
+   "end": 39.25,
+   "line": "s13",
+   "scene": "s13",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "webtoon",
+    "dur": 0.55
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.55,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.7,
+     "name": "pop",
+     "gain": -12.0
+    },
+    {
+     "at": 0.85,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 39.25,
+   "end": 44.6,
+   "line": "s14",
+   "scene": "s14",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "blip",
+     "gain": -12.0
+    },
+    {
+     "at": 3.0,
+     "name": "blip",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s15",
+   "start": 44.6,
+   "end": 50.3,
+   "line": "s15",
+   "scene": "s15",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "webtoon",
+    "dur": 0.55
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "impact",
+     "gain": -12.0
+    },
+    {
+     "at": 4.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s16",
+   "start": 50.3,
+   "end": 52.2,
+   "line": "s16",
+   "scene": "s16",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "heartbeat",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s17",
+   "start": 52.2,
+   "end": 55.35,
+   "line": "s17",
+   "scene": "s17",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "pageturn",
+    "dur": 0.8
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -12.0
+    },
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s18",
+   "start": 55.35,
+   "end": 60.5,
+   "line": "s18",
+   "scene": "s18",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s19",
+   "start": 60.5,
+   "end": 64.95,
+   "line": "s19",
+   "scene": "s19",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "swipe",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "ding",
+     "gain": -12.0
+    },
+    {
+     "at": 1.4,
+     "name": "ding",
+     "gain": -12.0
+    },
+    {
+     "at": 1.9,
+     "name": "ding",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s20",
+   "start": 64.95,
+   "end": 69.05,
+   "line": "s20",
+   "scene": "s20",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -12.0
+    },
+    {
+     "at": 2.5,
+     "name": "pop",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s21",
+   "start": 69.05,
+   "end": 75.973,
+   "line": "s21",
+   "scene": "s21",
+   "set": "komik",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 4.2,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 5.0,
+     "name": "hit",
+     "gain": -12.0
+    },
+    {
+     "at": 6.0,
+     "name": "whoosh",
+     "gain": -12.0
+    }
+   ],
+   "notes": ""
+  }
+ ]
+}
