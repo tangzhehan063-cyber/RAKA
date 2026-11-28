@@ -51,7 +51,7 @@ palet)
 sheet)
   python3 "$ROOT/tools/cek-sutradara.py" "$slug" || echo "!! cek-sutradara: ada GAGAL, perbaiki dulu"
   cd "$ST" && node render.mjs --project "$P" --sheet --scale 0.5 --workers "$WORKERS" 2>&1 | grep -iE "error|wrote" | tail -3
-  python3 "$ROOT/tools/safezone.py" "$PA/build/sheets/safe.png" $(ls "$PA"/build/sheets/s*_*.png | sort -V) ;;   # sheet + zona aman TikTok
+  python3 "$ROOT/tools/safezone.py" "$PA/build/sheets/safe.png" $(ls "$PA"/build/sheets/s[0-9][0-9]_*.png | sort -V) ;;   # sheet + zona aman TikTok
 stills)
   cd "$ST" && node render.mjs --project "$P" --stills "$3" --scale 0.5 2>&1 | grep -iE "error|wrote" | tail -3
   python3 "$ROOT/tools/safezone.py" "$PA/build/stills/safe.png" $(ls "$PA"/build/stills/*s_*.png | sort -V) ;;
